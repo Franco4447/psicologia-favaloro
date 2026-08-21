@@ -2716,10 +2716,13 @@ document.addEventListener('DOMContentLoaded', () => {
       
       slider.addEventListener('mousedown', (e) => {
         if (e.button !== 0) return;
+        
+        // Fix: Reset dragging state BEFORE returning early for interactive elements
+        isDragging = false; 
+        
         if (e.target.closest('button, input, .cursor-pointer')) return;
         
         isDown = true;
-        isDragging = false;
         slider.style.cursor = 'grabbing';
         document.body.style.userSelect = 'none';
         
