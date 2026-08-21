@@ -2708,6 +2708,7 @@ document.addEventListener('DOMContentLoaded', () => {
       slider.style.cursor = 'grab';
       
       let isDown = false;
+      let isDragging = false;
       let startX;
       let startY;
       let scrollLeft;
@@ -2718,6 +2719,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.closest('button, input, .cursor-pointer')) return;
         
         isDown = true;
+        isDragging = false;
         slider.style.cursor = 'grabbing';
         document.body.style.userSelect = 'none';
         
@@ -2737,13 +2739,29 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
+        
+        // Calculate distance moved
         const x = e.pageX - slider.offsetLeft;
         const y = e.pageY - slider.offsetTop;
+        
+        // Only consider it a drag if moved more than 3 pixels (prevents accidental tiny movements)
+        if (Math.abs(x - startX) > 3 || Math.abs(y - startY) > 3) {
+            isDragging = true;
+        }
+        
         const walkX = (x - startX) * 1.2;
         const walkY = (y - startY) * 1.2;
         slider.scrollLeft = scrollLeft - walkX;
         slider.scrollTop = scrollTop - walkY;
       });
+      
+      // Intercept the click event before React handles it
+      slider.addEventListener('click', (e) => {
+        if (isDragging) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+      }, true); // Use capture phase
     }
   });
   observer.observe(document.body, { childList: true, subtree: true });
