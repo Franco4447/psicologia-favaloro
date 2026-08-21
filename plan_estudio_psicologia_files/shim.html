@@ -1265,7 +1265,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
         clearTimeout(t);
       };
     }, []);
-    return /* @__PURE__ */ import_react.default.createElement("div", { className: "w-full h-screen bg-gray-100 flex flex-col font-sans overflow-hidden", onClick: () => setSelectedId(null) }, /* @__PURE__ */ import_react.default.createElement("div", { className: "p-6 bg-white border-b border-gray-200 shadow-sm z-20 flex justify-between items-center", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h1", { className: "text-2xl font-bold text-gray-800" }, "Plan de Estudio y Correlatividades - Psicolog\xEDa"), /* @__PURE__ */ import_react.default.createElement("p", { className: "text-sm text-gray-500 mt-1" }, /* @__PURE__ */ import_react.default.createElement("strong", null, "Haz clic"), " sobre una materia para fijar sus correlaciones directas e indirectas en toda la cadena.")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col items-end gap-3" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex gap-6 text-sm font-medium" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-blue-100 border border-blue-400" }), " Requisito Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-sky-100 border border-sky-400" }), " Requisito Indirecto")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-orange-100 border border-orange-400" }), " Habilita Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-yellow-100 border border-yellow-400" }), " Habilita Indirecto"))), /* @__PURE__ */ import_react.default.createElement(
+    return /* @__PURE__ */ import_react.default.createElement("div", { className: "w-full h-screen bg-gray-100 flex flex-col font-sans overflow-hidden", onClick: () => setSelectedId(null) }, /* @__PURE__ */ import_react.default.createElement("div", { className: "p-4 md:p-6 bg-white border-b border-gray-200 shadow-sm z-20 flex flex-col md:flex-row gap-4 md:justify-between md:items-center", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h1", { className: "text-xl md:text-2xl font-bold text-gray-800" }, "Plan de Estudio y Correlatividades - Psicolog\xEDa"), /* @__PURE__ */ import_react.default.createElement("p", { className: "text-sm text-gray-500 mt-1" }, /* @__PURE__ */ import_react.default.createElement("strong", null, "Haz clic"), " sobre una materia para fijar sus correlaciones directas e indirectas en toda la cadena.")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col items-end gap-3" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col sm:flex-row gap-2 sm:gap-6 text-sm font-medium" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-blue-100 border border-blue-400" }), " Requisito Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-sky-100 border border-sky-400" }), " Requisito Indirecto")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-orange-100 border border-orange-400" }), " Habilita Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-yellow-100 border border-yellow-400" }), " Habilita Indirecto"))), /* @__PURE__ */ import_react.default.createElement(
       "button",
       {
         onClick: (e) => {
@@ -2716,21 +2716,34 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
-        
-        // Calculate distance moved
         const x = e.pageX - slider.offsetLeft;
         const y = e.pageY - slider.offsetTop;
-        
-        // Only consider it a drag if moved more than 3 pixels (prevents accidental tiny movements)
-        if (Math.abs(x - startX) > 3 || Math.abs(y - startY) > 3) {
-            isDragging = true;
-        }
-        
-        const walkX = (x - startX) * 1.2;
-        const walkY = (y - startY) * 1.2;
-        slider.scrollLeft = scrollLeft - walkX;
-        slider.scrollTop = scrollTop - walkY;
+        if (Math.abs(x - startX) > 3 || Math.abs(y - startY) > 3) isDragging = true;
+        slider.scrollLeft = scrollLeft - (x - startX) * 1.2;
+        slider.scrollTop = scrollTop - (y - startY) * 1.2;
       });
+      
+      // Touch events for mobile
+      slider.addEventListener('touchstart', (e) => {
+        if (e.target.closest('button, input, .cursor-pointer')) return;
+        isDown = true;
+        isDragging = false;
+        startX = e.touches[0].pageX - slider.offsetLeft;
+        startY = e.touches[0].pageY - slider.offsetTop;
+        scrollLeft = slider.scrollLeft;
+        scrollTop = slider.scrollTop;
+      });
+      window.addEventListener('touchend', () => {
+        isDown = false;
+      });
+      window.addEventListener('touchmove', (e) => {
+        if (!isDown) return;
+        const x = e.touches[0].pageX - slider.offsetLeft;
+        const y = e.touches[0].pageY - slider.offsetTop;
+        if (Math.abs(x - startX) > 3 || Math.abs(y - startY) > 3) isDragging = true;
+        slider.scrollLeft = scrollLeft - (x - startX) * 1.5;
+        slider.scrollTop = scrollTop - (y - startY) * 1.5;
+      }, {passive: false});
       
       // Intercept the click event before React handles it
       slider.addEventListener('click', (e) => {
