@@ -1,0 +1,25 @@
+# Credenciales de APIs y Seguridad (NUNCA SUBIR)
+gdrive_credentials.json
+gdrive_token.json
+.env
+*.pem
+*.key
+
+# Archivos con Derechos de Autor (PDFs, Libros)
+# Ignora cualquier carpeta que se llame 1_Bibliografia_Original en cualquier nivel
+**/1_Bibliografia_Original/
+
+# Accesos directos locales
+*.url
+*.lnk
+
+# Archivos del Sistema Operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Archivos temporales
+*.tmp
+*.bak
+*.bak2
+*~

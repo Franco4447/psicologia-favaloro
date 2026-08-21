@@ -1,0 +1,91 @@
+ID,Género,Edad,Horas de uso de Redes Sociales,ASI Preocupación Social,Año de Nacimiento,Generación,Generación - Género
+AB_001,Hombre,28,2,3,1998,Generación Z,Generación Z - Hombre
+AB_002,Mujer,25,3,14,2001,Generación Z,Generación Z - Mujer
+AB_003,Hombre,35,1,2,1991,Millennials,Millennials - Hombre
+AB_004,Mujer,30,4,3,1996,Millennials,Millennials - Mujer
+AB_005,Mujer,31,5,8,1995,Millennials,Millennials - Mujer
+AB_006,Mujer,25,4,4,2001,Generación Z,Generación Z - Mujer
+AB_007,Hombre,21,4,11,2005,Generación Z,Generación Z - Hombre
+AB_008,Hombre,25,2,5,2001,Generación Z,Generación Z - Hombre
+AB_009,Hombre,22,13,14,2004,Generación Z,Generación Z - Hombre
+AB_010,Hombre,31,5,8,1995,Millennials,Millennials - Hombre
+CH_1,Mujer,20,2,3,2006,Generación Z,Generación Z - Mujer
+CH_2,Mujer,20,4,3,2006,Generación Z,Generación Z - Mujer
+CH_3,Mujer,20,4,12,2006,Generación Z,Generación Z - Mujer
+CH_4,Mujer,20,1,9,2006,Generación Z,Generación Z - Mujer
+CH_5,Mujer,20,5,12,2006,Generación Z,Generación Z - Mujer
+CH_6,Mujer,51,1,8,1975,Generación X,Generación X - Mujer
+CH_7,Mujer,20,5,18,2006,Generación Z,Generación Z - Mujer
+CH_8,Hombre,57,2,2,1969,Generación X,Generación X - Hombre
+PD_01,Mujer,42,1,1,1984,Millennials,Millennials - Mujer
+PD_02,Hombre,45,2,18,1981,Millennials,Millennials - Hombre
+PD_03,Hombre,68,1,8,1958,Baby Boomers,Baby Boomers - Hombre
+PD_04,Mujer,65,0,2,1961,Baby Boomers,Baby Boomers - Mujer
+PD_05,Mujer,21,3,8,2005,Generación Z,Generación Z - Mujer
+PD_06,Mujer,18,1,9,2008,Generación Z,Generación Z - Mujer
+PD_7,Mujer,39,2,3,1987,Millennials,Millennials - Mujer
+PD_8,Mujer,25,2,4,2001,Generación Z,Generación Z - Mujer
+PD_9,Mujer,28,3,13,1998,Generación Z,Generación Z - Mujer
+MZ_01,Mujer,59,0,4,1967,Generación X,Generación X - Mujer
+MZ_02,Mujer,32,2,6,1994,Millennials,Millennials - Mujer
+MZ_03,Mujer,32,5,3,1994,Millennials,Millennials - Mujer
+MZ_04,Hombre,45,1,10,1981,Millennials,Millennials - Hombre
+MZ_05,Hombre,35,0,0,1991,Millennials,Millennials - Hombre
+MZ_06,Hombre,37,6,2,1989,Millennials,Millennials - Hombre
+MZ_07,Mujer,84,0,2,1942,Baby Boomers,Baby Boomers - Mujer
+MZ_08,Hombre,25,8,9,2001,Generación Z,Generación Z - Hombre
+MZ_09,Hombre,26,3,8,2000,Generación Z,Generación Z - Hombre
+MZ_10,Mujer,22,6,17,2004,Generación Z,Generación Z - Mujer
+VL_01,Mujer,19,3,4,2007,Generación Z,Generación Z - Mujer
+VL_02,Mujer,32,6,5,1994,Millennials,Millennials - Mujer
+VL_03,Hombre,37,2,6,1989,Millennials,Millennials - Hombre
+VL_04,Mujer,38,3,4,1988,Millennials,Millennials - Mujer
+VL_05,Mujer,38,3,5,1988,Millennials,Millennials - Mujer
+VL_06,Mujer,32,3,8,1994,Millennials,Millennials - Mujer
+VL_07,Mujer,44,1,3,1982,Millennials,Millennials - Mujer
+VL_08,Hombre,40,2,6,1986,Millennials,Millennials - Hombre
+VL_09,Hombre,20,4,3,2006,Generación Z,Generación Z - Hombre
+MC_01,Hombre,38,4,7,1988,Millennials,Millennials - Hombre
+MC_02,Mujer,32,1,6,1994,Millennials,Millennials - Mujer
+MC_03,Hombre,38,3,8,1988,Millennials,Millennials - Hombre
+MC_04,Mujer,33,2,12,1993,Millennials,Millennials - Mujer
+MC_05,Mujer,33,4,8,1993,Millennials,Millennials - Mujer
+MC_06,Hombre,32,4,11,1994,Millennials,Millennials - Hombre
+MC_07,Hombre,30,5,8,1996,Millennials,Millennials - Hombre
+MC_08,Mujer,33,3,5,1993,Millennials,Millennials - Mujer
+MC_09,Mujer,29,3,6,1997,Generación Z,Generación Z - Mujer
+MC_10,Mujer,29,4,8,1997,Generación Z,Generación Z - Mujer
+wc-1,Hombre,23,2,8,2003,Generación Z,Generación Z - Hombre
+wc-2,Hombre,24,7,7,2002,Generación Z,Generación Z - Hombre
+wc-3,Hombre,31,2,0,1995,Millennials,Millennials - Hombre
+wc-4,Mujer,21,3,3,2005,Generación Z,Generación Z - Mujer
+wc-5,Hombre,23,7,6,2003,Generación Z,Generación Z - Hombre
+wc-6,Mujer,46,4,9,1980,Generación X,Generación X - Mujer
+wc-7,Hombre,51,2,0,1975,Generación X,Generación X - Hombre
+YS_01,Mujer,42,2,7,1984,Millennials,Millennials - Mujer
+YS_02,Hombre,47,1,8,1979,Generación X,Generación X - Hombre
+YS_03,Hombre,43,2,9,1983,Millennials,Millennials - Hombre
+YS_04,Hombre,39,4,6,1987,Millennials,Millennials - Hombre
+YS_05,Mujer,54,1,3,1972,Generación X,Generación X - Mujer
+YS_06,Mujer,54,3,10,1972,Generación X,Generación X - Mujer
+YS_07,Mujer,25,3,10,2001,Generación Z,Generación Z - Mujer
+YS_08,Hombre,32,6,4,1994,Millennials,Millennials - Hombre
+NMP_01,Hombre,28,3,8,1998,Generación Z,Generación Z - Hombre
+NMP_02,Hombre,20,3,9,2006,Generación Z,Generación Z - Hombre
+NMP_03,Hombre,24,6,7,2002,Generación Z,Generación Z - Hombre
+NMP_04,Hombre,27,4,2,1999,Generación Z,Generación Z - Hombre
+NMP_05,Hombre,35,1,11,1991,Millennials,Millennials - Hombre
+NMP_06,Hombre,27,2,4,1999,Generación Z,Generación Z - Hombre
+CSB1,Hombre,22,2,14,2004,Generación Z,Generación Z - Hombre
+CSB2,Hombre,30,10,4,1996,Millennials,Millennials - Hombre
+CSB3,Mujer,58,2,5,1968,Generación X,Generación X - Mujer
+CSB4,Mujer,38,2,15,1988,Millennials,Millennials - Mujer
+CSB5,Hombre,57,1,12,1969,Generación X,Generación X - Hombre
+CSB6,Hombre,24,6,8,2002,Generación Z,Generación Z - Hombre
+SF_01,Mujer,78,1,18,1948,Baby Boomers,Baby Boomers - Mujer
+SF_02,Mujer,53,1,22,1973,Generación X,Generación X - Mujer
+SF_03,Mujer,18,3,13,2008,Generación Z,Generación Z - Mujer
+SF_04,Mujer,21,2,20,2005,Generación Z,Generación Z - Mujer
+SF_05,Hombre,55,0,12,1971,Generación X,Generación X - Hombre
+SF_06,Mujer,18,5,11,2008,Generación Z,Generación Z - Mujer
+SF_07,Mujer,24,1,0,2002,Generación Z,Generación Z - Mujer
