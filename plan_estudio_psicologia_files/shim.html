@@ -2697,4 +2697,57 @@ react/cjs/react.development.js:
                 root.render(AppComponent);
             });
         </script>
-</body></html>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new MutationObserver(() => {
+    const slider = document.querySelector('.overflow-auto.custom-scrollbar');
+    if (slider && !slider.dataset.dragAttached) {
+      slider.dataset.dragAttached = "true";
+      
+      slider.style.cursor = 'grab';
+      
+      let isDown = false;
+      let startX;
+      let startY;
+      let scrollLeft;
+      let scrollTop;
+      
+      slider.addEventListener('mousedown', (e) => {
+        if (e.button !== 0) return;
+        if (e.target.closest('button, input, .cursor-pointer')) return;
+        
+        isDown = true;
+        slider.style.cursor = 'grabbing';
+        document.body.style.userSelect = 'none';
+        
+        startX = e.pageX - slider.offsetLeft;
+        startY = e.pageY - slider.offsetTop;
+        scrollLeft = slider.scrollLeft;
+        scrollTop = slider.scrollTop;
+      });
+      
+      window.addEventListener('mouseup', () => {
+        if (!isDown) return;
+        isDown = false;
+        slider.style.cursor = 'grab';
+        document.body.style.userSelect = '';
+      });
+      
+      window.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const y = e.pageY - slider.offsetTop;
+        const walkX = (x - startX) * 1.2;
+        const walkY = (y - startY) * 1.2;
+        slider.scrollLeft = scrollLeft - walkX;
+        slider.scrollTop = scrollTop - walkY;
+      });
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+</body>
+</html>
