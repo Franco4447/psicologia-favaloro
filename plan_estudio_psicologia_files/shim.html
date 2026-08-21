@@ -1013,7 +1013,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     { source: "evaluacion_psico", target: "juridica" },
     { source: "eval_neuropsico", target: "rehab_neuro" }
   ];
-  var SubjectNode = ({ data, isActive, isDirectPrereq, isIndirectPrereq, isDirectDep, isIndirectDep, onHover, onClick, unlocksFuture, dimNoCorrelatives }) => {
+  var SubjectNode = ({ data, isActive, isDirectPrereq, isIndirectPrereq, isDirectDep, isIndirectDep, onHover, onClick, unlocksFuture, dimNoCorrelatives, searchQuery }) => {
     let baseClass = "text-[11px] leading-tight font-semibold p-1 px-2 rounded-lg border-2 transition-all duration-300 cursor-pointer relative shadow-sm h-full flex items-center justify-center text-center ";
     const isAnyActive = isActive || isDirectPrereq || isIndirectPrereq || isDirectDep || isIndirectDep;
     if (isActive) {
@@ -1031,6 +1031,14 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     }
     if (dimNoCorrelatives && !unlocksFuture && !isAnyActive) {
       baseClass += " opacity-30 grayscale bg-gray-50 border-gray-100 text-gray-400 shadow-none ";
+    }
+    
+    if (searchQuery && searchQuery.trim() !== "") {
+      if (data.name.toLowerCase().includes(searchQuery.toLowerCase())) {
+         baseClass += " ring-4 ring-yellow-400 bg-yellow-50 ";
+      } else {
+         baseClass += " opacity-20 grayscale ";
+      }
     }
     return /* @__PURE__ */ import_react.default.createElement(
       "div",
@@ -1053,6 +1061,8 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     const [selectedId, setSelectedId] = (0, import_react.useState)(null);
     const [svgLines, setSvgLines] = (0, import_react.useState)([]);
     const [dimNoCorrelatives, setDimNoCorrelatives] = (0, import_react.useState)(false);
+    const [searchQuery, setSearchQuery] = (0, import_react.useState)("");
+    
     const containerRef = (0, import_react.useRef)(null);
     const years = [1, 2, 3, 4, 5];
     const activeId = selectedId || hoveredId;
@@ -1134,7 +1144,8 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
             onHover: setHoveredId,
             onClick: setSelectedId,
             unlocksFuture: edges.some((e) => e.source === subject.id),
-            dimNoCorrelatives
+            dimNoCorrelatives,
+            searchQuery
           }
         ))) : (
           /* Hueco vacío fijo para mantener la alineación estricta de Lunes a Viernes */
@@ -1254,7 +1265,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
         clearTimeout(t);
       };
     }, []);
-    return /* @__PURE__ */ import_react.default.createElement("div", { className: "w-full h-screen bg-gray-100 flex flex-col font-sans overflow-hidden", onClick: () => setSelectedId(null) }, /* @__PURE__ */ import_react.default.createElement("div", { className: "p-6 bg-white border-b border-gray-200 shadow-sm z-20 flex justify-between items-center", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h1", { className: "text-2xl font-bold text-gray-800" }, "Plan de Estudio y Correlatividades - Psicolog\xEDa"), /* @__PURE__ */ import_react.default.createElement("p", { className: "text-sm text-gray-500 mt-1" }, /* @__PURE__ */ import_react.default.createElement("strong", null, "Haz clic"), " sobre una materia para fijar sus correlaciones directas e indirectas en toda la cadena.")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col items-end gap-3" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex gap-6 text-sm font-medium" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-blue-100 border border-blue-400" }), " Requisito Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-sky-100 border border-sky-400" }), " Requisito Indirecto")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-orange-100 border border-orange-400" }), " Habilita Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-yellow-100 border border-yellow-400" }), " Habilita Indirecto"))), /* @__PURE__ */ import_react.default.createElement(
+    return /* @__PURE__ */ import_react.default.createElement("div", { className: "w-full h-screen bg-gray-100 flex flex-col font-sans overflow-hidden", onClick: () => setSelectedId(null) }, /* @__PURE__ */ import_react.default.createElement("div", { className: "p-4 bg-white border-b border-gray-200 shadow-sm z-20 flex flex-col gap-4", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex justify-between items-center w-full" }, /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("h1", { className: "text-2xl font-bold text-gray-800" }, "Plan de Estudio y Correlatividades - Psicolog\xEDa"), /* @__PURE__ */ import_react.default.createElement("p", { className: "text-sm text-gray-500 mt-1" }, /* @__PURE__ */ import_react.default.createElement("strong", null, "Haz clic"), " sobre una materia para fijar sus correlaciones directas e indirectas en toda la cadena.")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col items-end gap-3" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex gap-6 text-sm font-medium" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-blue-100 border border-blue-400" }), " Requisito Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-sky-100 border border-sky-400" }), " Requisito Indirecto")), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex flex-col gap-1" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-orange-100 border border-orange-400" }), " Habilita Directo"), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "w-4 h-4 rounded bg-yellow-100 border border-yellow-400" }), " Habilita Indirecto"))), /* @__PURE__ */ import_react.default.createElement(
       "button",
       {
         onClick: (e) => {
@@ -1264,7 +1275,34 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
         className: `px-3 py-1.5 rounded-md text-xs font-semibold transition-colors ${dimNoCorrelatives ? "bg-indigo-100 text-indigo-700 border border-indigo-300" : "bg-gray-100 text-gray-700 border border-gray-300 hover:bg-gray-200"}`
       },
       dimNoCorrelatives ? "Mostrar todas" : "Atenuar materias que no destraban futuras"
-    ))), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex-1 overflow-auto p-8 custom-scrollbar" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "min-w-[2800px] relative", ref: containerRef }, /* @__PURE__ */ import_react.default.createElement("svg", { className: "absolute top-0 left-0 w-full h-full pointer-events-none", style: { zIndex: 10 } }, /* @__PURE__ */ import_react.default.createElement("defs", null, /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-default", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "5", markerHeight: "5", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#cbd5e1" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-prereq", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "6", markerHeight: "6", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#3b82f6" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-indirect-prereq", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "5", markerHeight: "5", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#38bdf8" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-dep", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "6", markerHeight: "6", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#f97316" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-indirect-dep", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "5", markerHeight: "5", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#facc15" }))), svgLines.map((line) => {
+    ))), 
+    /* --- NEW NAVIGATION ROW --- */
+    /* @__PURE__ */ import_react.default.createElement("div", { className: "flex justify-between items-center bg-gray-50 p-2 px-4 rounded-lg border border-gray-200 w-full shadow-inner" },
+        /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-4" },
+            /* @__PURE__ */ import_react.default.createElement("span", { className: "text-sm font-bold text-gray-700" }, "Saltar a:"),
+            /* @__PURE__ */ import_react.default.createElement("div", { className: "flex gap-2" },
+                years.map(y => /* @__PURE__ */ import_react.default.createElement("button", { 
+                    key: `nav-${y}`,
+                    onClick: () => {
+                        const el = document.getElementById(`column-${y}`);
+                        if (el) el.scrollIntoView({ behavior: "smooth", inline: "start" });
+                    }, 
+                    className: "px-3 py-1 bg-white border border-gray-300 rounded shadow-sm text-sm font-semibold hover:bg-gray-100 transition-colors" 
+                }, `Año ${y}`))
+            )
+        ),
+        /* @__PURE__ */ import_react.default.createElement("div", { className: "flex items-center gap-3" },
+            /* @__PURE__ */ import_react.default.createElement("span", { className: "text-sm font-bold text-gray-700" }, "Buscador:"),
+            /* @__PURE__ */ import_react.default.createElement("input", { 
+                type: "text", 
+                placeholder: "Ej. Psicoanálisis...", 
+                value: searchQuery,
+                onChange: (e) => setSearchQuery(e.target.value),
+                className: "px-3 py-1.5 border border-gray-300 rounded-md text-sm w-64 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            })
+        )
+    )
+    ), /* @__PURE__ */ import_react.default.createElement("div", { className: "flex-1 overflow-auto p-8 custom-scrollbar" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "min-w-[2800px] relative", ref: containerRef }, /* @__PURE__ */ import_react.default.createElement("svg", { className: "absolute top-0 left-0 w-full h-full pointer-events-none", style: { zIndex: 10 } }, /* @__PURE__ */ import_react.default.createElement("defs", null, /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-default", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "5", markerHeight: "5", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#cbd5e1" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-prereq", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "6", markerHeight: "6", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#3b82f6" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-indirect-prereq", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "5", markerHeight: "5", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#38bdf8" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-dep", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "6", markerHeight: "6", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#f97316" })), /* @__PURE__ */ import_react.default.createElement("marker", { id: "arrow-indirect-dep", viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "5", markerHeight: "5", orient: "auto-start-reverse" }, /* @__PURE__ */ import_react.default.createElement("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#facc15" }))), svgLines.map((line) => {
       const isDirectPrereqEdge = directPrereqEdges.has(line.id);
       const isIndirectPrereqEdge = indirectPrereqEdges.has(line.id);
       const isDirectDepEdge = directDepEdges.has(line.id);
