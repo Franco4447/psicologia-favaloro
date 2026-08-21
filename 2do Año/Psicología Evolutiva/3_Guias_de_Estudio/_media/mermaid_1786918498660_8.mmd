@@ -1,0 +1,20 @@
+graph TD
+    A["Búsqueda de<br>la Identidad"]
+    
+    A -->|"Teoría Psicosocial"| B["Erik Erikson:<br>Identidad vs. Confusión"]
+    A --->|"Estados del Yo"| C["James Marcia:<br>Crisis y Compromiso"]
+    
+    B -->|"Virtud"| B1["Fidelidad y<br>Lealtad"]
+    
+    C -->|"Exploración y Decisión"| C1["Logro de<br>Identidad"]
+    C -->|"Decisión Impuesta"| C2["Exclusión"]
+    C ~~~ C3["Moratoria<br>(En Crisis)"]
+    C ~~~ C4["Difusión<br>(Sin Dirección)"]
+    
+    C1 --> C3
+    C2 --> C4
+    
+    style C1 fill:#f9f2ec,stroke:#333
+    style C2 fill:#f9f2ec,stroke:#333
+    style C3 fill:#f9f2ec,stroke:#333
+    style C4 fill:#f9f2ec,stroke:#333

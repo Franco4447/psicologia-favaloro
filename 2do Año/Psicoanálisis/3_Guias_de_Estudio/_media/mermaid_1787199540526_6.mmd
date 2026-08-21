@@ -1,0 +1,23 @@
+graph TD
+    subgraph Origen ["Origen Estructural"]
+        DP["Disposición Pulsional<br>Polimorfa (Infantil)"]
+    end
+    
+    subgraph Destinos ["Destinos de<br>la Pulsión"]
+        NEU["Neurosis (Represión)"]
+        PER["Perversión (Desmentida<br>/ Acto)"]
+    end
+
+    subgraph Manifestaciones ["Formaciones Clínicas"]
+        SIN["Síntoma (Satisfacción<br>Sustitutiva)"]
+        FTS["Fetiche /<br>Acto Perverso<br>(Satisfacción Manifiesta)"]
+    end
+
+    DP -->|"encuentra conflicto<br>y sufre<br>represión"| NEU
+    DP -->|"franquea el<br>dique moral<br>sin reprimir"| PER
+    
+    NEU -->|"retorna lo<br>reprimido como<br>formación de<br>compromiso"| SIN
+    PER -->|"se fija<br>el goce<br>renegando la<br>falta"| FTS
+    
+    SIN -.->|"es el<br>negativo de<br>(relación topológica)"| FTS
+    NEU -.->|"invierte el<br>mecanismo de"| PER
