@@ -1,0 +1,22 @@
+graph TD
+  %% Diseño en matriz de las estructuras clínicas y sus síntomas
+  RI["Representación Inconciliable"]
+
+  RI -->|"fracasa en tramitarse y provoca"| DEF["Defensa Primaria:<br>Separación del<br>Afecto"]
+
+  DEF -->|"en la Histeria se deriva a"| CUERPO["Inervación Somática"]
+  DEF -->|"en la Obsesión se enlaza a"| MENTE["Pensamiento Sustitutivo"]
+  DEF -->|"en la Fobia se transforma en"| ANG["Angustia Flotante"]
+
+  CUERPO -->|"requiere para fijarse"| SS["Solicitación Somática"]
+  CUERPO -->|"expresa un"| SI["Sentido Inconsciente"]
+  SS -->|"condensan el"| SINT_H["Síntoma: Conversión<br>Histérica"]
+  SI -->|"condensan el"| SINT_H
+
+  MENTE -->|"produce regresión al"| PO["Pensar Obsesivo"]
+  PO -->|"se manifiesta como"| FE["Falsos Enlaces<br>y Duda"]
+  FE -->|"paralizan la acción creando"| SINT_O["Síntoma: Acto<br>Compulsivo"]
+
+  ANG -->|"obliga al psiquismo a"| TRAB["Trabajo de<br>Ligadura"]
+  TRAB -->|"construye"| PARA["Parapetos Psíquicos"]
+  PARA -->|"delimitan y ordenan el"| SINT_F["Síntoma: Objeto<br>Fóbico"]
