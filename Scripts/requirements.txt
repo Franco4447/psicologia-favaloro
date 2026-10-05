@@ -10,4 +10,4 @@ pyyaml          # cabecera YAML de los .md generados
 pdfplumber      # /digitalizar: texto de PDFs
 pypdf           # /digitalizar: metadatos, páginas
 python-pptx     # /digitalizar: texto y notas de diapositivas
-openpyxl        # /flashcards: validación vía skill xlsx
+anki            # /flashcards (opcional): probar_anki.py importa los mazos en una colección de prueba

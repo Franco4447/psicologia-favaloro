@@ -23,7 +23,7 @@ PY = [
     ("pdfplumber", "pdfplumber", "/digitalizar", True),
     ("pypdf", "pypdf", "/digitalizar", True),
     ("python-pptx", "pptx", "/digitalizar", True),
-    ("openpyxl", "openpyxl", "/flashcards", False),
+    ("anki (prueba de mazos)", "anki", "/flashcards (opcional)", False),
 ]
 
 LIBREOFFICE_WIN = [r"C:\Program Files\LibreOffice\program\soffice.exe",
