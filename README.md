@@ -37,7 +37,8 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 │   ├── _media/               -> Diagramas Mermaid (.mmd + .png) y otros assets
 │   └── _imprimir/            -> Versiones para imprimir (2 páginas por hoja)  (C05_..._Guia_Imprimir.pdf)
 ├── 4_Flashcards/             -> Mazos CSV para Anki               (U07_Adolescencia_Flashcards.csv)
-└── 5_Evaluaciones/           -> Simulacros de parciales           (U07_Adolescencia_Simulacro.md)
+├── 5_Evaluaciones/           -> Simulacros y problemas de práctica (U07_Adolescencia_Simulacro.md)
+└── 6_Entregables/            -> (Opcional) TPs propios, consigna y datos (Inv_TPFinal_Consigna.pdf)
 ```
 
 > ⚠️ No existen carpetas globales `/Bibliografía` ni `/Resúmenes` en la raíz: todo vive
@@ -49,10 +50,10 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 |-----|---------|---------------------|-------|
 | 1er | Filosofía, Historia, LEO, Neurociencias, Psico General | ❌ | Agrupadas en `1er Cuatrimestre/` (estructura heredada) |
 | 1er | Epistemología, LEO, Metodología, Neurociencias, Sociología, Procesos Básicos I | ❌ | Agrupadas en `2do Cuatrimestre/` (estructura heredada) |
-| 2do | Psicoanálisis | 🟡 Parcial | Tiene `2_Textos_Extraidos/` y `3_Guias_de_Estudio/`; conviven carpetas viejas `biblio/`, `belucci/`, `clases/`, `lacan/` (1er cuatri) |
+| 2do | Psicoanálisis | ✅ | Migrada: bibliografía del 1er cuatri como `1erC_T[NN]_…`, clases como textos extraídos `C[NN]_Catedra_…`, resúmenes de Belucci y material de Lacan como guías `Transversal_…` |
 | 2do | Psicología Evolutiva | 🟡 Parcial | Pipeline activo; además existe `Psicología Evolutiva (1er Cuatri)/` como carpeta hermana |
-| 2do | Biología | ❌ | Esquema propio numerado (`01. diapositivas clase` … `06. resumen clase`) |
-| 2do | Estadística | ❌ | `clases pdf/`, `clases markdown/`, `parcial 02/`, `TP/` |
+| 2do | Biología | ✅ | Migrada: diapositivas, guías extendidas, resúmenes y síntesis por clase (`C01`…`C11`), problemas en Evaluaciones |
+| 2do | Estadística | ✅ | Migrada: guías por clase (`C01`…`C10`), material del 2do parcial (`C06_10_…`), TP final en `6_Entregables/` |
 | 2do | Procesos Básicos II | ✅ | Migrada: guías por clase (`C05`…`C09`) y global de la segunda mitad |
 | 2do | Psicología Experimental | ✅ | Migrada: bibliografía del trabajo de investigación (prefijo `Inv_`) |
 
@@ -73,7 +74,7 @@ El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALI
 
 ### Prompts reutilizables
 
-- `2do Año/estadistica psicologia/TP/prompts estadistica psicologia.txt`: prompt para
+- [`docs/prompts/Estadistica_DocumentoPorClase_Prompt.txt`](docs/prompts/Estadistica_DocumentoPorClase_Prompt.txt): prompt para
   fusionar *presentación de clase + bibliografía* en un documento de estudio exhaustivo.
   Sirve como plantilla para cualquier materia.
 
