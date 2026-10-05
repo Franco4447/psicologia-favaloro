@@ -38,3 +38,9 @@ node_modules/
 __pycache__/
 *.pyc
 .venv/
+
+# Logs de agentes (Antigravity): rutas locales e IDs de conversación
+.agents/
+
+# Datos de encuestas con respuestas sensibles (salud/medicación)
+**/6_Entregables/*Encuesta*.csv
