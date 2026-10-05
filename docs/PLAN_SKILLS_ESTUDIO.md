@@ -40,7 +40,7 @@ Skills propias del repositorio (en `.claude/skills/`) que automatizan el pipelin
 | Skill | Entrada → Salida | Se apoya en | Detalles clave |
 |-------|------------------|-------------|----------------|
 | `/flashcards` | `*_Guia.md` (o `.docx`, o `*_Resultados.md`) → `4_Flashcards/*_Flashcards.csv` | — | Mezcla pregunta/respuesta + cloze; ID estable por tarjeta (Anki actualiza en vez de duplicar y conserva el progreso); mazo `Materia::Unidad`; etiquetas; validación del CSV y prueba de importación real con el paquete `anki`; modo lote |
-| `/simulacro` | guías (+ exámenes previos / guía de lectura) → `5_Evaluaciones/*_Simulacro.md` | — | MC + desarrollo + casos; clave al final; cada pregunta rastreable a su fuente; **modo interactivo** que corrige y guarda `*_Resultados.md` con temas flojos |
+| `/simulacro` | guías (+ exámenes previos / guía de lectura) → `5_Evaluaciones/*_Simulacro.md` | — | Estructura de tu cuestionario de Lacan: A opción múltiple · B V/F justificado · C distinciones finas · D desarrollo con rúbrica · E casos; clave al final con fuente; estilo calibrado por cátedra; **modo interactivo** que corrige y guarda `*_Resultados.md` (temas flojos + historial de intentos) |
 | `/guia-estudio` | `*_Crudo.md` + diapositivas (+ guía de lectura) → `3_Guias_de_Estudio/*_Guia.md` | — | Plantilla de las mejores guías actuales; apuntes extendidos; citas de página; Mermaid `.mmd`+`.png` en `_media/`; chequeo de cobertura contra la fuente; procesamiento por partes |
 | `/digitalizar` | PDF/PPTX → `2_Textos_Extraidos/*_Crudo.md` | `pdf`, `pptx` | `## Página N`; OCR (`spa`) si es escaneado; limpieza (guiones de corte, encabezados/pies); imágenes en `_media/<crudo>/`; informe de calidad |
 | `/exportar` | `*_Guia.md` → `.docx` / `.pdf` / `_imprimir/` | `docx` | **pandoc + plantilla de estilos** (`reference.docx`); diagramas a PNG con ancho controlado; PDF con LibreOffice; borra temporales |
@@ -59,7 +59,7 @@ generan un mazo extra.
 |-------|-----------|--------|
 | 1 | Base: `.gitignore` de textos extraídos, `Scripts/estudio/` (nombres, cabecera YAML, verificación de entorno), `Scripts/requirements.txt`, script de inicio para sesiones en la nube | ✅ |
 | 2 | `/flashcards`: skill + `anki_csv.py` + `probar_anki.py`; pilotos Psicoanálisis C08 (36 tarjetas) y Biología C04 (60) | ✅ |
-| 3 | `/simulacro` (con modo interactivo y resultados) | ⏳ |
+| 3 | `/simulacro`: skill + `simulacro.py` (validar / resultados con historial de intentos); piloto Psicoanálisis C08 (22 preguntas); ciclo simulacro → temas flojos → flashcards probado | ✅ |
 | 4 | `/guia-estudio` (por partes, citas de página) | ⏳ |
 | 5 | `/digitalizar` (limpieza y OCR) | ⏳ |
 | 6 | `/exportar`, `/estudiar-unidad`, `/estado-materia`, documentación y PR | ⏳ |
