@@ -23,3 +23,14 @@ desktop.ini
 *.bak
 *.bak2
 *~
+
+# Intermedios de exportación (md -> docx) y pruebas
+*.temp.md
+*.temp.md.ps1
+~$*
+
+# Dependencias y cachés de scripts
+node_modules/
+__pycache__/
+*.pyc
+.venv/

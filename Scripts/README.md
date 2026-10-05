@@ -1,0 +1,53 @@
+# 🧰 Scripts de Google Drive
+
+Utilidades en Python para listar y descargar material de la cátedra desde Google Drive
+usando la API v3.
+
+| Script | Qué hace |
+|--------|----------|
+| `auth.py` | Corre el flujo OAuth (puerto `3000`) y guarda el token en `gdrive_token.json` |
+| `list_drive.py` | Lista nombre, ID y tipo MIME de los archivos de una carpeta de Drive |
+| `get_drive_path.py` | Muestra la ruta completa (`Carpeta / Subcarpeta / …`) de una carpeta a partir de su ID |
+| `fetch_pdfs.py` | Descarga todos los PDFs de una o más carpetas de Drive a un directorio local |
+
+## Requisitos
+
+```bash
+pip install google-auth-oauthlib google-api-python-client
+```
+
+## Configuración (una sola vez)
+
+1. En Google Cloud Console, crear un **ID de cliente OAuth** de tipo «Aplicación de
+   escritorio» (o web con redirect `http://localhost:3000/`) y habilitar la **Google Drive API**.
+2. Descargar el JSON del cliente como `gdrive_credentials.json` en el directorio desde el
+   que vas a correr los scripts.
+3. Ejecutar `python Scripts/auth.py`, abrir la URL que imprime y autorizar. Se genera
+   `gdrive_token.json`.
+
+Los dos archivos de credenciales están en `.gitignore`: **nunca** los subas al repositorio.
+
+## Uso
+
+Los IDs de carpeta y la ruta de destino están escritos dentro de cada script (bloque
+`if __name__ == '__main__':`). Antes de correrlos:
+
+- Reemplazá los IDs de carpeta por los de la materia que querés descargar (el ID es la
+  última parte de la URL `https://drive.google.com/drive/folders/<ID>`).
+- En `fetch_pdfs.py`, apuntá `dest` a `[Año]/[Materia]/1_Bibliografia_Original/` para
+  respetar [`AGENTS.md`](../AGENTS.md). El valor actual apunta a una carpeta global
+  `Bibliografía` que las reglas del repositorio ya no permiten.
+
+```bash
+python Scripts/list_drive.py
+python Scripts/get_drive_path.py
+python Scripts/fetch_pdfs.py
+```
+
+## Limitaciones conocidas
+
+- Solo se lee la primera página de resultados (`pageSize=100`); carpetas con más de 100
+  archivos quedan incompletas porque no se sigue `nextPageToken`.
+- El scope pedido es `drive` (lectura y escritura). Para estos scripts alcanza con
+  `drive.readonly`.
+- Las rutas y los IDs no se pueden pasar por línea de comandos todavía.
