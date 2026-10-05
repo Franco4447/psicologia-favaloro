@@ -65,10 +65,10 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
 ### 2.3 Archivos sueltos o mal ubicados en `2do Año/`
 - `PROCESOS BÀSICOS II - CLASE 29-05-26_ … .pdf`: pertenece a `procesos basicos 2/` (y
   tiene `À` en vez de `Á`).
-- Scripts de trabajo con rutas absolutas de Windows: `check_wide.js`, `test_png.js`,
-  `test.ps1`, `move_biblio.ps1`, `move_compendio.ps1`. Moverlos a `Scripts/` (y
+- Scripts de trabajo con rutas absolutas de Windows: `check_wide.js`,
+  `move_biblio.ps1`, `move_compendio.ps1`. Moverlos a `Scripts/` (y
   parametrizar rutas) o borrarlos.
-- Pruebas: `test.md` (apunta a una ruta local de `.gemini`), `test.docx`.
+- ~~Pruebas: `test.md`, `test.docx`, `test.ps1`, `test_png.js`~~ *(borrados)*.
 
 ---
 
@@ -81,11 +81,11 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
   Algunos son versiones distintas: revisar antes de borrar.
 - **Versiones manuales** en `Psicoanálisis/3_Guias_de_Estudio/`: `U04_…_v10.docx`,
   `_v11.docx`, `_FINAL.docx` (ídem U05). Git ya guarda las versiones; dejar solo una.
-- **Temporales de exportación** que quedaron versionados: `*.docx.temp.md`,
+- ~~**Temporales de exportación** que quedaron versionados~~ *(borrados)*: `*.docx.temp.md`,
   `*.docx.temp.md.ps1` (Psicoanálisis U04/U05, Evolutiva `_old`),
   `experimental_designs.pdf.temp.md`.
-- `Psicología Evolutiva/Resúmenes_Deprecados/_old/`: ~60 archivos obsoletos (tests,
-  diagramas viejos, `url.js` en UTF-16). Candidato a borrar: está en el historial de git.
+- ~~`Psicología Evolutiva/Resúmenes_Deprecados/_old/`: ~60 archivos obsoletos~~
+  *(borrada la carpeta completa; sigue disponible en el historial de git)*.
 
 `.gitignore` se amplió en este cambio para que estos temporales no vuelvan a subirse.
 
@@ -172,7 +172,7 @@ el trabajo ya hecho.
 ## 7. Próximos pasos sugeridos
 
 1. Pasar el repo a privado.
-2. Borrar temporales, `test*` y la carpeta `_old` (cambio chico, sin riesgo).
+2. ~~Borrar temporales, `test*` y la carpeta `_old`~~ ✅ hecho.
 3. Migrar una materia piloto (p. ej. Psicología Experimental, la más chica) al pipeline.
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
