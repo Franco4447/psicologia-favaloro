@@ -47,9 +47,9 @@ Skills propias del repositorio (en `.claude/skills/`) que automatizan el pipelin
 | `/estudiar-unidad` | unidad → pipeline completo | todas | Saltea etapas ya hechas; protege ediciones manuales |
 | `/estado-materia` | materia → tabla de cobertura | — | Detecta guías sin flashcards/simulacro y textos sin guía |
 
-## Integración con el Planificador
+## Integración con el Planificador ✅
 
-Las sesiones de repaso pasan a tener tarea concreta: repasos intermedios = mazo de
+Las sesiones de repaso pasan a tener tarea concreta (implementado en ambas versiones del Planificador): repasos intermedios = mazo de
 flashcards de la unidad; repaso final = simulacro. Los temas flojos de `*_Resultados.md`
 generan un mazo extra.
 
@@ -62,7 +62,7 @@ generan un mazo extra.
 | 3 | `/simulacro`: skill + `simulacro.py` (validar / resultados con historial de intentos); piloto Psicoanálisis C08 (22 preguntas); ciclo simulacro → temas flojos → flashcards probado | ✅ |
 | 4 | `/guia-estudio`: skill + plantilla + `fuente.py` (partes, cobertura) + `diagramas.py`; piloto Belucci «Las intervenciones del analista» (15.900 palabras → guía de 10.700, cobertura 93 %, 2 diagramas) | ✅ |
 | 5 | `/digitalizar`: skill + `extraer.py` (PDF con texto, escaneos con OCR, dos columnas por franjas, diapositivas PDF/PPTX con OCR de imágenes, limpieza, informe de calidad); probado con Freud *La represión* (escaneo, OCR 92 %), Barrett 2010 (dos columnas), Biología C04 (PDF de diapositivas) y C07 (PPTX: de 677 a 4.837 palabras con OCR) | ✅ |
-| 6 | `/exportar`, `/estudiar-unidad`, `/estado-materia`, documentación y PR | ⏳ |
+| 6 | `/exportar` (pandoc + plantilla, PDF con LibreOffice Writer, 2 por hoja); `/estado-materia` (`estado.py`); `/estudiar-unidad`; Planificador con tareas por sesión; documentación | ✅ |
 
 **Criterio de éxito por etapa:** probar con material real (p. ej. Psicoanálisis C21–23,
 Biología C04): la guía no pierde secciones ni ejemplos de la fuente, Anki importa el CSV
