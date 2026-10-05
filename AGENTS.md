@@ -41,6 +41,7 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - **`[Unidad]`**: siempre con dos dígitos (`U01`…`U12`) para que el orden alfabético coincida con el orden de cursada.
   - Si la materia se organiza por **clases** en vez de unidades, usa `C01`, `C02`… (rangos: `C17_18`).
   - Para material que abarca toda la materia o un cuatrimestre: `Global_1erC`, `Global_2doC`. Para ejes que cruzan varias unidades: `Transversal_[Tema]`.
+  - Para la bibliografía y el material de un **trabajo de investigación** (no asociado a una unidad del programa): `Inv_` (Ej: `Inv_Barrett_MusicEvokedNostalgia_Crudo.md`, `Inv_DisenosExperimentales_Guia.md`).
   - Si la bibliografía de la cátedra viene numerada, agrega el número de texto después de la unidad: `U04_T15_Freud_DueloYMelancolia_Crudo.md`.
 - **`[Autor]` / `[Tema]` / `[Capítulo]`**: en PascalCase o con guiones bajos, **sin truncar palabras** (✅ `DueloYMelancolia`, ✅ `Duelo_y_Melancolia`, ❌ `Lasintervencionesdel`). Evita espacios, paréntesis y prefijos como `(2)` o `2 - `.
 - **Sin sufijos de versión** (`_v10`, `_v11`, `_FINAL`): el historial lo guarda git. Al regenerar una guía, sobrescribe el archivo existente.
@@ -59,7 +60,7 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 
 ## Carpetas Heredadas (Legacy)
 
-Hay materias anteriores a este pipeline (todo `1er Año/`, y en `2do Año/` carpetas como `biologia/`, `estadistica psicologia/`, `procesos basicos 2/`, `Psicología Experimental/`, o `Psicoanálisis/biblio (1er cuatri)/`).
+Hay materias anteriores a este pipeline (todo `1er Año/`, y en `2do Año/` carpetas como `biologia/`, `estadistica psicologia/`, `procesos basicos 2/` o `Psicoanálisis/biblio (1er cuatri)/`).
 - **No las reorganices ni renombres por iniciativa propia**: propone la migración y espera confirmación del usuario.
 - Cuando el usuario pida trabajar sobre una materia heredada, crea las carpetas del pipeline **dentro de esa materia** y guarda ahí solo el material nuevo.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.

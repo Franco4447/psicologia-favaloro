@@ -8,7 +8,7 @@ Este documento recopila el análisis de los 7 artículos científicos procesados
 ---
 
 ## 1. Evaluación Emocional Prototípica de Música (Blanca et al., 2014)
-**Archivo:** `28432716005.md`
+**Archivo:** [`Inv_Blanca_EvaluacionEmocionalPrototipicaDeMusica_Crudo.md`](../2_Textos_Extraidos/Inv_Blanca_EvaluacionEmocionalPrototipicaDeMusica_Crudo.md)
 
 ### ¿Qué experimento realizaron?
 Un estudio experimental basado en la adaptación del **Test de Asociación Implícita (IAT)** para evaluar asociaciones automáticas/no conscientes entre emociones básicas (Alegría/Tristeza) y el tempo/valencia de fragmentos musicales (Música Movida/Suave).
@@ -29,7 +29,7 @@ Un estudio experimental basado en la adaptación del **Test de Asociación Impl�
 ---
 
 ## 2. Nostalgia Evocada por Música (Barrett et al., 2010)
-**Archivo:** `Barrett2010Emo.md`
+**Archivo:** [`Inv_Barrett_MusicEvokedNostalgia_Crudo.md`](../2_Textos_Extraidos/Inv_Barrett_MusicEvokedNostalgia_Crudo.md)
 
 ### ¿Qué experimento realizaron?
 Un experimento con diseño de medidas repetidas y análisis multinivel (datos por canción y por persona) para predecir la **nostalgia** a partir del contexto (la canción) y diferencias individuales (personalidad).
@@ -51,7 +51,7 @@ Un experimento con diseño de medidas repetidas y análisis multinivel (datos po
 ---
 
 ## 3. Inducción Emocional Musical y Persistencia Fisiológica (Ribeiro et al., 2019)
-**Archivo:** `ribeiro2019.md`
+**Archivo:** [`Inv_Ribeiro_EmotionalInductionThroughMusic_Crudo.md`](../2_Textos_Extraidos/Inv_Ribeiro_EmotionalInductionThroughMusic_Crudo.md)
 
 ### ¿Qué experimento realizaron?
 Un experimento intra-sujeto para inducir alegría y tristeza usando música clásica y medir cuánto persisten estas emociones subjetiva y fisiológicamente en silencio posterior.
@@ -76,7 +76,7 @@ Un experimento intra-sujeto para inducir alegría y tristeza usando música clá
 ---
 
 ## 4. Música Triste, Divagación Mental y Red Neuronal por Defecto (Taruffi et al., 2017)
-**Archivo:** `Taruffi.md`
+**Archivo:** [`Inv_Taruffi_EffectsOfSadAndHappyMusicOnMindWandering_Crudo.md`](../2_Textos_Extraidos/Inv_Taruffi_EffectsOfSadAndHappyMusicOnMindWandering_Crudo.md)
 
 ### ¿Qué experimento realizaron?
 Tres experimentos para ver si la música triste fomenta el *mind-wandering* (divagación mental) y activa la Red Neuronal por Defecto (DMN).
@@ -97,7 +97,7 @@ Tres experimentos para ver si la música triste fomenta el *mind-wandering* (div
 ---
 
 ## 5. Empatía y Conmoción por Música Triste No Familiar (Eerola et al., 2016)
-**Archivo:** `Eerola.md`
+**Archivo:** [`Inv_Eerola_BeingMovedByUnfamiliarSadMusic_Crudo.md`](../2_Textos_Extraidos/Inv_Eerola_BeingMovedByUnfamiliarSadMusic_Crudo.md)
 
 ### ¿Qué experimento realizaron?
 Estudio intra-sujeto y correlacional para ver si la empatía como rasgo predice experimentar una emoción placentera/conmovedora al escuchar una pista instrumental triste que el sujeto nunca había escuchado.
@@ -118,7 +118,7 @@ Estudio intra-sujeto y correlacional para ver si la empatía como rasgo predice 
 ---
 
 ## 6. y 7. Artículos de Revisión Teórica
-Los archivos `swaminathan2015.md` y `Music - Evoked Emotions.md` no detallan un experimento único propio, sino que resumen hallazgos de décadas de investigación.
+Los archivos [`Inv_Swaminathan_CurrentEmotionResearchInMusicPsychology_Crudo.md`](../2_Textos_Extraidos/Inv_Swaminathan_CurrentEmotionResearchInMusicPsychology_Crudo.md) y [`Inv_Schaefer_MusicEvokedEmotionsCurrentStudies_Crudo.md`](../2_Textos_Extraidos/Inv_Schaefer_MusicEvokedEmotionsCurrentStudies_Crudo.md) no detallan un experimento único propio, sino que resumen hallazgos de décadas de investigación.
 
 * **Swaminathan & Schellenberg (2015):** Revisan paradigmas clásicos, como estudios **transculturales** (poner música occidental a tribus africanas para ver si reconocen la emoción), paradigmas de **emociones contradictorias** (modificar canciones para que sean rápidas pero en tono menor) y estudios fisiológicos sobre **escalofríos (*chills*)**.
 * **Schaefer (2017):** Se enfoca en neurobiología. Describe detalladamente cómo replicar experimentos de **PET (*Tomografía por Emisión de Positrones*)** para ver liberación de dopamina con música de terror, estudios de **EEG (potenciales evocados)** para ver cómo el cerebro procesa la estructura de la melodía, e investigaciones detalladas con **cámaras macro de video** grabando el antebrazo para medir matemáticamente la piloerección (piel de gallina).
