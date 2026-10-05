@@ -1,0 +1,68 @@
+
+*Conducta: "Búsqueda de retroalimentación informativa asertiva ante el fracaso académico académico"*
+
+*Justificación teórica:* realidad de 1er y 2do orden (hechos físicos vs significado subjetivo) junto con la separación entre saber (adquisicion cognitiva) y hacer (ejecución regulada por la autoeficacia) (si otra persona observa la conducta positiva y lo imita para su próximo parcial también sumamos algo de imitación y modelos).
+
+*Parte 1: Estructura del Video*
+
+*Escena 1: El Hecho Objetivo (Realidad de 1er Orden)*
+*Acción:* Dos estudiantes (Estudiante A - El Modelo y Estudiante B - El Observador) están sentados juntos en el banco de la facultad. El docente camina por el aula entregando los parciales corregidos. Ambos reciben su hoja y ven la misma nota: un "2" (desaprobado).
+
+*Escena 2: La Bifurcación en el Significado (Realidad de 2do Orden)*
+*Estudiante B (Observador):* Reacciona con queja pasiva y frustración. Arruga el examen, lo tira adentro de la mochila, cruza los brazos y murmura con enojo: "El profesor me odia, la materia es imposible, no pienso venir más". Le asigna al "2" el significado subjetivo de un "castigo personal" o "fracaso absoluto".
+
+*Estudiante A (Modelo):* Se frustra un instante, pero respira hondo. Examina los comentarios de la corrección. Ve la nota no como una sentencia, sino como un dato útil (retroalimentación). Guarda la calma.
+
+*Escena 3: El "Hacer" Regulado por la Autoeficacia*
+*Acción:* El Estudiante A se levanta de su silla de forma decidida y se acerca de manera asertiva al escritorio del docente. El Estudiante B (Observador) se queda en su banco mirándolo con atención (Fase de Atención del aprendizaje observacional)
+
+*Interacción:* El Estudiante A le dice al docente con tono cordial: "Hola, profe. Quería consultarle de forma asertiva sobre la pregunta 3, así puedo corregir el error de cara al recuperatorio". El docente asiente con una sonrisa, le explica pacientemente el punto en la hoja y le señala qué material releer. El Estudiante A toma notas activas.
+
+*Escena 4: Consecuencias y Refuerzo Vicario (La imitación para el próximo parcial)*
+*Acción:* Placa temporal: "Siguiente fecha de examen". Se muestra de nuevo el aula. El Estudiante A rinde con seguridad y el docente le entrega su examen recuperatorio aprobado con un "8".
+
+*Efecto en el Observador:* El Estudiante B ve la nota de su compañero (Refuerzo Vicario y éxito social de la conducta). Se da cuenta de que "saber" que el docente explica no es suficiente si uno no ejecuta la acción.
+
+*Desenlace:* El Estudiante B, habiendo asimilado el modelo, se levanta de su silla con su examen desaprobado en la mano y se encamina asertivamente al escritorio del docente para pedir retroalimentación.
+Cierre con frase en pantalla sobre la resiliencia académica.
+
+*Parte 2: Estructura del Informe Escrito (Justificación Teórica - Máx. 3 carillas)*
+
+*Introducción y Planteo de la Conducta Saludable*
+*Definición:* Presentar la conducta elegida: "Búsqueda de retroalimentación informativa asertiva ante el fracaso académico" como un hábito saludable y de resiliencia frente a la queja pasiva.
+
+*Evidencia Empírica (Paper científico reciente):* Citar el paper que hayan elegido (de 2020 en adelante) que demuestre empíricamente cómo la retroalimentación docente y el afrontamiento asertivo disminuyen la ansiedad frente a los exámenes y mejoran el rendimiento de los universitarios
+.
+*Eje I: Hechos vs. Significado (Realidad de 1er y 2do Orden)*
+Realidad de Primer Orden (Hecho físico): Se define como el estímulo físico, cuantificable y objetivo: la entrega del examen en papel con un número "2" escrito en rojo. Ambos estudiantes experimentan exactamente la misma realidad de primer orden.
+Realidad de Segundo Orden (Significado subjetivo): Radica en la atribución de significado y valor que ocurre dentro de la "caja negra" (procesos cognitivos)
+
+El estudiante pasivo atribuye al "2" una carga de castigo y persecución docente, lo que desencadena una actitud defensiva y de apatía
+
+El estudiante modelo procesa el "2" como un indicador funcional de desempeño (retroalimentación informativa)
+Su valoración personal de la situación (actitud) le permite reencuadrar el error como una meta de aprendizaje
+
+*Eje II: La Brecha entre el "Saber" y el "Hacer" (Adquisición Cognitiva vs. Ejecución)*
+Disociación entre Saber y Hacer: Bandura postula que la adquisición cognitiva de una conducta y su posterior ejecución son procesos independientes
+Ambos estudiantes tienen las habilidades cognitivas para saber que el docente evacúa dudas y que estudiar ayuda
+
+*Autoeficacia vs. Apatía:* Lo que determina que el Estudiante A pase al "hacer" (ejecución conductual) y el Estudiante B se quede en el "saber" pasivo es la autoeficacia percibida.
+
+El Estudiante A posee una alta creencia en su propia capacidad para operar sobre su entorno ("yo creo que si hablo con el docente, puedo entender y revertir esta nota")
+
+El Estudiante B cae en la apatía académica, sintiéndose incapaz de incidir positivamente en su realidad
+Su conducta está regida por la evitación ante el castigo subjetivo de reprobar
+
+*Eje III: El Aprendizaje Observacional en Acción*
+Explicar detalladamente el comportamiento del Estudiante B (Observador) utilizando los subprocesos de Albert Bandura
+
+*Atención:* El observador, condicionado por su propia frustración, dirige su atención hacia el modelo (Estudiante A) al ver que este inicia una acción distinta (acercarse de manera asertiva al docente)
+
+*Retención:* Codifica e internaliza de manera representativa la interacción (el lenguaje no verbal calmado del modelo, la formulación asertiva de sus preguntas y la receptividad del docente)
+
+*Reproducción Motora:* Tras ver el éxito de la conducta del modelo, el Estudiante B se levanta y ejecuta activamente la misma pauta conductual (rompiendo el sedentarismo y la pasividad de la queja)
+
+*Motivación y el Rol del Refuerzo:*
+*Refuerzo Vicario:* El Estudiante B observa cómo la conducta del modelo es validada socialmente (el docente explica con amabilidad) y da un fruto positivo directo (el modelo aprueba con buena nota en el recuperatorio). Este éxito observado actúa como un incentivo anticipado que promueve la posterior imitación
+
+*Funciones del Refuerzo (Informativa, Motivacional y Fortalecedora):* La retroalimentación del docente cumple una función informativa (le dice al alumno exactamente en qué falló), motivacional (lo alienta a seguir estudiando con un rumbo claro) y fortalecedora (engrosa su repertorio de experiencias de resiliencia ante futuros obstáculos en su carrera)
