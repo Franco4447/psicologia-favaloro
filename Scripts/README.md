@@ -10,6 +10,19 @@ usando la API v3.
 | `get_drive_path.py` | Muestra la ruta completa (`Carpeta / Subcarpeta / …`) de una carpeta a partir de su ID |
 | `fetch_pdfs.py` | Descarga todos los PDFs de una o más carpetas de Drive a un directorio local |
 
+## Utilidades de mantenimiento (Windows)
+
+| Script | Qué hace |
+|--------|----------|
+| `check_wide.js` | (Node) Lista los PNG de `_media/` cuyo ancho supera ~500 pt al insertarse en Word |
+| `move_biblio.ps1` | (PowerShell) Copia `.md` extraídos de otra carpeta a `2_Textos_Extraidos/` renombrándolos como `UNN_Autor_Titulo_Crudo.md` |
+| `move_compendio.ps1` | (PowerShell) Copia guías `clase_*.md`, `00_global*.md` y `psicosis.md` a `3_Guias_de_Estudio/` con prefijo `U` |
+
+> ⚠️ Estos tres scripts tienen **rutas absolutas** de una PC concreta
+> (`C:\Users\Fmendezcasariego\OneDrive\...`). Editá `$source`/`$dest` (o `mediaDir`) antes
+> de usarlos. `move_biblio.ps1` toma solo las 3 primeras palabras del título y quita los
+> espacios, lo que produce nombres truncados; ver la regla de nombres en `AGENTS.md`.
+
 ## Requisitos
 
 ```bash
