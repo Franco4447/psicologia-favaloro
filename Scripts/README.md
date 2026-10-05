@@ -53,6 +53,8 @@ pero también se pueden correr a mano.
 | `anki_csv.py` | Arma (`construir`), valida (`validar`) y lee (`leer`) los mazos CSV de Anki de `/flashcards` |
 | `probar_anki.py` | Importa mazos en una colección de Anki temporal y verifica que reimportar no duplica (requiere `pip install anki`) |
 | `simulacro.py` | Valida la estructura de un simulacro (`validar`: preguntas ↔ clave, opciones, fuentes, rúbricas) y registra los resultados del modo interactivo (`resultados`) |
+| `fuente.py` | Divide un texto extraído en partes (`partes`, `texto`) y controla la cobertura de una guía contra su fuente (`cobertura`: términos, autores, casos y citas de página faltantes) |
+| `diagramas.py` | Renderiza los diagramas Mermaid de una guía a `_media/[Unidad]_[Tema]_NN.mmd/.png` e inserta la imagen en la guía |
 | `frontmatter.py` | Lee y escribe la cabecera YAML de los `.md` generados. `estado <archivo>` dice si una guía fue editada a mano desde que se generó, para no pisarla |
 
 ```bash
