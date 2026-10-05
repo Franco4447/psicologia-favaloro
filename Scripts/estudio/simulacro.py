@@ -16,7 +16,7 @@ Formato del simulacro (5_Evaluaciones/[Unidad]_[Tema]_Simulacro.md), con cabecer
     ### E1. Situación + consignas...
     ## Clave de respuestas
     ### A1 — b
-    Justificación... *(Fuente: C08_Guia.md, §2)*
+    Justificación... *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
     ### B1 — Falso
     ...
     ### D1
@@ -30,7 +30,7 @@ Uso:
 Formato de respuestas.json (lo arma la skill en modo interactivo):
     {"simulacro": "<ruta al simulacro.md>", "fecha": "2026-10-05",
      "respuestas": [{"id": "A1", "puntaje": 1, "max": 1, "tema": "Pseudo-objeción",
-                     "fuente": "C08_Guia.md §2", "comentario": "..."}]}
+                     "fuente": "C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md §2", "comentario": "..."}]}
     Una pregunta cuenta como floja si puntaje / max < 0.6.
 """
 import collections
