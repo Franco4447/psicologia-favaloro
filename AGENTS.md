@@ -66,7 +66,7 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 
 ## Carpetas Heredadas (Legacy)
 
-Hay materias anteriores a este pipeline (todo `1er Año/` y, en `2do Año/`, la carpeta hermana `Psicología Evolutiva (1er Cuatri)/`).
+Hay materias anteriores a este pipeline: todo `1er Año/`, organizado por cuatrimestre (`1er Año/1er Cuatrimestre/[Materia]/`).
 - **No las reorganices ni renombres por iniciativa propia**: propone la migración y espera confirmación del usuario.
 - Cuando el usuario pida trabajar sobre una materia heredada, crea las carpetas del pipeline **dentro de esa materia** y guarda ahí solo el material nuevo.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
