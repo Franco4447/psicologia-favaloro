@@ -8,7 +8,7 @@ description: 'Muestra en qué estado está cada materia del repositorio de Psico
 ```bash
 python Scripts/estudio/estado.py                      # todas las materias de 2do Año
 python Scripts/estudio/estado.py Psicoanálisis        # una o varias materias
-python Scripts/estudio/estado.py --anio "1er Año" …   # otro año (1er Año es archivo histórico)
+python Scripts/estudio/estado.py --anio "1er Año" …   # otro año (1er Año: archivo histórico, nombres sin normalizar)
 ```
 
 ## Cómo presentarlo

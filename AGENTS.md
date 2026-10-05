@@ -64,11 +64,11 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - Los intermedios de exportación (`*.temp.md`, `*.temp.md.ps1`, `test*.md`, `test*.docx`) se deben **borrar al terminar** la exportación. No los dejes en las carpetas de materias.
 - Los scripts de utilidad (`.ps1`, `.js`, `.py`) van en `/Scripts`, nunca dentro de `[Año]/`. No escribas rutas absolutas de un equipo concreto: recibe las rutas como parámetro o usa rutas relativas a la raíz del repositorio.
 
-## Carpetas Heredadas (Legacy)
+## 1er Año (estructura migrada, nombres heredados)
 
-Hay materias anteriores a este pipeline: todo `1er Año/`, organizado por cuatrimestre (`1er Año/1er Cuatrimestre/[Materia]/`). Es un **archivo histórico** de materias ya cursadas y se decidió no migrarlo.
-- **No las reorganices ni renombres por iniciativa propia**: propone la migración y espera confirmación del usuario.
-- Cuando el usuario pida trabajar sobre una materia heredada, crea las carpetas del pipeline **dentro de esa materia** y guarda ahí solo el material nuevo.
+`1er Año/[Materia]/` ya tiene las carpetas del pipeline (`1_Bibliografia_Original`, `3_Guias_de_Estudio`, `5_Evaluaciones`, `6_Entregables`), sin el nivel de cuatrimestre. Es un **archivo histórico** de materias ya cursadas: se migró la estructura, **no los nombres de archivo**.
+- **No renombres los archivos de 1er Año por iniciativa propia**: conservan sus nombres originales y su subcarpeta (`3er parcial/`, `FINAL/`…) dentro de cada etapa. Propone el renombrado y espera confirmación del usuario.
+- El material nuevo que se genere para una materia de 1er Año sí sigue la nomenclatura estricta de este documento.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
 
 ## Skills de Estudio (Claude Code)
