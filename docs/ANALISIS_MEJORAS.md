@@ -48,7 +48,7 @@ Psicoanálisis en `1er Año`.
 ### 2.1 Materias fuera del pipeline de 5 etapas
 | Materia | Situación | Propuesta |
 |---------|-----------|-----------|
-| `1er Año/*` | Agrupado por `1er Cuatrimestre/` y `2do Cuatrimestre/` | Materia cursada y cerrada: se puede dejar como archivo histórico, o aplanar a `1er Año/[Materia]/` |
+| `1er Año/*` | Agrupado por `1er Cuatrimestre/` y `2do Cuatrimestre/` | **Decidido: se mantiene como archivo histórico, sin migrar** |
 | ~~`2do Año/biologia`~~ | ✅ **Migrada** a `2do Año/Biología/` | — |
 | ~~`2do Año/estadistica psicologia`~~ | ✅ **Migrada** a `2do Año/Estadística/` (TP en `6_Entregables/`) | — |
 | ~~`2do Año/procesos basicos 2`~~ | ✅ **Migrada** a `2do Año/Procesos Básicos II/` | — |
@@ -174,7 +174,7 @@ el trabajo ya hecho.
 1. Pasar el repo a privado.
 2. ~~Borrar temporales, `test*` y la carpeta `_old`~~ ✅ hecho.
 3. ~~Migrar Psicología Experimental, Procesos Básicos II, Biología, Estadística y las
-   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Unificada también Psicología Evolutiva. Todo 2do año sigue el pipeline; falta `1er Año/`.
+   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Unificada también Psicología Evolutiva. Todo 2do año sigue el pipeline; `1er Año/` queda como archivo histórico.
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
 6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
