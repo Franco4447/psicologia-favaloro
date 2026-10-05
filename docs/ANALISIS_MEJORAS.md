@@ -17,7 +17,7 @@ todavía: mover o borrar archivos es decisión del dueño del repositorio.
   aplica a ningún archivo**: esa carpeta todavía no existe en ninguna materia, así que
   todo se subió igual.
 - También hay trabajos con nombre propio y de compañeros, datos de una encuesta
-  (`estadistica psicologia/TP/datos sujetos investigacion.csv`) e IDs de carpetas de
+  (`Estadística/6_Entregables/Inv_TPFinal_Datos.csv`) e IDs de carpetas de
   Google Drive en `Scripts/`.
 
 **Recomendación:** pasar el repositorio a **privado** (Settings → General → Danger Zone →
@@ -49,14 +49,15 @@ Psicoanálisis en `1er Año`.
 | Materia | Situación | Propuesta |
 |---------|-----------|-----------|
 | `1er Año/*` | Agrupado por `1er Cuatrimestre/` y `2do Cuatrimestre/` | Materia cursada y cerrada: se puede dejar como archivo histórico, o aplanar a `1er Año/[Materia]/` |
-| `2do Año/biologia` | Esquema propio `01. diapositivas` … `06. resumen clase` | `01`→`1_Bibliografia_Original`, `02`/`03`→`2_Textos_Extraidos`, `05`/`06`→`3_Guias_de_Estudio`, `04. problemas`→`5_Evaluaciones` |
-| `2do Año/estadistica psicologia` | `clases pdf`, `clases markdown`, `parcial 02`, `TP` | `clases pdf`→1, `clases markdown`→2, guías→3, `parcial 02` (repasos/40 preguntas)→5; `TP/` puede quedar como subcarpeta de entregables |
+| ~~`2do Año/biologia`~~ | ✅ **Migrada** a `2do Año/Biología/` | — |
+| ~~`2do Año/estadistica psicologia`~~ | ✅ **Migrada** a `2do Año/Estadística/` (TP en `6_Entregables/`) | — |
 | ~~`2do Año/procesos basicos 2`~~ | ✅ **Migrada** a `2do Año/Procesos Básicos II/` | — |
 | ~~`2do Año/Psicología Experimental`~~ | ✅ **Migrada** al pipeline con prefijo `Inv_` | — |
-| `2do Año/Psicoanálisis` | Pipeline parcial + `biblio/`, `belucci/`, `clases/`, `lacan/` del 1er cuatri | Unificar bibliografía en 1; `clases/*.md`→2 |
+| ~~`2do Año/Psicoanálisis`~~ | ✅ **Migrada**: se eliminaron `biblio/`, `belucci/`, `clases/`, `lacan/` | — |
 | `2do Año/Psicología Evolutiva (1er Cuatri)` | Carpeta hermana de `Psicología Evolutiva/` | Fusionar en una sola materia (Piaget → `U0X_Piaget_...`) |
 
 ### 2.2 Nombres de carpetas inconsistentes
+*(2do año corregido: `Biología`, `Estadística`, `Procesos Básicos II`. Queda `1er Año`.)*
 Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicologia`,
 `procesos basicos 2`, `Psicología Experimental`, `Psico General`. Proponer un estándar
 (p. ej. nombre oficial de la materia con mayúscula inicial y acentos: `Biología`,
@@ -73,11 +74,9 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
 
 ## 3. Duplicados y archivos temporales
 
-- **4 PDFs idénticos** de Belucci (05, 08, 15, 43) en `Psicoanálisis/belucci (1er cuatri)/`
-  y `Psicoanálisis/biblio (1er cuatri)/`.
-- **47 archivos con prefijo `(2) ` o `2 - `**: copias de descargas repetidas (ej.
-  `(2) Guia Parcial - 40 Preguntas.pdf`, `2 - Clase_06_-_Estadistica_Psicología.pdf`).
-  Algunos son versiones distintas: revisar antes de borrar.
+- ~~**4 PDFs idénticos** de Belucci (05, 08, 15, 43)~~ *(borradas las copias de `belucci (1er cuatri)/`)*.
+- ~~**47 archivos con prefijo `(2) ` o `2 - `**~~ en 2do año: eran versiones para imprimir
+  (2 páginas por hoja); se movieron a `_imprimir/`. Quedan los de `1er Año`.
 - **Versiones manuales** en `Psicoanálisis/3_Guias_de_Estudio/`: `U04_…_v10.docx`,
   `_v11.docx`, `_FINAL.docx` (ídem U05). Git ya guarda las versiones; dejar solo una.
 - ~~**Temporales de exportación** que quedaron versionados~~ *(borrados)*: `*.docx.temp.md`,
@@ -120,10 +119,10 @@ Assets*.
 - Archivos de otros formatos sin convención: `piaget - guia estudio completa.md`,
   `clase 08 - piaget preoperatorio.md`, `Clase 01 - Estadistica Psicología.md`.
 
-### 4.4 Etapas 4 y 5 del pipeline vacías
-Ninguna materia tiene todavía `4_Flashcards/` ni `5_Evaluaciones/`, aunque hay material
-apto (p. ej. `Guia Parcial - 40 Preguntas.pdf`, `Lacan_Cuestionario.pdf`, las guías
-C01–C24 de Psicoanálisis). Generar flashcards de las guías existentes aprovecharía mejor
+### 4.4 Etapa 4 (Flashcards) vacía
+`5_Evaluaciones/` ya tiene material en Biología, Estadística y Psicoanálisis, pero ninguna
+materia tiene `4_Flashcards/`, aunque hay guías aptas (p. ej. las C01–C24 de Psicoanálisis
+o las C01–C10 de Estadística). Generar flashcards de las guías existentes aprovecharía mejor
 el trabajo ya hecho.
 
 ---
@@ -174,7 +173,8 @@ el trabajo ya hecho.
 
 1. Pasar el repo a privado.
 2. ~~Borrar temporales, `test*` y la carpeta `_old`~~ ✅ hecho.
-3. ~~Migrar una materia piloto (Psicología Experimental) al pipeline~~ ✅ hecho.
+3. ~~Migrar Psicología Experimental, Procesos Básicos II, Biología, Estadística y las
+   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Falta `Psicología Evolutiva (1er Cuatri)/` y `1er Año/`.
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
 6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
