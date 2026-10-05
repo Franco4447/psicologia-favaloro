@@ -50,6 +50,8 @@ pero también se pueden correr a mano.
 |--------|----------|
 | `verificar_entorno.py` | Muestra qué herramientas están instaladas (Python, pandoc, LibreOffice, Tesseract, mermaid-cli) y cómo instalar las que faltan. `--probar` además renderiza un diagrama de prueba |
 | `nombres.py` | Genera el nombre correcto de un archivo según `AGENTS.md` (`generar guia --unidad U05 --tema "Duelo y melancolía"` → `U05_DueloYMelancolia_Guia.md`) y revisa nombres existentes (`validar <archivos>`) |
+| `anki_csv.py` | Arma (`construir`), valida (`validar`) y lee (`leer`) los mazos CSV de Anki de `/flashcards` |
+| `probar_anki.py` | Importa mazos en una colección de Anki temporal y verifica que reimportar no duplica (requiere `pip install anki`) |
 | `frontmatter.py` | Lee y escribe la cabecera YAML de los `.md` generados. `estado <archivo>` dice si una guía fue editada a mano desde que se generó, para no pisarla |
 
 ```bash
