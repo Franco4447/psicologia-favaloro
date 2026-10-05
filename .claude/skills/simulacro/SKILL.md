@@ -33,14 +33,14 @@ Dos modos:
 ## Modo archivo: generar el simulacro
 
 1. Leé las guías completas. Hacé una lista de los temas evaluables con su ubicación
-   (`C08_Guia.md §2`): cada pregunta va a salir de uno de esos temas.
+   (`C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md §2`): cada pregunta va a salir de uno de esos temas.
 2. Escribí el examen con la estructura de `references/formato_simulacro.md`. Cantidad orientativa
    para una clase: A 8–10 · B 5–6 · C 3–4 · D 2 · E 0–2 (más para un parcial entero). Ajustá al
    estilo de la cátedra (p. ej., Estadística: más opción múltiple y casos; Psicoanálisis: más
    desarrollo y distinciones).
 3. Reglas de calidad:
    - **Todo sale de las guías/fuentes**: nada de datos de memoria. Cada respuesta de la clave
-     cita su fuente: `*(Fuente: C08_Guia.md, §2)*`.
+     cita su fuente: `*(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*`.
    - Opción múltiple: una sola correcta; distractores **plausibles** sacados de los errores típicos
      y confusiones que marca la guía (no opciones absurdas); variá la posición de la correcta.
    - Verdadero/falso: afirmaciones que prueben matices (no obviedades); la clave justifica.
@@ -53,7 +53,7 @@ Dos modos:
    import sys; sys.path.insert(0, "Scripts/estudio")
    import frontmatter
    frontmatter.escribir(ruta, {"materia": "Psicoanálisis", "unidad": "C08", "tipo": "simulacro",
-       "fuentes": [{"archivo": "3_Guias_de_Estudio/C08_Guia.md"}], "skill": "simulacro"}, cuerpo)
+       "fuentes": [{"archivo": "3_Guias_de_Estudio/C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md"}], "skill": "simulacro"}, cuerpo)
    ```
 5. Validá y corregí hasta que no haya errores (y revisá los avisos):
    ```bash

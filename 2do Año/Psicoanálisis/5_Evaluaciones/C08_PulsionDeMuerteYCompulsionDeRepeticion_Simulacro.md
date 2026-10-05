@@ -3,10 +3,10 @@ materia: Psicoanálisis
 unidad: C08
 tipo: simulacro
 fuentes:
-- archivo: 3_Guias_de_Estudio/C08_Guia.md
+- archivo: 3_Guias_de_Estudio/C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md
 skill: simulacro
 generado: '2026-10-05'
-hash_generado: fe22982a4780
+hash_generado: f12b11e68fef
 ---
 
 # Simulacro — Psicoanálisis · Clase 8: el giro de 1920
@@ -115,69 +115,69 @@ Marcá la opción correcta.
 ## Clave de respuestas
 
 ### A1 — b
-El principio de placer es económico: aumento de tensión = displacer, reducción = placer; por eso tiende a mantener la excitación al nivel más bajo. (c) es la pulsión de muerte; (d) es la tarea de ligadura ante el trauma. *(Fuente: C08_Guia.md, §1)*
+El principio de placer es económico: aumento de tensión = displacer, reducción = placer; por eso tiende a mantener la excitación al nivel más bajo. (c) es la pulsión de muerte; (d) es la tarea de ligadura ante el trauma. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §1)*
 
 ### A2 — c
-El principio de realidad releva al de placer pero sigue a su servicio: demora la satisfacción (rodeo, tolerancia del displacer), no la anula. *(Fuente: C08_Guia.md, §2)*
+El principio de realidad releva al de placer pero sigue a su servicio: demora la satisfacción (rodeo, tolerancia del displacer), no la anula. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### A3 — a
-Los sueños traumáticos devuelven al sujeto a la situación del accidente que lo aterrorizó, contradiciendo la tesis de C2 de que todo sueño cumple un deseo. *(Fuente: C08_Guia.md, §2)*
+Los sueños traumáticos devuelven al sujeto a la situación del accidente que lo aterrorizó, contradiciendo la tesis de C2 de que todo sueño cumple un deseo. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### A4 — d
-Terror (*Schreck*): sin preparación. La angustia implica preparación/expectativa y el miedo un objeto determinado. *(Fuente: C08_Guia.md, §2)*
+Terror (*Schreck*): sin preparación. La angustia implica preparación/expectativa y el miedo un objeto determinado. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### A5 — a
-El niño juega mucho más el *fort* (la desaparición) que el reencuentro: repite lo displacentero, indicio del más allá del principio de placer. *(Fuente: C08_Guia.md, Ejemplo trabajado)*
+El niño juega mucho más el *fort* (la desaparición) que el reencuentro: repite lo displacentero, indicio del más allá del principio de placer. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, Ejemplo trabajado)*
 
 ### A6 — c
-La compulsión de repetición en la transferencia es la más relevante: el paciente repite en acto lo que nunca fue placentero, una compulsión "más originaria" que el principio de placer. *(Fuente: C08_Guia.md, §2 y "Para rendir" D1)*
+La compulsión de repetición en la transferencia es la más relevante: el paciente repite en acto lo que nunca fue placentero, una compulsión "más originaria" que el principio de placer. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2 y "Para rendir" D1)*
 
 ### A7 — b
-El trauma es la perforación del escudo protector por una excitación masiva que deja energía libre, no ligada. (a) corresponde a la teoría de la seducción, no al modelo de 1920. *(Fuente: C08_Guia.md, §3)*
+El trauma es la perforación del escudo protector por una excitación masiva que deja energía libre, no ligada. (a) corresponde a la teoría de la seducción, no al modelo de 1920. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §3)*
 
 ### A8 — d
-El aparato suspende el principio de placer para una tarea más urgente y primaria: ligar la energía (contrainvestiduras). Como ligar es previo al placer, hay un "más allá". *(Fuente: C08_Guia.md, §3)*
+El aparato suspende el principio de placer para una tarea más urgente y primaria: ligar la energía (contrainvestiduras). Como ligar es previo al placer, hay un "más allá". *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §3)*
 
 ### A9 — a
-Lacan relee la repetición desde el lenguaje: el sujeto repite porque está determinado por el significante (automaton), no por una fuerza biológica; (b) es la lectura de Freud. *(Fuente: C08_Guia.md, §5)*
+Lacan relee la repetición desde el lenguaje: el sujeto repite porque está determinado por el significante (automaton), no por una fuerza biológica; (b) es la lectura de Freud. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §5)*
 
 ### B1 — Falso
-Lo "demoníaco" es justamente que repite lo que nunca fue placentero (desaires, celos, fracasos). *(Fuente: C08_Guia.md, §2)*
+Lo "demoníaco" es justamente que repite lo que nunca fue placentero (desaires, celos, fracasos). *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### B2 — Verdadero
-La pulsión se redefine como "el esfuerzo de lo orgánico por restaurar un estado anterior": es conservadora, no un empuje al progreso. *(Fuente: C08_Guia.md, §4)*
+La pulsión se redefine como "el esfuerzo de lo orgánico por restaurar un estado anterior": es conservadora, no un empuje al progreso. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §4)*
 
 ### B3 — Falso
-Ese es el dualismo anterior; en 1920 se reemplaza por Eros (sexuales + autoconservación) vs. pulsión de muerte. *(Fuente: C08_Guia.md, §4)*
+Ese es el dualismo anterior; en 1920 se reemplaza por Eros (sexuales + autoconservación) vs. pulsión de muerte. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §4)*
 
 ### B4 — Verdadero
-En el trauma faltó la angustia (la preparación); el sueño intenta producirla retroactivamente para ligar lo no ligado. *(Fuente: C08_Guia.md, §2 y §3)*
+En el trauma faltó la angustia (la preparación); el sueño intenta producirla retroactivamente para ligar lo no ligado. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2 y §3)*
 
 ### B5 — Falso
-Esa es la lectura de Freud. Para Lacan es la insistencia del significante y la repetición del circuito pulsional alrededor del objeto a. *(Fuente: C08_Guia.md, §5)*
+Esa es la lectura de Freud. Para Lacan es la insistencia del significante y la repetición del circuito pulsional alrededor del objeto a. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §5)*
 
 ### B6 — Falso
-Hay una satisfacción ligada al displacer (acciones que nos dañan y repetimos): satisfacción ≠ placer, germen del goce. *(Fuente: C08_Guia.md, §5)*
+Hay una satisfacción ligada al displacer (acciones que nos dañan y repetimos): satisfacción ≠ placer, germen del goce. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §5)*
 
 ### C1
-Se distinguen por la relación con el peligro: la **angustia** implica preparación o expectativa ante un peligro incierto; el **miedo** es la reacción ante un objeto de peligro determinado; el **terror** es caer ante el peligro sin preparación. En el trauma faltó la angustia y hubo terror. *(Fuente: C08_Guia.md, §2)*
+Se distinguen por la relación con el peligro: la **angustia** implica preparación o expectativa ante un peligro incierto; el **miedo** es la reacción ante un objeto de peligro determinado; el **terror** es caer ante el peligro sin preparación. En el trauma faltó la angustia y hubo terror. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### C2
-El **principio de realidad** solo aplaza el placer y sigue a su servicio (pseudo-objeción). Las **verdaderas objeciones** (sueños traumáticos, Fort-Da, compulsión de repetición en la transferencia) muestran repeticiones de lo displacentero que el principio de placer no puede explicar. *(Fuente: C08_Guia.md, §2)*
+El **principio de realidad** solo aplaza el placer y sigue a su servicio (pseudo-objeción). Las **verdaderas objeciones** (sueños traumáticos, Fort-Da, compulsión de repetición en la transferencia) muestran repeticiones de lo displacentero que el principio de placer no puede explicar. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### C3
-Para **Freud** es una especulación biológica: la meta de la vida es la muerte (principio de Nirvana, Fechner). Para **Lacan** no es muerte biológica sino el funcionamiento del lenguaje: la insistencia del significante y la repetición alrededor del objeto a; el sujeto queda "desvivido" por la estructura simbólica. *(Fuente: C08_Guia.md, §5)*
+Para **Freud** es una especulación biológica: la meta de la vida es la muerte (principio de Nirvana, Fechner). Para **Lacan** no es muerte biológica sino el funcionamiento del lenguaje: la insistencia del significante y la repetición alrededor del objeto a; el sujeto queda "desvivido" por la estructura simbólica. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §5)*
 
 ### C4
-El **automaton** es la insistencia de la cadena significante, el retorno de los signos que "vuelve siempre al mismo lugar". La **tyché** es el encuentro fallido con lo real (el trauma) que la repetición rodea sin alcanzar. Ambos términos vienen de Aristóteles. *(Fuente: C08_Guia.md, §5)*
+El **automaton** es la insistencia de la cadena significante, el retorno de los signos que "vuelve siempre al mismo lugar". La **tyché** es el encuentro fallido con lo real (el trauma) que la repetición rodea sin alcanzar. Ambos términos vienen de Aristóteles. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §5)*
 
 ### D1
 **Esquema de respuesta modelo:** vesícula viva con protección antiestímulo que filtra estímulos → el trauma es su perforación por una excitación masiva → queda energía libre, no ligada → el aparato suspende el principio de placer para ligarla (*Bindung*, contrainvestiduras) → la repetición (sueños traumáticos, Fort-Da, transferencia) es un intento de ligar produciendo la angustia que faltó → como ligar es previo al placer, hay un principio "más allá".
-**Rúbrica (para un 10):** nombrar *Reizschutz* y la perforación; energía no ligada; la ligadura como tarea **previa** al placer; la repetición como intento de ligar. Resta puntos: describir el trauma sin explicar por qué funda el "más allá". *(Fuente: C08_Guia.md, §3 y "Para rendir" D2)*
+**Rúbrica (para un 10):** nombrar *Reizschutz* y la perforación; energía no ligada; la ligadura como tarea **previa** al placer; la repetición como intento de ligar. Resta puntos: describir el trauma sin explicar por qué funda el "más allá". *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §3 y "Para rendir" D2)*
 
 ### D2
 **Esquema de respuesta modelo:** la tradición (hedonismo, eudaimonía aristotélica: el hombre tiende al placer y al bien) → el "más allá" la cuestiona, pero Freud llega por la clínica → pseudo-objeción del principio de realidad + sueños traumáticos + Fort-Da + compulsión de repetición en la transferencia (la más relevante) → pulsión de muerte conservadora → Lacan: automaton (insistencia de la cadena significante) y tyché (encuentro fallido con lo real); el sujeto repite porque está determinado por el significante; enlace con S/s de C4 y germen del goce.
-**Rúbrica (para un 10):** nombrar la tradición y por qué el giro la cuestiona; los argumentos son **clínicos** y se desarrollan los tres más la pseudo-objeción, jerarquizando la transferencia; la lectura de Lacan por el lenguaje con automaton/tyché; **equilibrio** entre las dos mitades. Pierde puntos quien despacha a Lacan en una oración. *(Fuente: C08_Guia.md, "Para rendir" G)*
+**Rúbrica (para un 10):** nombrar la tradición y por qué el giro la cuestiona; los argumentos son **clínicos** y se desarrollan los tres más la pseudo-objeción, jerarquizando la transferencia; la lectura de Lacan por el lenguaje con automaton/tyché; **equilibrio** entre las dos mitades. Pierde puntos quien despacha a Lacan en una oración. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, "Para rendir" G)*
 
 ### E1
-a) **Compulsión de repetición**, y en el análisis, **en la transferencia**: no recuerda, repite en acto con el analista. b) Porque repite algo **displacentero** que lo hace sufrir: no busca placer, va "más allá" del principio de placer (pulsión de muerte). c) **Satisfacción ≠ placer**: hay una satisfacción ligada al displacer, germen de lo que Lacan llamará goce. *(Fuente: C08_Guia.md, §2, §5 y viñeta E de "Para rendir")*
+a) **Compulsión de repetición**, y en el análisis, **en la transferencia**: no recuerda, repite en acto con el analista. b) Porque repite algo **displacentero** que lo hace sufrir: no busca placer, va "más allá" del principio de placer (pulsión de muerte). c) **Satisfacción ≠ placer**: hay una satisfacción ligada al displacer, germen de lo que Lacan llamará goce. *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2, §5 y viñeta E de "Para rendir")*

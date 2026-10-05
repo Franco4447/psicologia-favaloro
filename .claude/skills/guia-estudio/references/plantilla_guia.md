@@ -1,6 +1,6 @@
 # Plantilla de guía extendida
 
-Basada en las mejores guías del repositorio (Psicoanálisis `C08_Guia.md`, Biología
+Basada en las mejores guías del repositorio (Psicoanálisis `C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md`, Biología
 `C04_Cronobiologia_Guia.md`). Las secciones marcadas *(opcional)* se incluyen si la fuente da
 material; el resto va siempre.
 

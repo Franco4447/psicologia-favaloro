@@ -52,7 +52,7 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
 - **Citas de página** en todo dato o tesis: `(Belucci, p. 12)`. Las citas textuales van entre
   comillas y con página. No inventes páginas.
 - **Fiel a la fuente:** nada de agregar teoría de memoria. Si conectás con otra clase o texto del
-  repo, decí cuál (`→ conecta con C08_Guia.md §4`).
+  repo, decí cuál (`→ conecta con C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md §4`).
 - **Terminología de la cátedra** y términos en el idioma original entre paréntesis (*Zwang*).
 - **Diagramas Mermaid** solo donde un esquema aclara de verdad (secuencias, relaciones,
   clasificaciones). Texto de nodos sin comillas dobles internas.
