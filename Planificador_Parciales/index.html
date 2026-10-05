@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planificador de Parciales</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --card:#fff; --ink:#1f2328; --mute:#6b7280; --line:#e5e3dc;
+    --ok:#2f855a; --warn:#d69e2e; --hot:#e53e3e; --acc:#5b4fcf; --accbg:#eeecfb;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#16171a; --card:#202226; --ink:#e8e8ea; --mute:#9aa0a8; --line:#33363b; --accbg:#2a2750; --acc:#a79dff;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,Segoe UI,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:20px 16px 60px}
+  h1{font-size:1.5rem;margin:0 0 2px}
+  .sub{color:var(--mute);margin-bottom:18px}
+  h2{font-size:1rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);margin:26px 0 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .grow{flex:1;min-width:180px}
+  .count{min-width:68px;text-align:center;border-radius:10px;padding:6px 4px;font-weight:700;color:#fff}
+  .count small{display:block;font-weight:500;font-size:.7rem;opacity:.9}
+  .ok{background:var(--ok)} .warn{background:var(--warn)} .hot{background:var(--hot)} .none{background:var(--mute)}
+  .title{font-weight:600}
+  .meta{color:var(--mute);font-size:.85rem}
+  .tag{display:inline-block;font-size:.72rem;padding:1px 8px;border-radius:99px;background:var(--accbg);color:var(--acc);margin-right:6px}
+  .bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin-top:8px}
+  .bar i{display:block;height:100%;background:var(--acc)}
+  .sessions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .chip{border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:.82rem;cursor:pointer;background:transparent;color:var(--ink)}
+  .chip.done{background:var(--ok);border-color:var(--ok);color:#fff;text-decoration:line-through}
+  .chip.late{border-color:var(--hot);color:var(--hot)}
+  .chip.today{border-color:var(--acc);background:var(--accbg);font-weight:600}
+  .today-item{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px dashed var(--line)}
+  .today-item:last-child{border:0}
+  button,input,select{font:inherit;color:var(--ink)}
+  .btn{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:7px 14px;cursor:pointer}
+  .ghost{background:transparent;color:var(--mute);border:0;cursor:pointer;font-size:.85rem}
+  .ghost:hover{color:var(--hot)}
+  form{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+  input,select{padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+  .empty{color:var(--mute);padding:6px 0}
+  .foot{margin-top:28px;color:var(--mute);font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📅 Planificador de Parciales</h1>
+  <div class="sub" id="hoy"></div>
+
+  <h2>Hoy te toca</h2>
+  <div class="card" id="today"></div>
+
+  <h2>Próximas entregas</h2>
+  <div id="list"></div>
+
+  <h2>Agregar entrega</h2>
+  <div class="card">
+    <form id="f">
+      <input name="materia" placeholder="Materia" required>
+      <input name="desc" placeholder="Descripción (ej. Parcial 1)">
+      <select name="tipo">
+        <option>Examen</option><option>Trabajo Práctico</option><option>Lección Oral</option>
+        <option>Final</option><option>Actividad</option>
+      </select>
+      <input name="fecha" type="date" required>
+      <button class="btn">Agregar</button>
+    </form>
+  </div>
+
+  <div class="foot">
+    Las sesiones de repaso se calculan hacia atrás desde la fecha: exámenes y finales a −14, −7, −3 y −1 días;
+    TPs y orales a −7, −3 y −1. Tocá una sesión para marcarla como hecha. Todo se guarda en este navegador.
+    Datos iniciales tomados de tu base «📖 Tareas» de Notion.
+  </div>
+</div>
+
+<script>
+// Datos iniciales (de Notion, 4/10/2026). Se pueden agregar/borrar desde la página.
+const SEED = [
+  {materia:"Psicología Social",    desc:"TP 3: Examen Individual (Multiple Choice)", tipo:"Examen",           fecha:"2026-10-22"},
+  {materia:"Psicoanálisis",        desc:"Segundo examen",                            tipo:"Examen",           fecha:"2026-10-26"},
+  {materia:"Procesos Básicos III", desc:"Presentación Pensamiento",                  tipo:"Lección Oral",     fecha:"2026-10-28"},
+  {materia:"Psicología Social",    desc:"TP 4: Trabajo de Revisión (hasta Metodología)", tipo:"Trabajo Práctico", fecha:"2026-10-29"},
+  {materia:"Psicología Evolutiva", desc:"Parcial 4 (U9 y U10)",                      tipo:"Examen",           fecha:"2026-11-03"},
+  {materia:"Procesos Básicos III", desc:"Parcial 2: Multiple Choice + a Desarrollar",tipo:"Examen",           fecha:"2026-11-04"},
+  {materia:"Procesos Básicos III", desc:"Proyecto Final",                            tipo:"Trabajo Práctico", fecha:"2026-11-11"},
+  {materia:"Psicología Social",    desc:"TP 5: Trabajo de Revisión (Completo)",      tipo:"Trabajo Práctico", fecha:"2026-11-12"},
+  {materia:"Psicología Experimental", desc:"Parcial 2 - Investigación",              tipo:"Trabajo Práctico", fecha:"2026-11-13"},
+];
+const KEY = "planificador_parciales_v1";
+const OFFSETS = {Examen:[14,7,3,1], Final:[14,7,3,1], "Trabajo Práctico":[7,3,1], "Lección Oral":[7,3,1], Actividad:[3,1]};
+const DAY = 86400000;
+
+let state = load();
+function load(){
+  try{ const s = JSON.parse(localStorage.getItem(KEY)); if(s && s.items) return s; }catch(e){}
+  return {items: SEED.map((x,i)=>({id:"s"+i,...x})), done:{}};
+}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+
+const startOfDay = d => { const x = new Date(d); x.setHours(0,0,0,0); return x; };
+const parse = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y,m-1,d); };
+const iso = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const fmt = d => d.toLocaleDateString("es-AR",{weekday:"short",day:"numeric",month:"short"});
+const esc = s => s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const today = () => startOfDay(new Date());
+
+function sessionsFor(it){
+  const due = parse(it.fecha), t = today();
+  const offs = OFFSETS[it.tipo] || [3,1];
+  return offs.map((o,i)=>{
+    let d = new Date(due.getTime() - o*DAY);
+    // Si la fecha ya pasó pero la entrega no, mover la sesión a hoy (sin duplicar el mismo día)
+    return {key:it.id+":"+i, date:d, label: i===offs.length-1 ? "Repaso final" : "Repaso "+(i+1), orig:d};
+  });
+}
+
+function render(){
+  const t = today();
+  document.getElementById("hoy").textContent = "Hoy es " + t.toLocaleDateString("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+
+  const items = state.items.filter(i=>parse(i.fecha) >= t).sort((a,b)=>a.fecha.localeCompare(b.fecha));
+
+  // Hoy
+  const todo = [];
+  items.forEach(it=>sessionsFor(it).forEach(s=>{
+    if(!state.done[s.key] && s.date <= t) todo.push({it,s});
+  }));
+  const T = document.getElementById("today");
+  T.innerHTML = todo.length ? todo.map(({it,s})=>{
+    const late = s.date < t;
+    return `<div class="today-item"><input type="checkbox" data-k="${s.key}">
+      <div class="grow"><b>${esc(it.materia)}</b> — ${esc(it.desc||it.tipo)}
+      <div class="meta">${s.label}${late?` · atrasada (era ${fmt(s.date)})`:""}</div></div></div>`;
+  }).join("") : `<div class="empty">Nada pendiente para hoy 🎉</div>`;
+
+  // Lista
+  const L = document.getElementById("list");
+  if(!items.length){ L.innerHTML = `<div class="card empty">No hay entregas próximas. Agregá una abajo.</div>`; }
+  else L.innerHTML = items.map(it=>{
+    const days = Math.round((parse(it.fecha)-t)/DAY);
+    const cls = days<=3 ? "hot" : days<=7 ? "warn" : "ok";
+    const ss = sessionsFor(it);
+    const nd = ss.filter(s=>state.done[s.key]).length;
+    const chips = ss.map(s=>{
+      const done = state.done[s.key];
+      const c = done ? "done" : s.date < t ? "late" : s.date.getTime()===t.getTime() ? "today" : "";
+      return `<button class="chip ${c}" data-k="${s.key}">${s.label} · ${fmt(s.date)}</button>`;
+    }).join("");
+    return `<div class="card">
+      <div class="row">
+        <div class="count ${cls}">${days===0?"HOY":days}<small>${days===0?"":days===1?"día":"días"}</small></div>
+        <div class="grow">
+          <div class="title">${esc(it.materia)}</div>
+          <div class="meta"><span class="tag">${esc(it.tipo)}</span>${esc(it.desc||"")} · ${fmt(parse(it.fecha))}</div>
+        </div>
+        <button class="ghost" data-del="${it.id}">Quitar</button>
+      </div>
+      <div class="bar"><i style="width:${ss.length?nd/ss.length*100:0}%"></i></div>
+      <div class="sessions">${chips}</div>
+    </div>`;
+  }).join("");
+}
+
+document.addEventListener("click",e=>{
+  const k = e.target.closest("[data-k]");
+  if(k && k.tagName!=="INPUT"){ toggle(k.dataset.k); }
+  const d = e.target.closest("[data-del]");
+  if(d && confirm("¿Quitar esta entrega?")){ state.items = state.items.filter(i=>i.id!==d.dataset.del); save(); render(); }
+});
+document.addEventListener("change",e=>{ if(e.target.matches("input[type=checkbox][data-k]")) toggle(e.target.dataset.k); });
+function toggle(key){ state.done[key] = !state.done[key]; save(); render(); }
+
+document.getElementById("f").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f = new FormData(e.target);
+  state.items.push({id:"u"+Date.now(), materia:f.get("materia").trim(), desc:f.get("desc").trim(), tipo:f.get("tipo"), fecha:f.get("fecha")});
+  save(); e.target.reset(); render();
+});
+
+render();
+</script>
+</body>
+</html>
