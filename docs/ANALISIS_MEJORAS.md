@@ -108,8 +108,11 @@ imposibles de relacionar con su guía. Ver la nueva regla en `AGENTS.md` → *Di
 Assets*.
 
 ### 4.3 Nomenclatura
-- `Psicoanálisis/3_Guias_de_Estudio/` usa `C01_Guia.md` … `C24_Guia.md` (sin tema) y
+- `Psicoanálisis/3_Guias_de_Estudio/` usaba `C01_Guia.md` … `C24_Guia.md` (sin tema) y
   `U04_Psicoanalisis_Guia_FINAL.md`. Sugerido: `C01_Epistemologia_Guia.md`, etc.
+  *(Resuelto en el PR #4: las 19 guías pasaron a `C##_[Tema]_Guia.md`, los `_FINAL` de
+  U04/U05 perdieron el sufijo y se borraron los `_v10`/`_v11`, que siguen en el historial
+  de git. Se actualizaron las referencias del simulacro y del mazo de C08.)*
 - `Psicoanálisis/2_Textos_Extraidos/` trunca títulos al quitar espacios
   (`U05_T27_Belucci_Lasintervencionesdel_Crudo.md`,
   `U04_T04_T01_Belucci_Introducciónaldiagnóstico_Crudo.md`). El script `move_biblio.ps1`
