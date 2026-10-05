@@ -14,8 +14,8 @@ ejemplos, casos, experimentos, cifras y matices. Nunca sobre-sintetizar.
 1. Leé `AGENTS.md` (manda sobre esta skill).
 2. Reuní las fuentes:
    - **Textos extraídos** `2_Textos_Extraidos/*_Crudo.md` (la fuente principal).
-   - Si solo hay PDF/PPTX en `1_Bibliografia_Original/`, primero hay que extraerlo (skill
-     `/digitalizar` cuando exista; mientras tanto, las skills `pdf` / `pptx`) a `2_Textos_Extraidos/`.
+   - Si solo hay PDF/PPTX en `1_Bibliografia_Original/`, primero extraelo con la skill
+     `/digitalizar` a `2_Textos_Extraidos/`.
    - **Diapositivas** de la clase (marcan qué priorizó el docente) y, si existen, la **guía de
      lectura** o evaluaciones de la cátedra (`5_Evaluaciones/`): definen "lo que entra sí o sí".
    - Si no está claro de qué materia/unidad se trata, **preguntá**.

@@ -65,7 +65,7 @@ El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALI
 
 | Paso | Qué se hace | Entrada → Salida |
 |------|-------------|------------------|
-| 1. Digitalización | Convertir PDFs/PPTs a Markdown (skill `pdf-to-markdown` u OCR) | `1_Bibliografia_Original/` → `2_Textos_Extraidos/*_Crudo.md` |
+| 1. Digitalización | Convertir PDFs (con texto o escaneados) y PowerPoint a Markdown con la skill **`/digitalizar`** | `1_Bibliografia_Original/` → `2_Textos_Extraidos/*_Crudo.md` |
 | 2. Guía de estudio | Generar **apuntes extendidos** con la skill **`/guia-estudio`** (por partes, con citas de página, diagramas y control de cobertura contra la fuente) | `2_Textos_Extraidos/` → `3_Guias_de_Estudio/*_Guia.md` |
 | 3. Exportación | Pasar la guía a `.docx`/`.pdf` prolijo con `export-study-material` | `*_Guia.md` → `*_Guia.docx` (+ diagramas en `_media/`) |
 | 4. Estudio activo | Crear tarjetas Anki con la skill **`/flashcards`** (Claude Code) | `*_Guia.md` → `4_Flashcards/*_Flashcards.csv` |
