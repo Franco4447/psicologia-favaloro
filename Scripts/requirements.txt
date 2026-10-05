@@ -1,0 +1,13 @@
+# Dependencias de Python para los scripts del repositorio y las skills de estudio.
+# Instalar con:  pip install -r Scripts/requirements.txt
+
+# Google Drive (auth.py, list_drive.py, get_drive_path.py, fetch_pdfs.py)
+google-auth-oauthlib
+google-api-python-client
+
+# Skills de estudio (Scripts/estudio/)
+pyyaml          # cabecera YAML de los .md generados
+pdfplumber      # /digitalizar: texto de PDFs
+pypdf           # /digitalizar: metadatos, páginas
+python-pptx     # /digitalizar: texto y notas de diapositivas
+openpyxl        # /flashcards: validación vía skill xlsx

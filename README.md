@@ -32,7 +32,7 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 ```text
 [Año de la Carrera]/[Nombre de la Materia]/
 ├── 1_Bibliografia_Original/  -> PDFs, PPTs y textos originales (ignorado por git)
-├── 2_Textos_Extraidos/       -> .md crudos post-OCR/extracción   (U07_Papalia_Cap15_Crudo.md)
+├── 2_Textos_Extraidos/       -> .md crudos post-OCR/extracción   (U07_Papalia_Cap15_Crudo.md, ignorado por git)
 ├── 3_Guias_de_Estudio/       -> Apuntes extendidos .md y .docx    (U07_Adolescencia_Guia.md)
 │   ├── _media/               -> Diagramas Mermaid (.mmd + .png) y otros assets
 │   └── _imprimir/            -> Versiones para imprimir (2 páginas por hoja)  (C05_..._Guia_Imprimir.pdf)
@@ -81,6 +81,10 @@ El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALI
 ---
 
 ## 🧰 Herramientas incluidas
+
+### Skills de estudio *(en construcción)*
+Skills de Claude Code para digitalizar, armar guías, flashcards y simulacros siguiendo `AGENTS.md`.
+Plan y estado: [`docs/PLAN_SKILLS_ESTUDIO.md`](docs/PLAN_SKILLS_ESTUDIO.md).
 
 ### Mapa del plan de estudio (`index.html`)
 Mapa interactivo de las materias de la carrera, exportado desde Gemini Canvas, con

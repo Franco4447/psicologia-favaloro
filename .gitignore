@@ -9,6 +9,10 @@ gdrive_token.json
 # Ignora cualquier carpeta que se llame 1_Bibliografia_Original en cualquier nivel
 **/1_Bibliografia_Original/
 
+# Textos extraídos: son copias completas de la bibliografía (derechos de autor).
+# Los nuevos quedan solo en la copia local; los que ya estaban versionados siguen en git.
+**/2_Textos_Extraidos/
+
 # Accesos directos locales
 *.url
 *.lnk
