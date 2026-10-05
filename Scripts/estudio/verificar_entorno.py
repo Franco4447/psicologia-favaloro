@@ -132,4 +132,7 @@ def main():
 
 
 if __name__ == "__main__":
+    # La consola de Windows usa cp1252 y no puede imprimir ✓/✗/acentos fuera de ese juego
+    for _flujo in (sys.stdout, sys.stderr):
+        _flujo.reconfigure(encoding="utf-8", errors="replace")
     main()
