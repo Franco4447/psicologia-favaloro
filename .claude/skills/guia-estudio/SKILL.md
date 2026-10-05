@@ -1,6 +1,6 @@
 ---
 name: guia-estudio
-description: Escribe guías de estudio extendidas ("apuntes extendidos" que reemplazan al texto original) a partir de los textos extraídos, diapositivas y bibliografía del repositorio de Psicología, procesando textos largos por partes, citando páginas, con diagramas Mermaid renderizados y control de cobertura contra la fuente. Usala siempre que el usuario pida una guía, resumen, apunte, síntesis o "material para estudiar" de un texto, capítulo, clase o unidad, o que pase a guía un texto extraído o un PDF, aunque diga "resumen": en este repo todo resumen es una guía extendida.
+description: 'Escribe guías de estudio extendidas ("apuntes extendidos" que reemplazan al texto original) a partir de los textos extraídos, diapositivas y bibliografía del repositorio de Psicología, procesando textos largos por partes, citando páginas, con diagramas Mermaid renderizados y control de cobertura contra la fuente. Usala siempre que el usuario pida una guía, resumen, apunte, síntesis o "material para estudiar" de un texto, capítulo, clase o unidad, o que pase a guía un texto extraído o un PDF, aunque diga "resumen": en este repo todo resumen es una guía extendida.'
 ---
 
 # Guías de estudio extendidas
