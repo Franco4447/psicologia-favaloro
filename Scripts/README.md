@@ -41,10 +41,37 @@ node Scripts/check_wide.js "2do Año/Psicoanálisis/3_Guias_de_Estudio/_media"  
 node Scripts/check_wide.js "2do Año/Psicoanálisis/3_Guias_de_Estudio/_media" 400    # límite propio
 ```
 
+## Utilidades de las skills de estudio (`Scripts/estudio/`)
+
+Las usan las skills de estudio (ver [`docs/PLAN_SKILLS_ESTUDIO.md`](../docs/PLAN_SKILLS_ESTUDIO.md)),
+pero también se pueden correr a mano.
+
+| Script | Qué hace |
+|--------|----------|
+| `verificar_entorno.py` | Muestra qué herramientas están instaladas (Python, pandoc, LibreOffice, Tesseract, mermaid-cli) y cómo instalar las que faltan. `--probar` además renderiza un diagrama de prueba |
+| `nombres.py` | Genera el nombre correcto de un archivo según `AGENTS.md` (`generar guia --unidad U05 --tema "Duelo y melancolía"` → `U05_DueloYMelancolia_Guia.md`) y revisa nombres existentes (`validar <archivos>`) |
+| `anki_csv.py` | Arma (`construir`), valida (`validar`) y lee (`leer`) los mazos CSV de Anki de `/flashcards` |
+| `probar_anki.py` | Importa mazos en una colección de Anki temporal y verifica que reimportar no duplica (requiere `pip install anki`) |
+| `simulacro.py` | Valida la estructura de un simulacro (`validar`: preguntas ↔ clave, opciones, fuentes, rúbricas) y registra los resultados del modo interactivo (`resultados`) |
+| `extraer.py` | Extrae PDFs (con texto, escaneados con OCR, a dos columnas) y PowerPoint a `*_Crudo.md` con marcas de página, limpieza e informe de calidad |
+| `exportar.py` | Guía `.md` → Word con la plantilla `plantillas/plantilla_guia.docx` (+ `--pdf`, `--imprimir` 2 por hoja) |
+| `estado.py` | Tabla por materia y unidad de qué etapas están hechas y qué falta |
+| `fuente.py` | Divide un texto extraído en partes (`partes`, `texto`) y controla la cobertura de una guía contra su fuente (`cobertura`: términos, autores, casos y citas de página faltantes) |
+| `diagramas.py` | Renderiza los diagramas Mermaid de una guía a `_media/[Unidad]_[Tema]_NN.mmd/.png` e inserta la imagen en la guía |
+| `frontmatter.py` | Lee y escribe la cabecera YAML de los `.md` generados. `estado <archivo>` dice si una guía fue editada a mano desde que se generó, para no pisarla |
+
+```bash
+python Scripts/estudio/verificar_entorno.py --probar
+python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/"*.md
+```
+
+En las sesiones de Claude Code en la nube, `.claude/hooks/session-start.sh` instala todo
+automáticamente al arrancar.
+
 ## Requisitos
 
 ```bash
-pip install google-auth-oauthlib google-api-python-client
+pip install -r Scripts/requirements.txt
 ```
 
 ## Configuración (una sola vez)

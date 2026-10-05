@@ -142,8 +142,8 @@ el trabajo ya hecho.
 ### 5.2 Planificador de Parciales
 - Dos implementaciones con lógica duplicada y reglas que ya divergen (`OFFSETS` de
   `planificador_notion.html` tiene «TP conceptual» y «Lectura»; `index.html` no).
-- En `index.html`, `sessionsFor()` tiene un comentario sobre mover sesiones vencidas a
-  hoy que no está implementado, y variables sin uso (`t`, `orig`).
+- ~~En `index.html`, `sessionsFor()` tenía un comentario sobre mover sesiones vencidas a
+  hoy que no estaba implementado, y variables sin uso~~ *(limpiado al agregar las tareas por sesión)*.
 - La lista `SEED` queda congelada al 4/10/2026; si ya hay datos en `localStorage`, nunca
   se vuelve a leer.
 
