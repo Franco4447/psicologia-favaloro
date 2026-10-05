@@ -55,7 +55,9 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 | 2do | Biología | ✅ | Migrada: diapositivas, guías extendidas, resúmenes y síntesis por clase (`C01`…`C11`), problemas en Evaluaciones |
 | 2do | Estadística | ✅ | Migrada: guías por clase (`C01`…`C10`), material del 2do parcial (`C06_10_…`), TP final en `6_Entregables/` |
 | 2do | Procesos Básicos II | ✅ | Migrada: guías por clase (`C05`…`C09`) y global de la segunda mitad |
-| 2do | Psicología Experimental | ✅ | Migrada: bibliografía del trabajo de investigación (prefijo `Inv_`) |
+| 2do | Psicología Experimental | ✅ | Migrada: bibliografía del trabajo de investigación (prefijo `Inv_`); Parcial 1 y Parcial 2 en `6_Entregables/` (`Inv_Actividad1_`, `Inv_P2_`). La plataforma web del experimento vive en [`psicologia-experimental-web`](https://github.com/Franco4447/psicologia-experimental-web) |
+| 2do | Psicología Social | ✅ | Migrada: guías de la Unidad 3, resúmenes de clase (`C01`…`C03`), TPs en `6_Entregables/` |
+| 2do | Procesos Básicos III | ✅ | Migrada: guías de motivación (`U01`), guía del artículo de Biwer (`Global_`), consigna en `6_Entregables/` |
 
 El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALISIS_MEJORAS.md).
 
@@ -136,7 +138,7 @@ solo existe en la copia local de OneDrive.
 ## 🔒 Qué se versiona y qué no
 
 - **Sí:** textos extraídos, guías de estudio, flashcards, simulacros, herramientas.
-- **No:** credenciales (`gdrive_credentials.json`, `gdrive_token.json`, `.env`), accesos
+- **No:** logs de agentes (`.agents/`), datos de encuestas con respuestas sensibles, credenciales (`gdrive_credentials.json`, `gdrive_token.json`, `.env`), accesos
   directos, archivos temporales de exportación (`*.temp.md`, `*.temp.md.ps1`) y la
   bibliografía original con derechos de autor (`1_Bibliografia_Original/`).
 
