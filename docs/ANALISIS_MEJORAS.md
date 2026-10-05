@@ -1,0 +1,179 @@
+# Análisis del repositorio y oportunidades de mejora
+
+*Relevamiento: octubre 2026 · 705 archivos versionados · ~1,8 GB en disco · historial git de ~1,6 GB.*
+
+Las mejoras están ordenadas por prioridad. Ninguna de las de reorganización se aplicó
+todavía: mover o borrar archivos es decisión del dueño del repositorio.
+
+---
+
+## 1. Prioridad alta
+
+### 1.1 Visibilidad del repositorio y material con derechos de autor
+- El repositorio es **público** en GitHub y contiene ~296 PDFs, la mayoría bibliografía
+  de cátedra (Freud, Lacan, Papalia, Segal, Ruiz Vargas…), además de PPTs de clase,
+  videos `.mp4` y podcasts `.m4a` de NotebookLM.
+- La regla de `.gitignore` que debía protegerlos (`**/1_Bibliografia_Original/`) **no
+  aplica a ningún archivo**: esa carpeta todavía no existe en ninguna materia, así que
+  todo se subió igual.
+- También hay trabajos con nombre propio y de compañeros, datos de una encuesta
+  (`estadistica psicologia/TP/datos sujetos investigacion.csv`) e IDs de carpetas de
+  Google Drive en `Scripts/`.
+
+**Recomendación:** pasar el repositorio a **privado** (Settings → General → Danger Zone →
+Change visibility). Es reversible y resuelve el problema de inmediato. Después, migrar la
+bibliografía a `1_Bibliografia_Original/` para que el `.gitignore` empiece a aplicar.
+
+### 1.2 Tamaño del repositorio
+- `.git` pesa ~1,6 GB. GitHub recomienda repositorios < 1 GB; clonar es lento y se acerca
+  a los límites blandos.
+- Los archivos más pesados: `09. Freud - La interpretación de los sueños` (75 MB), Ruiz
+  Vargas cap. 2 (67 MB), PPT clase 11 de Procesos Básicos I (67 MB), 5 videos de
+  NotebookLM (35–58 MB c/u), 2 podcasts (37–38 MB).
+
+**Recomendación:** sacar del versionado PDFs/PPTs/videos/audio (que ya viven en Drive /
+OneDrive) y, si se quiere achicar el historial, reescribirlo con `git filter-repo` (esto
+reescribe commits: hacer backup antes). Alternativa: Git LFS solo para lo imprescindible.
+
+### 1.3 Contradicción entre README y AGENTS.md *(corregido en este cambio)*
+El README anterior pedía carpetas `/Bibliografía`, `/Resúmenes`, `/Flashcards`,
+`/Entregables`, que `AGENTS.md` prohíbe explícitamente. Un agente que leyera el README
+podía guardar archivos en el lugar equivocado. Además, el ejemplo de `AGENTS.md` ubicaba
+Psicoanálisis en `1er Año`.
+
+---
+
+## 2. Organización de carpetas
+
+### 2.1 Materias fuera del pipeline de 5 etapas
+| Materia | Situación | Propuesta |
+|---------|-----------|-----------|
+| `1er Año/*` | Agrupado por `1er Cuatrimestre/` y `2do Cuatrimestre/` | Materia cursada y cerrada: se puede dejar como archivo histórico, o aplanar a `1er Año/[Materia]/` |
+| `2do Año/biologia` | Esquema propio `01. diapositivas` … `06. resumen clase` | `01`→`1_Bibliografia_Original`, `02`/`03`→`2_Textos_Extraidos`, `05`/`06`→`3_Guias_de_Estudio`, `04. problemas`→`5_Evaluaciones` |
+| `2do Año/estadistica psicologia` | `clases pdf`, `clases markdown`, `parcial 02`, `TP` | `clases pdf`→1, `clases markdown`→2, guías→3, `parcial 02` (repasos/40 preguntas)→5; `TP/` puede quedar como subcarpeta de entregables |
+| `2do Año/procesos basicos 2` | `segunda mitad/` + resúmenes sueltos | Pipeline estándar |
+| `2do Año/Psicología Experimental` | PDF + `.md` extraído sueltos en la raíz | PDFs→1, `.md`→2 con nombre `UXX_Autor_Tema_Crudo.md` |
+| `2do Año/Psicoanálisis` | Pipeline parcial + `biblio/`, `belucci/`, `clases/`, `lacan/` del 1er cuatri | Unificar bibliografía en 1; `clases/*.md`→2 |
+| `2do Año/Psicología Evolutiva (1er Cuatri)` | Carpeta hermana de `Psicología Evolutiva/` | Fusionar en una sola materia (Piaget → `U0X_Piaget_...`) |
+
+### 2.2 Nombres de carpetas inconsistentes
+Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicologia`,
+`procesos basicos 2`, `Psicología Experimental`, `Psico General`. Proponer un estándar
+(p. ej. nombre oficial de la materia con mayúscula inicial y acentos: `Biología`,
+`Estadística`, `Procesos Básicos II`).
+
+### 2.3 Archivos sueltos o mal ubicados en `2do Año/`
+- `PROCESOS BÀSICOS II - CLASE 29-05-26_ … .pdf`: pertenece a `procesos basicos 2/` (y
+  tiene `À` en vez de `Á`).
+- Scripts de trabajo con rutas absolutas de Windows: `check_wide.js`, `test_png.js`,
+  `test.ps1`, `move_biblio.ps1`, `move_compendio.ps1`. Moverlos a `Scripts/` (y
+  parametrizar rutas) o borrarlos.
+- Pruebas: `test.md` (apunta a una ruta local de `.gemini`), `test.docx`.
+
+---
+
+## 3. Duplicados y archivos temporales
+
+- **4 PDFs idénticos** de Belucci (05, 08, 15, 43) en `Psicoanálisis/belucci (1er cuatri)/`
+  y `Psicoanálisis/biblio (1er cuatri)/`.
+- **47 archivos con prefijo `(2) ` o `2 - `**: copias de descargas repetidas (ej.
+  `(2) Guia Parcial - 40 Preguntas.pdf`, `2 - Clase_06_-_Estadistica_Psicología.pdf`).
+  Algunos son versiones distintas: revisar antes de borrar.
+- **Versiones manuales** en `Psicoanálisis/3_Guias_de_Estudio/`: `U04_…_v10.docx`,
+  `_v11.docx`, `_FINAL.docx` (ídem U05). Git ya guarda las versiones; dejar solo una.
+- **Temporales de exportación** que quedaron versionados: `*.docx.temp.md`,
+  `*.docx.temp.md.ps1` (Psicoanálisis U04/U05, Evolutiva `_old`),
+  `experimental_designs.pdf.temp.md`.
+- `Psicología Evolutiva/Resúmenes_Deprecados/_old/`: ~60 archivos obsoletos (tests,
+  diagramas viejos, `url.js` en UTF-16). Candidato a borrar: está en el historial de git.
+
+`.gitignore` se amplió en este cambio para que estos temporales no vuelvan a subirse.
+
+---
+
+## 4. Calidad del contenido generado
+
+### 4.1 Imágenes rotas en los textos extraídos
+~130 enlaces `![](images/<hash>.jpg)` apuntan a una carpeta `images/` que no se subió:
+- `Psicología Evolutiva/2_Textos_Extraidos/*` (U07 y U08: Papalia caps. 1, 3, 15, 16, 17; Piaget cap. 5)
+- `Psicoanálisis/2_Textos_Extraidos/U04_T08…`, `U04_T19…`
+- `Psicología Experimental/Music - Evoked Emotions.md` (43)
+
+**Opciones:** subir las imágenes a `2_Textos_Extraidos/_media/<crudo>/` y reescribir los
+enlaces, o quitar los enlaces si las figuras no aportan.
+
+### 4.2 Diagramas Mermaid desconectados de las guías
+Los `.png` de `_media/` (12 en Psicoanálisis, 27 en Evolutiva) **no están referenciados
+desde ningún `.md`**: las guías usan bloques ```` ```mermaid ```` y los PNG solo se usan al
+exportar a `.docx`. Además, los nombres son timestamps (`mermaid_1786917962589_5.png`),
+imposibles de relacionar con su guía. Ver la nueva regla en `AGENTS.md` → *Diagramas y
+Assets*.
+
+### 4.3 Nomenclatura
+- `Psicoanálisis/3_Guias_de_Estudio/` usa `C01_Guia.md` … `C24_Guia.md` (sin tema) y
+  `U04_Psicoanalisis_Guia_FINAL.md`. Sugerido: `C01_Epistemologia_Guia.md`, etc.
+- `Psicoanálisis/2_Textos_Extraidos/` trunca títulos al quitar espacios
+  (`U05_T27_Belucci_Lasintervencionesdel_Crudo.md`,
+  `U04_T04_T01_Belucci_Introducciónaldiagnóstico_Crudo.md`). El script `move_biblio.ps1`
+  que los generó toma solo las 3 primeras palabras y borra los espacios.
+- Archivos de otros formatos sin convención: `piaget - guia estudio completa.md`,
+  `clase 08 - piaget preoperatorio.md`, `Clase 01 - Estadistica Psicología.md`.
+
+### 4.4 Etapas 4 y 5 del pipeline vacías
+Ninguna materia tiene todavía `4_Flashcards/` ni `5_Evaluaciones/`, aunque hay material
+apto (p. ej. `Guia Parcial - 40 Preguntas.pdf`, `Lacan_Cuestionario.pdf`, las guías
+C01–C24 de Psicoanálisis). Generar flashcards de las guías existentes aprovecharía mejor
+el trabajo ya hecho.
+
+---
+
+## 5. Herramientas
+
+### 5.1 Mapa del plan de estudio (`index.html` + `plan_estudio_psicologia_files/`)
+- Es una página de Gemini guardada con «Guardar como…»: ~6 MB de recursos de Google
+  (`gtm.js`, `editor.main.js`, `m=_b`, etc.) y un `index.html` de 1 MB. El código propio
+  está solo en `shim.html`.
+- La página guardada incluye datos de la sesión de Google con la que se exportó (cuenta,
+  tokens de sesión). Conviene revisarla y no publicarla tal cual.
+- **Propuesta:** extraer el mapa a un `plan_estudio/index.html` autocontenido (HTML + CSS +
+  JS propio, sin dependencias de Google) y borrar la carpeta `_files`. Ventajas: liviano,
+  editable, publicable con GitHub Pages.
+
+### 5.2 Planificador de Parciales
+- Dos implementaciones con lógica duplicada y reglas que ya divergen (`OFFSETS` de
+  `planificador_notion.html` tiene «TP conceptual» y «Lectura»; `index.html` no).
+- En `index.html`, `sessionsFor()` tiene un comentario sobre mover sesiones vencidas a
+  hoy que no está implementado, y variables sin uso (`t`, `orig`).
+- La lista `SEED` queda congelada al 4/10/2026; si ya hay datos en `localStorage`, nunca
+  se vuelve a leer.
+
+### 5.3 Scripts de Drive
+- `fetch_pdfs.py` guarda en una carpeta global `…\Psicología\Bibliografía`, contra lo que
+  pide `AGENTS.md`.
+- Rutas absolutas e IDs de carpeta escritos en el código; no hay argumentos de línea de
+  comandos ni `requirements.txt`.
+- Sin paginación (`nextPageToken` se pide pero no se usa): carpetas con > 100 archivos
+  quedan incompletas.
+- Scope `drive` completo cuando alcanza con `drive.readonly`.
+
+---
+
+## 6. Documentación *(aplicado en este cambio)*
+
+- `README.md` reescrito: estructura real, tabla de estado por materia, flujo de estudio
+  con entradas/salidas, herramientas y qué se versiona.
+- `AGENTS.md`: ejemplo corregido (`2do Año/Psicoanálisis`), y nuevas secciones sobre
+  códigos de unidad (`U`, `C`, `T`, `Global`, `Transversal`), nombres sin truncar, sin
+  sufijos de versión, diagramas y assets, temporales, scripts y carpetas heredadas.
+- `Scripts/README.md` y `Planificador_Parciales/README.md` nuevos.
+- `.gitignore`: temporales de exportación, `node_modules/`, `__pycache__/`, archivos de
+  bloqueo de Office (`~$*`).
+
+## 7. Próximos pasos sugeridos
+
+1. Pasar el repo a privado.
+2. Borrar temporales, `test*` y la carpeta `_old` (cambio chico, sin riesgo).
+3. Migrar una materia piloto (p. ej. Psicología Experimental, la más chica) al pipeline.
+4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
+5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
+6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
