@@ -53,7 +53,7 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 | 2do | Biología | ❌ | Esquema propio numerado (`01. diapositivas clase` … `06. resumen clase`) |
 | 2do | Estadística | ❌ | `clases pdf/`, `clases markdown/`, `parcial 02/`, `TP/` |
 | 2do | Procesos Básicos II | ❌ | `segunda mitad/` + resúmenes sueltos |
-| 2do | Psicología Experimental | ❌ | Archivos sueltos (PDF + .md extraído) en la raíz de la materia |
+| 2do | Psicología Experimental | ✅ | Migrada: bibliografía del trabajo de investigación (prefijo `Inv_`) |
 
 El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALISIS_MEJORAS.md).
 
