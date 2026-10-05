@@ -23,6 +23,7 @@ Qué hace:
 import argparse
 import collections
 import io
+import os
 import re
 import shutil
 import statistics
@@ -140,8 +141,9 @@ def columnas(page):
 def tesseract():
     exe = shutil.which("tesseract")
     if not exe and sys.platform == "win32":
-        p = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
-        exe = str(p) if p.exists() else None
+        candidatos = [Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe"),
+                      Path(os.environ.get("LOCALAPPDATA", ""), "Programs", "Tesseract-OCR", "tesseract.exe")]
+        exe = next((str(p) for p in candidatos if p.exists()), None)
     return exe
 
 
