@@ -69,7 +69,7 @@ El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALI
 | 2. Guía de estudio | Generar **apuntes extendidos** (tesis, desarrollo exhaustivo, glosario, mapas Mermaid, citas) con `study-summarizer` | `2_Textos_Extraidos/` → `3_Guias_de_Estudio/*_Guia.md` |
 | 3. Exportación | Pasar la guía a `.docx`/`.pdf` prolijo con `export-study-material` | `*_Guia.md` → `*_Guia.docx` (+ diagramas en `_media/`) |
 | 4. Estudio activo | Crear tarjetas Anki con la skill **`/flashcards`** (Claude Code) | `*_Guia.md` → `4_Flashcards/*_Flashcards.csv` |
-| 5. Autoevaluación | Simulacro de parcial con `interactive-evaluation` | `*_Guia.md` → `5_Evaluaciones/*_Simulacro.md` |
+| 5. Autoevaluación | Simulacro de parcial con la skill **`/simulacro`** (archivo, o «tomame examen» en modo interactivo) | `*_Guia.md` → `5_Evaluaciones/*_Simulacro.md` (+ `*_Resultados.md`) |
 | 6. Planificación | Cargar fechas de parciales en el [Planificador](Planificador_Parciales/README.md) | Notion «Tareas» → sesiones de repaso |
 
 ### Prompts reutilizables

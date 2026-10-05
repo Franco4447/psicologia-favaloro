@@ -92,10 +92,17 @@ Para "todas las guías que no tienen flashcards" de una materia (o de todo `2do 
 
 ## Mazo de temas flojos (desde un simulacro)
 
-Si la entrada es un `5_Evaluaciones/*_Resultados.md` (lo genera `/simulacro`), hacé tarjetas
-solo de los temas marcados como flojos, buscando el contenido en las guías que el resultado
-cita. Nombre: tema `TemasFlojos` (p. ej. `C08_TemasFlojos_Flashcards.csv`) y etiqueta
-`temas-flojos` en todas las tarjetas.
+Si la entrada es un `5_Evaluaciones/*_Resultados.md` (lo genera `/simulacro`):
+
+1. Leé su cabecera (`python Scripts/estudio/frontmatter.py ver <resultados.md>`): `temas_flojos`
+   trae cada tema con su `fuente` (guía y sección) y las `preguntas` donde falló. En la tabla
+   "Detalle" del intento más reciente, el comentario de esas preguntas dice **qué** confundió.
+2. Hacé tarjetas solo de esos temas, buscando el contenido en las secciones citadas, y apuntá
+   a la confusión concreta (si confundió terror con angustia, una tarjeta de distinción
+   terror/angustia/miedo, no una definición suelta). 3–6 tarjetas por tema.
+3. Nombre con tema `TemasFlojos` (p. ej. `C08_TemasFlojos_Flashcards.csv`), etiqueta
+   `temas-flojos` en todas, y **claves con prefijo `flojo-`** (`flojo-angustia-miedo-terror`):
+   si una clave coincidiera con una del mazo principal de la unidad, Anki pisaría esa tarjeta.
 
 ## Tipos de nota de Anki
 
