@@ -65,9 +65,8 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
 ### 2.3 Archivos sueltos o mal ubicados en `2do Año/`
 - `PROCESOS BÀSICOS II - CLASE 29-05-26_ … .pdf`: pertenece a `procesos basicos 2/` (y
   tiene `À` en vez de `Á`).
-- Scripts de trabajo con rutas absolutas de Windows: `check_wide.js`,
-  `move_biblio.ps1`, `move_compendio.ps1`. Moverlos a `Scripts/` (y
-  parametrizar rutas) o borrarlos.
+- ~~Scripts de trabajo `check_wide.js`, `move_biblio.ps1`, `move_compendio.ps1`~~
+  *(movidos a `Scripts/`)*. Pendiente: siguen con rutas absolutas de Windows; parametrizarlas.
 - ~~Pruebas: `test.md`, `test.docx`, `test.ps1`, `test_png.js`~~ *(borrados)*.
 
 ---
