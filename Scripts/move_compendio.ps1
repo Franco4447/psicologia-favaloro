@@ -4,11 +4,16 @@
 
 .DESCRIPTION
     Renombra al copiar:
-        clase_1.md / clase_01.md   ->  C01_Guia.md
+        clase_1.md / clase_01.md   ->  C01_Guia.md        (provisional: falta el tema)
         clase_17_18.md             ->  C17_18_Guia.md
         00_global*.md              ->  Global_[Cuatrimestre]_Guia.md  (o Global_Guia.md)
         psicosis.md                ->  Transversal_Psicosis_Guia.md
     Los demás archivos se informan y se saltean.
+
+    OJO: las guías de clase salen como C[NN]_Guia.md, sin tema, y AGENTS.md pide
+    C[NN]_[Tema]_Guia.md. El script no puede saber el tema: avisa por cada guía y hay que
+    renombrarlas después (el tema sale del título `#` de la guía; validar con
+    python Scripts/estudio/nombres.py validar <archivo>).
 
 .PARAMETER Origen
     Carpeta del compendio con los .md.
@@ -47,10 +52,12 @@ $global = if ($Cuatrimestre) { "Global_${Cuatrimestre}_Guia.md" } else { 'Global
 Get-ChildItem -LiteralPath $Origen -Filter *.md | ForEach-Object {
     $name = $_.Name
     $newName = $null
+    $sinTema = $false
     if ($name -match '^clase_(\d+(?:_\d+)*)\.md$') {
         # Cada número con dos dígitos: clase_7 -> C07, clase_17_18 -> C17_18
         $nums = ($matches[1] -split '_' | ForEach-Object { $_.PadLeft(2, '0') }) -join '_'
         $newName = "C${nums}_Guia.md"
+        $sinTema = $true
     } elseif ($name -match '^00_global.*\.md$') {
         $newName = $global
     } elseif ($name -match '^psicosis\.md$') {
@@ -67,5 +74,8 @@ Get-ChildItem -LiteralPath $Origen -Filter *.md | ForEach-Object {
     } elseif ($PSCmdlet.ShouldProcess($newName, "Copiar desde $name")) {
         Copy-Item -LiteralPath $_.FullName -Destination $target -Force:$Force
         Write-Host "$name -> $newName"
+        if ($sinTema) {
+            Write-Warning "$newName no tiene tema en el nombre: renombrar a C${nums}_[Tema]_Guia.md (AGENTS.md)"
+        }
     }
 }

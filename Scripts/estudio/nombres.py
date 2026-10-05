@@ -8,7 +8,7 @@ Uso como módulo (desde las skills):
 Uso por línea de comandos:
     python Scripts/estudio/nombres.py generar guia --unidad U05 --tema "Duelo y melancolía"
     python Scripts/estudio/nombres.py generar crudo --unidad U04 --texto 15 --autor Freud --tema "Duelo y melancolía"
-    python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/C01_Guia.md" ...
+    python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/C01_CienciaYPsicoanalisisFreudYLasEscuelas_Guia.md" ...
 """
 import argparse
 import re
