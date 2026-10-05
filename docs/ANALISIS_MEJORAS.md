@@ -48,7 +48,7 @@ Psicoanálisis en `1er Año`.
 ### 2.1 Materias fuera del pipeline de 5 etapas
 | Materia | Situación | Propuesta |
 |---------|-----------|-----------|
-| `1er Año/*` | Agrupado por `1er Cuatrimestre/` y `2do Cuatrimestre/` | **Decidido: se mantiene como archivo histórico, sin migrar** |
+| ~~`1er Año/*`~~ | ✅ **Migrada la estructura**: una carpeta por materia con las etapas del pipeline (se fusionaron Neurociencias y LEO de ambos cuatrimestres; se creó `Antropología/`). **Los nombres de archivo no se renombraron** | — |
 | ~~`2do Año/biologia`~~ | ✅ **Migrada** a `2do Año/Biología/` | — |
 | ~~`2do Año/estadistica psicologia`~~ | ✅ **Migrada** a `2do Año/Estadística/` (TP en `6_Entregables/`) | — |
 | ~~`2do Año/procesos basicos 2`~~ | ✅ **Migrada** a `2do Año/Procesos Básicos II/` | — |
@@ -57,7 +57,7 @@ Psicoanálisis en `1er Año`.
 | ~~`2do Año/Psicología Evolutiva (1er Cuatri)`~~ | ✅ **Unificada** en `Psicología Evolutiva/` (Piaget `U05`, Desarrollo Cognitivo `U06`) | — |
 
 ### 2.2 Nombres de carpetas inconsistentes
-*(2do año corregido: `Biología`, `Estadística`, `Procesos Básicos II`. Queda `1er Año`.)*
+*(2do año corregido: `Biología`, `Estadística`, `Procesos Básicos II`. En `1er Año` se normalizaron `Psicología General` y `Procesos Básicos I`.)*
 Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicologia`,
 `procesos basicos 2`, `Psicología Experimental`, `Psico General`. Proponer un estándar
 (p. ej. nombre oficial de la materia con mayúscula inicial y acentos: `Biología`,
@@ -177,7 +177,7 @@ el trabajo ya hecho.
 1. Pasar el repo a privado.
 2. ~~Borrar temporales, `test*` y la carpeta `_old`~~ ✅ hecho.
 3. ~~Migrar Psicología Experimental, Procesos Básicos II, Biología, Estadística y las
-   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Unificada también Psicología Evolutiva. Todo 2do año sigue el pipeline; `1er Año/` queda como archivo histórico.
+   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Unificada también Psicología Evolutiva. Todo 2do año sigue el pipeline; `1er Año/` migró su estructura (nombres de archivo sin cambios).
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
 6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
