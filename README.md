@@ -20,7 +20,7 @@ planificación de la carrera. Está pensado para trabajar junto a agentes de IA
 ├── plan_estudio_psicologia_files/  -> Recursos del mapa anterior (el código propio está en shim.html)
 ├── Planificador_Parciales/      -> Planificador de repasos espaciados para parciales y TPs
 ├── Scripts/                     -> Utilidades de Python para descargar material de Google Drive
-├── 1er Año/                     -> Materias de 1er año (estructura heredada, por cuatrimestre)
+├── 1er Año/                     -> Materias de 1er año (archivo histórico, por cuatrimestre; no se migra)
 └── 2do Año/                     -> Materias de 2do año (todas en el pipeline)
 ```
 
