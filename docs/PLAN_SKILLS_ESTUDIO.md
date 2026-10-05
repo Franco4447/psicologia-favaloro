@@ -60,7 +60,7 @@ generan un mazo extra.
 | 1 | Base: `.gitignore` de textos extraídos, `Scripts/estudio/` (nombres, cabecera YAML, verificación de entorno), `Scripts/requirements.txt`, script de inicio para sesiones en la nube | ✅ |
 | 2 | `/flashcards`: skill + `anki_csv.py` + `probar_anki.py`; pilotos Psicoanálisis C08 (36 tarjetas) y Biología C04 (60) | ✅ |
 | 3 | `/simulacro`: skill + `simulacro.py` (validar / resultados con historial de intentos); piloto Psicoanálisis C08 (22 preguntas); ciclo simulacro → temas flojos → flashcards probado | ✅ |
-| 4 | `/guia-estudio` (por partes, citas de página) | ⏳ |
+| 4 | `/guia-estudio`: skill + plantilla + `fuente.py` (partes, cobertura) + `diagramas.py`; piloto Belucci «Las intervenciones del analista» (15.900 palabras → guía de 10.700, cobertura 93 %, 2 diagramas) | ✅ |
 | 5 | `/digitalizar` (limpieza y OCR) | ⏳ |
 | 6 | `/exportar`, `/estudiar-unidad`, `/estado-materia`, documentación y PR | ⏳ |
 
