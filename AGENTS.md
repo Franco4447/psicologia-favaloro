@@ -20,7 +20,8 @@ El formato que debes utilizar y crear (si no existe) es el siguiente, dividido e
 ├── 3_Guias_de_Estudio/       -> Para los apuntes extendidos finales en .md y .docx.
 │   └── _media/               -> Para guardar los diagramas Mermaid (.png) y otros assets.
 ├── 4_Flashcards/             -> Para los mazos CSV exportados para Anki.
-└── 5_Evaluaciones/           -> Para los simulacros de parciales y tests.
+├── 5_Evaluaciones/           -> Para los simulacros de parciales, tests y problemas de práctica.
+└── 6_Entregables/            -> (Opcional) Trabajos propios a entregar: TPs, monografías, su consigna y sus datos.
 ```
 
 **Ejemplo de uso correcto:**
@@ -35,6 +36,9 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - **Guías de Estudio**: `[Unidad]_[Tema_Principal]_Guia.ext` (Ej: `U07_Adolescencia_Guia.docx`)
 - **Flashcards**: `[Unidad]_[Tema]_Flashcards.csv` (Ej: `U07_Adolescencia_Flashcards.csv`)
 - **Evaluaciones**: `[Unidad]_[Tema]_Simulacro.md` (Ej: `U07_Adolescencia_Simulacro.md`)
+  - Problemas de práctica de la cátedra: `[Unidad]_[Tema]_Enunciado.ext` y su resolución `[Unidad]_[Tema]_Resuelto.ext` (Ej: `C08_ProblemaELS_Enunciado.pdf` / `C08_ProblemaELS_Resuelto.pdf`).
+- **Entregables**: `Inv_[Trabajo]_[Parte].ext` (Ej: `Inv_TPFinal_Consigna.pdf`, `Inv_TPFinal_Datos.csv`).
+- **Bibliografía Original**: `[Autor][Año].pdf` para artículos (Ej: `Barrett2010.pdf`). Si la cátedra numera la bibliografía por cuatrimestre: `[Cuatri]_T[NN]_[Autor]_[Titulo].pdf` (Ej: `1erC_T09_Freud_LaInterpretacionDeLosSuenosCapsVIYVII.pdf`). Las diapositivas de clase: `C[NN]_Diapositivas_[Tema].ext`.
 
 ### Detalle de los componentes del nombre
 
@@ -51,7 +55,7 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - Cada diagrama se guarda en `3_Guias_de_Estudio/_media/` como par `.mmd` (fuente) + `.png` (render), con el mismo nombre base.
 - Nombra los diagramas por guía, no por timestamp: `[Unidad]_[Tema]_[NN].png` (Ej: `U07_Adolescencia_01.png`).
 - La guía `.md` debe referenciar el `.png` con ruta **relativa** (`![Etapas de Marcia](_media/U07_Adolescencia_01.png)`) además de, o en lugar de, el bloque ```` ```mermaid ````. **NUNCA** uses rutas absolutas de Windows (`C:\Users\...`).
-- Las versiones para imprimir (2 páginas por hoja, apaisadas) van en `3_Guias_de_Estudio/_imprimir/` con el mismo nombre que la guía y el sufijo `_Imprimir` (Ej: `_imprimir/C05_LenguajeEnNeurodegenerativas_Guia_Imprimir.pdf`).
+- Las versiones para imprimir (2 páginas por hoja, apaisadas) van en una subcarpeta `_imprimir/` dentro de la etapa que corresponda (normalmente `3_Guias_de_Estudio/_imprimir/`) con el mismo nombre que la guía y el sufijo `_Imprimir` (Ej: `_imprimir/C05_LenguajeEnNeurodegenerativas_Guia_Imprimir.pdf`).
 - Los apuntes de clase hechos por otra persona son material fuente: van en `1_Bibliografia_Original/` como `[Unidad]_Apuntes_[Autor]_[Tema].pdf` (Ej: `C07_Apuntes_Silvi_TeoriasNeurocognitivasDeLaMemoriaSemantica.pdf`).
 - Las imágenes que salen del OCR de un texto extraído van en `2_Textos_Extraidos/_media/[Nombre_del_Crudo]/`, y los enlaces del `.md` crudo deben apuntar ahí.
 
@@ -62,7 +66,7 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 
 ## Carpetas Heredadas (Legacy)
 
-Hay materias anteriores a este pipeline (todo `1er Año/`, y en `2do Año/` carpetas como `biologia/`, `estadistica psicologia/` o `Psicoanálisis/biblio (1er cuatri)/`).
+Hay materias anteriores a este pipeline (todo `1er Año/` y, en `2do Año/`, la carpeta hermana `Psicología Evolutiva (1er Cuatri)/`).
 - **No las reorganices ni renombres por iniciativa propia**: propone la migración y espera confirmación del usuario.
 - Cuando el usuario pida trabajar sobre una materia heredada, crea las carpetas del pipeline **dentro de esa materia** y guarda ahí solo el material nuevo.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
