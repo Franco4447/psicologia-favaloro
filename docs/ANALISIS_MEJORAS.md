@@ -115,8 +115,8 @@ Assets*.
   (`U05_T27_Belucci_Lasintervencionesdel_Crudo.md`,
   `U04_T04_T01_Belucci_Introducciónaldiagnóstico_Crudo.md`). El script `move_biblio.ps1`
   que los generó tomaba solo las 3 primeras palabras y borraba los espacios *(corregido:
-  ahora usa PascalCase sin acentos y título completo; falta renombrar los 30 crudos ya
-  existentes)*.
+  ahora usa PascalCase sin acentos y título completo; los 29 crudos afectados ya se
+  renombraron, y `U04_T04_T01_Belucci…` pasó a `U04_T01_…`)*.
 - Archivos de otros formatos sin convención: `piaget - guia estudio completa.md`,
   `clase 08 - piaget preoperatorio.md`, `Clase 01 - Estadistica Psicología.md`.
 
