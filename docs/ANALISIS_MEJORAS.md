@@ -54,7 +54,7 @@ Psicoanálisis en `1er Año`.
 | ~~`2do Año/procesos basicos 2`~~ | ✅ **Migrada** a `2do Año/Procesos Básicos II/` | — |
 | ~~`2do Año/Psicología Experimental`~~ | ✅ **Migrada** al pipeline con prefijo `Inv_` | — |
 | ~~`2do Año/Psicoanálisis`~~ | ✅ **Migrada**: se eliminaron `biblio/`, `belucci/`, `clases/`, `lacan/` | — |
-| `2do Año/Psicología Evolutiva (1er Cuatri)` | Carpeta hermana de `Psicología Evolutiva/` | Fusionar en una sola materia (Piaget → `U0X_Piaget_...`) |
+| ~~`2do Año/Psicología Evolutiva (1er Cuatri)`~~ | ✅ **Unificada** en `Psicología Evolutiva/` (Piaget `U05`, Desarrollo Cognitivo `U06`) | — |
 
 ### 2.2 Nombres de carpetas inconsistentes
 *(2do año corregido: `Biología`, `Estadística`, `Procesos Básicos II`. Queda `1er Año`.)*
@@ -174,7 +174,7 @@ el trabajo ya hecho.
 1. Pasar el repo a privado.
 2. ~~Borrar temporales, `test*` y la carpeta `_old`~~ ✅ hecho.
 3. ~~Migrar Psicología Experimental, Procesos Básicos II, Biología, Estadística y las
-   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Falta `Psicología Evolutiva (1er Cuatri)/` y `1er Año/`.
+   carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Unificada también Psicología Evolutiva. Todo 2do año sigue el pipeline; falta `1er Año/`.
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
 6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
