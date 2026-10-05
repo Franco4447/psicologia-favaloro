@@ -51,7 +51,7 @@ Psicoanálisis en `1er Año`.
 | `1er Año/*` | Agrupado por `1er Cuatrimestre/` y `2do Cuatrimestre/` | Materia cursada y cerrada: se puede dejar como archivo histórico, o aplanar a `1er Año/[Materia]/` |
 | `2do Año/biologia` | Esquema propio `01. diapositivas` … `06. resumen clase` | `01`→`1_Bibliografia_Original`, `02`/`03`→`2_Textos_Extraidos`, `05`/`06`→`3_Guias_de_Estudio`, `04. problemas`→`5_Evaluaciones` |
 | `2do Año/estadistica psicologia` | `clases pdf`, `clases markdown`, `parcial 02`, `TP` | `clases pdf`→1, `clases markdown`→2, guías→3, `parcial 02` (repasos/40 preguntas)→5; `TP/` puede quedar como subcarpeta de entregables |
-| `2do Año/procesos basicos 2` | `segunda mitad/` + resúmenes sueltos | Pipeline estándar |
+| ~~`2do Año/procesos basicos 2`~~ | ✅ **Migrada** a `2do Año/Procesos Básicos II/` | — |
 | ~~`2do Año/Psicología Experimental`~~ | ✅ **Migrada** al pipeline con prefijo `Inv_` | — |
 | `2do Año/Psicoanálisis` | Pipeline parcial + `biblio/`, `belucci/`, `clases/`, `lacan/` del 1er cuatri | Unificar bibliografía en 1; `clases/*.md`→2 |
 | `2do Año/Psicología Evolutiva (1er Cuatri)` | Carpeta hermana de `Psicología Evolutiva/` | Fusionar en una sola materia (Piaget → `U0X_Piaget_...`) |
@@ -63,8 +63,8 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
 `Estadística`, `Procesos Básicos II`).
 
 ### 2.3 Archivos sueltos o mal ubicados en `2do Año/`
-- `PROCESOS BÀSICOS II - CLASE 29-05-26_ … .pdf`: pertenece a `procesos basicos 2/` (y
-  tiene `À` en vez de `Á`).
+- ~~`PROCESOS BÀSICOS II - CLASE 29-05-26_ … .pdf`~~ *(borrado: mismo texto que los
+  apuntes de la clase 10, ya en `Procesos Básicos II/1_Bibliografia_Original/`)*.
 - ~~Scripts de trabajo `check_wide.js`, `move_biblio.ps1`, `move_compendio.ps1`~~
   *(movidos a `Scripts/` y parametrizados: ya no tienen rutas fijas)*.
 - ~~Pruebas: `test.md`, `test.docx`, `test.ps1`, `test_png.js`~~ *(borrados)*.

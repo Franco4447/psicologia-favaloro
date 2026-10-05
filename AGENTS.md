@@ -51,6 +51,8 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - Cada diagrama se guarda en `3_Guias_de_Estudio/_media/` como par `.mmd` (fuente) + `.png` (render), con el mismo nombre base.
 - Nombra los diagramas por guía, no por timestamp: `[Unidad]_[Tema]_[NN].png` (Ej: `U07_Adolescencia_01.png`).
 - La guía `.md` debe referenciar el `.png` con ruta **relativa** (`![Etapas de Marcia](_media/U07_Adolescencia_01.png)`) además de, o en lugar de, el bloque ```` ```mermaid ````. **NUNCA** uses rutas absolutas de Windows (`C:\Users\...`).
+- Las versiones para imprimir (2 páginas por hoja, apaisadas) van en `3_Guias_de_Estudio/_imprimir/` con el mismo nombre que la guía y el sufijo `_Imprimir` (Ej: `_imprimir/C05_LenguajeEnNeurodegenerativas_Guia_Imprimir.pdf`).
+- Los apuntes de clase hechos por otra persona son material fuente: van en `1_Bibliografia_Original/` como `[Unidad]_Apuntes_[Autor]_[Tema].pdf` (Ej: `C07_Apuntes_Silvi_TeoriasNeurocognitivasDeLaMemoriaSemantica.pdf`).
 - Las imágenes que salen del OCR de un texto extraído van en `2_Textos_Extraidos/_media/[Nombre_del_Crudo]/`, y los enlaces del `.md` crudo deben apuntar ahí.
 
 ## Archivos Temporales y Scripts Auxiliares
@@ -60,7 +62,7 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 
 ## Carpetas Heredadas (Legacy)
 
-Hay materias anteriores a este pipeline (todo `1er Año/`, y en `2do Año/` carpetas como `biologia/`, `estadistica psicologia/`, `procesos basicos 2/` o `Psicoanálisis/biblio (1er cuatri)/`).
+Hay materias anteriores a este pipeline (todo `1er Año/`, y en `2do Año/` carpetas como `biologia/`, `estadistica psicologia/` o `Psicoanálisis/biblio (1er cuatri)/`).
 - **No las reorganices ni renombres por iniciativa propia**: propone la migración y espera confirmación del usuario.
 - Cuando el usuario pida trabajar sobre una materia heredada, crea las carpetas del pipeline **dentro de esa materia** y guarda ahí solo el material nuevo.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
