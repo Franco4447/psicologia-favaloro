@@ -16,7 +16,7 @@ El formato que debes utilizar y crear (si no existe) es el siguiente, dividido e
 ```text
 [Año de la Carrera]/[Nombre de la Materia]/
 ├── 1_Bibliografia_Original/  -> Para los PDFs, PPTs y textos originales descargados.
-├── 2_Textos_Extraidos/       -> Para los archivos .md crudos generados post-OCR/extracción.
+├── 2_Textos_Extraidos/       -> Para los archivos .md crudos generados post-OCR/extracción (no se versionan en git).
 ├── 3_Guias_de_Estudio/       -> Para los apuntes extendidos finales en .md y .docx.
 │   └── _media/               -> Para guardar los diagramas Mermaid (.png) y otros assets.
 ├── 4_Flashcards/             -> Para los mazos CSV exportados para Anki.
