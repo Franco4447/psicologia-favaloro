@@ -21,7 +21,7 @@ planificación de la carrera. Está pensado para trabajar junto a agentes de IA
 ├── Planificador_Parciales/      -> Planificador de repasos espaciados para parciales y TPs
 ├── Scripts/                     -> Utilidades de Python para descargar material de Google Drive
 ├── 1er Año/                     -> Materias de 1er año (estructura heredada, por cuatrimestre)
-└── 2do Año/                     -> Materias de 2do año (migrando al pipeline de 5 etapas)
+└── 2do Año/                     -> Materias de 2do año (todas en el pipeline)
 ```
 
 ### Estructura de cada materia (pipeline de 5 etapas)
@@ -51,7 +51,7 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 | 1er | Filosofía, Historia, LEO, Neurociencias, Psico General | ❌ | Agrupadas en `1er Cuatrimestre/` (estructura heredada) |
 | 1er | Epistemología, LEO, Metodología, Neurociencias, Sociología, Procesos Básicos I | ❌ | Agrupadas en `2do Cuatrimestre/` (estructura heredada) |
 | 2do | Psicoanálisis | ✅ | Migrada: bibliografía del 1er cuatri como `1erC_T[NN]_…`, clases como textos extraídos `C[NN]_Catedra_…`, resúmenes de Belucci y material de Lacan como guías `Transversal_…` |
-| 2do | Psicología Evolutiva | 🟡 Parcial | Pipeline activo; además existe `Psicología Evolutiva (1er Cuatri)/` como carpeta hermana |
+| 2do | Psicología Evolutiva | ✅ | Unificada: Piaget y desarrollo cognitivo del 1er cuatri (`U05`, `U06`) junto a Adolescencia y Adultez (`U07`, `U08`) |
 | 2do | Biología | ✅ | Migrada: diapositivas, guías extendidas, resúmenes y síntesis por clase (`C01`…`C11`), problemas en Evaluaciones |
 | 2do | Estadística | ✅ | Migrada: guías por clase (`C01`…`C10`), material del 2do parcial (`C06_10_…`), TP final en `6_Entregables/` |
 | 2do | Procesos Básicos II | ✅ | Migrada: guías por clase (`C05`…`C09`) y global de la segunda mitad |
