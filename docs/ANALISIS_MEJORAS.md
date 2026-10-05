@@ -66,7 +66,7 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
 - `PROCESOS BÀSICOS II - CLASE 29-05-26_ … .pdf`: pertenece a `procesos basicos 2/` (y
   tiene `À` en vez de `Á`).
 - ~~Scripts de trabajo `check_wide.js`, `move_biblio.ps1`, `move_compendio.ps1`~~
-  *(movidos a `Scripts/`)*. Pendiente: siguen con rutas absolutas de Windows; parametrizarlas.
+  *(movidos a `Scripts/` y parametrizados: ya no tienen rutas fijas)*.
 - ~~Pruebas: `test.md`, `test.docx`, `test.ps1`, `test_png.js`~~ *(borrados)*.
 
 ---
@@ -114,7 +114,9 @@ Assets*.
 - `Psicoanálisis/2_Textos_Extraidos/` trunca títulos al quitar espacios
   (`U05_T27_Belucci_Lasintervencionesdel_Crudo.md`,
   `U04_T04_T01_Belucci_Introducciónaldiagnóstico_Crudo.md`). El script `move_biblio.ps1`
-  que los generó toma solo las 3 primeras palabras y borra los espacios.
+  que los generó tomaba solo las 3 primeras palabras y borraba los espacios *(corregido:
+  ahora usa PascalCase sin acentos y título completo; falta renombrar los 30 crudos ya
+  existentes)*.
 - Archivos de otros formatos sin convención: `piaget - guia estudio completa.md`,
   `clase 08 - piaget preoperatorio.md`, `Clase 01 - Estadistica Psicología.md`.
 
