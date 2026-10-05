@@ -27,7 +27,7 @@ Convierte una guía `*_Guia.md` de `3_Guias_de_Estudio/` en un mazo
    ```bash
    python Scripts/estudio/nombres.py generar flashcards --unidad C08 --tema "Pulsión de muerte"
    ```
-   Si la guía no tiene tema en el nombre (p. ej. `C08_Guia.md`), sacá el tema de su título `#`.
+   Si la guía no tiene tema en el nombre (p. ej. `C##_Guia.md`), sacá el tema de su título `#`.
 4. Si el CSV de salida **ya existe**:
    - Leé sus tarjetas con `python Scripts/estudio/anki_csv.py leer <csv>` y **reusá la misma
      `clave` para el mismo concepto**: así Anki actualiza esas tarjetas y conserva su historial
