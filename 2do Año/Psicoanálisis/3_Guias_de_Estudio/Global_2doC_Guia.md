@@ -1,4 +1,8 @@
-﻿# Clase 13: Estructura y tiempos de la neurosis
+﻿# Psicoanálisis (Freud ↔ Lacan) — Compendio del 2do cuatrimestre (Clases 13 a 24)
+
+---
+
+# Guía de Estudio - Clase 13: Estructura y tiempos de la neurosis
 
 Esta guía de estudio ampliada responde en profundidad a la batería de preguntas de la Clase 13, integrando aportes de Freud ("Las neuropsicosis de defensa", "23a. Conferencia") y de Belucci.
 
@@ -366,6 +370,8 @@ La presente guía articula dos abordajes clínicos de los conflictos estructural
 
 ---
 
+# Guía de Estudio - Clase 19 y 20: Clínica de los bordes
+
 ### 1. Tesis Central
 
 La «clínica de los bordes» (o de los fracasos del fantasma) reúne una serie de presentaciones patológicas contemporáneas (anorexias, bulimias, adicciones, fenómenos psicosomáticos, pasajes al acto y "locuras" histéricas) que comparten una estructura subyacente: el fracaso en la constitución y operatividad del fantasma fundamental. A diferencia de la neurosis clásica, donde el fantasma protege frente a la angustia ofertando un objeto parcial, en estos sujetos se evidencia una detención en el tiempo narcisista de la identificación y un déficit en la función paterna y fálica (sin llegar a la forclusión psicótica). Esto los deja a merced de un goce no regulado, desencadenando defensas que operan como "máscaras yoicas" (síntomas prêt-à-porter), lesiones biológicas reales, o pasajes al acto en los que el sujeto se identifica con el objeto perdido o de desecho. Clínicamente, el abordaje demanda leer allí un duelo patológico y una melancolización encubierta que amenaza permanentemente con la destrucción subjetiva.
@@ -498,6 +504,8 @@ La dirección de la cura en psicoanálisis no es una empresa pedagógica, moral 
 
 
 ---
+
+# Guía de Estudio - Clase 24: Psicoanálisis en Argentina y urgencia
 
 ### 1. Tesis Central
 La inserción del psicoanálisis en la Argentina, desde sus inicios pioneros hasta su consolidación en el ámbito público (especialmente en hospitales generales), ha requerido una constante reformulación de sus dispositivos clínicos. La intervención en la urgencia y el dispositivo de interconsulta demuestran la plasticidad del método psicoanalítico, donde la ética de hacer lugar al sujeto del inconsciente dialoga y se tensiona con el discurso médico e institucional, expandiendo la praxis hacia múltiples ámbitos de interlocución comunitaria, judicial y educativa.
