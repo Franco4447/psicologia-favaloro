@@ -10,18 +10,36 @@ usando la API v3.
 | `get_drive_path.py` | Muestra la ruta completa (`Carpeta / Subcarpeta / …`) de una carpeta a partir de su ID |
 | `fetch_pdfs.py` | Descarga todos los PDFs de una o más carpetas de Drive a un directorio local |
 
-## Utilidades de mantenimiento (Windows)
+## Utilidades de mantenimiento
 
 | Script | Qué hace |
 |--------|----------|
-| `check_wide.js` | (Node) Lista los PNG de `_media/` cuyo ancho supera ~500 pt al insertarse en Word |
-| `move_biblio.ps1` | (PowerShell) Copia `.md` extraídos de otra carpeta a `2_Textos_Extraidos/` renombrándolos como `UNN_Autor_Titulo_Crudo.md` |
-| `move_compendio.ps1` | (PowerShell) Copia guías `clase_*.md`, `00_global*.md` y `psicosis.md` a `3_Guias_de_Estudio/` con prefijo `U` |
+| `move_biblio.ps1` | Copia `.md` extraídos con formato `NN. Autor - Título.md` a `2_Textos_Extraidos/` como `[Unidad]_T[NN]_[Autor]_[Titulo]_Crudo.md` |
+| `move_compendio.ps1` | Copia guías `clase_N.md`, `00_global*.md` y `psicosis.md` a `3_Guias_de_Estudio/` como `C[NN]_Guia.md`, `Global_[Cuatri]_Guia.md` y `Transversal_Psicosis_Guia.md` |
+| `check_wide.js` | (Node) Lista los PNG de una carpeta `_media/` que quedan demasiado anchos al insertarse en Word |
 
-> ⚠️ Estos tres scripts tienen **rutas absolutas** de una PC concreta
-> (`C:\Users\Fmendezcasariego\OneDrive\...`). Editá `$source`/`$dest` (o `mediaDir`) antes
-> de usarlos. `move_biblio.ps1` toma solo las 3 primeras palabras del título y quita los
-> espacios, lo que produce nombres truncados; ver la regla de nombres en `AGENTS.md`.
+Los scripts de PowerShell aceptan `-WhatIf` para ver qué harían sin copiar nada, y no
+sobrescriben archivos existentes salvo que se pase `-Force`. Ayuda completa:
+`Get-Help .\Scripts\move_biblio.ps1 -Full`.
+
+```powershell
+# Ver qué nombres generaría (no copia nada)
+.\Scripts\move_biblio.ps1 -Origen "C:\descargas\biblio-2c" `
+  -Destino ".\2do Año\Psicoanálisis\2_Textos_Extraidos" -Unidad U05 -WhatIf
+#   "27. Belucci - Las intervenciones del analista.md"
+#   -> U05_T27_Belucci_LasIntervencionesDelAnalista_Crudo.md
+
+# Títulos largos: limitar a N palabras enteras
+.\Scripts\move_biblio.ps1 -Origen ... -Destino ... -Unidad U05 -MaxPalabras 4
+
+.\Scripts\move_compendio.ps1 -Origen "C:\descargas\compendio" `
+  -Destino ".\2do Año\Psicoanálisis\3_Guias_de_Estudio" -Cuatrimestre 2doC
+```
+
+```bash
+node Scripts/check_wide.js "2do Año/Psicoanálisis/3_Guias_de_Estudio/_media"        # límite 500 pt
+node Scripts/check_wide.js "2do Año/Psicoanálisis/3_Guias_de_Estudio/_media" 400    # límite propio
+```
 
 ## Requisitos
 
