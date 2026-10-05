@@ -28,6 +28,8 @@ PY = [
 
 LIBREOFFICE_WIN = [r"C:\Program Files\LibreOffice\program\soffice.exe",
                    r"C:\Program Files (x86)\LibreOffice\program\soffice.exe"]
+TESSERACT_WIN = [r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+                 os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "Tesseract-OCR", "tesseract.exe")]
 
 BIN = [
     ("pandoc", ["pandoc"], "/exportar", True,
@@ -50,6 +52,8 @@ def buscar(cmds):
             return p
     if WIN and "soffice" in cmds:
         return next((p for p in LIBREOFFICE_WIN if Path(p).exists()), None)
+    if WIN and "tesseract" in cmds:
+        return next((p for p in TESSERACT_WIN if Path(p).exists()), None)
     return None
 
 
