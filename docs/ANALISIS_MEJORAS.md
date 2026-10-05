@@ -52,7 +52,7 @@ Psicoanálisis en `1er Año`.
 | `2do Año/biologia` | Esquema propio `01. diapositivas` … `06. resumen clase` | `01`→`1_Bibliografia_Original`, `02`/`03`→`2_Textos_Extraidos`, `05`/`06`→`3_Guias_de_Estudio`, `04. problemas`→`5_Evaluaciones` |
 | `2do Año/estadistica psicologia` | `clases pdf`, `clases markdown`, `parcial 02`, `TP` | `clases pdf`→1, `clases markdown`→2, guías→3, `parcial 02` (repasos/40 preguntas)→5; `TP/` puede quedar como subcarpeta de entregables |
 | `2do Año/procesos basicos 2` | `segunda mitad/` + resúmenes sueltos | Pipeline estándar |
-| `2do Año/Psicología Experimental` | PDF + `.md` extraído sueltos en la raíz | PDFs→1, `.md`→2 con nombre `UXX_Autor_Tema_Crudo.md` |
+| ~~`2do Año/Psicología Experimental`~~ | ✅ **Migrada** al pipeline con prefijo `Inv_` | — |
 | `2do Año/Psicoanálisis` | Pipeline parcial + `biblio/`, `belucci/`, `clases/`, `lacan/` del 1er cuatri | Unificar bibliografía en 1; `clases/*.md`→2 |
 | `2do Año/Psicología Evolutiva (1er Cuatri)` | Carpeta hermana de `Psicología Evolutiva/` | Fusionar en una sola materia (Piaget → `U0X_Piaget_...`) |
 
@@ -96,7 +96,7 @@ Mezcla de mayúsculas, acentos y abreviaturas: `biologia`, `estadistica psicolog
 ~130 enlaces `![](images/<hash>.jpg)` apuntan a una carpeta `images/` que no se subió:
 - `Psicología Evolutiva/2_Textos_Extraidos/*` (U07 y U08: Papalia caps. 1, 3, 15, 16, 17; Piaget cap. 5)
 - `Psicoanálisis/2_Textos_Extraidos/U04_T08…`, `U04_T19…`
-- `Psicología Experimental/Music - Evoked Emotions.md` (43)
+- `Psicología Experimental/2_Textos_Extraidos/Inv_Schaefer_MusicEvokedEmotionsCurrentStudies_Crudo.md` (43)
 
 **Opciones:** subir las imágenes a `2_Textos_Extraidos/_media/<crudo>/` y reescribir los
 enlaces, o quitar los enlaces si las figuras no aportan.
@@ -174,7 +174,7 @@ el trabajo ya hecho.
 
 1. Pasar el repo a privado.
 2. ~~Borrar temporales, `test*` y la carpeta `_old`~~ ✅ hecho.
-3. Migrar una materia piloto (p. ej. Psicología Experimental, la más chica) al pipeline.
+3. ~~Migrar una materia piloto (Psicología Experimental) al pipeline~~ ✅ hecho.
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
 6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
