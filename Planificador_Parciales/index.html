@@ -109,14 +109,18 @@ const fmt = d => d.toLocaleDateString("es-AR",{weekday:"short",day:"numeric",mon
 const esc = s => s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const today = () => startOfDay(new Date());
 
+// Qué hacer en cada sesión (skills /flashcards y /simulacro): en exámenes y finales, los repasos
+// intermedios son con el mazo de flashcards y el repaso final es el simulacro.
+const ES_EXAMEN = {"Examen":1, "Final":1};
+function labelFor(tipo, i, n){
+  const ult = i === n-1;
+  if(ES_EXAMEN[tipo]) return ult ? "Repaso final · simulacro" : "Repaso "+(i+1)+" · flashcards";
+  return ult ? "Repaso final" : "Repaso "+(i+1);
+}
 function sessionsFor(it){
-  const due = parse(it.fecha), t = today();
+  const due = parse(it.fecha);
   const offs = OFFSETS[it.tipo] || [3,1];
-  return offs.map((o,i)=>{
-    let d = new Date(due.getTime() - o*DAY);
-    // Si la fecha ya pasó pero la entrega no, mover la sesión a hoy (sin duplicar el mismo día)
-    return {key:it.id+":"+i, date:d, label: i===offs.length-1 ? "Repaso final" : "Repaso "+(i+1), orig:d};
-  });
+  return offs.map((o,i)=>({key:it.id+":"+i, date:new Date(due.getTime() - o*DAY), label:labelFor(it.tipo, i, offs.length)}));
 }
 
 function render(){

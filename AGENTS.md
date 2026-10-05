@@ -71,6 +71,24 @@ Hay materias anteriores a este pipeline: todo `1er Año/`, organizado por cuatri
 - Cuando el usuario pida trabajar sobre una materia heredada, crea las carpetas del pipeline **dentro de esa materia** y guarda ahí solo el material nuevo.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
 
+## Skills de Estudio (Claude Code)
+
+El repositorio trae skills propias en `.claude/skills/` que aplican estas reglas automáticamente.
+Usalas en lugar de hacer el trabajo a mano:
+
+| Etapa | Skill | Script de apoyo (`Scripts/estudio/`) |
+|---|---|---|
+| 1 → 2 | `/digitalizar` | `extraer.py` |
+| 2 → 3 | `/guia-estudio` | `fuente.py`, `diagramas.py` |
+| 3 (Word/PDF) | `/exportar` | `exportar.py` |
+| 3 → 4 | `/flashcards` | `anki_csv.py`, `probar_anki.py` |
+| 3 → 5 | `/simulacro` | `simulacro.py` |
+| Todas | `/estudiar-unidad`, `/estado-materia` | `estado.py` |
+
+- Los nombres de archivo se generan con `Scripts/estudio/nombres.py`, nunca a mano.
+- Todo `.md` generado lleva cabecera YAML (`frontmatter.py`); antes de sobrescribir un archivo
+  generado, comprobá con `frontmatter.py estado` que no fue editado a mano.
+
 ## Nivel de Detalle de los Apuntes (Regla Obligatoria)
 
 Al generar resúmenes o guías de estudio, **SIEMPRE debes crear "Apuntes Extendidos"**. 

@@ -102,7 +102,7 @@ def validar(path):
                 problemas.append(f"no empieza con un código de unidad válido (U05, C17_18, Global_1erC…): {unidad}")
             sin_sufijo = stem[: -len(sufijo) - 1]
             if RE_UNIDAD.match(sin_sufijo) and not sin_sufijo.startswith(("Global", "Transversal")):
-                problemas.append(f"falta el tema: [Unidad]_[Tema]_{sufijo} (ej.: {sin_sufijo}_Epistemologia_{sufijo})")
+                problemas.append(f"falta el tema: [Unidad]_[Tema]_{sufijo} (ej.: {sin_sufijo}_[Tema]_{sufijo})")
             break
     return problemas
 

@@ -67,10 +67,10 @@ El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALI
 |------|-------------|------------------|
 | 1. Digitalización | Convertir PDFs (con texto o escaneados) y PowerPoint a Markdown con la skill **`/digitalizar`** | `1_Bibliografia_Original/` → `2_Textos_Extraidos/*_Crudo.md` |
 | 2. Guía de estudio | Generar **apuntes extendidos** con la skill **`/guia-estudio`** (por partes, con citas de página, diagramas y control de cobertura contra la fuente) | `2_Textos_Extraidos/` → `3_Guias_de_Estudio/*_Guia.md` |
-| 3. Exportación | Pasar la guía a `.docx`/`.pdf` prolijo con `export-study-material` | `*_Guia.md` → `*_Guia.docx` (+ diagramas en `_media/`) |
+| 3. Exportación | Pasar la guía a Word (y PDF / versión para imprimir) con la skill **`/exportar`** | `*_Guia.md` → `*_Guia.docx` (+ `.pdf`, `_imprimir/`) |
 | 4. Estudio activo | Crear tarjetas Anki con la skill **`/flashcards`** (Claude Code) | `*_Guia.md` → `4_Flashcards/*_Flashcards.csv` |
 | 5. Autoevaluación | Simulacro de parcial con la skill **`/simulacro`** (archivo, o «tomame examen» en modo interactivo) | `*_Guia.md` → `5_Evaluaciones/*_Simulacro.md` (+ `*_Resultados.md`) |
-| 6. Planificación | Cargar fechas de parciales en el [Planificador](Planificador_Parciales/README.md) | Notion «Tareas» → sesiones de repaso |
+| 6. Planificación | Cargar fechas de parciales en el [Planificador](Planificador_Parciales/README.md): en exámenes, los repasos dicen *flashcards* y el final *simulacro* | Notion «Tareas» → sesiones de repaso |
 
 ### Prompts reutilizables
 
@@ -82,9 +82,25 @@ El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALI
 
 ## 🧰 Herramientas incluidas
 
-### Skills de estudio *(en construcción)*
-Skills de Claude Code para digitalizar, armar guías, flashcards y simulacros siguiendo `AGENTS.md`.
-Plan y estado: [`docs/PLAN_SKILLS_ESTUDIO.md`](docs/PLAN_SKILLS_ESTUDIO.md).
+### Skills de estudio (Claude Code)
+Skills propias del repo (`.claude/skills/`) que siguen `AGENTS.md`. Se usan pidiéndolas en lenguaje
+natural ("haceme flashcards de la clase 8 de Psicoanálisis", "tomame el simulacro", "¿qué me falta de
+Biología?") o con su nombre:
+
+| Skill | Qué hace |
+|---|---|
+| `/digitalizar` | PDF (con texto o escaneado, a dos columnas) o PowerPoint → texto extraído con OCR y limpieza |
+| `/guia-estudio` | Texto extraído → guía extendida con citas de página, diagramas y control de cobertura |
+| `/exportar` | Guía → Word con plantilla de estilos, PDF y versión 2 páginas por hoja |
+| `/flashcards` | Guía → mazo CSV para Anki (reimportar actualiza sin duplicar) |
+| `/simulacro` | Guías → simulacro con clave; modo interactivo que corrige y registra temas flojos |
+| `/estado-materia` | Qué tiene y qué le falta a cada unidad |
+| `/estudiar-unidad` | Todo lo anterior para una unidad, salteando lo que ya existe |
+
+Primera vez en tu PC: `pip install -r Scripts/requirements.txt` y
+`python Scripts/estudio/verificar_entorno.py --probar` (dice qué más instalar: pandoc, LibreOffice,
+Tesseract, mermaid-cli). En la nube se instala solo. Diseño y decisiones:
+[`docs/PLAN_SKILLS_ESTUDIO.md`](docs/PLAN_SKILLS_ESTUDIO.md).
 
 ### Mapa del plan de estudio (`index.html`)
 Mapa interactivo de las materias de la carrera, exportado desde Gemini Canvas, con
