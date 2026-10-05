@@ -16,6 +16,11 @@ aviso de «Sin conexión a Notion».
 
 ## Reglas de repaso
 
+En **exámenes y finales**, cada sesión dice qué hacer, en línea con las skills de estudio del repo:
+los repasos intermedios son con el **mazo de flashcards** de la unidad (`/flashcards`) y el
+**repaso final es el simulacro** en modo interactivo (`/simulacro`). En TPs, orales y actividades
+las sesiones son repasos generales.
+
 Días antes de la entrega en que se programa cada sesión:
 
 | Tipo | `index.html` | `planificador_notion.html` |
