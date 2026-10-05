@@ -34,7 +34,8 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 ├── 1_Bibliografia_Original/  -> PDFs, PPTs y textos originales (ignorado por git)
 ├── 2_Textos_Extraidos/       -> .md crudos post-OCR/extracción   (U07_Papalia_Cap15_Crudo.md)
 ├── 3_Guias_de_Estudio/       -> Apuntes extendidos .md y .docx    (U07_Adolescencia_Guia.md)
-│   └── _media/               -> Diagramas Mermaid (.mmd + .png) y otros assets
+│   ├── _media/               -> Diagramas Mermaid (.mmd + .png) y otros assets
+│   └── _imprimir/            -> Versiones para imprimir (2 páginas por hoja)  (C05_..._Guia_Imprimir.pdf)
 ├── 4_Flashcards/             -> Mazos CSV para Anki               (U07_Adolescencia_Flashcards.csv)
 └── 5_Evaluaciones/           -> Simulacros de parciales           (U07_Adolescencia_Simulacro.md)
 ```
@@ -52,7 +53,7 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 | 2do | Psicología Evolutiva | 🟡 Parcial | Pipeline activo; además existe `Psicología Evolutiva (1er Cuatri)/` como carpeta hermana |
 | 2do | Biología | ❌ | Esquema propio numerado (`01. diapositivas clase` … `06. resumen clase`) |
 | 2do | Estadística | ❌ | `clases pdf/`, `clases markdown/`, `parcial 02/`, `TP/` |
-| 2do | Procesos Básicos II | ❌ | `segunda mitad/` + resúmenes sueltos |
+| 2do | Procesos Básicos II | ✅ | Migrada: guías por clase (`C05`…`C09`) y global de la segunda mitad |
 | 2do | Psicología Experimental | ✅ | Migrada: bibliografía del trabajo de investigación (prefijo `Inv_`) |
 
 El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALISIS_MEJORAS.md).
