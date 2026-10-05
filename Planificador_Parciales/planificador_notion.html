@@ -115,12 +115,20 @@ function lsSet(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){}
 
 let rows = [], done = lsGet(K_DONE,{}), status = {kind:"load"}, mcp = null;
 
+// Qué hacer en cada sesión (skills /flashcards y /simulacro): en exámenes y finales, los repasos
+// intermedios son con el mazo de flashcards y el repaso final es el simulacro.
+const ES_EXAMEN = {"Examen":1, "Final":1};
+function labelFor(tipo, i, n){
+  const ult = i === n-1;
+  if(ES_EXAMEN[tipo]) return ult ? "Repaso final · simulacro" : "Repaso "+(i+1)+" · flashcards";
+  return ult ? "Repaso final" : "Repaso "+(i+1);
+}
 function sessionsFor(it){
   const due = parseD(it.fecha), offs = OFFSETS[it.tipo] || [3,1];
   return offs.map((o,i)=>({
     key: it.materia+"|"+it.descr+"|"+it.fecha+"|"+o,
     date: new Date(due.getTime()-o*DAY),
-    label: i===offs.length-1 ? "Repaso final" : "Repaso "+(i+1)
+    label: labelFor(it.tipo, i, offs.length)
   }));
 }
 

@@ -18,6 +18,12 @@ if ! command -v pandoc >/dev/null || ! tesseract --list-langs 2>/dev/null | grep
     || { apt-get update -q >/dev/null 2>&1 && apt-get install -y -q pandoc tesseract-ocr tesseract-ocr-spa >/dev/null; }
 fi
 
+# LibreOffice Writer (/exportar a PDF); el contenedor trae solo el núcleo, que no abre documentos
+if ! dpkg -s libreoffice-writer >/dev/null 2>&1; then
+  apt-get install -y -q libreoffice-writer >/dev/null 2>&1 \
+    || { apt-get update -q >/dev/null 2>&1 && apt-get install -y -q libreoffice-writer >/dev/null; }
+fi
+
 # mermaid-cli (diagramas), usando el Chromium preinstalado en vez de descargar otro
 if ! command -v mmdc >/dev/null; then
   PUPPETEER_SKIP_DOWNLOAD=1 npm install -g @mermaid-js/mermaid-cli >/dev/null 2>&1

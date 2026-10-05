@@ -77,6 +77,18 @@ def probar_mermaid(exe):
         return out.exists()
 
 
+def probar_libreoffice(exe):
+    with tempfile.TemporaryDirectory() as d:
+        src = Path(d, "t.txt")
+        src.write_text("prueba", encoding="utf-8")
+        try:
+            subprocess.run([exe, "--headless", "--convert-to", "pdf", "--outdir", d, str(src)],
+                           capture_output=True, timeout=180, shell=WIN)
+        except Exception:
+            return False
+        return Path(d, "t.pdf").exists()
+
+
 def main():
     probar = "--probar" in sys.argv
     falta_oblig = False
@@ -97,6 +109,9 @@ def main():
         ok = bool(p)
         if ok and nombre.startswith("Tesseract") and not tesseract_spa(p):
             ok, det = False, "falta el idioma español (spa)"
+        if ok and probar and nombre == "LibreOffice":
+            ok = probar_libreoffice(p)
+            det = "convierte OK" if ok else "instalado pero no convierte (¿falta el componente Writer? apt-get install libreoffice-writer)"
         if ok and probar and nombre.startswith("mermaid"):
             ok = probar_mermaid(p)
             det = "renderiza OK" if ok else "instalado pero no renderiza (¿falta Chromium?)"

@@ -54,6 +54,8 @@ pero también se pueden correr a mano.
 | `probar_anki.py` | Importa mazos en una colección de Anki temporal y verifica que reimportar no duplica (requiere `pip install anki`) |
 | `simulacro.py` | Valida la estructura de un simulacro (`validar`: preguntas ↔ clave, opciones, fuentes, rúbricas) y registra los resultados del modo interactivo (`resultados`) |
 | `extraer.py` | Extrae PDFs (con texto, escaneados con OCR, a dos columnas) y PowerPoint a `*_Crudo.md` con marcas de página, limpieza e informe de calidad |
+| `exportar.py` | Guía `.md` → Word con la plantilla `plantillas/plantilla_guia.docx` (+ `--pdf`, `--imprimir` 2 por hoja) |
+| `estado.py` | Tabla por materia y unidad de qué etapas están hechas y qué falta |
 | `fuente.py` | Divide un texto extraído en partes (`partes`, `texto`) y controla la cobertura de una guía contra su fuente (`cobertura`: términos, autores, casos y citas de página faltantes) |
 | `diagramas.py` | Renderiza los diagramas Mermaid de una guía a `_media/[Unidad]_[Tema]_NN.mmd/.png` e inserta la imagen en la guía |
 | `frontmatter.py` | Lee y escribe la cabecera YAML de los `.md` generados. `estado <archivo>` dice si una guía fue editada a mano desde que se generó, para no pisarla |
