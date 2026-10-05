@@ -7,7 +7,7 @@ fuentes:
   paginas: 1-21
 skill: guia-estudio
 generado: '2026-10-05'
-hash_generado: 22fb4a05f459
+hash_generado: 2a65ca289062
 ---
 
 # U05 — Las intervenciones del analista (Belucci)
@@ -886,8 +886,8 @@ no cuidando**, y despliega su historia (p. 20).
 
 | Conecta con | Cómo |
 |---|---|
-| Lacan, *La dirección de la cura* (T22) y la guía de C21–23 (`C21_23_Guia.md`) | Política / estrategia / táctica; deseo del analista; interpretación y fin de análisis |
-| Freud, *Recordar, repetir y reelaborar* y C08 (`C08_Guia.md`) | La repetición en la transferencia; la compulsión |
+| Lacan, *La dirección de la cura* (T22) y la guía de C21–23 (`C21_23_DireccionDeLaCuraIntervencionesYFinDeAnalisis_Guia.md`) | Política / estrategia / táctica; deseo del analista; interpretación y fin de análisis |
+| Freud, *Recordar, repetir y reelaborar* y C08 (`C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md`) | La repetición en la transferencia; la compulsión |
 | Iunger, *Contratransferencia, ¿resistencia del analista?* (T29) | El deseo del analista no es puro; la contratransferencia (p. 3); pasaje al acto (p. 20) |
 | Belucci, *Versiones del fin de análisis* (T30) | El final: caída del analista como desecho; el análisis produce un analista (p. 20) |
 | Freud, *Inhibición, síntoma y angustia* y la fobia | Inhibición fóbica como «padre en lo imaginario» (p. 12) |

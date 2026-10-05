@@ -42,7 +42,7 @@ Marcá la opción correcta.
 ## Clave de respuestas
 
 ### A1 — c
-[Por qué es la correcta y por qué las otras no, en 1–3 líneas.] *(Fuente: C08_Guia.md, §2)*
+[Por qué es la correcta y por qué las otras no, en 1–3 líneas.] *(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*
 
 ### B1 — Falso
 [Justificación.] *(Fuente: …)*
