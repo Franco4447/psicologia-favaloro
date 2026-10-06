@@ -28,6 +28,6 @@ python Scripts/estudio/estado.py --anio "1er Año" …   # otro año (1er Año: 
 
 - Los **textos extraídos** no se suben a git: el conteo es el de la copia local (en una sesión en
   la nube pueden faltar los que solo están en la PC del usuario).
-- "Nombres fuera de AGENTS.md" incluye guías viejas sin tema en el nombre (`C01_Guia.md`) o con
+- "Nombres fuera de AGENTS.md" incluye guías viejas sin tema en el nombre (`C01_Guia.md` en vez de `C01_[Tema]_Guia.md`) o con
   sufijos de versión (`_v10`, `_FINAL`). **No las renombres sin permiso**: proponelo.
 - "Guías editadas a mano": no regenerarlas sin preguntar.
