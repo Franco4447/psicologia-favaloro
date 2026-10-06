@@ -1,9 +1,0 @@
-# Citas Literales - Bandura & Walters, 1993 (Caps. 1 y 2 - Chunk 6)
-
-*   "Al aprendizaje por observación se le llama generalmente <<imitación>> en psicología experimental e <<identificación>> en las teorías de la personalidad." [Página del PDF: 78]
-*   "Pero ambos conceptos abarcan el mismo fenómeno comportamental, a saber: la tendencia de una persona a reproducir las acciones, actitudes o respuestas emocionales que presentan los modelos de la vida real o simbólicos." [Página del PDF: 78]
-*   "Por tanto, va en interés de la claridad, la precisión y la economía al emplear un solo término, imitación, para referirse a las respuestas de emulación." [Página del PDF: 79]
-*   "En términos generales, la conducta imitativa implica en la representación de un rol y en la conducta de rol, tal como utilizan estos términos los psicólogos del desarrollo y los psicólogos sociales, se da en ausencia de instrucciones explícitas de cómo deberá comportarse el observador..." [Página del PDF: 79]
-*   "En realidad, cuando, durante el proceso de representación de un rol, el actor convierte sus propias actividades previas en modelo para su conducta posterior, recibe refuerzo tanto por su capacidad como modelo como por su capacidad de observador e imitador." [Página del PDF: 80]
-*   "Como explicación del aprendizaje imitativo de la agresión se acepta ampliamente la de la identificación con el agresor, por la que se presume que la persona pasa de ser objeto de agresión a ser agente de ella al adoptar los atributos de un modelo amenazante agresivo, con el fin de reducir el miedo al ataque." [Página del PDF: 87]
-*   "A partir de los estudios de juego con muñecos se deduce la influencia sobre el desarrollo de la agresión de la presencia en el hogar de un modelo agresivo masculino." [Página del PDF: 89]
