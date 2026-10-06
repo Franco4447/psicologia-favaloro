@@ -24,9 +24,11 @@ todavía: mover o borrar archivos es decisión del dueño del repositorio.
 Change visibility). Es reversible y resuelve el problema de inmediato. Después, migrar la
 bibliografía a `1_Bibliografia_Original/` para que el `.gitignore` empiece a aplicar.
 
-*(Parcialmente resuelto: la bibliografía original y los textos extraídos —188 y 85 archivos,
-~1,1 GB— dejaron de versionarse y viven solo en OneDrive. Siguen en el historial de git y el
-repositorio sigue siendo público: falta pasarlo a privado y/o reescribir el historial.)*
+*(Resuelto en octubre de 2026: la bibliografía original, los textos extraídos y el material de
+NotebookLM —282 archivos, ~1,4 GB— dejaron de versionarse y se **purgaron del historial** con
+`git filter-repo` y force-push a `main` (el repo pasó de 1,7 GB a ~350 MB; sigue siendo el mismo
+repositorio y sigue público). Pendiente: pedir a GitHub Support que purgue las referencias
+internas de los PR #1–#9 y las vistas en caché. Respaldo previo a la limpieza fuera de OneDrive.)*
 
 ### 1.2 Tamaño del repositorio
 - `.git` pesa ~1,6 GB. GitHub recomienda repositorios < 1 GB; clonar es lento y se acerca
