@@ -1,6 +1,6 @@
 # Análisis del repositorio y oportunidades de mejora
 
-*Actualizado: 6 de octubre de 2026 · 482 archivos versionados · `.git` de ~340 MB · repositorio público.*
+*Actualizado: 6 de octubre de 2026 · 480 archivos versionados · `.git` de ~307 MB · repositorio público.*
 
 Primero lo que sigue abierto, ordenado por prioridad; al final, el registro de lo resuelto.
 
@@ -8,21 +8,14 @@ Primero lo que sigue abierto, ordenado por prioridad; al final, el registro de l
 
 ## 1. Pendiente
 
-### 1.1 Datos personales y de la sesión de Google en el historial
-El mapa del plan de estudio era una página de Gemini guardada con «Guardar como…». El
-`index.html` y la carpeta `plan_estudio_psicologia_files/` traían el correo de la cuenta de
-Google con la que se exportó, claves de API de Google y un token de sesión (vencido), y se
-publicaban en GitHub Pages. Ya se reemplazaron por un mapa autocontenido (ver 2.6), pero
-**siguen en el historial de git**. Quitarlos de ahí requiere otra reescritura del historial
-(`git filter-repo` + force-push).
+### 1.1 Referencias de los PR en GitHub
+Tras las dos reescrituras del historial (ver 2.1 y 2.6), las referencias internas de los PR
+#1–#13 (`refs/pull/*`) siguen apuntando a los commits viejos, y lo purgado (bibliografía,
+datos de la sesión de Google) sigue accesible por SHA. Solo GitHub Support puede
+eliminarlas: el pedido se envió el 5/10/2026 y se amplió el 6/10 con la segunda purga. Al
+responder, verificar que los commits viejos den 404.
 
-### 1.2 Referencias de los PR en GitHub
-Tras purgar la bibliografía del historial (ver 2.1), las referencias internas de los PR
-#1–#9 (`refs/pull/*`) siguen apuntando a los commits viejos, y esos archivos siguen
-accesibles por SHA. Solo GitHub Support puede eliminarlas: el pedido se envió el
-5/10/2026. Al responder, verificar que los commits viejos den 404.
-
-### 1.3 Pendientes menores de nombres y textos (solo en la copia local)
+### 1.2 Pendientes menores de nombres y textos (solo en la copia local)
 - **Pensamiento (Procesos Básicos III, `U03`)**: textos extraídos y bibliografía ya con
   nombres según `AGENTS.md`, pero todavía **sin guía** (ni flashcards ni simulacro).
 - **Psicología Social, `2_Textos_Extraidos/Paginados/`**: 12 `*_chunk*.md` de una extracción
@@ -31,7 +24,7 @@ accesibles por SHA. Solo GitHub Support puede eliminarlas: el pedido se envió e
   los párrafos no aparecen), así que no se borraron: revisar si aportan algo y descartarlos.
 - **Bibliografía de 1er Año**: conserva sus nombres y subcarpetas originales.
 
-### 1.4 Material de estudio
+### 1.3 Material de estudio
 - Flashcards: solo hay mazos de `C04` (Biología) y `C08` (Psicoanálisis); 8 simulacros en
   total. La mayoría de las guías no tiene ninguno de los dos.
 - Guías sin escribir: Psicología Experimental U01–U05, Psicología Social U04, Procesos
@@ -45,7 +38,9 @@ accesibles por SHA. Solo GitHub Support puede eliminarlas: el pedido se envió e
 `1_Bibliografia_Original/`, `2_Textos_Extraidos/` y el material de NotebookLM (282
 archivos, ~1,4 GB) dejaron de versionarse y se **purgaron del historial** con
 `git filter-repo` (por ID de blob) y force-push a `main`: el repositorio pasó de 1,7 GB a
-~350 MB y sigue siendo el mismo y público. Viven solo en OneDrive.
+~350 MB y sigue siendo el mismo y público. Viven solo en OneDrive. El 6/10 también se purgó
+el video de NotebookLM de Neurociencias (42 MB), que había quedado fuera de una carpeta
+`NotebookLM/`.
 
 ### 2.2 Estructura de carpetas *(octubre 2026)*
 Todo 2do Año sigue el pipeline (Biología, Estadística, Procesos Básicos II y III,
@@ -76,9 +71,13 @@ y archivos de bloqueo de Office.
   Tesseract instalado por usuario.
 
 ### 2.6 Mapa del plan de estudio *(octubre 2026)*
-`index.html` es ahora un archivo autocontenido de ~110 KB (React y Tailwind desde CDN) con
-el código propio del mapa, sin los ~7 MB de recursos de Google ni datos de la sesión. Se
-borró `plan_estudio_psicologia_files/`. Sigue publicado en GitHub Pages.
+El mapa era una página de Gemini guardada con «Guardar como…»: el `index.html` y
+`plan_estudio_psicologia_files/` traían el correo de la cuenta de Google con la que se
+exportó, claves de API de Google y un token de sesión (vencido), y se publicaban en GitHub
+Pages. `index.html` es ahora un archivo autocontenido de ~110 KB (React y Tailwind desde
+CDN) con el código propio del mapa, sin los ~7 MB de recursos de Google ni datos de la
+sesión, y sigue publicado en GitHub Pages. Las versiones viejas y la carpeta se
+**purgaron del historial** (6/10/2026, `git filter-repo` conservando los 62 commits).
 
 ### 2.7 Diagramas, imágenes y nombres *(octubre 2026)*
 - Los 39 diagramas con nombre de timestamp (`mermaid_1786…png`): 24 de Evolutiva pasaron a
