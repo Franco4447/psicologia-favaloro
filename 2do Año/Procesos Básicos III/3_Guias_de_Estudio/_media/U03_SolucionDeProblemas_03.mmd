@@ -1,0 +1,7 @@
+graph TD
+    A[Comparar estado actual con la meta] --> B{¿Hay diferencias?}
+    B -->|No| F[Problema resuelto]
+    B -->|Sí| C[Identificar la diferencia de mayor prioridad]
+    C --> D[Elegir el operador que más la reduzca o, si no se puede aplicar, fijar una submeta]
+    D --> E[Aplicar el operador: nuevo estado]
+    E --> A

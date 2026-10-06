@@ -16,8 +16,6 @@ eliminarlas: el pedido se envió el 5/10/2026 y se amplió el 6/10 con la segund
 responder, verificar que los commits viejos den 404.
 
 ### 1.2 Pendientes menores de nombres y textos (solo en la copia local)
-- **Pensamiento (Procesos Básicos III, `U03`)**: textos extraídos y bibliografía ya con
-  nombres según `AGENTS.md`, pero todavía **sin guía** (ni flashcards ni simulacro).
 - **Psicología Social**: `U03_Baron_Citas02_Crudo.md` y `U03_Baron_Citas03_Crudo.md` están
   vacíos (0 KB): volver a extraerlos o borrarlos.
 - **Bibliografía de 1er Año**: conserva sus nombres y subcarpetas originales.
@@ -25,8 +23,9 @@ responder, verificar que los commits viejos den 404.
 ### 1.3 Material de estudio
 - Flashcards: solo hay mazos de `C04` (Biología) y `C08` (Psicoanálisis); 8 simulacros en
   total. La mayoría de las guías no tiene ninguno de los dos.
-- Guías sin escribir: Psicología Experimental U01–U05, Psicología Social U04, Procesos
-  Básicos II y Pensamiento (Procesos Básicos III).
+- Guías sin escribir: Psicología Experimental U01–U05, Psicología Social U04 y Procesos
+  Básicos II. Las 4 guías de Pensamiento (Procesos Básicos III, `U03`) todavía no tienen
+  flashcards ni simulacro.
 
 ---
 

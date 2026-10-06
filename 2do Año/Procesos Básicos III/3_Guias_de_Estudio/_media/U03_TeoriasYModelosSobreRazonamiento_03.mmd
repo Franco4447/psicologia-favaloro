@@ -1,0 +1,6 @@
+graph TD
+    P[Premisas] --> C1[1 Comprensión - modelo inicial lo más simple posible con información implícita]
+    C1 --> C2[2 Descripción - conclusión que describe lo representado en el modelo]
+    C2 --> C3[3 Evaluación - buscar modelos alternativos en que la conclusión sea falsa]
+    C3 -->|Hay contraejemplo| C2
+    C3 -->|No hay contraejemplo| V[Conclusión válida]

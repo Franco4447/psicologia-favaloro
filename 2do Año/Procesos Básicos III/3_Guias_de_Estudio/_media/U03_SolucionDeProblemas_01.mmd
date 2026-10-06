@@ -1,0 +1,14 @@
+graph LR
+    EI[Estado inicial: el enunciado] -->|operador| E1[Estado intermedio]
+    EI -->|operador| E2[Estado intermedio]
+    E1 -->|operador| E3[Estado intermedio]
+    E2 -->|operador| X[Estado prohibido o callejón sin salida]
+    E3 -->|operador| EF[Estado final: la meta]
+    subgraph EP [Espacio del problema - todos los estados y secuencias posibles]
+    EI
+    E1
+    E2
+    E3
+    X
+    EF
+    end

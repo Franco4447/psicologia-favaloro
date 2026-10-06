@@ -1,0 +1,5 @@
+graph LR
+    M[Estado deseado o meta] --> CMP{Comparación}
+    EA[Estado actual] --> CMP
+    CMP -->|Discrepancia: señal de error| AJ[Ajuste de la acción]
+    AJ --> EA

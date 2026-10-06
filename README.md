@@ -55,7 +55,7 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 | 2do | Procesos Básicos II | ✅ | Migrada: guías por clase (`C05`…`C09`) y global de la segunda mitad |
 | 2do | Psicología Experimental | ✅ | Migrada: bibliografía del trabajo de investigación (prefijo `Inv_`); Parcial 1 y Parcial 2 en `6_Entregables/` (`Inv_Actividad1_`, `Inv_P2_`). La plataforma web del experimento vive en [`psicologia-experimental-web`](https://github.com/Franco4447/psicologia-experimental-web) |
 | 2do | Psicología Social | ✅ | Migrada: guías de la Unidad 3, resúmenes de clase (`C01`…`C03`), TPs en `6_Entregables/` |
-| 2do | Procesos Básicos III | ✅ | Migrada: guías de motivación (`U01`), aprendizaje (`U02`: Biwer y Stanton) y textos de pensamiento (`U03`), consigna en `6_Entregables/` |
+| 2do | Procesos Básicos III | ✅ | Migrada: guías de motivación (`U01`), aprendizaje (`U02`: Biwer y Stanton) y pensamiento (`U03`: introducción, teorías del razonamiento, razonamiento probabilístico y solución de problemas), consigna en `6_Entregables/` |
 
 El plan de migración propuesto está en [`docs/ANALISIS_MEJORAS.md`](docs/ANALISIS_MEJORAS.md).
 
