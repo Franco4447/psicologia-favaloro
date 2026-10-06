@@ -19,7 +19,7 @@ planificación de la carrera. Está pensado para trabajar junto a agentes de IA
 ├── index.html                   -> Mapa interactivo del plan de estudio (autocontenido; publicado en GitHub Pages)
 ├── Planificador_Parciales/      -> Planificador de repasos espaciados para parciales y TPs
 ├── Scripts/                     -> Utilidades: skills de estudio (estudio/), Google Drive y mantenimiento
-├── 1er Año/                     -> Materias de 1er año (archivo histórico: estructura del pipeline, nombres originales)
+├── 1er Año/                     -> Materias de 1er año (archivo histórico, en el pipeline)
 └── 2do Año/                     -> Materias de 2do año (todas en el pipeline)
 ```
 
@@ -47,7 +47,7 @@ Todo material **nuevo** se guarda dentro de su año y materia, siguiendo este pi
 
 | Año | Materia | ¿Sigue el pipeline? | Notas |
 |-----|---------|---------------------|-------|
-| 1er | Antropología, Epistemología, Filosofía, Historia, LEO, Metodología, Neurociencias, Procesos Básicos I, Psicología General, Sociología | ✅ (estructura) | Una carpeta por materia con las etapas del pipeline; los nombres de archivo siguen siendo los originales (archivo histórico) |
+| 1er | Antropología, Epistemología, Filosofía, Historia, LEO, Metodología, Neurociencias, Procesos Básicos I, Psicología General, Sociología | ✅ | Archivo histórico: una carpeta por materia, nombres por cuatrimestre (`Global_1erC`, `Global_2doC`) o clase (`C21`); la bibliografía conserva sus nombres originales |
 | 2do | Psicoanálisis | ✅ | Migrada: bibliografía del 1er cuatri como `1erC_T[NN]_…`, clases como textos extraídos `C[NN]_Catedra_…`, resúmenes de Belucci y material de Lacan como guías `Transversal_…` |
 | 2do | Psicología Evolutiva | ✅ | Unificada: Piaget y desarrollo cognitivo del 1er cuatri (`U05`, `U06`) junto a Adolescencia y Adultez (`U07`, `U08`) |
 | 2do | Biología | ✅ | Migrada: diapositivas, guías extendidas, resúmenes y síntesis por clase (`C01`…`C11`), problemas en Evaluaciones |

@@ -64,11 +64,12 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - Los intermedios de exportación (`*.temp.md`, `*.temp.md.ps1`, `test*.md`, `test*.docx`) se deben **borrar al terminar** la exportación. No los dejes en las carpetas de materias.
 - Los scripts de utilidad (`.ps1`, `.js`, `.py`) van en `/Scripts`, nunca dentro de `[Año]/`. No escribas rutas absolutas de un equipo concreto: recibe las rutas como parámetro o usa rutas relativas a la raíz del repositorio.
 
-## 1er Año (estructura migrada, nombres heredados)
+## 1er Año (archivo histórico)
 
-`1er Año/[Materia]/` ya tiene las carpetas del pipeline (`1_Bibliografia_Original`, `3_Guias_de_Estudio`, `5_Evaluaciones`, `6_Entregables`), sin el nivel de cuatrimestre. Es un **archivo histórico** de materias ya cursadas: se migró la estructura, **no los nombres de archivo**.
-- **No renombres los archivos de 1er Año por iniciativa propia**: conservan sus nombres originales y su subcarpeta (`3er parcial/`, `FINAL/`…) dentro de cada etapa. Propone el renombrado y espera confirmación del usuario.
-- El material nuevo que se genere para una materia de 1er Año sí sigue la nomenclatura estricta de este documento.
+`1er Año/[Materia]/` tiene las carpetas del pipeline (`1_Bibliografia_Original`, `3_Guias_de_Estudio`, `5_Evaluaciones`, `6_Entregables`), sin el nivel de cuatrimestre. Es un **archivo histórico** de materias ya cursadas.
+- Las guías, evaluaciones y entregables siguen la nomenclatura de este documento. Como esas materias no tenían unidades, el código es `Global_1erC` / `Global_2doC` según el cuatrimestre en que se cursó, o `C[NN]` cuando el material es de una clase (Ej: `Global_1erC_Parcial1_Resuelto.docx`, `C21_TP_EnvejecimientoNormalYPatologico.pdf`, `Global_2doC_TP12_CognicionSocial.docx`).
+- Los exámenes y parciales propios ya rendidos van en `5_Evaluaciones/` con sufijo `_Resuelto`; los apuntes de compañeros y las diapositivas de la cátedra, en `1_Bibliografia_Original/`.
+- La bibliografía original (`1_Bibliografia_Original/`, solo en OneDrive) conserva sus nombres y subcarpetas originales: no la renombres por iniciativa propia; propone el renombrado y espera confirmación del usuario.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
 
 ## Git: subir un commit que mueve muchos archivos
