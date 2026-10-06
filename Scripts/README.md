@@ -15,7 +15,7 @@ usando la API v3.
 | Script | Qué hace |
 |--------|----------|
 | `move_biblio.ps1` | Copia `.md` extraídos con formato `NN. Autor - Título.md` a `2_Textos_Extraidos/` como `[Unidad]_T[NN]_[Autor]_[Titulo]_Crudo.md` |
-| `move_compendio.ps1` | Copia guías `clase_N.md`, `00_global*.md` y `psicosis.md` a `3_Guias_de_Estudio/` como `C[NN]_Guia.md`, `Global_[Cuatri]_Guia.md` y `Transversal_Psicosis_Guia.md` |
+| `move_compendio.ps1` | Copia guías `clase_N.md`, `00_global*.md` y `psicosis.md` a `3_Guias_de_Estudio/` como `C[NN]_Guia.md` (sin tema: hay que renombrarlas a `C[NN]_[Tema]_Guia.md`), `Global_[Cuatri]_Guia.md` y `Transversal_Psicosis_Guia.md` |
 | `check_wide.js` | (Node) Lista los PNG de una carpeta `_media/` que quedan demasiado anchos al insertarse en Word |
 
 Los scripts de PowerShell aceptan `-WhatIf` para ver qué harían sin copiar nada, y no
