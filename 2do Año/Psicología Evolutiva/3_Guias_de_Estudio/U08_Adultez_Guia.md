@@ -30,6 +30,8 @@ graph TD
     D --> I["Causalidad Múltiple<br>(Análisis Multidisciplinario)"]
 ```
 
+![Diagrama 01](_media/U08_Adultez_01.png)
+
 ## Las distintas etapas y transiciones
 
 El desarrollo adulto es sumamente complejo debido a que los cambios ocurren simultáneamente en múltiples dimensiones del ser humano: desarrollo físico, desarrollo intelectual o cognitivo, desarrollo de la personalidad y desarrollo social. Estas áreas están fuertemente interrelacionadas; por ejemplo, un declive físico puede afectar la elección ocupacional (ámbito social) o mermar la autoestima (ámbito de la personalidad).
@@ -77,6 +79,8 @@ graph TD
     J --> N["Edad Psicológica<br>(Madurez para afrontar retos)"]
     J --> O["Edad Social<br>(Expectativas de roles sociales)"]
 ```
+
+![Diagrama 02](_media/U08_Adultez_02.png)
 
 ## Influencias normativas y no normativas
 
@@ -126,6 +130,7 @@ graph TD
     H --> M["Cronosistema<br>(Dimensión temporal)"]
 ```
 
+![Diagrama 03](_media/U08_Adultez_03.png)
 
 ### 1. Tesis Central o Resumen Ejecutivo
 
@@ -157,6 +162,8 @@ graph TD
     style C1 fill:#f9f2ec,stroke:#333
     style D1 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 04](_media/U08_Adultez_04.png)
 
 ### 3. Cambios Sistémicos: Visión y Audición
 
@@ -194,6 +201,8 @@ graph TD
     style C2 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 05](_media/U08_Adultez_05.png)
+
 ### 4. Funcionamiento Sexual y Reproductivo
 
 Lejos de extinguirse, la función sexual evoluciona. Sin embargo, ocurren cambios endocrinos drásticos en las mujeres y transformaciones progresivas en los hombres que demarcan el climaterio.
@@ -226,6 +235,8 @@ graph TD
     style C1 fill:#f9f2ec,stroke:#333
     style C2 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 06](_media/U08_Adultez_06.png)
 
 ### 5. Glosario de Conceptos Clave
 
@@ -292,6 +303,8 @@ graph TD
     style C2 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 07](_media/U08_Adultez_07.png)
+
 #### Influencias Indirectas sobre la Salud
 
 La salud no opera en el vacío biológico; está moldeada por el contexto social y demográfico en el que se desenvuelve el adulto.
@@ -321,6 +334,8 @@ graph TD
     style C1 fill:#f9f2ec,stroke:#333
     style D1 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 08](_media/U08_Adultez_08.png)
 
 #### Factores para Mantener y Mejorar la Salud (Estilo de Vida)
 
@@ -377,6 +392,8 @@ graph TD
     style D1 fill:#f9f2ec,stroke:#333
     style D2 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 09](_media/U08_Adultez_09.png)
 
 ### 6. Preguntas de Autoevaluación
 
