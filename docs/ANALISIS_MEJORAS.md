@@ -31,13 +31,7 @@ accesibles por SHA. Solo GitHub Support puede eliminarlas: el pedido se envió e
   los párrafos no aparecen), así que no se borraron: revisar si aportan algo y descartarlos.
 - **Bibliografía de 1er Año**: conserva sus nombres y subcarpetas originales.
 
-### 1.4 Planificador de Parciales
-- Dos implementaciones con lógica duplicada y reglas que ya divergen (`OFFSETS` de
-  `planificador_notion.html` tiene «TP conceptual» y «Lectura»; `index.html` no).
-- La lista `SEED` queda congelada al 4/10/2026; si ya hay datos en `localStorage`, nunca
-  se vuelve a leer.
-
-### 1.5 Material de estudio
+### 1.4 Material de estudio
 - Flashcards: solo hay mazos de `C04` (Biología) y `C08` (Psicoanálisis); 8 simulacros en
   total. La mayoría de las guías no tiene ninguno de los dos.
 - Guías sin escribir: Psicología Experimental U01–U05, Psicología Social U04, Procesos
@@ -100,7 +94,14 @@ borró `plan_estudio_psicologia_files/`. Sigue publicado en GitHub Pages.
   ajenos (diapositivas de la cátedra, apuntes de compañeros, extractos) movidos a
   `1_Bibliografia_Original/`.
 
-### 2.8 Documentación
+### 2.8 Planificador de Parciales *(octubre 2026)*
+Las dos páginas (`index.html` local y `planificador_notion.html`) tenían la lógica duplicada y
+reglas que ya divergían. Ahora hay una sola `index.html` que lee Notion si se abre como Artifact
+en claude.ai y, si no, usa la lista fija y las entregas propias. Las reglas de repaso son las
+mismas en ambos modos, las entregas nuevas de `SEED` aparecen aunque haya datos guardados, y
+los datos del formato anterior se migran solos.
+
+### 2.9 Documentación
 `README.md` y `AGENTS.md` coherentes entre sí (sin carpetas globales, códigos de unidad,
 nombres sin truncar, diagramas, temporales, 1er Año, cómo subir commits que mueven muchos
 archivos). `Scripts/README.md` y `Planificador_Parciales/README.md` describen sus
