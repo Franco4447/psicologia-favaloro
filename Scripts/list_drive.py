@@ -1,27 +1,27 @@
-import os
-import json
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
+"""Lista nombre, ID y tipo de los archivos de una o más carpetas de Google Drive.
 
-def list_drive_folder(folder_id):
-    # Load credentials from the token file
-    creds = Credentials.from_authorized_user_file('gdrive_token.json', ['https://www.googleapis.com/auth/drive'])
-    
-    # Build the Drive API client
-    service = build('drive', 'v3', credentials=creds)
-    
-    # Call the Drive v3 API to list files in the specific folder
-    query = f"'{folder_id}' in parents and trashed = false"
-    results = service.files().list(q=query, pageSize=100, fields="nextPageToken, files(id, name, mimeType)").execute()
-    items = results.get('files', [])
+    python Scripts/list_drive.py <ID_de_carpeta> [<ID_de_carpeta> ...]
 
-    if not items:
-        print('No files found in the folder.')
-    else:
-        print('Files:')
-        for item in items:
-            print(f"{item['name']} (ID: {item['id']}) - Type: {item['mimeType']}")
+El ID es la parte final de la URL de la carpeta: drive.google.com/drive/folders/<ID>
+"""
+import argparse
 
-if __name__ == '__main__':
-    folder_id = '1ktEVSeHLJRo_AGXi0vS9Eff8IpMPrC1o'
-    list_drive_folder(folder_id)
+from drive_comun import listar, servicio, utf8_consola
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("carpetas", nargs="+", metavar="ID", help="ID de la carpeta de Drive")
+    args = ap.parse_args()
+
+    service = servicio()
+    for carpeta in args.carpetas:
+        archivos = listar(service, f"'{carpeta}' in parents and trashed = false")
+        print(f"== {carpeta}: {len(archivos)} archivo(s)")
+        for a in sorted(archivos, key=lambda a: a["name"].lower()):
+            print(f"  {a['name']}  (ID: {a['id']})  [{a['mimeType']}]")
+
+
+if __name__ == "__main__":
+    utf8_consola()
+    main()

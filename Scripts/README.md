@@ -1,14 +1,27 @@
 # 🧰 Scripts de Google Drive
 
 Utilidades en Python para listar y descargar material de la cátedra desde Google Drive
-usando la API v3.
+usando la API v3, con permiso de **solo lectura**. Las credenciales van en la raíz del
+repositorio (`gdrive_credentials.json` y `gdrive_token.json`, ambos en `.gitignore`).
 
 | Script | Qué hace |
 |--------|----------|
-| `auth.py` | Corre el flujo OAuth (puerto `3000`) y guarda el token en `gdrive_token.json` |
-| `list_drive.py` | Lista nombre, ID y tipo MIME de los archivos de una carpeta de Drive |
-| `get_drive_path.py` | Muestra la ruta completa (`Carpeta / Subcarpeta / …`) de una carpeta a partir de su ID |
-| `fetch_pdfs.py` | Descarga todos los PDFs de una o más carpetas de Drive a un directorio local |
+| `auth.py` | Corre el flujo OAuth (puerto `3000`) y guarda el token en `gdrive_token.json`. Volver a correrlo si un script avisa que el token venció |
+| `list_drive.py` | Lista nombre, ID y tipo MIME de los archivos de una o más carpetas de Drive |
+| `get_drive_path.py` | Muestra la ruta completa (`Carpeta / Subcarpeta / …`) de una o más carpetas a partir de su ID |
+| `fetch_pdfs.py` | Descarga los PDF de una o más carpetas de Drive a `[Año]/[Materia]/1_Bibliografia_Original/` (nunca a una carpeta global). Saltea los que ya existen |
+| `drive_comun.py` | Funciones compartidas: rutas de las credenciales, cliente de Drive y listado con paginación |
+
+El ID de una carpeta es la parte final de su URL (`drive.google.com/drive/folders/<ID>`).
+
+```bash
+python Scripts/auth.py
+python Scripts/list_drive.py <ID>
+python Scripts/fetch_pdfs.py --materia "2do Año/Psicoanálisis" <ID> --dry-run   # ver qué bajaría
+python Scripts/fetch_pdfs.py --materia "2do Año/Psicoanálisis" <ID>
+```
+
+Los PDF conservan el nombre que tienen en Drive: renombralos según `AGENTS.md`.
 
 ## Utilidades de mantenimiento
 

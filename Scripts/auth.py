@@ -1,25 +1,29 @@
-import json
-import os
-from google_auth_oauthlib.flow import InstalledAppFlow
+"""Autoriza el acceso de solo lectura a Google Drive y guarda el token en gdrive_token.json.
 
-SCOPES = ['https://www.googleapis.com/auth/drive']
+Requiere gdrive_credentials.json (cliente OAuth) en la raíz del repositorio.
+
+    python Scripts/auth.py
+"""
+import argparse
+import sys
+
+from drive_comun import CREDENCIALES, SCOPES, TOKEN, utf8_consola
+
 
 def main():
-    creds_file = 'gdrive_credentials.json'
-    token_file = 'gdrive_token.json'
-    
-    # Run the flow using the client secrets file
-    flow = InstalledAppFlow.from_client_secrets_file(creds_file, SCOPES)
-    
-    # We will use port 3000 to match the redirect_uri in the JSON
-    print("Starting authentication flow... Please check the URL below.")
-    creds = flow.run_local_server(port=3000, prompt='consent', open_browser=False)
-    
-    # Save the credentials for the next run
-    with open(token_file, 'w') as token:
-        token.write(creds.to_json())
-    
-    print(f"Token saved successfully to {token_file}!")
+    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
+    if not CREDENCIALES.exists():
+        sys.exit(f"No existe {CREDENCIALES.name} en la raíz del repositorio (cliente OAuth de Google Cloud Console)")
+    from google_auth_oauthlib.flow import InstalledAppFlow
 
-if __name__ == '__main__':
+    flow = InstalledAppFlow.from_client_secrets_file(str(CREDENCIALES), SCOPES)
+    # Puerto 3000: coincide con el redirect_uri configurado en el cliente OAuth
+    print("Iniciando la autorización: abrí la URL que aparece abajo.")
+    creds = flow.run_local_server(port=3000, prompt="consent", open_browser=False)
+    TOKEN.write_text(creds.to_json(), encoding="utf-8")
+    print(f"Token guardado en {TOKEN.name}")
+
+
+if __name__ == "__main__":
+    utf8_consola()
     main()
