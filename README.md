@@ -110,8 +110,9 @@ Google que traía la página guardada. Abrir `index.html` en el navegador o en
 <https://franco4447.github.io/psicologia-favaloro/>.
 
 ### Planificador de Parciales (`Planificador_Parciales/`)
-Calcula sesiones de repaso espaciado (−14, −7, −3, −1 días) para cada entrega.
-Dos versiones: una local con `localStorage` y otra sincronizada con Notion.
+Calcula sesiones de repaso espaciado (−14, −7, −3, −1 días) para cada entrega. Una sola
+página: abierta como Artifact en claude.ai lee las entregas de Notion; abierta con doble clic
+o en GitHub Pages usa una lista fija más las entregas que agregues.
 Ver [`Planificador_Parciales/README.md`](Planificador_Parciales/README.md).
 
 ### Scripts de Google Drive (`Scripts/`)

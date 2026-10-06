@@ -4,189 +4,338 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Planificador de Parciales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
+  /* Layout: una columna de lectura; la cuenta regresiva a la izquierda de cada entrega ordena la lista por urgencia. */
   :root{
-    --bg:#f6f5f1; --card:#fff; --ink:#1f2328; --mute:#6b7280; --line:#e5e3dc;
-    --ok:#2f855a; --warn:#d69e2e; --hot:#e53e3e; --acc:#5b4fcf; --accbg:#eeecfb;
+    --bg:#f2f5f7; --card:#ffffff; --ink:#14202b; --mute:#5d6b78; --line:#dbe2e8;
+    --acc:#0f6b66; --accbg:#e1f1ef;
+    --ok:#2f7d4f; --warn:#b7791f; --hot:#c8372d; --on:#ffffff;
+    --f-display:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
+    --f-body:"IBM Plex Sans",system-ui,"Segoe UI",sans-serif;
+    --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
   }
   @media (prefers-color-scheme:dark){
-    :root{--bg:#16171a; --card:#202226; --ink:#e8e8ea; --mute:#9aa0a8; --line:#33363b; --accbg:#2a2750; --acc:#a79dff;}
+    :root:not([data-theme="light"]){
+      --bg:#0f161c; --card:#17212a; --ink:#e6edf2; --mute:#94a3b0; --line:#2a3743;
+      --acc:#5cc4bc; --accbg:#16312f; --ok:#5fbf86; --warn:#e0b04f; --hot:#ef7168; --on:#0f161c;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f161c; --card:#17212a; --ink:#e6edf2; --mute:#94a3b0; --line:#2a3743;
+    --acc:#5cc4bc; --accbg:#16312f; --ok:#5fbf86; --warn:#e0b04f; --hot:#ef7168; --on:#0f161c;
+    color-scheme:dark;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,Segoe UI,sans-serif}
-  .wrap{max-width:900px;margin:0 auto;padding:20px 16px 60px}
-  h1{font-size:1.5rem;margin:0 0 2px}
-  .sub{color:var(--mute);margin-bottom:18px}
-  h2{font-size:1rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);margin:26px 0 10px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
-  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-  .grow{flex:1;min-width:180px}
-  .count{min-width:68px;text-align:center;border-radius:10px;padding:6px 4px;font-weight:700;color:#fff}
-  .count small{display:block;font-weight:500;font-size:.7rem;opacity:.9}
-  .ok{background:var(--ok)} .warn{background:var(--warn)} .hot{background:var(--hot)} .none{background:var(--mute)}
-  .title{font-weight:600}
-  .meta{color:var(--mute);font-size:.85rem}
-  .tag{display:inline-block;font-size:.72rem;padding:1px 8px;border-radius:99px;background:var(--accbg);color:var(--acc);margin-right:6px}
-  .bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin-top:8px}
-  .bar i{display:block;height:100%;background:var(--acc)}
-  .sessions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-  .chip{border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:.82rem;cursor:pointer;background:transparent;color:var(--ink)}
-  .chip.done{background:var(--ok);border-color:var(--ok);color:#fff;text-decoration:line-through}
-  .chip.late{border-color:var(--hot);color:var(--hot)}
-  .chip.today{border-color:var(--acc);background:var(--accbg);font-weight:600}
-  .today-item{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px dashed var(--line)}
-  .today-item:last-child{border:0}
-  button,input,select{font:inherit;color:var(--ink)}
-  .btn{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:7px 14px;cursor:pointer}
-  .ghost{background:transparent;color:var(--mute);border:0;cursor:pointer;font-size:.85rem}
+  [hidden]{display:none !important}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body)}
+  .wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:24px 64px}
+  header{display:flex;gap:12px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin-bottom:6px}
+  h1{font:700 1.7rem/1.15 var(--f-display);margin:0;text-wrap:balance}
+  .date{color:var(--mute);margin:2px 0 0}
+  .sync{display:flex;align-items:center;gap:10px;font-size:.82rem;color:var(--mute)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--mute);flex:none}
+  .dot.live{background:var(--ok)} .dot.err{background:var(--hot)}
+  button,input,select{font:inherit;color:inherit}
+  .btn{background:var(--acc);color:var(--on);border:0;border-radius:8px;padding:7px 14px;cursor:pointer;font-weight:500}
+  .btn.line{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+  .btn:focus-visible,.chip:focus-visible,.check:focus-visible,.ghost:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+  .ghost{background:transparent;border:0;color:var(--mute);cursor:pointer;font-size:.82rem;flex:none}
   .ghost:hover{color:var(--hot)}
+  h2{font:600 .78rem/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--mute);margin:30px 0 10px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .notice{background:var(--accbg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .notice.bad{border-color:var(--hot)}
+  .list{display:flex;flex-direction:column;gap:10px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .top{display:flex;gap:14px;align-items:center}
+  .count{flex:none;width:70px;text-align:center;border-radius:10px;padding:7px 0 6px;color:var(--on);font:500 1.4rem/1 var(--f-mono);font-variant-numeric:tabular-nums}
+  .count small{display:block;font:500 .66rem/1.2 var(--f-body);letter-spacing:.05em;text-transform:uppercase;margin-top:3px;opacity:.9}
+  .count.ok{background:var(--ok)} .count.warn{background:var(--warn)} .count.hot{background:var(--hot)}
+  .body{min-width:0;flex:1}
+  .mat{font:600 1.02rem/1.25 var(--f-display)}
+  .desc{color:var(--mute);font-size:.88rem;overflow-wrap:anywhere}
+  .tag{display:inline-block;font-size:.7rem;font-weight:600;padding:1px 8px;border-radius:99px;background:var(--accbg);color:var(--acc);margin-right:6px;vertical-align:1px}
+  .bar{height:5px;background:var(--line);border-radius:9px;overflow:hidden;margin:12px 0 0}
+  .bar i{display:block;height:100%;background:var(--acc)}
+  .sess{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .chip{border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:.8rem;cursor:pointer;background:transparent}
+  .chip .d{font-family:var(--f-mono);font-size:.76rem;color:var(--mute);margin-left:4px}
+  .chip.done{background:var(--ok);border-color:var(--ok);color:var(--on)}
+  .chip.done .d{color:var(--on)}
+  .chip.late{border-color:var(--hot);color:var(--hot)}
+  .chip.now{border-color:var(--acc);background:var(--accbg);font-weight:600}
+  .t{display:flex;gap:12px;align-items:flex-start;padding-block:8px;border-bottom:1px dashed var(--line)}
+  .t:last-child{border:0}
+  .check{width:18px;height:18px;margin-top:2px;accent-color:var(--acc);flex:none}
+  .meta{font-size:.82rem;color:var(--mute)}
+  .undated{display:flex;flex-direction:column;gap:6px}
+  .undated div{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
   form{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
   input,select{padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
-  .empty{color:var(--mute);padding:6px 0}
-  .foot{margin-top:28px;color:var(--mute);font-size:.8rem}
+  .empty{color:var(--mute)}
+  .foot{margin-top:30px;color:var(--mute);font-size:.8rem;max-width:62ch}
+  @media (max-width:420px){ .count{width:58px;font-size:1.2rem} .top{gap:10px} }
+  @media (prefers-reduced-motion:no-preference){ .bar i{transition:width .3s} }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>📅 Planificador de Parciales</h1>
-  <div class="sub" id="hoy"></div>
+  <header>
+    <div>
+      <h1>Planificador de Parciales</h1>
+      <p class="date" id="hoy"></p>
+    </div>
+    <div class="sync" id="sync" hidden><span class="dot" id="dot"></span><span id="syncTxt"></span>
+      <button class="btn line" id="refresh" type="button">Actualizar</button></div>
+  </header>
+
+  <div id="notice"></div>
 
   <h2>Hoy te toca</h2>
-  <div class="card" id="today"></div>
+  <div class="panel" id="today"><span class="empty">Cargando…</span></div>
 
   <h2>Próximas entregas</h2>
-  <div id="list"></div>
+  <div class="list" id="list"></div>
 
-  <h2>Agregar entrega</h2>
-  <div class="card">
-    <form id="f">
-      <input name="materia" placeholder="Materia" required>
-      <input name="desc" placeholder="Descripción (ej. Parcial 1)">
-      <select name="tipo">
-        <option>Examen</option><option>Trabajo Práctico</option><option>Lección Oral</option>
-        <option>Final</option><option>Actividad</option>
-      </select>
-      <input name="fecha" type="date" required>
-      <button class="btn">Agregar</button>
-    </form>
+  <div id="undatedWrap" hidden>
+    <h2>Pendientes sin fecha</h2>
+    <div class="panel undated" id="undated"></div>
   </div>
 
-  <div class="foot">
-    Las sesiones de repaso se calculan hacia atrás desde la fecha: exámenes y finales a −14, −7, −3 y −1 días;
-    TPs y orales a −7, −3 y −1. Tocá una sesión para marcarla como hecha. Todo se guarda en este navegador.
-    Datos iniciales tomados de tu base «📖 Tareas» de Notion.
+  <div id="addWrap" hidden>
+    <h2>Agregar entrega</h2>
+    <div class="panel">
+      <form id="f">
+        <input name="materia" placeholder="Materia" required>
+        <input name="descr" placeholder="Descripción (ej. Parcial 1)">
+        <select name="tipo" id="tipo"></select>
+        <input name="fecha" type="date" required>
+        <button class="btn">Agregar</button>
+      </form>
+    </div>
   </div>
+
+  <p class="foot" id="foot"></p>
 </div>
 
 <script>
-// Datos iniciales (de Notion, 4/10/2026). Se pueden agregar/borrar desde la página.
-const SEED = [
-  {materia:"Psicología Social",    desc:"TP 3: Examen Individual (Multiple Choice)", tipo:"Examen",           fecha:"2026-10-22"},
-  {materia:"Psicoanálisis",        desc:"Segundo examen",                            tipo:"Examen",           fecha:"2026-10-26"},
-  {materia:"Procesos Básicos III", desc:"Presentación Pensamiento",                  tipo:"Lección Oral",     fecha:"2026-10-28"},
-  {materia:"Psicología Social",    desc:"TP 4: Trabajo de Revisión (hasta Metodología)", tipo:"Trabajo Práctico", fecha:"2026-10-29"},
-  {materia:"Psicología Evolutiva", desc:"Parcial 4 (U9 y U10)",                      tipo:"Examen",           fecha:"2026-11-03"},
-  {materia:"Procesos Básicos III", desc:"Parcial 2: Multiple Choice + a Desarrollar",tipo:"Examen",           fecha:"2026-11-04"},
-  {materia:"Procesos Básicos III", desc:"Proyecto Final",                            tipo:"Trabajo Práctico", fecha:"2026-11-11"},
-  {materia:"Psicología Social",    desc:"TP 5: Trabajo de Revisión (Completo)",      tipo:"Trabajo Práctico", fecha:"2026-11-12"},
-  {materia:"Psicología Experimental", desc:"Parcial 2 - Investigación",              tipo:"Trabajo Práctico", fecha:"2026-11-13"},
-];
-const KEY = "planificador_parciales_v1";
-const OFFSETS = {Examen:[14,7,3,1], Final:[14,7,3,1], "Trabajo Práctico":[7,3,1], "Lección Oral":[7,3,1], Actividad:[3,1]};
-const DAY = 86400000;
+/* Una sola página, dos fuentes de datos:
+   - Abierta como Artifact en claude.ai (hay window.claude): lee la base «Tareas» de Notion
+     en vivo y se refresca cada minuto.
+   - Abierta con doble clic o desde GitHub Pages: usa la lista fija SEED más las entregas que
+     agregues a mano, guardadas en este navegador. */
 
-let state = load();
-function load(){
-  try{ const s = JSON.parse(localStorage.getItem(KEY)); if(s && s.items) return s; }catch(e){}
-  return {items: SEED.map((x,i)=>({id:"s"+i,...x})), done:{}};
-}
-function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
-
-const startOfDay = d => { const x = new Date(d); x.setHours(0,0,0,0); return x; };
-const parse = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y,m-1,d); };
-const iso = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
-const fmt = d => d.toLocaleDateString("es-AR",{weekday:"short",day:"numeric",month:"short"});
-const esc = s => s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const today = () => startOfDay(new Date());
-
+// ── Reglas de repaso: días antes de la entrega en que se programa cada sesión ──
+const OFFSETS = {"Examen":[14,7,3,1], "Final":[14,7,3,1], "Trabajo Práctico":[7,3,1], "Lección Oral":[7,3,1],
+                 "TP conceptual":[3,1], "Actividad":[3,1], "Lectura":[1]};
+const OFFSETS_OTRO = [3,1];
 // Qué hacer en cada sesión (skills /flashcards y /simulacro): en exámenes y finales, los repasos
 // intermedios son con el mazo de flashcards y el repaso final es el simulacro.
 const ES_EXAMEN = {"Examen":1, "Final":1};
+
+// ── Lista fija del modo local (de Notion, 4/10/2026). Agregar acá nuevas entregas: aparecen
+//    aunque el navegador ya tenga datos guardados; las que se quitan desde la página no vuelven. ──
+const SEED = [
+  {materia:"Psicología Social",       descr:"TP 3: Examen Individual (Multiple Choice)",     tipo:"Examen",           fecha:"2026-10-22"},
+  {materia:"Psicoanálisis",           descr:"Segundo examen",                                tipo:"Examen",           fecha:"2026-10-26"},
+  {materia:"Procesos Básicos III",    descr:"Presentación Pensamiento",                      tipo:"Lección Oral",     fecha:"2026-10-28"},
+  {materia:"Psicología Social",       descr:"TP 4: Trabajo de Revisión (hasta Metodología)", tipo:"Trabajo Práctico", fecha:"2026-10-29"},
+  {materia:"Psicología Evolutiva",    descr:"Parcial 4 (U9 y U10)",                          tipo:"Examen",           fecha:"2026-11-03"},
+  {materia:"Procesos Básicos III",    descr:"Parcial 2: Multiple Choice + a Desarrollar",    tipo:"Examen",           fecha:"2026-11-04"},
+  {materia:"Procesos Básicos III",    descr:"Proyecto Final",                                tipo:"Trabajo Práctico", fecha:"2026-11-11"},
+  {materia:"Psicología Social",       descr:"TP 5: Trabajo de Revisión (Completo)",          tipo:"Trabajo Práctico", fecha:"2026-11-12"},
+  {materia:"Psicología Experimental", descr:"Parcial 2 - Investigación",                     tipo:"Trabajo Práctico", fecha:"2026-11-13"},
+];
+
+// ── Notion (modo claude.ai) ──
+const SERVER = "Notion", TOOL = "notion-query-data-sources";
+const DS = "collection://f632aab8-2791-40ca-87f8-a60351841409";
+const QUERY = 'SELECT "Materia" AS materia, "Tipo" AS tipo, "Descripción" AS descr, "Cuándo" AS cuando, "date:Entrega:start" AS fecha FROM "' + DS + '" WHERE "Cuándo" != \'Terminado\' ORDER BY "date:Entrega:start"';
+const INPUT = {data:{data_source_urls:[DS], query:QUERY}};
+
+// ── Almacenamiento en este navegador ──
+const K_DONE = "pp_done_v2";            // sesiones tildadas, compartidas por ambos modos
+const K_CACHE = "pp_cache_v2";          // última respuesta de Notion
+const K_LOCAL = "pp_local_v3";          // modo local: entregas propias y entregas de SEED quitadas
+const K_LOCAL_V1 = "planificador_parciales_v1";   // formato anterior de index.html (se migra)
+const DAY = 86400000;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const sod = d => { const x=new Date(d); x.setHours(0,0,0,0); return x; };
+const parseD = s => { const [y,m,d]=s.slice(0,10).split("-").map(Number); return new Date(y,m-1,d); };
+const fmt = d => d.toLocaleDateString("es-AR",{weekday:"short",day:"numeric",month:"short"}).replace(".","");
+function lsGet(k,fb){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):fb; }catch(e){ return fb; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+
+const idDe = it => it.materia+"|"+it.descr+"|"+it.fecha;
+const offsetsDe = tipo => OFFSETS[tipo] || OFFSETS_OTRO;
 function labelFor(tipo, i, n){
   const ult = i === n-1;
   if(ES_EXAMEN[tipo]) return ult ? "Repaso final · simulacro" : "Repaso "+(i+1)+" · flashcards";
   return ult ? "Repaso final" : "Repaso "+(i+1);
 }
 function sessionsFor(it){
-  const due = parse(it.fecha);
-  const offs = OFFSETS[it.tipo] || [3,1];
-  return offs.map((o,i)=>({key:it.id+":"+i, date:new Date(due.getTime() - o*DAY), label:labelFor(it.tipo, i, offs.length)}));
+  const due = parseD(it.fecha), offs = offsetsDe(it.tipo);
+  return offs.map((o,i)=>({key: idDe(it)+"|"+o, date: new Date(due.getTime()-o*DAY), label: labelFor(it.tipo, i, offs.length)}));
 }
 
-function render(){
-  const t = today();
-  document.getElementById("hoy").textContent = "Hoy es " + t.toLocaleDateString("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+let modo = window.claude ? "notion" : "local";
+let rows = [], done = lsGet(K_DONE,{}), status = {kind:"load"}, mcp = null;
+let local = cargarLocal();
 
-  const items = state.items.filter(i=>parse(i.fecha) >= t).sort((a,b)=>a.fecha.localeCompare(b.fecha));
+// ── Modo local ──
+function cargarLocal(){
+  const l = lsGet(K_LOCAL, null);
+  if(l) return l;
+  // Migración desde el formato v1: sus entregas pasan a ser propias y las sesiones tildadas
+  // (clave "id:índice") pasan a la clave por contenido que usan ambos modos.
+  const v1 = lsGet(K_LOCAL_V1, null), nuevo = {propias:[], quitadas:[]};
+  if(v1 && Array.isArray(v1.items)){
+    const enSeed = new Set(SEED.map(idDe));
+    v1.items.forEach(x=>{
+      const it = {materia:x.materia, descr:x.desc||"", tipo:x.tipo, fecha:x.fecha};
+      if(!enSeed.has(idDe(it))) nuevo.propias.push(it);
+      offsetsDe(it.tipo).forEach((o,i)=>{ if(v1.done && v1.done[x.id+":"+i]) done[idDe(it)+"|"+o] = true; });
+    });
+    // Las de SEED que se habían quitado en v1 siguen quitadas
+    const v1ids = new Set(v1.items.map(x=>idDe({materia:x.materia, descr:x.desc||"", fecha:x.fecha})));
+    nuevo.quitadas = SEED.map(idDe).filter(id=>!v1ids.has(id));
+    lsSet(K_DONE, done);
+  }
+  lsSet(K_LOCAL, nuevo);
+  return nuevo;
+}
+function filasLocales(){
+  const quitadas = new Set(local.quitadas);
+  return [...SEED.filter(x=>!quitadas.has(idDe(x))), ...local.propias];
+}
+function quitar(id){
+  if(SEED.some(x=>idDe(x)===id)) local.quitadas.push(id);
+  local.propias = local.propias.filter(x=>idDe(x)!==id);
+  lsSet(K_LOCAL, local); rows = filasLocales(); render();
+}
+
+// ── Render ──
+function render(){
+  const t = sod(new Date());
+  $("hoy").textContent = t.toLocaleDateString("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+
+  const dated = rows.filter(r=>r.fecha && parseD(r.fecha)>=t).sort((a,b)=>a.fecha.localeCompare(b.fecha));
+  const undated = rows.filter(r=>!r.fecha);
 
   // Hoy
-  const todo = [];
-  items.forEach(it=>sessionsFor(it).forEach(s=>{
-    if(!state.done[s.key] && s.date <= t) todo.push({it,s});
-  }));
-  const T = document.getElementById("today");
-  T.innerHTML = todo.length ? todo.map(({it,s})=>{
-    const late = s.date < t;
-    return `<div class="today-item"><input type="checkbox" data-k="${s.key}">
-      <div class="grow"><b>${esc(it.materia)}</b> — ${esc(it.desc||it.tipo)}
-      <div class="meta">${s.label}${late?` · atrasada (era ${fmt(s.date)})`:""}</div></div></div>`;
-  }).join("") : `<div class="empty">Nada pendiente para hoy 🎉</div>`;
+  const todo=[];
+  dated.forEach(it=>sessionsFor(it).forEach(s=>{ if(!done[s.key] && s.date<=t) todo.push({it,s}); }));
+  $("today").innerHTML = todo.length ? todo.map(({it,s})=>{
+    const late = s.date<t;
+    return `<label class="t"><input class="check" type="checkbox" data-k="${esc(s.key)}">
+      <span><b>${esc(it.materia)}</b> · ${esc(it.descr||it.tipo)}<br>
+      <span class="meta">${s.label} para el ${fmt(parseD(it.fecha))}${late?` · atrasada, era del ${fmt(s.date)}`:""}</span></span></label>`;
+  }).join("") : `<span class="empty">${rows.length?"No tenés repasos pendientes para hoy.":"Todavía no hay datos."}</span>`;
 
-  // Lista
-  const L = document.getElementById("list");
-  if(!items.length){ L.innerHTML = `<div class="card empty">No hay entregas próximas. Agregá una abajo.</div>`; }
-  else L.innerHTML = items.map(it=>{
-    const days = Math.round((parse(it.fecha)-t)/DAY);
-    const cls = days<=3 ? "hot" : days<=7 ? "warn" : "ok";
-    const ss = sessionsFor(it);
-    const nd = ss.filter(s=>state.done[s.key]).length;
+  // Entregas
+  $("list").innerHTML = dated.length ? dated.map(it=>{
+    const days = Math.round((parseD(it.fecha)-t)/DAY);
+    const cls = days<=3?"hot":days<=7?"warn":"ok";
+    const ss = sessionsFor(it), nd = ss.filter(s=>done[s.key]).length;
     const chips = ss.map(s=>{
-      const done = state.done[s.key];
-      const c = done ? "done" : s.date < t ? "late" : s.date.getTime()===t.getTime() ? "today" : "";
-      return `<button class="chip ${c}" data-k="${s.key}">${s.label} · ${fmt(s.date)}</button>`;
+      const c = done[s.key]?"done":s.date<t?"late":s.date.getTime()===t.getTime()?"now":"";
+      return `<button type="button" class="chip ${c}" data-k="${esc(s.key)}" aria-pressed="${!!done[s.key]}">${s.label}<span class="d">${fmt(s.date)}</span></button>`;
     }).join("");
-    return `<div class="card">
-      <div class="row">
-        <div class="count ${cls}">${days===0?"HOY":days}<small>${days===0?"":days===1?"día":"días"}</small></div>
-        <div class="grow">
-          <div class="title">${esc(it.materia)}</div>
-          <div class="meta"><span class="tag">${esc(it.tipo)}</span>${esc(it.desc||"")} · ${fmt(parse(it.fecha))}</div>
-        </div>
-        <button class="ghost" data-del="${it.id}">Quitar</button>
-      </div>
+    const btnQuitar = modo==="local" ? `<button class="ghost" type="button" data-del="${esc(idDe(it))}">Quitar</button>` : "";
+    return `<article class="item"><div class="top">
+      <div class="count ${cls}">${days===0?"HOY":days}<small>${days===0?"entrega":days===1?"día":"días"}</small></div>
+      <div class="body"><div class="mat">${esc(it.materia)}</div>
+        <div class="desc"><span class="tag">${esc(it.tipo)}</span>${esc(it.descr||"")} · ${fmt(parseD(it.fecha))}</div></div>${btnQuitar}</div>
       <div class="bar"><i style="width:${ss.length?nd/ss.length*100:0}%"></i></div>
-      <div class="sessions">${chips}</div>
-    </div>`;
-  }).join("");
+      <div class="sess">${chips}</div></article>`;
+  }).join("") : `<div class="panel empty">${modo==="local"?"No hay entregas próximas. Agregá una abajo.":status.kind==="ok"?"No hay entregas con fecha en Notion.":"Sin datos todavía."}</div>`;
+
+  // Sin fecha (solo vienen de Notion)
+  $("undatedWrap").hidden = !undated.length;
+  $("undated").innerHTML = undated.map(r=>`<div><b>${esc(r.materia)}</b><span class="tag">${esc(r.tipo||"")}</span><span class="meta">${esc(r.descr||"")}</span></div>`).join("");
+
+  // Modo y estado de sincronización
+  $("addWrap").hidden = modo!=="local";
+  $("sync").hidden = modo!=="notion";
+  $("foot").textContent = (modo==="notion"
+    ? "Las entregas salen de tu base «Tareas» en Notion y se refrescan solas cada minuto. "
+    : "Lista fija tomada de Notion más las entregas que agregues acá. ")
+    + "Las sesiones de repaso se calculan hacia atrás desde la fecha: exámenes y finales a 14, 7, 3 y 1 días; TPs y orales a 7, 3 y 1; TP conceptual y actividades a 3 y 1; lecturas a 1. Lo que tildás se guarda en este navegador.";
+  const n=$("notice"); n.innerHTML="";
+  if(modo!=="notion") return;
+  const dot=$("dot"), txt=$("syncTxt");
+  dot.className="dot";
+  if(status.kind==="ok"){ dot.classList.add("live"); txt.textContent="Sincronizado con Notion · "+new Date(status.at).toLocaleTimeString("es-AR",{hour:"2-digit",minute:"2-digit"}); }
+  else if(status.kind==="load"){ txt.textContent="Conectando con Notion…"; }
+  else if(status.kind==="nomcp"){
+    txt.textContent="Sin conexión a Notion";
+    n.innerHTML=`<div class="notice bad"><span>Esta vista no puede conectarse a Notion. Abrí la página desde claude.ai para sincronizar${rows.length?"; mientras tanto se muestran los últimos datos guardados":""}.</span></div>`;
+  } else {
+    dot.classList.add("err"); txt.textContent="Error de sincronización";
+    const c=status.code;
+    let msg, act="";
+    if(c==="needs_reauth"||c==="server_not_connected"||c==="selection_required") msg="Notion no está conectado. Conectalo en claude.ai, Ajustes, Conectores.";
+    else if(c==="not_in_manifest"||c==="consent_required"){ msg="No diste permiso a esta página para leer Notion."; act=`<button class="btn" type="button" id="perm">Dar permiso</button>`; }
+    else if(c==="tool_error") msg="Notion rechazó la consulta: "+esc(status.message||"");
+    else msg="No se pudo leer Notion ("+esc(c||"error")+")."+(status.retry?" Se reintenta solo.":"");
+    n.innerHTML=`<div class="notice bad"><span>${msg}${rows.length?" Se muestran los últimos datos guardados.":""}</span>${act}</div>`;
+    const p=$("perm"); if(p) p.onclick=async()=>{ try{ const pm=await claude.use("permissions"); await pm.request(["mcp:"+SERVER]); }catch(e){} start(); };
+  }
 }
 
+function toggle(k){ done[k]=!done[k]; lsSet(K_DONE,done); render(); }
 document.addEventListener("click",e=>{
-  const k = e.target.closest("[data-k]");
-  if(k && k.tagName!=="INPUT"){ toggle(k.dataset.k); }
-  const d = e.target.closest("[data-del]");
-  if(d && confirm("¿Quitar esta entrega?")){ state.items = state.items.filter(i=>i.id!==d.dataset.del); save(); render(); }
+  const c=e.target.closest("button.chip[data-k]"); if(c) toggle(c.dataset.k);
+  const d=e.target.closest("button[data-del]"); if(d && confirm("¿Quitar esta entrega?")) quitar(d.dataset.del);
 });
-document.addEventListener("change",e=>{ if(e.target.matches("input[type=checkbox][data-k]")) toggle(e.target.dataset.k); });
-function toggle(key){ state.done[key] = !state.done[key]; save(); render(); }
+document.addEventListener("change",e=>{ if(e.target.matches("input.check[data-k]")) toggle(e.target.dataset.k); });
 
-document.getElementById("f").addEventListener("submit",e=>{
+$("tipo").innerHTML = Object.keys(OFFSETS).map(t=>`<option>${esc(t)}</option>`).join("");
+$("f").addEventListener("submit",e=>{
   e.preventDefault();
   const f = new FormData(e.target);
-  state.items.push({id:"u"+Date.now(), materia:f.get("materia").trim(), desc:f.get("desc").trim(), tipo:f.get("tipo"), fecha:f.get("fecha")});
-  save(); e.target.reset(); render();
+  local.propias.push({materia:f.get("materia").trim(), descr:f.get("descr").trim(), tipo:f.get("tipo"), fecha:f.get("fecha")});
+  lsSet(K_LOCAL, local); e.target.reset(); rows = filasLocales(); render();
 });
 
-render();
+// ── Notion ──
+function apply(result){
+  const p = result && result.payload;
+  const arr = p && Array.isArray(p.results) ? p.results : null;
+  if(!arr){ status={kind:"err",code:"upstream_error",message:"respuesta inesperada"}; return render(); }
+  rows = arr.map(r=>({materia:r.materia||"",tipo:r.tipo||"",descr:r.descr||"",fecha:r.fecha?String(r.fecha).slice(0,10):""}));
+  lsSet(K_CACHE,rows);
+  status={kind:"ok",at:(result.cache&&result.cache.storedAt)||Date.now()};
+  render();
+}
+function fail(error){ status={kind:"err",code:error.code,message:error.message,retry:error.retryable}; render(); }
+
+let unwatch = null;
+async function start(){
+  if(!mcp) mcp = await claude.use("mcp");
+  if(!mcp){ status={kind:"nomcp"}; return render(); }
+  if(unwatch) unwatch();
+  unwatch = mcp.watchTool(SERVER,TOOL,INPUT,ev=>{ ev.type==="data" ? apply(ev.result) : fail(ev.error); },{refetchInterval:60000});
+}
+$("refresh").addEventListener("click",async()=>{
+  if(!mcp) return start();
+  status={kind:"load"}; render();
+  try{ apply(await mcp.callTool(SERVER,TOOL,INPUT,{cache:{refresh:true}})); }catch(e){ fail(e); }
+});
+
+if(modo==="notion"){
+  rows = lsGet(K_CACHE,[]);   // primer cuadro con los últimos datos conocidos
+  render();
+  start().catch(()=>{ status={kind:"nomcp"}; render(); });
+} else {
+  rows = filasLocales();
+  render();
+}
 </script>
 </body>
 </html>
