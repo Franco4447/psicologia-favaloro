@@ -25,6 +25,7 @@ graph TD
     style F fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 01](_media/U07_Adolescencia_01.png)
 
 ### Transición Desde la Niñez y Adultez Emergente
 
@@ -55,6 +56,7 @@ graph TD
     style D1 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 02](_media/U07_Adolescencia_02.png)
 
 ### Cambios Asociados a la Pubertad
 
@@ -108,6 +110,7 @@ graph TD
     style D1 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 03](_media/U07_Adolescencia_03.png)
 
 ### Salud Física Inicial y el Cerebro Adolescente
 
@@ -145,6 +148,7 @@ graph TD
     style D1 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 04](_media/U07_Adolescencia_04.png)
 
 ### Tesis Central o Resumen Ejecutivo
 
@@ -192,6 +196,7 @@ graph TD
     style C2 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 05](_media/U07_Adolescencia_05.png)
 
 ### Desarrollo Moral y Ética
 
@@ -230,6 +235,7 @@ graph TD
     style C2 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 06](_media/U07_Adolescencia_06.png)
 
 ### Educación y Motivación en la Adolescencia
 
@@ -269,6 +275,7 @@ graph TD
     style D fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 07](_media/U07_Adolescencia_07.png)
 
 ### Glosario de Conceptos Clave
 
@@ -348,6 +355,8 @@ graph TD
     style C4 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 08](_media/U07_Adolescencia_08.png)
+
 #### Sexualidad
 
 El logro de la identidad sexual abarca el reconocimiento de la orientación sexual, el manejo de impulsos y la formación de vínculos emocionales. La orientación sexual (heterosexual, homosexual, bisexual) se hace apremiante en esta etapa y parece tener un origen parcialmente genético y neurobiológico (como diferencias en el hipotálamo y respuestas a feromonas), combinado con factores ambientales. El desarrollo de una identidad homosexual o bisexual suele ser más complejo debido al estigma social y la falta de modelos aceptados, atravesando fases desde la concienciación de la atracción hasta la apertura y relaciones románticas.
@@ -376,6 +385,8 @@ graph TD
     style C2 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 09](_media/U07_Adolescencia_09.png)
+
 #### Socialización en el entorno familiar
 
 A pesar de la creencia popular en una "rebelión adolescente" caracterizada por tormenta y tensión incontrolables (perspectiva clásica de G. Stanley Hall y el psicoanálisis), las investigaciones muestran que la gran mayoría de los adolescentes mantienen relaciones positivas y comparten valores fundamentales con sus padres. La desvinculación (pasar menos tiempo con la familia) responde a una necesidad normativa de individuación y autonomía.
@@ -400,6 +411,8 @@ graph TD
     style C1 fill:#f9f2ec,stroke:#333
     style C2 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 10](_media/U07_Adolescencia_10.png)
 
 #### Relación con los pares
 
@@ -428,6 +441,8 @@ graph TD
     style C1 fill:#f9f2ec,stroke:#333
     style D1 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 11](_media/U07_Adolescencia_11.png)
 
 #### Cambios conductuales (Conducta antisocial y delincuencia)
 
@@ -487,6 +502,8 @@ graph TD
     style D fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 12](_media/U07_Adolescencia_12.png)
+
 ### 6. Preguntas de Autoevaluación
 
 1. Según el modelo de James Marcia, ¿cuál es la diferencia clínica y conductual entre un adolescente en estado de "moratoria" y uno en "difusión de identidad"?
@@ -529,6 +546,8 @@ graph TD
     style D2 fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 13](_media/U07_Adolescencia_13.png)
+
 ### El Grupo de las Dos Reversibilidades (INRC)
 
 La combinatoria permite estructurar algo fundamental que marca la síntesis de todo el desarrollo operatorio anterior: el grupo de cuaternalidad o **grupo INRC**.
@@ -560,6 +579,8 @@ graph TD
     style B1 fill:#f9f2ec,stroke:#333
     style C1 fill:#f9f2ec,stroke:#333
 ```
+
+![Diagrama 14](_media/U07_Adolescencia_14.png)
 
 ### Los Esquemas Operatorios Formales y la Disociación de Factores
 
@@ -597,6 +618,7 @@ graph TD
     style E fill:#f9f2ec,stroke:#333
 ```
 
+![Diagrama 15](_media/U07_Adolescencia_15.png)
 
 ### Glosario de Conceptos Clave
 

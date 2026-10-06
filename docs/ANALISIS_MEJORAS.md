@@ -1,6 +1,6 @@
 # Análisis del repositorio y oportunidades de mejora
 
-*Actualizado: 6 de octubre de 2026 · 524 archivos versionados · `.git` de ~340 MB · repositorio público.*
+*Actualizado: 6 de octubre de 2026 · 482 archivos versionados · `.git` de ~340 MB · repositorio público.*
 
 Primero lo que sigue abierto, ordenado por prioridad; al final, el registro de lo resuelto.
 
@@ -22,32 +22,22 @@ Tras purgar la bibliografía del historial (ver 2.1), las referencias internas d
 accesibles por SHA. Solo GitHub Support puede eliminarlas: el pedido se envió el
 5/10/2026. Al responder, verificar que los commits viejos den 404.
 
-### 1.3 Diagramas Mermaid desconectados de las guías
-39 `.png` de `_media/` (12 en Psicoanálisis, 27 en Evolutiva) tienen nombres de timestamp
-(`mermaid_1786917962589_5.png`) y **no están referenciados desde ningún `.md`**: las guías
-usan bloques ```` ```mermaid ```` y los PNG solo se usaron al exportar a Word. `AGENTS.md`
-pide `[Unidad]_[Tema]_[NN].png` enlazado con ruta relativa desde la guía.
+### 1.3 Pendientes menores de nombres y textos (solo en la copia local)
+- **Pensamiento (Procesos Básicos III, `U03`)**: textos extraídos y bibliografía ya con
+  nombres según `AGENTS.md`, pero todavía **sin guía** (ni flashcards ni simulacro).
+- **Psicología Social, `2_Textos_Extraidos/Paginados/`**: 12 `*_chunk*.md` de una extracción
+  anterior de Bandura y Walters, Baron y Byrne y Pecino y Sánchez. No coinciden párrafo a
+  párrafo con los textos completos `U03_…_Crudo.md` (en Baron y Pecino, más de la mitad de
+  los párrafos no aparecen), así que no se borraron: revisar si aportan algo y descartarlos.
+- **Bibliografía de 1er Año**: conserva sus nombres y subcarpetas originales.
 
-### 1.4 Imágenes rotas en los textos extraídos
-335 enlaces `![](images/<hash>.jpg)` en 21 textos extraídos (Evolutiva, Psicoanálisis,
-Experimental) apuntan a una carpeta `images/` que no existe. Los textos extraídos ya no se
-versionan, así que afecta solo a la copia local. Opciones: recuperar las imágenes en
-`2_Textos_Extraidos/_media/<crudo>/` y reescribir los enlaces, o quitar los enlaces.
-
-### 1.5 Nombres de archivo
-- **1er Año** conserva los nombres originales (con espacios, `(2) `, nombres propios):
-  13 archivos versionados con prefijo `(2) ` en Neurociencias y Epistemología. `estado.py`
-  no reconoce esos archivos porque no tienen código de unidad.
-- **Procesos Básicos III / Pensamiento**: los 9 textos extraídos ya son `U03_…`, pero los
-  PDF originales tienen nombres libres (`Clase 01 - Pensamiento.pdf`) y no hay guía.
-
-### 1.6 Planificador de Parciales
+### 1.4 Planificador de Parciales
 - Dos implementaciones con lógica duplicada y reglas que ya divergen (`OFFSETS` de
   `planificador_notion.html` tiene «TP conceptual» y «Lectura»; `index.html` no).
 - La lista `SEED` queda congelada al 4/10/2026; si ya hay datos en `localStorage`, nunca
   se vuelve a leer.
 
-### 1.7 Material de estudio
+### 1.5 Material de estudio
 - Flashcards: solo hay mazos de `C04` (Biología) y `C08` (Psicoanálisis); 8 simulacros en
   total. La mayoría de las guías no tiene ninguno de los dos.
 - Guías sin escribir: Psicología Experimental U01–U05, Psicología Social U04, Procesos
@@ -96,7 +86,21 @@ y archivos de bloqueo de Office.
 el código propio del mapa, sin los ~7 MB de recursos de Google ni datos de la sesión. Se
 borró `plan_estudio_psicologia_files/`. Sigue publicado en GitHub Pages.
 
-### 2.7 Documentación
+### 2.7 Diagramas, imágenes y nombres *(octubre 2026)*
+- Los 39 diagramas con nombre de timestamp (`mermaid_1786…png`): 24 de Evolutiva pasaron a
+  `U07_Adolescencia_NN` / `U08_Adultez_NN` y quedaron enlazados desde su guía; 3 eran copias
+  idénticas; los 12 de Psicoanálisis eran de los Word `_v10` ya borrados y se quitaron.
+- Textos extraídos (solo locales): 27 copias con nombre truncado borradas en Psicoanálisis y
+  344 enlaces a una carpeta `images/` inexistente reemplazados por una marca visible (las
+  imágenes eran recortes de otra herramienta y no se pueden reconstruir).
+- Procesos Básicos III: bibliografía como `[Autor][Año].pdf` y `U0N_Diapositivas_…`, textos
+  de Motivación como `U01_…_Crudo.md`, y tres trabajos propios movidos a `6_Entregables/`.
+- 1er Año: 88 archivos renombrados con `Global_1erC` / `Global_2doC` o `C[NN]`, versiones
+  para imprimir en `_imprimir/`, Neurociencias sin subcarpetas por parcial, y 14 archivos
+  ajenos (diapositivas de la cátedra, apuntes de compañeros, extractos) movidos a
+  `1_Bibliografia_Original/`.
+
+### 2.8 Documentación
 `README.md` y `AGENTS.md` coherentes entre sí (sin carpetas globales, códigos de unidad,
 nombres sin truncar, diagramas, temporales, 1er Año, cómo subir commits que mueven muchos
 archivos). `Scripts/README.md` y `Planificador_Parciales/README.md` describen sus
