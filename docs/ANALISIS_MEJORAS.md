@@ -18,10 +18,8 @@ responder, verificar que los commits viejos den 404.
 ### 1.2 Pendientes menores de nombres y textos (solo en la copia local)
 - **Pensamiento (Procesos Básicos III, `U03`)**: textos extraídos y bibliografía ya con
   nombres según `AGENTS.md`, pero todavía **sin guía** (ni flashcards ni simulacro).
-- **Psicología Social, `2_Textos_Extraidos/Paginados/`**: 12 `*_chunk*.md` de una extracción
-  anterior de Bandura y Walters, Baron y Byrne y Pecino y Sánchez. No coinciden párrafo a
-  párrafo con los textos completos `U03_…_Crudo.md` (en Baron y Pecino, más de la mitad de
-  los párrafos no aparecen), así que no se borraron: revisar si aportan algo y descartarlos.
+- **Psicología Social**: `U03_Baron_Citas02_Crudo.md` y `U03_Baron_Citas03_Crudo.md` están
+  vacíos (0 KB): volver a extraerlos o borrarlos.
 - **Bibliografía de 1er Año**: conserva sus nombres y subcarpetas originales.
 
 ### 1.3 Material de estudio
@@ -86,6 +84,10 @@ sesión, y sigue publicado en GitHub Pages. Las versiones viejas y la carpeta se
 - Textos extraídos (solo locales): 27 copias con nombre truncado borradas en Psicoanálisis y
   344 enlaces a una carpeta `images/` inexistente reemplazados por una marca visible (las
   imágenes eran recortes de otra herramienta y no se pueden reconstruir).
+- Psicología Social: se borraron los 12 fragmentos de `2_Textos_Extraidos/Paginados/`, de una
+  extracción anterior. Los de Bandura y Walters y los de Pecino y Sánchez repetían el crudo
+  completo (con peor OCR); de los de Baron y Byrne se rescataron las leyendas y los rótulos
+  de las 20 figuras del capítulo, que ahora están en `U03_BaronByrne_Cap4_Crudo.md`.
 - Procesos Básicos III: bibliografía como `[Autor][Año].pdf` y `U0N_Diapositivas_…`, textos
   de Motivación como `U01_…_Crudo.md`, y tres trabajos propios movidos a `6_Entregables/`.
 - 1er Año: 88 archivos renombrados con `Global_1erC` / `Global_2doC` o `C[NN]`, versiones
