@@ -23,6 +23,7 @@ Qué hace:
 import argparse
 import collections
 import io
+import os
 import re
 import shutil
 import statistics
@@ -140,8 +141,9 @@ def columnas(page):
 def tesseract():
     exe = shutil.which("tesseract")
     if not exe and sys.platform == "win32":
-        p = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
-        exe = str(p) if p.exists() else None
+        candidatos = [Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe"),
+                      Path(os.environ.get("LOCALAPPDATA", ""), "Programs", "Tesseract-OCR", "tesseract.exe")]
+        exe = next((str(p) for p in candidatos if p.exists()), None)
     return exe
 
 
@@ -409,4 +411,7 @@ def main():
 
 
 if __name__ == "__main__":
+    # La consola de Windows usa cp1252 y no puede imprimir ✓/✗/acentos fuera de ese juego
+    for _flujo in (sys.stdout, sys.stderr):
+        _flujo.reconfigure(encoding="utf-8", errors="replace")
     main()

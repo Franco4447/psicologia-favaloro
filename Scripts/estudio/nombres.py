@@ -8,7 +8,7 @@ Uso como módulo (desde las skills):
 Uso por línea de comandos:
     python Scripts/estudio/nombres.py generar guia --unidad U05 --tema "Duelo y melancolía"
     python Scripts/estudio/nombres.py generar crudo --unidad U04 --texto 15 --autor Freud --tema "Duelo y melancolía"
-    python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/C01_Guia.md" ...
+    python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/C01_CienciaYPsicoanalisisFreudYLasEscuelas_Guia.md" ...
 """
 import argparse
 import re
@@ -140,4 +140,7 @@ def _cli():
 
 
 if __name__ == "__main__":
+    # La consola de Windows usa cp1252 y no puede imprimir ✓/✗/acentos fuera de ese juego
+    for _flujo in (sys.stdout, sys.stderr):
+        _flujo.reconfigure(encoding="utf-8", errors="replace")
     _cli()

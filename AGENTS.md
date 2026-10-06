@@ -71,6 +71,16 @@ Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de
 - El material nuevo que se genere para una materia de 1er Año sí sigue la nomenclatura estricta de este documento.
 - Si una materia se cursa en ambos cuatrimestres, usa **una sola carpeta de materia** y distingue los cuatrimestres con el código de unidad/clase o con `Global_1erC` / `Global_2doC`; no crees carpetas hermanas como `Materia (1er Cuatri)/`.
 
+## Git: subir un commit que mueve muchos archivos
+
+Si un commit **mueve o renombra muchos archivos entre carpetas** (una migración como la de 1er Año), `git push` puede tardar muchos minutos y preparar un paquete enorme: con el empaquetado «sparse» (activo por defecto) Git compara solo rutas iguales, no reconoce que el archivo ya existe en GitHub bajo otra ruta y lo vuelve a empaquetar. En la migración de 1er Año el paquete pesaba 577 MB en vez de 24 KB. Súbelo así:
+
+```bash
+git -c pack.useSparse=false push -u origin <rama>
+```
+
+Para comprobarlo antes de subir: `printf 'HEAD\n^origin/main\n' | git -c pack.useSparse=false pack-objects --revs --stdout --thin -q | wc -c` debe dar kilobytes, no cientos de megabytes. Al sincronizar `main` después, usa `git switch -C main origin/main` (no `git pull`) para no regenerar archivos en OneDrive.
+
 ## Skills de Estudio (Claude Code)
 
 El repositorio trae skills propias en `.claude/skills/` que aplican estas reglas automáticamente.
