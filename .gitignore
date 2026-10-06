@@ -10,7 +10,7 @@ gdrive_token.json
 **/1_Bibliografia_Original/
 
 # Textos extraídos: son copias completas de la bibliografía (derechos de autor).
-# Los nuevos quedan solo en la copia local; los que ya estaban versionados siguen en git.
+# Ni estos ni la bibliografía original se versionan: viven solo en OneDrive.
 **/2_Textos_Extraidos/
 
 # Accesos directos locales

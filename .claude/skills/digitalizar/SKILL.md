@@ -8,8 +8,9 @@ description: 'Convierte la bibliografía original del repositorio de Psicología
 Convierte `1_Bibliografia_Original/*.pdf|.pptx` en `2_Textos_Extraidos/[Unidad]_[Autor]_[Capítulo]_Crudo.md`,
 la entrada de `/guia-estudio`.
 
-> Los textos extraídos **no se suben a git** (están en `.gitignore`: son copias completas de
-> material con derechos de autor). Quedan solo en la copia local.
+> Los textos extraídos y la bibliografía original (`1_Bibliografia_Original/`) **no se suben a
+> git** (están en `.gitignore`: son copias de material con derechos de autor). Quedan solo en
+> la copia local de OneDrive.
 
 ## Antes de empezar
 
