@@ -1,32 +1,32 @@
-import os
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
+"""Muestra la ruta completa (Carpeta / Subcarpeta / ...) de una o más carpetas de Google Drive.
 
-def get_folder_path(service, folder_id):
-    path = []
-    current_id = folder_id
-    while current_id:
-        file = service.files().get(fileId=current_id, fields="id, name, parents").execute()
-        path.insert(0, file.get('name'))
-        parents = file.get('parents')
-        if not parents:
-            break
-        current_id = parents[0]
-    return ' / '.join(path)
+    python Scripts/get_drive_path.py <ID_de_carpeta> [<ID_de_carpeta> ...]
+"""
+import argparse
+
+from drive_comun import servicio, utf8_consola
+
+
+def ruta(service, carpeta):
+    partes, actual = [], carpeta
+    while actual:
+        f = service.files().get(fileId=actual, fields="id, name, parents").execute()
+        partes.insert(0, f["name"])
+        padres = f.get("parents")
+        actual = padres[0] if padres else None
+    return " / ".join(partes)
+
 
 def main():
-    creds = Credentials.from_authorized_user_file('gdrive_token.json', ['https://www.googleapis.com/auth/drive'])
-    service = build('drive', 'v3', credentials=creds)
-    
-    folders = [
-        '1Dc_QpcTJ_Ncs-B1BFPWSWHqbqLFErgum',
-        '13lvYHO5i-bslvJUaeLGzIzb635Y4RSwW'
-    ]
-    
-    for fid in folders:
-        print(f"Path for {fid}:")
-        print(get_folder_path(service, fid))
-        print("---")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("carpetas", nargs="+", metavar="ID", help="ID de la carpeta de Drive")
+    args = ap.parse_args()
 
-if __name__ == '__main__':
+    service = servicio()
+    for carpeta in args.carpetas:
+        print(f"{carpeta}: {ruta(service, carpeta)}")
+
+
+if __name__ == "__main__":
+    utf8_consola()
     main()

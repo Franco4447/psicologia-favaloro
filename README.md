@@ -16,10 +16,9 @@ planificación de la carrera. Está pensado para trabajar junto a agentes de IA
 ├── AGENTS.md                    -> Reglas obligatorias para agentes (estructura, nombres, nivel de detalle)
 ├── README.md                    -> Este archivo
 ├── docs/                        -> Documentación del proyecto (informe de mejoras, convenciones)
-├── index.html                   -> Mapa interactivo del plan de estudio (exportado de Gemini Canvas)
-├── plan_estudio_psicologia_files/  -> Recursos del mapa anterior (el código propio está en shim.html)
+├── index.html                   -> Mapa interactivo del plan de estudio (autocontenido; publicado en GitHub Pages)
 ├── Planificador_Parciales/      -> Planificador de repasos espaciados para parciales y TPs
-├── Scripts/                     -> Utilidades de Python para descargar material de Google Drive
+├── Scripts/                     -> Utilidades: skills de estudio (estudio/), Google Drive y mantenimiento
 ├── 1er Año/                     -> Materias de 1er año (archivo histórico: estructura del pipeline, nombres originales)
 └── 2do Año/                     -> Materias de 2do año (todas en el pipeline)
 ```
@@ -104,10 +103,11 @@ Tesseract, mermaid-cli). En la nube se instala solo. Diseño y decisiones:
 [`docs/PLAN_SKILLS_ESTUDIO.md`](docs/PLAN_SKILLS_ESTUDIO.md).
 
 ### Mapa del plan de estudio (`index.html`)
-Mapa interactivo de las materias de la carrera, exportado desde Gemini Canvas, con
-arrastre tipo Miro (mouse y táctil). El código propio está en
-`plan_estudio_psicologia_files/shim.html`; el resto de esa carpeta son dependencias
-descargadas por el navegador al guardar la página. Abrir `index.html` en el navegador.
+Mapa interactivo de las materias de la carrera y sus correlatividades, con arrastre tipo
+Miro (mouse y táctil). Se generó con Gemini Canvas y se extrajo a un único archivo
+autocontenido (React y Tailwind desde CDN), sin los scripts ni los datos de la sesión de
+Google que traía la página guardada. Abrir `index.html` en el navegador o en
+<https://franco4447.github.io/psicologia-favaloro/>.
 
 ### Planificador de Parciales (`Planificador_Parciales/`)
 Calcula sesiones de repaso espaciado (−14, −7, −3, −1 días) para cada entrega.
