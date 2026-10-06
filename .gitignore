@@ -13,6 +13,9 @@ gdrive_token.json
 # Ni estos ni la bibliografía original se versionan: viven solo en OneDrive.
 **/2_Textos_Extraidos/
 
+# Videos, podcasts y slides generados con NotebookLM: pesados (~300 MB); viven solo en OneDrive.
+**/NotebookLM/
+
 # Accesos directos locales
 *.url
 *.lnk
