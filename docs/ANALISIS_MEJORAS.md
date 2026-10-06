@@ -24,6 +24,10 @@ todavía: mover o borrar archivos es decisión del dueño del repositorio.
 Change visibility). Es reversible y resuelve el problema de inmediato. Después, migrar la
 bibliografía a `1_Bibliografia_Original/` para que el `.gitignore` empiece a aplicar.
 
+*(Parcialmente resuelto: la bibliografía original y los textos extraídos —188 y 85 archivos,
+~1,1 GB— dejaron de versionarse y viven solo en OneDrive. Siguen en el historial de git y el
+repositorio sigue siendo público: falta pasarlo a privado y/o reescribir el historial.)*
+
 ### 1.2 Tamaño del repositorio
 - `.git` pesa ~1,6 GB. GitHub recomienda repositorios < 1 GB; clonar es lento y se acerca
   a los límites blandos.
@@ -180,4 +184,5 @@ el trabajo ya hecho.
    carpetas viejas de Psicoanálisis al pipeline~~ ✅ hecho. Unificada también Psicología Evolutiva. Todo 2do año sigue el pipeline; `1er Año/` migró su estructura (nombres de archivo sin cambios).
 4. Corregir `fetch_pdfs.py` (destino por materia, paginación, argumentos).
 5. Generar `4_Flashcards/` a partir de las guías de Psicoanálisis C01–C24.
-6. Decidir sobre bibliografía/videos en git y, si corresponde, limpiar el historial.
+6. ~~Dejar de versionar la bibliografía y los textos extraídos~~ ✅ hecho. Pendiente: videos y
+   audios de NotebookLM en `3_Guias_de_Estudio/` y, si corresponde, limpiar el historial.

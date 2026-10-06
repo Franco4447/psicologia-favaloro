@@ -136,10 +136,11 @@ solo existe en la copia local de OneDrive.
 
 ## 🔒 Qué se versiona y qué no
 
-- **Sí:** textos extraídos, guías de estudio, flashcards, simulacros, herramientas.
+- **Sí:** guías de estudio, flashcards, simulacros, herramientas.
 - **No:** logs de agentes (`.agents/`), datos de encuestas con respuestas sensibles, credenciales (`gdrive_credentials.json`, `gdrive_token.json`, `.env`), accesos
   directos, archivos temporales de exportación (`*.temp.md`, `*.temp.md.ps1`) y la
-  bibliografía original con derechos de autor (`1_Bibliografia_Original/`).
+  bibliografía original (`1_Bibliografia_Original/`) y los textos extraídos (`2_Textos_Extraidos/`):
+  ambos tienen derechos de autor y viven solo en OneDrive.
 
 ---
 *Este archivo sirve como contexto base para que personas y agentes comprendan la
