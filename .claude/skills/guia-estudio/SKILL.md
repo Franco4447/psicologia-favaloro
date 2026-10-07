@@ -70,8 +70,10 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
 - **Exhaustiva:** cada ejemplo, caso clínico, experimento, cifra y distinción de la fuente tiene
   su lugar. Los casos se cuentan con detalle (qué pasó, qué hizo el analista/el experimentador,
   qué concluye el autor).
-- **Citas de página** en todo dato o tesis: `(Belucci, p. 12)`. Las citas textuales van entre
-  comillas y con página. No inventes páginas.
+- **Citas en normas APA 7** en todo dato o tesis: `(Belucci, 2014, p. 12)`,
+  `(Freud, 1894/1991, p. 6)`; las referencias completas, en APA, en el recuadro `Fuentes` del
+  principio. Reglas y ejemplos en `references/citas_apa.md`. Las citas textuales van entre comillas
+  y con página. No inventes páginas ni datos de edición. No agregues un recuadro "Cómo se cita".
 - **Fiel a la fuente:** nada de agregar teoría de memoria. Si conectás con otra clase o texto del
   repo, decí cuál (`→ conecta con C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md §4`).
 - **Terminología de la cátedra** y términos en el idioma original entre paréntesis (*Zwang*).

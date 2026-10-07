@@ -60,7 +60,8 @@ debe dar pistas suficientes para una única respuesta correcta.
 - Todo lo que dice la respuesta tiene que estar en la guía (o en la fuente que cita).
   No agregues datos de memoria.
 - Respetá la terminología de la cátedra (si la guía dice "fantasma", no lo cambies por "fantasía").
-- Si la guía cita página, podés ponerla al final del dorso: `<i>(Papalia, p. 412)</i>`.
+- Si la guía cita la fuente, ponela al final del dorso en APA 7: `<i>(Papalia et al., 2012, p. 412)</i>`,
+  `<i>(Freud, 1894/1991, p. 6)</i>`.
 
 ## 7. Formato
 

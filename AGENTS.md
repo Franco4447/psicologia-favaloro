@@ -108,4 +108,5 @@ Al generar resúmenes o guías de estudio, **SIEMPRE debes crear "Apuntes Extend
 * **Extensión Máxima:** No debes sobre-sintetizar ni omitir detalles. El material generado debe funcionar como un reemplazo completo del libro original.
 * **Profundidad:** Incluye todos los ejemplos relevantes, experimentos, estadísticas, casos de estudio y matices teóricos mencionados en la bibliografía fuente.
 * **Formato:** Aunque apliques estructuras (como mapas conceptuales o glosarios), el cuerpo del desarrollo analítico debe ser exhaustivo y lo más detallado posible.
+* **Citas en normas APA 7:** toda mención de una fuente (en el texto y en la lista de fuentes) va en APA 7: `(Freud, 1894/1991, p. 6)`. No se agrega un apartado "Cómo se cita". Reglas: `.claude/skills/guia-estudio/references/citas_apa.md`.
 * **Capas para rendir:** la guía extendida no se recorta; se le suman capas cortas para repasar e integrar (hilo conductor, esqueletos de respuesta, "no confundir", fichas de repaso, cuadros integradores, simulacros con rúbrica). Cuándo y cómo: `.claude/skills/guia-estudio/references/materiales_de_parcial.md`.

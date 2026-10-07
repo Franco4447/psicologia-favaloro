@@ -24,7 +24,7 @@ recuadro, nada resalta.
 
 | Empieza con | Recuadro | Para qué |
 |---|---|---|
-| `**Fuente:**`, `**Cómo se cita:**` | gris claro | Fuentes, convención de citas |
+| `**Fuentes:**` | gris claro | Referencias completas en APA |
 | `**Aviso sobre las fuentes:**` | rojo | Fragmentos, textos no asignados, OCR dudoso, falta de apuntes |
 | `**Idea-fuerza:**` | azul | La tesis central |
 | `🔑 **Punto clave:**` | amarillo | Lo que no hay que perder de una sección |
@@ -41,11 +41,12 @@ Las demás citas en bloque (citas textuales largas, consignas) salen con una bar
 ~~~markdown
 # [Unidad/Clase] — [Título del tema]
 
-> **Fuente:** [Autor, *Título* (T[NN], año), páginas] · [más textos] · [apuntes de clase y fecha] ·
-> **Materia:** [materia, año, docentes].
-
-> **Cómo se cita:** «p. N» es la marca `## Página N` del texto extraído [aclarar los textos sin
-> páginas y cómo se citan]. Lo marcado **▸ Complemento** no está en los textos asignados.
+> **Fuentes:** (APA 7, orden alfabético; ver `citas_apa.md`)
+>
+> - Belucci, G. (2014). *Introducción al diagnóstico de estructura* [Ficha de cátedra]. Universidad Favaloro. [Texto T01 del programa]
+> - Freud, S. (1991). Las neuropsicosis de defensa. En J. Strachey (Ed.), *Obras completas* (J. L. Etcheverry, Trad., Vol. 3, pp. 41-61). Amorrortu. (Obra original publicada en 1894) [Texto T02 del programa]
+>
+> **Materia:** [materia, año, docentes]. Apuntes de clase: [fecha].
 
 > **Aviso sobre las fuentes:** [solo si hace falta: textos incompletos, no asignados, OCR dudoso,
 > clases sin apuntes. Qué conviene contrastar con el cuaderno.]
@@ -68,19 +69,19 @@ círculo. Nombrá las preguntas o secciones ("pregunta 2") para que sirva de map
 
 ## 🎯 Lo que entra sí o sí
 
-1. [Los 5–8 puntos que no pueden faltar, con texto y página.]
+1. [Los 5–8 puntos que no pueden faltar, con su cita APA.]
 
 ## 1. Primera pregunta — [título]
 
 > [Consigna textual de la cátedra, si existe.]
 
-**Textos:** [T01 pp. 1-4; T03 p. 3; apuntes 3/8] ← mapa pregunta → texto, para volver a la fuente.
+**Textos:** (Belucci, 2014, pp. 1-4; Freud, 1894/1991, p. 3) ← mapa pregunta → texto, para volver a la fuente.
 
 ### 1.1 Respuesta modelo (para escribir en el parcial)
 
 > **Esqueleto de la respuesta:**
 > 1. **Tesis:** [la idea que responde la consigna en una línea]
-> 2. **[Concepto obligatorio]** ([autor], T[NN] p. N)
+> 2. **[Concepto obligatorio]** (Autor, año, p. N)
 > 3. **[Concepto obligatorio]** …
 > 4. **Articulación:** [cómo se conectan entre sí / Freud ↔ Lacan / con otra clase]
 > 5. **Ejemplo:** [caso o ejemplo de la fuente]
@@ -94,7 +95,7 @@ debería poder reconstruir a partir del esqueleto.]
 
 ### 1.2 Desarrollo ampliado (todo lo que dice la fuente)
 
-[Desarrollo **exhaustivo**: argumento completo, con citas de página (T[NN], p. N).
+[Desarrollo **exhaustivo**: argumento completo, con citas APA (Autor, año, p. N).
 Cada concepto: definición → por qué → ejemplo de la fuente. Casos con detalle: situación,
 intervención, efecto, lectura del autor.]
 
@@ -114,7 +115,7 @@ graph TD
 
 ## Tabla de distinciones
 
-| Concepto | Qué es | Se confunde con | Criterio que los distingue (p. N) |
+| Concepto | Qué es | Se confunde con | Criterio que los distingue (cita APA) |
 |---|---|---|---|
 
 ## 🚩 Errores típicos y trampas de examen
@@ -128,7 +129,7 @@ graph TD
 
 ## Glosario
 
-| Término | Definición breve (p. N) |
+| Término | Definición breve (cita APA) |
 |---|---|
 
 ## Autoevaluación (sin mirar la guía)
@@ -141,7 +142,9 @@ graph TD
 
 - Español rioplatense neutro, segunda persona para consejos ("ojo con…").
 - **Negrita** para términos técnicos la primera vez; *cursiva* para títulos y términos en otro idioma.
-- Citas textuales entre comillas «…» con página.
+- **Citas en APA 7** (`references/citas_apa.md`): (Autor, año, p. N); obras clásicas con año
+  original/edición (Freud, 1917/1991); textuales entre comillas «…» con página. **No** agregues un
+  recuadro o sección que explique cómo se cita.
 - Separá las secciones `## N.` con una línea `---`: en Word cada una empieza en página nueva.
 - Nada de relleno: la extensión sale de incluir todo el contenido de la fuente, no de repetirlo.
 - Guías de más de ~5.000 palabras: exportalas con índice (`/exportar … --indice`) y armá su

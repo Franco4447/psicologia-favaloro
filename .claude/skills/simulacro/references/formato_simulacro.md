@@ -52,7 +52,7 @@ Marcá la opción correcta.
 [La distinción en 2–4 líneas.] *(Fuente: …)*
 
 ### D1
-**Esqueleto:** 1. Tesis… 2. [concepto obligatorio] (T[NN] p. N) 3. … 4. Articulación… 5. Cierre…
+**Esqueleto:** 1. Tesis… 2. [concepto obligatorio] (Autor, año, p. N) 3. … 4. Articulación… 5. Cierre…
 
 **Respuesta modelo:** [prosa con la extensión pedida, siguiendo el esqueleto].
 
