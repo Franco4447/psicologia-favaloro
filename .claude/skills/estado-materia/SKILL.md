@@ -31,3 +31,9 @@ python Scripts/estudio/estado.py --anio "1er Año" …   # otro año (1er Año e
 - "Nombres fuera de AGENTS.md" incluye guías viejas sin tema en el nombre (`C01_Guia.md` en vez de `C01_[Tema]_Guia.md`) o con
   sufijos de versión (`_v10`, `_FINAL`). **No las renombres sin permiso**: proponelo.
 - "Guías editadas a mano": no regenerarlas sin preguntar.
+- "Guías con formato anterior": les falta el hilo conductor o los esqueletos de respuesta de la
+  plantilla actual. Proponé actualizarlas (agregando esas secciones, sin tocar el resto) cuando no
+  haya un parcial encima; antes de un parcial, priorizá las que entran.
+- Si hay un parcial cerca, chequeá también los **materiales de parcial**
+  (`guia-estudio/references/materiales_de_parcial.md`): fichas de repaso de las guías largas
+  (columna "Resúmenes / fichas"), cuadro integrador `Transversal_…` y simulacro integrador.

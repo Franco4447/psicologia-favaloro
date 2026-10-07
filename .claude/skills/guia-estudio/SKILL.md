@@ -18,6 +18,12 @@ ejemplos, casos, experimentos, cifras y matices. Nunca sobre-sintetizar.
      `/digitalizar` a `2_Textos_Extraidos/`.
    - **Diapositivas** de la clase (marcan qué priorizó el docente) y, si existen, la **guía de
      lectura** o evaluaciones de la cátedra (`5_Evaluaciones/`): definen "lo que entra sí o sí".
+   - **Preguntas de la cátedra** (baterías de preguntas, consignas de parciales anteriores, apuntes
+     del usuario con "preguntas de examen"): si existen, la guía se ordena **por pregunta** (ver
+     la plantilla) y responde cada una.
+   - **Formato del examen** (desarrollo, opción múltiple, oral; extensión mínima como «10
+     renglones»): fija la extensión de las respuestas modelo. Si no lo sabés y hay preguntas de
+     desarrollo, preguntalo.
    - Si no está claro de qué materia/unidad se trata, **preguntá**.
 3. Nombre de salida con el script (tema = tema principal, sin truncar):
    ```bash
@@ -46,6 +52,21 @@ ejemplos, casos, experimentos, cifras y matices. Nunca sobre-sintetizar.
 
 Seguí `references/plantilla_guia.md`. Lo esencial:
 
+- **Capas de lectura:** recuadros de fuente y avisos → idea-fuerza → **hilo conductor** (cómo se
+  conectan los temas de la guía) → hoja de ruta → lo que entra sí o sí → una sección por pregunta.
+- **Respuesta modelo con esqueleto:** en cada pregunta, primero el **esqueleto** (tesis, conceptos
+  obligatorios con autor/texto/página, articulación, ejemplo, cierre) y después la respuesta en
+  prosa con la extensión del formato del examen, siguiendo el esqueleto. El estudiante memoriza el
+  esqueleto y reconstruye la prosa; no memoriza un texto ajeno. Después, el **desarrollo
+  ampliado** con todo lo que dice la fuente.
+- **No confundir:** en cada pregunta, la confusión típica y el criterio que la resuelve; al final,
+  la tabla de distinciones.
+- **Recuadros:** las citas en bloque con etiqueta (`🔑`, `🎯 Para el parcial`, `Esqueleto`,
+  `⚠ No confundir`, `▸ Complemento`, `Aviso sobre las fuentes`…) salen de color en Word. La tabla
+  de etiquetas está en la plantilla.
+- **Avisos de fuentes:** si un texto está incompleto, no asignado, viene de una transcripción con
+  OCR o faltan los apuntes de una clase, decilo en un recuadro de aviso al principio.
+
 - **Exhaustiva:** cada ejemplo, caso clínico, experimento, cifra y distinción de la fuente tiene
   su lugar. Los casos se cuentan con detalle (qué pasó, qué hizo el analista/el experimentador,
   qué concluye el autor).
@@ -54,8 +75,11 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
 - **Fiel a la fuente:** nada de agregar teoría de memoria. Si conectás con otra clase o texto del
   repo, decí cuál (`→ conecta con C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md §4`).
 - **Terminología de la cátedra** y términos en el idioma original entre paréntesis (*Zwang*).
-- **Diagramas Mermaid** solo donde un esquema aclara de verdad (secuencias, relaciones,
-  clasificaciones). Texto de nodos sin comillas dobles internas.
+- **Diagramas Mermaid:** uno de la lógica de toda la guía y uno por cada pregunta difícil
+  (secuencias, tiempos, relaciones, clasificaciones); ninguno decorativo. Texto de nodos sin
+  comillas dobles internas.
+- **Contenido externo marcado:** lo que no está en los textos asignados (otra obra del autor, la
+  teoría general) va con **▸ Complemento**, para que el estudiante lo contraste con su cuaderno.
 - Cabecera YAML con `frontmatter.escribir` (materia, unidad, tipo `guia`, `fuentes` con archivo y
   páginas, skill `guia-estudio`):
   ```python
@@ -81,10 +105,25 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
    ruido. Todas las citas "p. N" tienen que existir en la fuente (el script avisa si no).
 3. Nombre: `python Scripts/estudio/nombres.py validar <guia.md>`.
 4. Releé la guía de punta a punta como estudiante: ¿se entiende sin el original? ¿falta algún
-   paso del argumento?
+   paso del argumento? ¿Cada pregunta tiene esqueleto, respuesta de la extensión pedida y "no
+   confundir"? ¿El hilo conductor nombra todas las preguntas?
 5. Borrá las notas de parte temporales.
+
+## Materiales de parcial (cuando aplica)
+
+Leé `references/materiales_de_parcial.md`. Según el caso, ofrecé o hacé:
+
+- **Ficha de repaso** (`[Unidad]_[Tema]_Repaso_Guia.md`, 2 páginas) si la guía supera ~5.000
+  palabras o se acerca un parcial.
+- **Cuadro integrador** (`Transversal_[Eje]_Guia.md`) si el parcial abarca varias clases sobre
+  categorías paralelas (estructuras clínicas, escuelas, modelos…).
+- **Plan de repaso** en el chat si hay fecha de examen.
+
+Para guías del formato anterior (sin hilo conductor ni esqueletos; `estado.py` las lista), no las
+regeneres solas: ofrecé actualizarlas agregando las secciones que faltan sin tocar el resto.
 
 ## Al terminar, informá
 
 Ruta, extensión (palabras) frente a la fuente, cobertura final, diagramas generados y próximos
-pasos posibles: `/flashcards` y `/simulacro` de la guía, o exportarla a Word (`/exportar`, cuando exista).
+pasos posibles: `/flashcards` y `/simulacro` de la guía, exportarla a Word (`/exportar`, con
+`--indice` si es larga) y los materiales de parcial que apliquen.

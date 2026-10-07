@@ -16,8 +16,8 @@ Convierte una guía `*_Guia.md` de `3_Guias_de_Estudio/` en un mazo
    - **Guía concreta** (ruta o nombre): de la ruta salen año, materia y unidad.
    - **Materia + unidad/clase**: buscá la guía en `[Año]/[Materia]/3_Guias_de_Estudio/`.
      Si hay varias (p. ej. `C04_Cronobiologia_Guia.md`, `_Resumen_Guia`, `_SintesisProblemas_Guia`),
-     usá la guía extendida (la que no tiene `_Resumen` ni `_Sintesis`) y sumá las otras solo
-     si aportan contenido que falta.
+     usá la guía extendida (la que no tiene `_Resumen`, `_Sintesis` ni `_Repaso`) y sumá las
+     otras solo si aportan contenido que falta.
    - **Lote** ("todas las guías de Psicoanálisis", "las que no tienen flashcards"): ver *Modo lote*.
    - **Guía solo en Word** (`*_Guia.docx` sin `.md`, como en Procesos Básicos II): convertila a
      Markdown en un temporal fuera del repo (`pandoc <guia>.docx -t gfm -o <tmp>/guia.md`) y
@@ -84,7 +84,7 @@ Convierte una guía `*_Guia.md` de `3_Guias_de_Estudio/` en un mazo
 
 Para "todas las guías que no tienen flashcards" de una materia (o de todo `2do Año`):
 
-1. Listá las guías `*_Guia.md` (o `*_Guia.docx` sin `.md`) de `3_Guias_de_Estudio/` (sin `_Resumen`/`_Sintesis`, que
+1. Listá las guías `*_Guia.md` (o `*_Guia.docx` sin `.md`) de `3_Guias_de_Estudio/` (sin `_Resumen`/`_Sintesis`/`_Repaso`, que
    se usan como complemento) y descartá las que ya tienen su `*_Flashcards.csv`.
 2. Mostrale al usuario la lista y cuántos mazos se van a generar antes de arrancar.
 3. Si son más de 3, repartí las guías entre subagentes (una o pocas guías cada uno), cada

@@ -37,7 +37,7 @@ def orden(cod):
 
 def analizar(dir_materia):
     filas = collections.defaultdict(lambda: collections.defaultdict(list))
-    malos, editadas, flojos = [], [], []
+    malos, editadas, flojos, anteriores = [], [], [], []
     for etapa, clave in ETAPAS.items():
         d = dir_materia / etapa
         if not d.is_dir():
@@ -52,10 +52,12 @@ def analizar(dir_materia):
             if not cod:
                 continue
             if clave == "guia":
-                variante = "resumen" if re.search(r"_(Resumen|Sintesis\w*)_Guia", f.name) else "guia"
+                variante = "resumen" if re.search(r"_(Resumen|Sintesis\w*|Repaso)_Guia", f.name) else "guia"
                 filas[cod][f"{variante}{f.suffix}"].append(f)
                 if f.suffix == ".md" and frontmatter.estado(f) == "editado":
                     editadas.append(f.name)
+                if f.suffix == ".md" and variante == "guia" and formato_anterior(f):
+                    anteriores.append(cod)
             elif clave == "eval":
                 tipo = "resultado" if f.stem.endswith("_Resultados") else "eval"
                 filas[cod][tipo].append(f)
@@ -66,7 +68,13 @@ def analizar(dir_materia):
                             flojos.append((cod, t["tema"], t.get("fuente", "")))
             else:
                 filas[cod][clave].append(f)
-    return filas, malos, editadas, flojos
+    return filas, malos, editadas, flojos, anteriores
+
+
+def formato_anterior(guia):
+    """True si la guía no tiene las secciones del formato actual (references/plantilla_guia.md)."""
+    texto = guia.read_text(encoding="utf-8-sig", errors="replace")
+    return "## Hilo conductor" not in texto or "Esqueleto" not in texto
 
 
 def marca(n):
@@ -74,12 +82,12 @@ def marca(n):
 
 
 def reporte(dir_materia):
-    filas, malos, editadas, flojos = analizar(dir_materia)
+    filas, malos, editadas, flojos, anteriores = analizar(dir_materia)
     out = [f"## {dir_materia.name}", ""]
     if not filas:
         out += ["*(sin archivos en las carpetas del pipeline)*", ""]
         return out, {}
-    out += ["| Unidad | Textos extraídos | Guía .md | Word | Resúmenes | Flashcards | Simulacro / evaluación | Último resultado |",
+    out += ["| Unidad | Textos extraídos | Guía .md | Word | Resúmenes / fichas | Flashcards | Simulacro / evaluación | Último resultado |",
             "|---|---|---|---|---|---|---|---|"]
     pend = collections.defaultdict(list)
     for cod in sorted(filas, key=orden):
@@ -106,6 +114,9 @@ def reporte(dir_materia):
         out.append(f"- **{titulo}:** {', '.join(cods)}")
     if flojos:
         out.append("- **Temas flojos en simulacros:** " + "; ".join(f"{c}: {t}" for c, t, _ in flojos))
+    if anteriores:
+        out.append("- **Guías con formato anterior** (sin hilo conductor o sin esqueletos de respuesta; "
+                   f"actualizar con /guia-estudio cuando haya tiempo): {', '.join(sorted(set(anteriores), key=orden))}")
     if editadas:
         out.append(f"- **Guías editadas a mano** (no regenerar sin preguntar): {', '.join(editadas)}")
     if malos:

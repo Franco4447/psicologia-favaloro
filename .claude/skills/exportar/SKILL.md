@@ -15,6 +15,14 @@ python Scripts/estudio/exportar.py <guia.md> [--pdf] [--imprimir] [--indice] [--
 | `--pdf` | además `[Unidad]_[Tema]_Guia.pdf` (con LibreOffice) |
 | `--imprimir` | además `_imprimir/[Unidad]_[Tema]_Guia_Imprimir.pdf`: A4 apaisado, 2 páginas por hoja (implica `--pdf`) |
 | `--indice` | índice al principio del Word (Word pide "actualizar campos" al abrirlo; en el PDF no aparece completo) |
+| `--sin-saltos` | sin saltos de página entre secciones (para fichas de repaso y para gastar menos papel) |
+
+### Cuándo usar cada opción
+
+- **Guía de más de ~5.000 palabras:** `--indice`.
+- **Ficha de repaso** (`*_Repaso_Guia.md`): `--sin-saltos` (tiene que entrar en 2 páginas).
+- **Para imprimir y estudiar en papel:** `--imprimir`.
+- **Para leer en pantalla:** sin opciones.
 
 ## Pasos
 
@@ -26,9 +34,20 @@ python Scripts/estudio/exportar.py <guia.md> [--pdf] [--imprimir] [--indice] [--
    - renderiza los diagramas (`diagramas.py`): `.mmd` + `.png` en `_media/` y la imagen en la guía;
    - en Word va la imagen, no el código Mermaid, con ancho ajustado a la página (máx. 16 × 20 cm);
    - usa la plantilla `Scripts/estudio/plantillas/plantilla_guia.docx` (Calibri, títulos en color,
-     márgenes de 2,2 cm). Para cambiar el estilo de todas las guías, editá esa plantilla en Word.
-4. Verificá el resultado: que el `.docx` abra, que las tablas y diagramas estén, y si hubo PDF,
-   que la cantidad de páginas sea razonable (`pdfinfo`). Los intermedios se borran solos (van a un
+     márgenes estrechos de 1,27 cm con 3 cm a la derecha para anotar a mano, texto justificado y
+     tablas alineadas a la izquierda, encabezado con el título de la guía, pie con «página / total»). Para cambiar
+     el estilo de todas las guías, editá esa plantilla en Word (los estilos «Recuadro …»,
+     «Encabezado guia» y «Pie guia»; el texto `TITULO_GUIA` del encabezado lo reemplaza el script);
+   - aplica el filtro `Scripts/estudio/plantillas/recuadros.lua`: las citas en bloque con etiqueta
+     (`Idea-fuerza`, `🔑`, `🎯 Para el parcial`, `Esqueleto`, `⚠ No confundir`, `▸ Complemento`,
+     `Fuente`, `Aviso`…) salen como recuadros de color, y cada sección `## N.` (N ≥ 1) empieza en
+     página nueva. La tabla de etiquetas está en `guia-estudio/references/plantilla_guia.md`;
+   - si la guía tiene Mermaid y `mmdc` no está en el PATH, agregá antes la carpeta del caché de
+     npx donde esté instalado (ver la memoria del proyecto).
+4. Verificá el resultado: que el `.docx` abra, que las tablas, diagramas y recuadros estén, y si
+   hubo PDF, que la cantidad de páginas sea razonable (`pdfinfo`). Para mirarlo sin LibreOffice,
+   si Word está instalado se puede pasar a PDF por COM (PowerShell: `Word.Application` →
+   `ExportAsFixedFormat`) en un temporal fuera del repo y revisar algunas páginas. Los intermedios se borran solos (van a un
    directorio temporal); no dejes `*.temp.md` en las carpetas de materias.
 5. Si falta pandoc o LibreOffice, `python Scripts/estudio/verificar_entorno.py --probar` dice cómo
    instalarlos.

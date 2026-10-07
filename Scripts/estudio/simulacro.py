@@ -117,6 +117,8 @@ def validar(path):
             errores.append(f"{pid}: la respuesta no cita la fuente ('*(Fuente: ...)*')")
         if sec == "D" and pid in clave and not re.search(r"r[úu]brica|para un 10", texto, re.I):
             avisos.append(f"{pid}: pregunta de desarrollo sin rúbrica")
+        if sec == "D" and pid in clave and "esqueleto" not in texto.lower():
+            avisos.append(f"{pid}: pregunta de desarrollo sin esqueleto de respuesta")
     total_a = sum(letras.values())
     if total_a >= 4:
         letra, n = letras.most_common(1)[0]

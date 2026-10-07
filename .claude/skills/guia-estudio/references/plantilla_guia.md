@@ -1,77 +1,148 @@
 # Plantilla de guía extendida
 
-Basada en las mejores guías del repositorio (Psicoanálisis `C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md`, Biología
-`C04_Cronobiologia_Guia.md`). Las secciones marcadas *(opcional)* se incluyen si la fuente da
+Basada en las guías del 2.º parcial de Psicoanálisis (`C13_EstructuraYTiemposDeLaNeurosis_Guia.md`,
+`C21_23_DireccionDeLaCuraIntervencionesYFinDeAnalisis_Guia.md`) y en Biología
+(`C04_Cronobiologia_Guia.md`). Las secciones marcadas *(opcional)* se incluyen si la fuente da
 material; el resto va siempre.
+
+## Dos formas de ordenar el cuerpo
+
+- **Por preguntas de la cátedra** (cuando hay batería de preguntas, guía de lectura o consignas de
+  parcial): cada pregunta es una sección `## N.` con su consigna textual, la respuesta modelo y el
+  desarrollo ampliado. Es la forma preferida: la guía responde exactamente lo que se evalúa.
+- **Por la lógica del texto** (cuando no hay preguntas): cada sección `## N.` es un paso del
+  argumento, y al final van "Para rendir — preguntas y respuestas modelo" con consignas armadas
+  desde las diapositivas y los "lo que entra sí o sí".
+
+En las dos, todo lo que la fuente dice tiene su lugar (regla de apuntes extendidos de `AGENTS.md`).
+
+## Recuadros (se ven de color en el Word)
+
+Una cita en bloque (`> …`) que **empieza** con una de estas etiquetas sale en Word como recuadro de
+color (filtro `Scripts/estudio/plantillas/recuadros.lua`). Usalos con criterio: si todo es un
+recuadro, nada resalta.
+
+| Empieza con | Recuadro | Para qué |
+|---|---|---|
+| `**Fuente:**`, `**Cómo se cita:**` | gris claro | Fuentes, convención de citas |
+| `**Aviso sobre las fuentes:**` | rojo | Fragmentos, textos no asignados, OCR dudoso, falta de apuntes |
+| `**Idea-fuerza:**` | azul | La tesis central |
+| `🔑 **Punto clave:**` | amarillo | Lo que no hay que perder de una sección |
+| `🎯 **Para el parcial:**`, `**Para un 10:**` | verde | Qué piden y cómo responder |
+| `**Esqueleto de la respuesta:**` | verde azulado | Los puntos de la respuesta modelo |
+| `⚠ **No confundir:**`, `**Trampa:**` | rojo | Distinciones que cuestan puntos |
+| `▸ **Complemento:**` | gris | Contenido que no está en los textos asignados |
+
+Las demás citas en bloque (citas textuales largas, consignas) salen con una barra gris.
+`▸ Complemento` también puede ir dentro de un párrafo cuando es una frase corta.
+
+## Esqueleto
 
 ~~~markdown
 # [Unidad/Clase] — [Título del tema]
 
-> **Fuente:** [Autor, *Título*, obra/edición, páginas] · **Materia:** [materia] · [docentes si aplica]
+> **Fuente:** [Autor, *Título* (T[NN], año), páginas] · [más textos] · [apuntes de clase y fecha] ·
+> **Materia:** [materia, año, docentes].
 
-> **Idea-fuerza:** [2–4 líneas: la tesis central del texto y por qué importa.]
+> **Cómo se cita:** «p. N» es la marca `## Página N` del texto extraído [aclarar los textos sin
+> páginas y cómo se citan]. Lo marcado **▸ Complemento** no está en los textos asignados.
+
+> **Aviso sobre las fuentes:** [solo si hace falta: textos incompletos, no asignados, OCR dudoso,
+> clases sin apuntes. Qué conviene contrastar con el cuaderno.]
+
+> **Idea-fuerza:** [3–5 líneas: la tesis que une la clase y por qué importa.]
+
+## Hilo conductor: cómo se conectan los temas de esta guía
+
+[400–600 palabras en prosa. Cuál es la pregunta de fondo de la clase, cómo cada tema/pregunta
+responde a una parte de ella, qué concepto pasa de un tema al siguiente y cómo se cierra el
+círculo. Nombrá las preguntas o secciones ("pregunta 2") para que sirva de mapa.]
+
+> 🎯 **Para el parcial:** [cómo usar este hilo en las respuestas: qué conexión no puede faltar.]
+
+**En una sola oración:** [la clase entera en una oración.]
 
 ## 0. Hoja de ruta
 
-[Cómo está armado el argumento del texto, en orden lógico, con 1 línea por paso.
-Sirve de mapa para leer el resto.]
+1. **[Paso o pregunta] ([textos]):** [1 línea]
 
 ## 🎯 Lo que entra sí o sí
 
-1. [Los 4–7 puntos que no pueden faltar en un examen, priorizados por diapositivas,
-   guía de lectura o evaluaciones de la cátedra.]
+1. [Los 5–8 puntos que no pueden faltar, con texto y página.]
 
-## 1. [Primera sección del desarrollo]
+## 1. Primera pregunta — [título]
 
-[Desarrollo **exhaustivo**: argumento completo, con citas de página (Autor, p. N).
-Cada concepto: definición → explicación del porqué → ejemplo de la fuente.]
+> [Consigna textual de la cátedra, si existe.]
+
+**Textos:** [T01 pp. 1-4; T03 p. 3; apuntes 3/8] ← mapa pregunta → texto, para volver a la fuente.
+
+### 1.1 Respuesta modelo (para escribir en el parcial)
+
+> **Esqueleto de la respuesta:**
+> 1. **Tesis:** [la idea que responde la consigna en una línea]
+> 2. **[Concepto obligatorio]** ([autor], T[NN] p. N)
+> 3. **[Concepto obligatorio]** …
+> 4. **Articulación:** [cómo se conectan entre sí / Freud ↔ Lacan / con otra clase]
+> 5. **Ejemplo:** [caso o ejemplo de la fuente]
+> 6. **Cierre:** [la conclusión que vuelve a la consigna]
+
+[La respuesta en prosa, con la extensión que pide el formato del examen (p. ej., «mínimo 10
+renglones» → 180–300 palabras), siguiendo el esqueleto en el mismo orden. Es lo que el estudiante
+debería poder reconstruir a partir del esqueleto.]
+
+> ⚠ **No confundir:** [la confusión típica de esta pregunta y el criterio que la resuelve.]
+
+### 1.2 Desarrollo ampliado (todo lo que dice la fuente)
+
+[Desarrollo **exhaustivo**: argumento completo, con citas de página (T[NN], p. N).
+Cada concepto: definición → por qué → ejemplo de la fuente. Casos con detalle: situación,
+intervención, efecto, lectura del autor.]
 
 > 🔑 **Punto clave:** [lo que no hay que perder de esta sección]
 
-### Caso / ejemplo: [nombre]  *(cuando la fuente trae casos)*
-[Relato del caso con detalle: situación, intervención, efecto, lectura del autor (p. N).]
+## 2. … (una sección por pregunta o por paso del argumento)
 
-## 2. … (tantas secciones como pida la fuente)
+## Diagrama
 
-## Tabla de distinciones  *(opcional)*
-
-| Concepto | [Autor A] | [Autor B] |
-|---|---|---|
-
-## Diagrama  *(opcional, solo si aclara)*
+[Al menos uno que muestre la lógica de toda la clase; además, uno por cada pregunta difícil
+(secuencias, tiempos, clasificaciones, esquemas). `diagramas.py` los renderiza.]
 
 ```mermaid
 graph TD
     A[Concepto] --> B[Concepto]
 ```
 
+## Tabla de distinciones
+
+| Concepto | Qué es | Se confunde con | Criterio que los distingue (p. N) |
+|---|---|---|---|
+
 ## 🚩 Errores típicos y trampas de examen
 
 - [Confusiones habituales y cómo evitarlas.]
 
-## Articulación con el resto de la materia  *(opcional)*
+## Articulación con el resto de la materia
 
 | Viene de / va hacia | Cómo se conecta |
 |---|---|
-
-## Para rendir — preguntas y respuestas modelo
-
-**P1. [Consigna tipo parcial]**
-**Esquema de respuesta modelo:** [puntos].
-**Para un 10:** [qué conceptos y conexiones no pueden faltar].
 
 ## Glosario
 
 | Término | Definición breve (p. N) |
 |---|---|
 
-## Autoevaluación
+## Autoevaluación (sin mirar la guía)
 
-1. [Preguntas para repasar sin mirar la guía.]
+1. [Preguntas para responder de memoria: una por concepto evaluable; incluí "reconstruí el
+   esqueleto de la pregunta N" y "¿qué diferencia X de Y?".]
 ~~~
 
-Reglas de forma:
+## Reglas de forma
+
 - Español rioplatense neutro, segunda persona para consejos ("ojo con…").
 - **Negrita** para términos técnicos la primera vez; *cursiva* para títulos y términos en otro idioma.
 - Citas textuales entre comillas «…» con página.
+- Separá las secciones `## N.` con una línea `---`: en Word cada una empieza en página nueva.
 - Nada de relleno: la extensión sale de incluir todo el contenido de la fuente, no de repetirlo.
+- Guías de más de ~5.000 palabras: exportalas con índice (`/exportar … --indice`) y armá su
+  **ficha de repaso** (ver `materiales_de_parcial.md`).

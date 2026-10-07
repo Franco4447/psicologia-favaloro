@@ -7,6 +7,8 @@ Uso como módulo (desde las skills):
 
 Uso por línea de comandos:
     python Scripts/estudio/nombres.py generar guia --unidad U05 --tema "Duelo y melancolía"
+    python Scripts/estudio/nombres.py generar repaso --unidad U05 --tema "Duelo y melancolía"   # ficha de repaso
+    python Scripts/estudio/nombres.py generar guia --unidad Transversal_EstructurasClinicas  # eje que cruza clases
     python Scripts/estudio/nombres.py generar crudo --unidad U04 --texto 15 --autor Freud --tema "Duelo y melancolía"
     python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/C01_CienciaYPsicoanalisisFreudYLasEscuelas_Guia.md" ...
 """
@@ -22,6 +24,7 @@ RAIZ = Path(__file__).resolve().parents[2]
 TIPOS = {
     "crudo":      ("2_Textos_Extraidos", "Crudo", ".md"),
     "guia":       ("3_Guias_de_Estudio", "Guia", ".md"),
+    "repaso":     ("3_Guias_de_Estudio", "Repaso_Guia", ".md"),   # ficha de repaso corta de una guía
     "imprimir":   ("3_Guias_de_Estudio/_imprimir", "Guia_Imprimir", ".pdf"),
     "diagrama":   ("3_Guias_de_Estudio/_media", None, ".png"),
     "flashcards": ("4_Flashcards", "Flashcards", ".csv"),
