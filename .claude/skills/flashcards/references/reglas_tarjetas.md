@@ -47,6 +47,13 @@ debe dar pistas suficientes para una única respuesta correcta.
 - **Aplicación**: "Ante [situación], ¿qué prueba estadística corresponde y por qué?"
 - **Pregunta de examen**: si la guía tiene preguntas tipo examen, convertirlas en tarjetas
   con respuesta breve (etiqueta `clave-examen`).
+- **Esqueleto de respuesta**: si la guía trae esqueletos, una cloze por pregunta con un hueco por
+  punto (`1. {{c1::Tesis…}}<br>2. {{c2::…}}`) y la consigna en el frente (etiquetas
+  `clave-examen` y `esqueleto`). Entrena el orden de la respuesta, no solo los conceptos sueltos.
+- **No confundir**: cada par de la tabla de distinciones o de los recuadros "⚠ No confundir" de
+  la guía, como básica "¿Qué distingue X de Y?" → el criterio (etiqueta `distincion`).
+- **Integradora**: si hay cuadro integrador (`Transversal_[Eje]_Guia.md`), una tarjeta por celda
+  importante ("En la perversión, ¿cuál es el mecanismo frente a la castración?").
 
 ## 6. Fidelidad a la fuente
 

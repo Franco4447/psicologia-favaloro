@@ -34,6 +34,8 @@ Si el usuario no especifica a qué materia corresponde un texto, **DEBES PREGUNT
 Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de nombres para que Windows los ordene correctamente por Unidad:
 - **Textos Extraídos**: `[Unidad]_[Autor]_[Capítulo]_Crudo.md` (Ej: `U07_Papalia_Cap15_Crudo.md`)
 - **Guías de Estudio**: `[Unidad]_[Tema_Principal]_Guia.ext` (Ej: `U07_Adolescencia_Guia.docx`)
+  - Ficha de repaso corta de una guía: `[Unidad]_[Tema]_Repaso_Guia.ext` (Ej: `C13_EstructuraYTiemposDeLaNeurosis_Repaso_Guia.md`).
+  - Cuadro integrador que compara varias clases: `Transversal_[Eje]_Guia.ext` (Ej: `Transversal_EstructurasClinicas_Guia.md`).
 - **Flashcards**: `[Unidad]_[Tema]_Flashcards.csv` (Ej: `U07_Adolescencia_Flashcards.csv`)
 - **Evaluaciones**: `[Unidad]_[Tema]_Simulacro.md` (Ej: `U07_Adolescencia_Simulacro.md`)
   - Problemas de práctica de la cátedra: `[Unidad]_[Tema]_Enunciado.ext` y su resolución `[Unidad]_[Tema]_Resuelto.ext` (Ej: `C08_ProblemaELS_Enunciado.pdf` / `C08_ProblemaELS_Resuelto.pdf`).
@@ -106,3 +108,4 @@ Al generar resúmenes o guías de estudio, **SIEMPRE debes crear "Apuntes Extend
 * **Extensión Máxima:** No debes sobre-sintetizar ni omitir detalles. El material generado debe funcionar como un reemplazo completo del libro original.
 * **Profundidad:** Incluye todos los ejemplos relevantes, experimentos, estadísticas, casos de estudio y matices teóricos mencionados en la bibliografía fuente.
 * **Formato:** Aunque apliques estructuras (como mapas conceptuales o glosarios), el cuerpo del desarrollo analítico debe ser exhaustivo y lo más detallado posible.
+* **Capas para rendir:** la guía extendida no se recorta; se le suman capas cortas para repasar e integrar (hilo conductor, esqueletos de respuesta, "no confundir", fichas de repaso, cuadros integradores, simulacros con rúbrica). Cuándo y cómo: `.claude/skills/guia-estudio/references/materiales_de_parcial.md`.

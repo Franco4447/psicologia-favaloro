@@ -1,7 +1,7 @@
 """Exporta una guía .md a Word (y opcionalmente PDF e impresión 2 por hoja) — skill /exportar.
 
 Uso:
-    python Scripts/estudio/exportar.py <guia.md> [--pdf] [--imprimir] [--indice] [--forzar]
+    python Scripts/estudio/exportar.py <guia.md> [--pdf] [--imprimir] [--indice] [--sin-saltos] [--forzar]
 
   - Renderiza los diagramas Mermaid (diagramas.py) y los inserta como imágenes con un ancho que
     entra en la página (máx. 16 × 20 cm, sin agrandar imágenes chicas).
@@ -10,7 +10,14 @@ Uso:
   - --pdf: además genera el .pdf con LibreOffice.
   - --imprimir: además genera 3_Guias_de_Estudio/_imprimir/[...]_Guia_Imprimir.pdf (A4 apaisado,
     2 páginas por hoja). Implica --pdf.
+  - Recuadros de color y saltos de página con el filtro plantillas/recuadros.lua: las citas en bloque
+    que empiezan con «Idea-fuerza», «🔑», «Para el parcial», «Esqueleto», «⚠ No confundir»,
+    «▸ Complemento», «Fuente»… salen como recuadros; cada sección «## N.» empieza en página nueva.
+    La plantilla trae encabezado con el título de la guía, pie con «página / total», márgenes
+    estrechos (1,27 cm) con 3 cm a la derecha para anotar a mano, y texto justificado; las tablas
+    se alinean a la izquierda (el script se lo pone a cada párrafo de tabla).
   - --indice: agrega índice al principio del Word (Word pide "actualizar campos" al abrir).
+  - --sin-saltos: sin saltos de página entre secciones (gasta menos papel).
   - No sobrescribe un .docx/.pdf existente sin --forzar (puede tener retoques hechos en Word).
   - Todos los intermedios van a un directorio temporal que se borra al terminar.
 """
@@ -22,6 +29,8 @@ import struct
 import subprocess
 import sys
 import tempfile
+import zipfile
+from xml.sax.saxutils import escape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -29,6 +38,7 @@ import diagramas  # noqa: E402
 import frontmatter  # noqa: E402
 
 PLANTILLA = Path(__file__).resolve().parent / "plantillas" / "plantilla_guia.docx"
+FILTRO = Path(__file__).resolve().parent / "plantillas" / "recuadros.lua"
 MAX_W_CM, MAX_H_CM = 16.0, 20.0
 RE_IMG = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)(\{[^}]*\})?")
 RE_MERMAID = re.compile(r"```mermaid\n.*?```\n?", re.S)
@@ -84,7 +94,49 @@ def dos_por_hoja(pdf_in, pdf_out):
         w.write(f)
 
 
-def exportar(guia, pdf=False, imprimir=False, indice=False, forzar=False):
+RE_SALTO = re.compile(rb'<w:p>\s*<w:r>\s*<w:br w:type="page"\s*/>\s*</w:r>\s*</w:p>'
+                      rb'((?:\s*<w:bookmark(?:Start|End)[^>]*/>)*\s*<w:p>\s*<w:pPr>\s*<w:pStyle w:val="Heading2"\s*/>)')
+
+
+RE_TABLA = re.compile(rb"<w:tbl>.*?</w:tbl>", re.S)
+RE_PPR_TABLA = re.compile(rb"<w:pPr>(?:(?!</w:pPr>).)*</w:pPr>", re.S)
+
+
+def tabla_a_la_izquierda(m):
+    """En la plantilla el texto es justificado; en las tablas queda feo: se alinea a la izquierda
+    cada párrafo de tabla que no traiga su propia alineación."""
+    def ppr(mp):
+        bloque = mp.group(0)
+        if b"<w:jc " in bloque:
+            return bloque
+        return bloque.replace(b"</w:pPr>", b'<w:jc w:val="left"/></w:pPr>')
+    tabla = RE_PPR_TABLA.sub(ppr, m.group(0))
+    return re.sub(rb"<w:p>(?!\s*<w:pPr>)", b'<w:p><w:pPr><w:jc w:val="left"/></w:pPr>', tabla)
+
+
+def ajustar_docx(docx, titulo):
+    """Retoques que pandoc no hace: título en el encabezado, saltos de página como «salto antes del
+    título» (no dejan páginas en blanco si el salto cae al final de una página) y tablas alineadas
+    a la izquierda."""
+    tmp = docx.with_suffix(".ajuste.docx")
+    with zipfile.ZipFile(docx) as zin, zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+        for item in zin.infolist():
+            datos = zin.read(item.filename)
+            if item.filename.startswith("word/header"):
+                datos = datos.replace(b"TITULO_GUIA", escape(titulo).encode("utf-8"))
+            elif item.filename == "word/document.xml":
+                datos = RE_SALTO.sub(rb"\1<w:pageBreakBefore/>", datos)
+                datos = RE_TABLA.sub(tabla_a_la_izquierda, datos)
+            zout.writestr(item, datos)
+    tmp.replace(docx)
+
+
+def titulo_de(cuerpo, guia):
+    m = re.search(r"^# (.+)$", cuerpo, re.M)
+    return re.sub(r"[*_`]", "", m.group(1)).strip() if m else guia.stem
+
+
+def exportar(guia, pdf=False, imprimir=False, indice=False, forzar=False, sin_saltos=False):
     guia = Path(guia).resolve()
     docx = guia.with_suffix(".docx")
     pdf_path = guia.with_suffix(".pdf")
@@ -116,12 +168,16 @@ def exportar(guia, pdf=False, imprimir=False, indice=False, forzar=False):
         md.write_text(cuerpo, encoding="utf-8")
         cmd = ["pandoc", str(md), "-o", str(Path(tmp, "guia.docx")),
                "-f", "markdown+lists_without_preceding_blankline+pipe_tables-yaml_metadata_block-implicit_figures",
-               "--resource-path", str(guia.parent), "--reference-doc", str(PLANTILLA)]
+               "--resource-path", str(guia.parent), "--reference-doc", str(PLANTILLA),
+               "--lua-filter", str(FILTRO)]
+        if sin_saltos:
+            cmd += ["-M", "sin_saltos=true"]
         if indice:
             cmd += ["--toc", "--toc-depth=2", "-M", "toc-title=Índice"]
         r = subprocess.run(cmd, capture_output=True, text=True)
         if r.returncode != 0:
             raise RuntimeError(f"pandoc falló:\n{r.stderr[-1500:]}")
+        ajustar_docx(Path(tmp, "guia.docx"), titulo_de(cuerpo, guia))
         shutil.copy(Path(tmp, "guia.docx"), docx)
         hechos = [docx]
         if pdf or imprimir:
@@ -147,12 +203,13 @@ def main():
     ap.add_argument("--pdf", action="store_true")
     ap.add_argument("--imprimir", action="store_true")
     ap.add_argument("--indice", action="store_true")
+    ap.add_argument("--sin-saltos", action="store_true")
     ap.add_argument("--forzar", action="store_true")
     a = ap.parse_args()
     if not a.guia.endswith("_Guia.md"):
         sys.exit("La entrada tiene que ser una guía *_Guia.md de 3_Guias_de_Estudio/.")
     try:
-        hechos = exportar(a.guia, a.pdf, a.imprimir, a.indice, a.forzar)
+        hechos = exportar(a.guia, a.pdf, a.imprimir, a.indice, a.forzar, a.sin_saltos)
     except RuntimeError as e:
         sys.exit(f"Error: {e}")
     for h in hechos:

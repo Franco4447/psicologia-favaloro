@@ -27,6 +27,7 @@ Orquesta las demás skills. Cada paso se hace **siguiendo la skill correspondien
 | c. Word | `/exportar` | la guía `.md` no tiene `.docx` (con `--pdf` / `--imprimir` si lo pidió) |
 | d. Flashcards | `/flashcards` | no hay `*_Flashcards.csv` de la unidad |
 | e. Simulacro | `/simulacro` | no hay `*_Simulacro.md` de la unidad |
+| f. Ficha de repaso | `/guia-estudio` (`materiales_de_parcial.md`) | la guía supera ~5.000 palabras y no hay `*_Repaso_Guia.md` |
 
 - **Nunca sobrescribas** algo editado a mano (`frontmatter.py estado` → `editado` o
   `sin-cabecera`) ni un `.docx` existente sin preguntar.
@@ -34,11 +35,32 @@ Orquesta las demás skills. Cada paso se hace **siguiendo la skill correspondien
   pida el usuario; para muchos textos, repartí la extracción y las notas de parte entre subagentes.
 - Si un paso falla (falta Tesseract, pandoc…), seguí con los demás y avisá al final.
 
+## Modo parcial (varias clases)
+
+Cuando el pedido es "armame todo para el parcial" o abarca varias clases:
+
+1. Averiguá **fecha y formato del examen** (tipo de preguntas, extensión mínima, qué clases
+   entran y cuáles no). Está en los apuntes del usuario, el Planificador o la memoria; si no,
+   preguntá. Guardalo en la memoria del proyecto.
+2. Corré el pipeline de la sección 2 **por clase**. Si la cátedra dio baterías de preguntas, cada
+   guía se ordena por pregunta (`/guia-estudio`, plantilla).
+3. Agregá los **materiales integradores** (`guia-estudio/references/materiales_de_parcial.md`):
+   cuadro integrador `Transversal_[Eje]_Guia.md` si las clases tratan categorías paralelas, y
+   fichas de repaso de las guías largas.
+4. Un **simulacro integrador** del parcial entero (`/simulacro`, alcance `C13_23` o `Global_2doC`),
+   con las preguntas intercaladas y el formato real del examen.
+5. **Plan de repaso** hasta la fecha (en el chat), según `materiales_de_parcial.md`.
+
+**Si queda poco tiempo**, priorizá lo que más rinde para la nota: (1) cuadro integrador y "no
+confundir", (2) esqueletos y fichas de repaso, (3) simulacros con corrección, (4) flashcards. El
+diseño del Word y las guías del formato anterior pueden esperar a después del parcial.
+
 ## 3. Cierre
 
 1. `python Scripts/estudio/estado.py "<Materia>"` de nuevo: la fila de la unidad debería quedar
    completa.
 2. Resumí lo generado (rutas, extensión de la guía, cobertura, cantidad de tarjetas y preguntas).
 3. Proponé cómo usarlo en el tiempo que queda hasta el parcial, en línea con el **Planificador**
-   (`Planificador_Parciales/`): repasos intermedios con el mazo de flashcards; repaso final con el
-   simulacro en modo interactivo ("tomame el simulacro de …") y después el mazo de temas flojos.
+   (`Planificador_Parciales/`) y el plan de repaso de `materiales_de_parcial.md`: flashcards todos
+   los días; reconstruir esqueletos sin mirar; simulacros intercalados con corrección de las
+   respuestas escritas ("corregime esto"); después, el mazo de temas flojos.
