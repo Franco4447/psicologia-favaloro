@@ -47,7 +47,11 @@ Máximo **2 páginas** en Word (~900–1.200 palabras). Exportala con `--sin-sal
 
 ## Citas que conviene saber
 
-- «…» (T[NN], p. N) — para qué sirve en una respuesta.
+- «…» (Autor, año, p. N) — para qué sirve en una respuesta.
+
+## Referencias
+
+[Las de la guía, en APA 7.]
 
 ## Autoevaluación rápida
 
@@ -63,7 +67,8 @@ suelen pedir **comparar**. El cuadro integrador las reúne:
 1. **Columnas** = las categorías (p. ej., histeria · obsesión · fobia · perversión · psicosis ·
    bordes). **Filas** = los ejes de comparación que usa la cátedra (p. ej., mecanismo —represión,
    desmentida, forclusión—, relación con la castración y con el Otro, angustia, síntoma, fantasma,
-   transferencia, dirección de la cura). Cada celda: 1–2 líneas con su cita (`C15 §2; T10 p. 3`).
+   transferencia, dirección de la cura). Cada celda: 1–2 líneas con su cita APA (`Freud, 1926/1992, p. 3`) y la sección de la guía donde
+   se desarrolla (`→ C15 §2`). Al final, `## Referencias` en APA 7.
 2. Debajo del cuadro, **una sección por fila**: el eje explicado de punta a punta, comparando
    (así sirve de respuesta modelo para "compare X e Y en cuanto a…").
 3. **Lista "No confundir" transversal**: los pares que cruzan clases (represión / desmentida /

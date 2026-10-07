@@ -54,7 +54,8 @@ entrenan recordar, pero no armar una respuesta de 10 renglones. Ahí el simulacr
    - **Tiempo:** indicá el tiempo sugerido según el examen real (p. ej., 15–20 min por pregunta de
      desarrollo) y pedí resolverlo con reloj y sin material.
 3. Reglas de calidad:
-   - **Todo sale de las guías/fuentes**: nada de datos de memoria. Cada respuesta de la clave
+   - **Todo sale de las guías/fuentes**: nada de datos de memoria. Las menciones de autores y
+     textos en consignas y respuestas modelo van en APA 7 (`guia-estudio/references/citas_apa.md`). Cada respuesta de la clave
      cita su fuente: `*(Fuente: C08_PulsionDeMuerteYCompulsionDeRepeticion_Guia.md, §2)*`.
    - Opción múltiple: una sola correcta; distractores **plausibles** sacados de los errores típicos
      y confusiones que marca la guía (no opciones absurdas); variá la posición de la correcta.

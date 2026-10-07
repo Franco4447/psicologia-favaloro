@@ -10,7 +10,6 @@
 local ETIQUETAS = {
   { "^Idea%-fuerza", "Recuadro Idea" },
   { "^Fuente", "Recuadro Fuente" },
-  { "^Cómo se cita", "Recuadro Fuente" },
   { "^Aviso", "Recuadro Atencion" },
   { "^🔑", "Recuadro Clave" },
   { "^Punto clave", "Recuadro Clave" },
