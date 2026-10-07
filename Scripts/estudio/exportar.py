@@ -167,7 +167,7 @@ def exportar(guia, pdf=False, imprimir=False, indice=False, forzar=False, sin_sa
         md = Path(tmp, "guia.md")
         md.write_text(cuerpo, encoding="utf-8")
         cmd = ["pandoc", str(md), "-o", str(Path(tmp, "guia.docx")),
-               "-f", "markdown+lists_without_preceding_blankline+pipe_tables-yaml_metadata_block-implicit_figures",
+               "-f", "markdown+lists_without_preceding_blankline+pipe_tables-yaml_metadata_block-implicit_figures-tex_math_dollars",
                "--resource-path", str(guia.parent), "--reference-doc", str(PLANTILLA),
                "--lua-filter", str(FILTRO)]
         if sin_saltos:
