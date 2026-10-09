@@ -47,3 +47,6 @@ __pycache__/
 
 # Datos de encuestas con respuestas sensibles (salud/medicación)
 **/6_Entregables/*Encuesta*.csv
+
+# Repo propio clonado (Psicología Experimental, parcial 2): tiene su .git y su remoto en GitHub
+**/6_Entregables/web-experimento/
