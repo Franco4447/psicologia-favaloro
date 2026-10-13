@@ -14,7 +14,7 @@ fuentes:
 - archivo: 6_Entregables/web-experimento/src/data/residence.ts
 skill: ninguna (redacción manual asistida)
 generado: '2026-10-12'
-hash_generado: 1cc3323c5dbb
+hash_generado: 5e035a286e4b
 ---
 
 # Efecto de la inducción racional y emocional sobre la formación de falsos recuerdos a partir de noticias falsas congruentes con la afinidad terapéutica
@@ -150,7 +150,7 @@ Experimento en línea con diseño entre sujetos de un factor, **tipo de inducci�
 
 **Participantes excluidos del análisis.** Quienes no cumplían algún criterio completaban igualmente la tarea con la consigna del grupo Control y uno de los dos conjuntos de noticias falsas, elegido al azar, pero la plataforma los registraba como excluidos: no se los asignaba a ningún grupo ni integran la muestra analizada. Se analiza a quienes completaron la tarea completa, incluido el control de la manipulación.
 
-**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp e Instagram y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología mayores de 18 años. La participación no fue remunerada. [Completar las fechas de recolección.]
+**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp e Instagram y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología mayores de 18 años. La participación no fue remunerada. Los datos se recolectaron desde el 1 de octubre de 2026 [hasta la fecha de cierre].
 
 **Muestra.** Participaron [N total] personas, de las cuales [n incluidas] cumplieron los criterios y completaron la tarea (Razón: [n]; Emoción: [n]; Control: [n]). Edad: *M* = [ ], *DE* = [ ], rango [ ]. Género: [n] femenino, [n] masculino, [n] otro. Afinidad: [n] psicoanálisis, [n] cognitivo-conductual. Instituciones: [UBA, UNLZ, UFLO, otras].
 
