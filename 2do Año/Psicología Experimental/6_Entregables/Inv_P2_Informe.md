@@ -14,7 +14,7 @@ fuentes:
 - archivo: 6_Entregables/web-experimento/src/data/residence.ts
 skill: ninguna (redacción manual asistida)
 generado: '2026-10-13'
-hash_generado: 95c760c34848
+hash_generado: 7cfe5d76eb7b
 ---
 
 # Efecto de la inducción racional y emocional sobre la formación de falsos recuerdos a partir de noticias falsas congruentes con la afinidad terapéutica
@@ -151,7 +151,7 @@ Experimento en línea con diseño entre sujetos de un factor, **tipo de inducci�
 
 **Participantes excluidos del análisis.** Quienes no cumplían algún criterio completaban igualmente la tarea con la consigna del grupo Control y uno de los dos conjuntos de noticias falsas, elegido al azar, pero la plataforma los registraba como excluidos: no se los asignaba a ningún grupo ni integran la muestra analizada. Se analiza a quienes completaron la tarea completa, incluido el control de la manipulación.
 
-**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp e Instagram y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología mayores de 18 años. La participación no fue remunerada. Los datos se recolectaron desde el 1 de octubre de 2026 [hasta la fecha de cierre].
+**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp e Instagram y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología de 18 a 65 años que vivan en la Ciudad Autónoma de Buenos Aires o en la provincia de Buenos Aires. La participación no fue remunerada. Los datos se recolectaron desde el 1 de octubre de 2026 [hasta la fecha de cierre].
 
 **Muestra.** Participaron [N total] personas, de las cuales [n incluidas] cumplieron los criterios y completaron la tarea (Razón: [n]; Emoción: [n]; Control: [n]). Edad: *M* = [ ], *DE* = [ ], rango [ ]. Género: [n] femenino, [n] masculino, [n] otro. Afinidad: [n] psicoanálisis, [n] cognitivo-conductual. Instituciones: [UBA, UNLZ, UFLO, otras].
 

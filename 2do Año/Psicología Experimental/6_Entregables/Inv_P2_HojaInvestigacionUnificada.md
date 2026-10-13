@@ -8,7 +8,7 @@ fuentes:
 - archivo: 6_Entregables/web-experimento/src/data/stimuli.ts
 skill: ninguna (redacción manual asistida)
 generado: '2026-10-13'
-hash_generado: be8455efa4cf
+hash_generado: afa8c0790356
 ---
 
 # Hoja unificada: Investigación (Psicología Experimental, Parcial 2)
@@ -144,15 +144,13 @@ Banco de 28 titulares adaptados al español a partir de los de León et al. (202
 
 **Formulario + Convocatoria**
 
-> ¡Hola! Somos estudiantes de la Licenciatura en Psicología de la Universidad Favaloro y, en el marco de la materia Psicología Experimental, estamos haciendo una investigación sobre cómo las personas procesan, interpretan y recuerdan la información que reciben a través de noticias.
+> ¡Hola! Somos estudiantes de la Licenciatura en Psicología de la Universidad Favaloro, estamos llevando a cabo una investigación sobre cómo las personas procesan, interpretan y recuerdan la información que reciben a través de noticias.
 >
-> 🔎 **¿Quiénes pueden participar?**
->
+> 🔎 \*¿Quiénes pueden participar?\*
 > Estudiantes y graduados/as de la carrera de Psicología, de 18 a 65 años, que vivan en la Ciudad Autónoma de Buenos Aires o en la provincia de Buenos Aires.
 >
-> 📝 **¿En qué consiste?**
->
-> Un breve cuestionario y una actividad de lectura de noticias (10 a 15 minutos). Te pedimos hacerlo preferentemente desde una computadora, en un momento tranquilo y sin interrupciones, y completarlo de principio a fin. La participación es voluntaria, anónima y con fines académicos.
+> 📝 \*¿En qué consiste?\*
+> Un breve cuestionario y una actividad de lectura de noticias (10 a 15 minutos). La participación es anónima y con fines académicos.
 >
 > 🔗 https://psicologia-experimental-web.vercel.app/
 >
