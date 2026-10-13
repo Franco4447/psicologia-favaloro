@@ -8,9 +8,11 @@ fuentes:
 - archivo: 6_Entregables/web-experimento/src/data/stimuli.ts
 - archivo: 6_Entregables/web-experimento/supabase/schema.sql
 - archivo: 2_Textos_Extraidos/Inv_P2_*_Crudo.md
+- archivo: 'Drive: Psicología Experimental - Favaloro (Estructura Artículo, Borrador
+    Artículo, Pregunta, objetivos e hipótesis)'
 skill: ninguna (redacción manual asistida)
 generado: '2026-10-12'
-hash_generado: 971bcac91cc4
+hash_generado: b20c6dd2a3c1
 ---
 
 # Efecto de la inducción de razón y de emoción sobre la formación de falsos recuerdos y falsas creencias a partir de noticias falsas ideológicamente congruentes
@@ -19,13 +21,13 @@ hash_generado: 971bcac91cc4
 **Cátedra:** Psicología Experimental · Universidad Favaloro · Parcial 2 (Investigación)
 **Fecha:** [completar]
 
-> **Estado del borrador.** Están redactadas la Introducción, las hipótesis, el Método y el plan de análisis. El *Resumen*, los *Resultados* y la *Discusión* se completan cuando se cierre la recolección y se analicen los datos (ver los apartados marcados con **[PENDIENTE]**). Lo que está entre corchetes `[ ]` es un dato que solo el grupo conoce.
+> **Estado del borrador.** Sigue la estructura que pidió el equipo (Resumen, Introducción, Antecedentes, Objetivos e hipótesis, Método, Resultados, Discusión, Conclusión). Están redactados Introducción, Antecedentes, Objetivos e hipótesis, Método y plan de análisis. *Resumen*, *Resultados*, *Discusión* y *Conclusión* se completan al cerrar la recolección (apartados **[PENDIENTE]**). Lo que está entre corchetes `[ ]` es una decisión o un dato que solo el equipo conoce.
 
 ---
 
 ## Resumen
 
-**[PENDIENTE: se redacta al final, con N, resultados principales y conclusión. Máximo 250 palabras.]**
+**[PENDIENTE: se escribe al final, con N, resultados principales y conclusión. Máximo 250 palabras.]**
 
 **Palabras clave:** noticias falsas, falsos recuerdos, falsas creencias, inducción emocional, procesamiento dual, efecto de congruencia
 
@@ -33,7 +35,15 @@ hash_generado: 971bcac91cc4
 
 ## Introducción
 
-La desinformación —cualquier información que resulta ser falsa— plantea un desafío a la cognición humana porque los seres humanos se equivocan con frecuencia y, a veces, mienten (Ecker et al., 2022). Las noticias falsas, es decir, contenido publicado en internet que imita el aspecto de las noticias legítimas pero es fabricado o extremadamente inexacto (Pennycook y Rand, 2021), no solo pueden ser creídas: también pueden distorsionar la memoria y la conducta de quienes las leen (Leon et al., 2023). Esta introducción recorre tres líneas de evidencia —la memoria y sus errores de fuente, el efecto de la congruencia ideológica y el papel del procesamiento racional y emocional— para justificar la pregunta que organiza este estudio.
+La circulación de información a través de medios digitales y redes sociales expone a las personas a contenidos cuya veracidad no siempre pueden comprobar. Las noticias falsas, es decir, contenido publicado en internet que imita el aspecto de las noticias legítimas pero es fabricado o extremadamente inexacto (Pennycook y Rand, 2021), pueden ser creídas y también distorsionar la memoria y la conducta de quienes las leen (Leon et al., 2023). El estudio de cómo se acepta, se comparte y se corrige la desinformación es hoy un campo amplio de la psicología (Greifeneder et al., 2021).
+
+Dentro de ese campo interesa un fenómeno en particular, la formación de **falsos recuerdos**: recordar claramente haber visto o leído algo que no ocurrió. Su estudio importa porque, a diferencia de una creencia equivocada, un falso recuerdo se vive como una experiencia propia y puede orientar decisiones. Importa especialmente en una profesión como la psicología, cuya práctica tiene implicancias enormes para la salud y la economía (Leon et al., 2023).
+
+Este trabajo pregunta si el modo de procesamiento que se induce antes de leer —basarse en la razón o en la emoción— modifica la formación de falsos recuerdos ante noticias falsas congruentes con lo que la persona ya piensa. Los antecedentes que justifican la pregunta se desarrollan a continuación.
+
+---
+
+## Antecedentes
 
 ### Falsos recuerdos, falsas creencias y monitoreo de la fuente
 
@@ -45,31 +55,56 @@ Esta distinción permite separar dos fenómenos que la literatura sobre noticias
 
 El sesgo de confirmación designa la tendencia a buscar o interpretar la evidencia de maneras parciales hacia las creencias, expectativas o hipótesis preexistentes, en general sin que la persona lo advierta (Nickerson, 1998). Aplicado a la memoria, predice que los eventos falsos congruentes con lo que la persona ya piensa se aceptarán con más facilidad. Frenda et al. (2013) hallaron que las personas generaban falsos recuerdos de eventos políticos fabricados sobre todo cuando eran consistentes con su ideología, fenómeno conocido como *efecto de congruencia* (Leon et al., 2023).
 
-Murphy et al. (2021) lo replicaron con un tema distinto: cuanto más negativas eran las actitudes de los participantes hacia el feminismo, más probable era que informaran un falso recuerdo de un evento fabricado que dejaba mal parado al movimiento, y viceversa. El resultado se mantuvo en un segundo experimento con historias menos ambiguas, incluso después de una advertencia (Murphy et al., 2021). Grady et al. (2021) mostraron además que una advertencia previa elimina inicialmente el efecto de congruencia partidaria, pero que este reaparece dos semanas después, aunque los participantes ya sabían que los titulares eran falsos.
+Murphy et al. (2021) lo replicaron con otro tema: cuanto más negativas eran las actitudes de los participantes hacia el feminismo, más probable era que informaran un falso recuerdo de un evento fabricado que dejaba mal parado al movimiento, y viceversa. El resultado se mantuvo en un segundo experimento con historias menos ambiguas, en el que además se compararon las mismas historias con otro grupo protagonista (personas refugiadas) y el estudio se presentó como una investigación sobre noticias de la pandemia de COVID-19 (Murphy et al., 2021). Grady et al. (2021) mostraron que una advertencia previa elimina inicialmente el efecto de congruencia partidaria, pero que este reaparece dos semanas después, aunque los participantes ya sabían que los titulares eran falsos.
 
-Leon et al. (2023) llevaron el paradigma a un debate más acotado: el de las corrientes de la psicología en Argentina. Con 326 personas alineadas con el psicoanálisis (PSA) o con las prácticas basadas en la evidencia (PBE) que vieron 12 noticias verdaderas y 8 fabricadas, hallaron que el grupo PBE recordaba o creía más las noticias falsas que dañaban al psicoanálisis, y que recordaba con mayor precisión las afirmaciones de las noticias que perjudicaban a su propia corriente que las que se referían a otras. El grupo PSA, en cambio, no mostró efecto de alineación ideológica, lo que los autores interpretan como un desbalance en el compromiso entre las partes (Leon et al., 2023).
+Leon et al. (2023) llevaron el paradigma a un debate más acotado: el de las corrientes de la psicología en Argentina. Con 326 personas alineadas con el psicoanálisis (PSA) o con las prácticas basadas en la evidencia (PBE) que vieron 12 noticias verdaderas y 8 fabricadas, hallaron que el grupo PBE recordaba o creía más las noticias falsas que dañaban al psicoanálisis y recordaba con mayor precisión las afirmaciones de las noticias que perjudicaban a su propia corriente. El grupo PSA, en cambio, no mostró efecto de alineación ideológica, lo que los autores interpretan como un desbalance en el compromiso entre las partes. En conjunto, **no observaron que el efecto de congruencia modificara la tasa de falsos recuerdos**, aunque sí que esta población decide guiada por la congruencia ideológica (Leon et al., 2023).
+
+### Por qué estudiantes y profesionales de psicología
+
+Leon et al. (2023) eligieron esta población por tres razones, que este estudio adopta. Primero, el efecto de congruencia se había observado sobre todo en grandes debates sociales (elecciones, referendos), y era una pregunta abierta si aparecía en un nicho profesional específico. Segundo, en Argentina la enseñanza de la psicología es un terreno polarizado: el currículo de la mayoría de las universidades públicas se orienta en un 49,8 % al psicoanálisis y solo en un 4,9 % a la terapia cognitivo-conductual (Fierro, 2015, como se citó en Leon et al., 2023), lo que genera un debate genuino entre quienes defienden el currículo y quienes piden incluir las prácticas basadas en la evidencia. Tercero, las distorsiones de memoria en quienes estudian o ejercen la psicología pueden incidir en las decisiones de la disciplina. Además, un debate con dos bandos identificables permite alinear las noticias falsas con la postura previa de cada participante.
 
 ### Procesamiento racional y emocional
 
 Hay un debate sobre *por qué* se cree en noticias falsas. Según la cuenta del razonamiento perezoso, las personas discriminan mal entre noticias verdaderas y falsas cuando no deliberan y se apoyan en la intuición. Según la del razonamiento motivado, la deliberación facilita la cognición protectora de la identidad y sirve para racionalizar lo congruente con la propia ideología (Bago et al., 2020). Bago et al. (2020), con un paradigma de dos respuestas, hallaron que la deliberación corregía los errores intuitivos: los participantes creían más los titulares falsos (no los verdaderos) en la primera respuesta, rápida, que en la respuesta final. Pennycook y Rand (2021) sostienen que la evidencia reciente contradice la narrativa de que la partisanía y el razonamiento motivado expliquen por qué se cae en noticias falsas. Pérez Santángelo y Solovey (2023), en cambio, encuentran que tanto la partisanía como la reflexión cognitiva juegan un papel importante en la aceptación de la desinformación. Ecker et al. (2022) concluyen que los factores que llevan a formar creencias falsas son múltiples: cognitivos (como el pensamiento intuitivo y las fallas de memoria), sociales (como confiar en las pistas de la fuente) y afectivos (como la influencia del ánimo en la credulidad). Visto así, las dos cuentas no serían excluyentes.
 
-El factor afectivo cobra importancia con Martel et al. (2020). En su Estudio 1 (*N* = 409), una mayor emocionalidad al comienzo predecía más creencia en noticias falsas (pero no en reales). En el Estudio 2, que midió y manipuló la dependencia de la emoción frente a la razón en cuatro experimentos (*N* total = 3884), hallaron evidencia correlacional y causal de que apoyarse en la emoción aumenta la creencia en noticias falsas (Martel et al., 2020). La manipulación consistió en pedir a los participantes que evaluaran los titulares basándose en la emoción o en la razón; los autores incluyeron además un control de la manipulación y una medida del uso autoinformado de emoción y de razón. Trevors et al. (2021), por su parte, inducieron experimentalmente emociones positivas, negativas o ninguna antes de leer textos y hallaron que las emociones negativas, más que las positivas, favorecían la revisión de conocimientos erróneos sobre vacunas.
+El factor afectivo cobra importancia con Martel et al. (2020). En su Estudio 1 (*N* = 409), una mayor emocionalidad al comienzo predecía más creencia en noticias falsas (pero no en reales). En el Estudio 2, que midió y manipuló la dependencia de la emoción frente a la razón en cuatro experimentos (*N* total = 3884), hallaron evidencia correlacional y causal de que apoyarse en la emoción aumenta la creencia en noticias falsas. La manipulación consistió en pedir a los participantes que evaluaran los titulares basándose en la emoción o en la razón, y los autores incluyeron un control de la manipulación y una medida del uso autoinformado de emoción y de razón. La inducción racional, en cambio, no mejoró la discriminación respecto del control; los autores lo atribuyen a que el grupo control ya se apoyaba más en la razón que en la emoción, algo que respaldan sus datos de control de la manipulación (Martel et al., 2020). Trevors et al. (2021) indujeron emociones positivas, negativas o ninguna antes de leer textos y hallaron que las emociones negativas, más que las positivas, favorecían la revisión de conocimientos erróneos sobre vacunas.
 
 ### El vacío que aborda este estudio
 
-Hasta donde alcanza la bibliografía revisada, los estudios que manipulan experimentalmente la dependencia de la emoción o la razón (Martel et al., 2020) midieron el impacto sobre la *creencia* en noticias falsas, pero no sobre los *recuerdos*. Los estudios de falsos recuerdos por congruencia ideológica (Leon et al., 2023; Murphy et al., 2021) no manipularon el modo de procesamiento: midieron el efecto pasivo de la congruencia. Integrar ambos paradigmas permite preguntar si el modo de procesamiento inducido —racional o emocional— modula la probabilidad de formar falsos recuerdos y falsas creencias ante noticias congruentes con la propia orientación teórica, y si lo hace de la misma forma sobre los recuerdos verdaderos.
+Hasta donde alcanza la bibliografía revisada, los estudios que manipulan experimentalmente la dependencia de la emoción o la razón (Martel et al., 2020) midieron el impacto sobre la *creencia* en noticias falsas, pero no sobre los *recuerdos*. Los estudios de falsos recuerdos por congruencia ideológica (Leon et al., 2023; Murphy et al., 2021) no manipularon el modo de procesamiento: midieron el efecto pasivo de la congruencia. Integrar ambos paradigmas permite preguntar si el modo de procesamiento inducido —racional o emocional— modula la probabilidad de formar falsos recuerdos ante noticias congruentes con la propia orientación teórica. Las falsas creencias ya están estudiadas con este tipo de inducción; se miden aquí como complemento, y el aporte principal está en los falsos recuerdos.
 
-### Objetivo e hipótesis
+---
 
-El objetivo es evaluar el efecto de una inducción a evaluar noticias desde la razón, desde la emoción, o sin inducción (control), sobre la formación de falsos recuerdos y falsas creencias en estudiantes y graduados de psicología expuestos a noticias falsas congruentes con su orientación terapéutica.
+## Pregunta de investigación, objetivos e hipótesis
 
-> **Hipótesis propuestas a partir del diseño (confirmar con el grupo).** Las direcciones se derivan de la bibliografía citada.
+**Pregunta de investigación.** ¿Cuál es el efecto de la inducción al pensamiento racional y emocional sobre la creación de falsos recuerdos tras la exposición a *fake news* congruentes con la afinidad terapéutica, en personas adultas estudiantes o graduadas de Psicología [definir rango de edad y región]?
 
-- **H1.** El grupo Emoción formará más falsos recuerdos y falsas creencias que los grupos Razón y Control (Martel et al., 2020).
-- **H2 (exploratoria).** El grupo Razón diferirá del Control; la dirección esperada es de menos falsos recuerdos y falsas creencias (Bago et al., 2020), aunque la evidencia sobre esta comparación es menos clara que la del contraste con Emoción.
-- **H3.** Los recuerdos verdaderos no diferirán entre grupos: la inducción afectaría la aceptación de lo falso pero no la de lo verdadero (Bago et al., 2020).
-- **H4.** La latencia de respuesta será mayor en el grupo Razón que en el grupo Emoción, como indicador conductual de deliberación.
-- **H5 (verificación de la manipulación).** El uso autoinformado de emoción será mayor en el grupo Emoción, y el de razón, en el grupo Razón (Martel et al., 2020).
+**Objetivo general.** Evaluar si la inducción previa a modos de procesamiento cognitivo diferenciados (racional, emocional y control) modifica la frecuencia de formación de falsos recuerdos ante la lectura de *fake news* congruentes con la afinidad terapéutica previa [de personas adultas, estudiantes o graduadas de Psicología].
+
+**Objetivos específicos**
+
+1. Describir la frecuencia de formación de falsos recuerdos ante la lectura de *fake news* congruentes con la afinidad terapéutica previa de los participantes.
+2. Comparar la frecuencia de formación de falsos recuerdos entre los participantes sometidos a inducción emocional, inducción racional y los del grupo control.
+3. Explorar si el efecto del tipo de inducción sobre la formación de falsos recuerdos varía según la afinidad terapéutica previa (psicoanálisis o práctica basada en evidencia).
+
+Objetivos complementarios, que se derivan de las variables que la plataforma registra:
+
+4. Describir y comparar entre grupos la frecuencia de falsas creencias (medida complementaria).
+5. Analizar si el tiempo de respuesta, tomado como indicador del esfuerzo cognitivo, se relaciona con la frecuencia de falsos recuerdos y si difiere entre inducciones.
+
+> **Sobre la congruencia.** Todas las noticias falsas que ve cada participante son congruentes con su afinidad terapéutica; la congruencia es entonces una **constante del diseño** y no una variable. Por eso este estudio *no* tiene como objetivo estimar el efecto de la congruencia ni su interacción con la inducción. Lo que sí varía entre participantes es la afinidad terapéutica (psicoanálisis o práctica basada en evidencia), y el objetivo 3 la analiza.
+
+**Hipótesis**
+
+- **H1.** Los participantes sometidos a inducción **emocional** presentarán una mayor frecuencia de falsos recuerdos ante *fake news* que los sometidos a inducción **racional** y que los del **grupo control**.
+- **H2.** El efecto del tipo de inducción sobre la formación de falsos recuerdos **variará según la afinidad terapéutica previa** de los participantes.
+
+**Hipótesis y análisis complementarios** (propuestos a partir de la bibliografía; confirmar con el equipo):
+
+- **C1.** El patrón de H1 se repetirá en las falsas creencias (Martel et al., 2020).
+- **C2.** Los recuerdos verdaderos no diferirán entre grupos: la inducción afectaría la aceptación de lo falso pero no la de lo verdadero (Bago et al., 2020).
+- **C3.** Los participantes del grupo Emoción responderán más rápido que los del grupo Razón, y un menor tiempo de respuesta se asociará con más falsos recuerdos. La lógica es la del monitoreo de fuentes: una codificación apresurada o heurística impide registrar los detalles contextuales de la fuente y favorece atribuir como real lo imaginado (Johnson et al., 1993).
+- **C4 (verificación de la manipulación).** El uso autoinformado de emoción será mayor en el grupo Emoción, y el de razón, en el grupo Razón (Martel et al., 2020).
 
 ---
 
@@ -77,28 +112,34 @@ El objetivo es evaluar el efecto de una inducción a evaluar noticias desde la r
 
 ### Diseño
 
-Experimento en línea con diseño entre sujetos de un factor, **inducción** (Razón, Emoción, Control), con asignación aleatoria balanceada de los participantes. Las variables dependientes son el número de falsos recuerdos, de falsas creencias y de recuerdos verdaderos, y la latencia de respuesta. La orientación terapéutica del participante (psicoanálisis o práctica basada en la evidencia) determina qué noticias falsas recibe y funciona como variable de agrupación en el análisis.
+Experimento en línea con diseño entre sujetos de un factor, **inducción** (Razón, Emoción, Control), con asignación aleatoria balanceada. La variable dependiente principal es el número de falsos recuerdos; las complementarias son el número de falsas creencias, el de recuerdos verdaderos y el tiempo de respuesta. La afinidad terapéutica (psicoanálisis o práctica basada en evidencia) determina qué noticias falsas recibe cada participante y se usa como variable de agrupación en el análisis.
+
+**Congruencia constante.** Cada participante recibe solo noticias falsas congruentes con su afinidad. El equipo tomó esa decisión por tres razones: (a) la inducción emocional podría no ser suficiente para crear un falso recuerdo si la noticia no es congruente; (b) se preserva la validez ecológica, porque las noticias falsas reales no operan sobre temas neutros para quien las lee; y (c) con la congruencia constante, las diferencias entre inducciones pueden atribuirse al modo de procesamiento y no a la afinidad con la noticia. El costo es que el diseño no permite comparar, dentro de una misma persona, noticias congruentes con incongruentes.
 
 ### Participantes
 
-**Criterios de inclusión.** Edad de 18 años o más; estudiar o haber estudiado la carrera de Psicología; declarar afinidad con el psicoanálisis o con la orientación basada en evidencia científica; no presentar una condición de memoria que interfiera con la tarea ni una dificultad visual no corregida.
+**Criterios de inclusión.** Ser estudiante o graduado/a de la carrera de Psicología; tener [18 años o más / entre 18 y 65 años: definir]; manifestar afinidad con el psicoanálisis o con las terapias basadas en evidencia científica, lo que permite seleccionar las noticias falsas de acuerdo con esa afinidad.
 
-**Participantes excluidos del análisis.** Quienes no cumplían alguno de esos criterios (incluida la opción «Otros / Ninguna en particular» de orientación) completaban igualmente la tarea con un conjunto de noticias falsas elegido al azar entre los dos disponibles, pero la plataforma los registraba como excluidos y no integran la muestra analizada.
+**Criterios de exclusión.** Presentar una condición o diagnóstico que afecte significativamente los procesos de memoria y pueda interferir con la tarea, o una dificultad visual no corregida que impida realizar la lectura dentro del tiempo de exposición.
 
-**Muestra.** Participaron [N total] personas, de las cuales [n incluidas] cumplieron los criterios (Razón: [n]; Emoción: [n]; Control: [n]). Edad: *M* = [ ], *DE* = [ ], rango [ ]. Género: [n] femenino, [n] masculino, [n] otro. Orientación: [n] psicoanálisis, [n] práctica basada en evidencia. Instituciones: [UBA, UNLZ, UFLO, otras].
+> **A resolver.** El formulario exige tener 18 años o más (acepta hasta 120) y no pregunta provincia ni lugar de residencia. Si los criterios finales incluyen un tope de edad o una región, hay que aplicarlos al analizar, y la región no se puede verificar con los datos recolectados.
 
-**Reclutamiento.** [Completar: cómo se difundió el enlace, entre qué fechas y si hubo incentivo.]
+**Participantes excluidos del análisis.** Quienes no cumplían los criterios (incluida la opción «Otros / Ninguna en particular» de afinidad) completaban igualmente la tarea con la consigna del grupo Control y un conjunto de noticias falsas elegido al azar entre los dos disponibles, pero la plataforma los registraba como excluidos y no integran ningún grupo ni la muestra analizada.
+
+**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología mayores de 18 años. [Completar fechas de difusión y si hubo incentivo.]
+
+**Muestra.** Participaron [N total] personas, de las cuales [n incluidas] cumplieron los criterios (Razón: [n]; Emoción: [n]; Control: [n]). Edad: *M* = [ ], *DE* = [ ], rango [ ]. Género: [n] femenino, [n] masculino, [n] otro. Afinidad: [n] psicoanálisis, [n] práctica basada en evidencia. Instituciones: [UBA, UNLZ, UFLO, otras].
 
 ### Materiales
 
 **Plataforma.** El experimento se presentó en una aplicación web propia (Next.js, con base de datos en Supabase y despliegue en Vercel; código en https://github.com/Franco4447/psicologia-experimental-web). Las respuestas se guardan de forma asíncrona, con un búfer en el navegador para tolerar cortes de conexión.
 
-**Estímulos.** Banco de 28 titulares presentados como imágenes y traducidos al español a partir de los de Leon et al. (2023): 12 noticias verdaderas y 16 falsas. Las falsas se organizan en dos conjuntos de 8:
+**Estímulos.** Banco de 28 titulares traducidos al español a partir de los de Leon et al. (2023), cada uno presentado como una imagen con el titular, en un formato parecido al de un *feed* de noticias, como en el estudio original: 12 noticias verdaderas y 16 falsas. [Aclarar el origen de las imágenes, por ejemplo si fueron generadas con IA.] Las falsas se organizan en dos conjuntos de 8:
 
 - *Congruentes con el psicoanálisis*: atacan a la terapia cognitivo-conductual (IDs 14, 16, 18, 20, 21, 23, 25 y 27).
 - *Congruentes con la práctica basada en evidencia*: atacan al psicoanálisis (IDs 13, 15, 17, 19, 22, 24, 26 y 28).
 
-Cada noticia falsa de un conjunto tiene un «espejo» en el otro, con la misma estructura y la corriente invertida. Por ejemplo: «El terapeuta freudiano que hipnotizaba a sus pacientes con descargas eléctricas irá a juicio» y «El terapeuta cognitivo que entrenaba a sus pacientes con descargas eléctricas irá a juicio». Cada participante recibe las 12 verdaderas y las 8 falsas congruentes con su orientación (20 noticias en total); nunca recibe ambos miembros de un par espejo.
+Cada noticia falsa de un conjunto tiene un «espejo» en el otro, con la misma estructura y la corriente invertida. Por ejemplo: «El terapeuta freudiano que hipnotizaba a sus pacientes con descargas eléctricas irá a juicio» y «El terapeuta cognitivo que entrenaba a sus pacientes con descargas eléctricas irá a juicio». Cada participante recibe las 12 verdaderas y las 8 falsas congruentes con su afinidad (20 noticias en total) y nunca ambos miembros de un par espejo.
 
 **Escala de memoria.** Para cada noticia, la pregunta «¿Recuerda haber visto o leído este evento con anterioridad?» con cuatro opciones, adaptadas de Murphy et al. (2021) y Leon et al. (2023): (1) *Recuerdo claramente haber visto/leído este evento*; (2) *No recuerdo haberlo visto, pero creo que sucedió*; (3) *Lo recuerdo diferente*; (4) *No lo recuerdo en absoluto*.
 
@@ -110,7 +151,7 @@ Cada noticia falsa de un conjunto tiene un «espejo» en el otro, con la misma e
 
 **Verificación de la manipulación.** Al terminar la tarea: (a) solo en los grupos Razón y Emoción, una pregunta de elección forzada (*Emoción* o *Razón*) sobre en qué se les pidió confiar; y (b) en todos los grupos, dos ítems de escala de 1 (*Nada*) a 5 sobre en qué medida usaron la emoción y la razón al evaluar las noticias. Sigue la lógica del control de la manipulación de Martel et al. (2020).
 
-**Cuestionario sociodemográfico.** Edad, género (femenino, masculino, otro), si estudia o estudió Psicología, orientación terapéutica con mayor afinidad (psicoanálisis, basada en evidencia científica, otros / ninguna en particular), universidad, condición de memoria y dificultad visual.
+**Cuestionario sociodemográfico.** Edad, género (femenino, masculino, otro), si estudia o estudió Psicología, afinidad terapéutica (psicoanálisis, basada en evidencia científica, otros / ninguna en particular), universidad, condición de memoria y dificultad visual.
 
 ### Procedimiento
 
@@ -118,7 +159,7 @@ Cada noticia falsa de un conjunto tiene un «espejo» en el otro, con la misma e
 2. **Cuestionario sociodemográfico.** Al completarlo se registra al participante.
 3. **Asignación al grupo.** Una función de la base de datos asigna el grupo con menos participantes incluidos y desempata al azar, bajo un candado transaccional para evitar condiciones de carrera. Así los tres grupos quedan balanceados.
 4. **Inducción.** El participante lee la consigna de su grupo.
-5. **Tarea de noticias.** 20 ensayos en orden aleatorio (Fisher-Yates), cada uno con dos fases: *lectura* obligatoria de 15 s con barra de progreso, y *evaluación* con la escala de memoria, sin límite de tiempo. La plataforma registra el tiempo de lectura y la latencia de respuesta en milisegundos.
+5. **Tarea de noticias.** 20 ensayos en orden aleatorio (Fisher-Yates), cada uno con dos fases: *lectura* obligatoria de 15 s con barra de progreso, sin posibilidad de avanzar antes, y *evaluación* con la escala de memoria, sin límite de tiempo. La plataforma registra el tiempo de lectura y el tiempo de respuesta en milisegundos. Como la lectura es de duración fija, el indicador de esfuerzo cognitivo es el tiempo de respuesta.
 6. **Verificación de la manipulación.**
 7. **Debriefing.** Se informa que 8 de los 20 titulares eran noticias falsas creadas para la investigación y se explica el propósito del estudio.
 8. **Agradecimiento.**
@@ -127,25 +168,27 @@ Cada noticia falsa de un conjunto tiene un «espejo» en el otro, con la misma e
 
 | Variable | Definición operacional | Rango |
 |---|---|---|
-| Falso recuerdo | Elegir la opción 1 ante una noticia **falsa** | 0-8 por participante |
-| Falsa creencia | Elegir la opción 2 ante una noticia **falsa** | 0-8 por participante |
+| Falso recuerdo (principal) | Elegir la opción 1 ante una noticia **falsa** | 0-8 por participante |
+| Falsa creencia (complementaria) | Elegir la opción 2 ante una noticia **falsa** | 0-8 por participante |
 | Recuerdo verdadero | Elegir la opción 1 ante una noticia **verdadera** | 0-12 por participante |
-| Latencia de respuesta | Tiempo hasta confirmar la respuesta en la pantalla de evaluación; se promedia por participante y se expresa en segundos | continua |
+| Tiempo de respuesta | Tiempo hasta confirmar la respuesta en la pantalla de evaluación; se promedia por participante y se expresa en segundos | continua |
 | Uso de emoción / de razón | Ítems de 1 a 5 de la verificación de la manipulación | 1-5 |
 
 ### Consideraciones éticas
 
-La participación fue voluntaria, previa lectura y aceptación del consentimiento informado y con confirmación de ser mayor de 18 años. Se informó la posibilidad de retirarse sin consecuencias y de solicitar la exclusión de las respuestas mientras fuera posible identificarlas. Los datos se tratan de forma confidencial y se analizan en conjunto. Como el diseño incluye noticias falsas y la consigna del grupo Control presenta los titulares como reales, se hace un debriefing inmediato que revela cuáles eran falsos y el objetivo del estudio. Leon et al. (2023) aplicaron una advertencia similar una semana después; aquí el diseño es de una sola sesión, así que la advertencia se entrega al final de la misma.
+El estudio implica un riesgo psicológico leve: la exposición a noticias falsas puede generar malestar o confusión sobre qué información es verdadera. Además, hay un **ocultamiento parcial de información**: no se informa de entrada que el objetivo es medir la formación de falsos recuerdos y falsas creencias, porque saberlo podría alertar a los participantes y sesgar las respuestas, y la consigna del grupo Control presenta los titulares como reales. Ese ocultamiento es aceptable porque se resuelve con un debriefing inmediato que identifica las noticias falsas y explica el propósito real del estudio, de modo que nadie se retire con información falsa tomada por verdadera. Leon et al. (2023) aplicaron una advertencia similar una semana después; aquí el diseño es de una sola sesión, así que se entrega al final de la misma.
+
+La participación fue voluntaria, previa lectura y aceptación del consentimiento informado y con confirmación de ser mayor de 18 años. Se informó la posibilidad de retirarse sin consecuencias y de solicitar la exclusión de las respuestas mientras fuera posible identificarlas. Los datos se tratan de forma confidencial y se analizan en conjunto.
 
 ### Plan de análisis
 
-Los datos se exportan de la base de datos en una tabla con una fila por participante, restringida a los participantes incluidos, con edad, género, universidad (con las variantes de escritura unificadas), grupo de inducción, orientación terapéutica, respuestas de la verificación de la manipulación, recuentos de falsos recuerdos, falsas creencias y recuerdos verdaderos, y latencia promedio en segundos.
+Los datos se exportan de la base de datos en una tabla con una fila por participante, restringida a los participantes incluidos, con edad, género, universidad (con las variantes de escritura unificadas), grupo de inducción, afinidad terapéutica, respuestas de la verificación de la manipulación, recuentos de falsos recuerdos, falsas creencias y recuerdos verdaderos, y tiempo de respuesta promedio en segundos.
 
-- **Descriptivos** por grupo de inducción y por orientación: medias, desviaciones estándar y proporciones.
-- **Verificación de la manipulación (H5):** comparación entre grupos del uso autoinformado de emoción y de razón, y porcentaje de aciertos en la pregunta de elección forzada. Los participantes que no recuerden su consigna se analizarán por separado como análisis de sensibilidad **[definir el criterio de depuración antes de ver los resultados]**.
-- **Efecto de la inducción (H1-H3):** como los recuentos son acotados (0-8 y 0-12), modelos de regresión binomial o de Poisson con el grupo como predictor, con contrastes planeados Emoción contra Razón y contra Control; alternativamente, prueba de Kruskal-Wallis si no se cumplen los supuestos. Se informan tamaños del efecto e intervalos de confianza.
-- **Latencia (H4):** comparación de la latencia promedio entre grupos (ANOVA de un factor o Kruskal-Wallis).
-- **Moderación por orientación:** se explora la interacción entre grupo de inducción y orientación terapéutica.
+- **Descriptivos** por grupo de inducción y por afinidad: medias, desviaciones estándar y proporciones. Primero, la descripción de la muestra, con el porcentaje de cada afinidad dentro de cada grupo.
+- **Verificación de la manipulación (C4):** comparación entre grupos del uso autoinformado de emoción y de razón, y porcentaje de aciertos en la pregunta de elección forzada. Quienes no recuerden su consigna se analizarán por separado como análisis de sensibilidad **[definir el criterio de depuración antes de ver los resultados]**.
+- **Efecto de la inducción (H1, C1, C2):** como los recuentos son acotados (0-8 y 0-12), modelos de regresión binomial o de Poisson con el grupo como predictor, con contrastes planeados Emoción contra Razón y contra Control; alternativamente, prueba de Kruskal-Wallis si no se cumplen los supuestos. Se informan tamaños del efecto e intervalos de confianza.
+- **Variación según afinidad (H2):** interacción entre grupo de inducción y afinidad terapéutica.
+- **Tiempo de respuesta (C3):** comparación entre grupos (ANOVA de un factor o Kruskal-Wallis) y relación con el recuento de falsos recuerdos.
 
 ---
 
@@ -155,12 +198,19 @@ Los datos se exportan de la base de datos en una tabla con una fila por particip
 
 Estructura prevista:
 
-1. Descripción de la muestra y flujo de participantes (reclutados, excluidos y analizados).
+1. **Descripción de la muestra** y flujo de participantes (reclutados, excluidos y analizados), con esta tabla:
+
+| Grupo | *n* | % psicoanálisis | % práctica basada en evidencia |
+|---|---|---|---|
+| Razón | [ ] | [ ] | [ ] |
+| Emoción | [ ] | [ ] | [ ] |
+| Control | [ ] | [ ] | [ ] |
+
 2. Verificación de la manipulación.
-3. Falsos recuerdos y falsas creencias por grupo de inducción (tabla de medias y *DE*, contrastes planeados, tamaños del efecto).
-4. Recuerdos verdaderos por grupo.
-5. Latencia de respuesta por grupo.
-6. Análisis exploratorios (orientación terapéutica, universidad).
+3. Falsos recuerdos por grupo de inducción (tabla de medias y *DE*, contrastes planeados, tamaños del efecto).
+4. Variación del efecto según la afinidad terapéutica.
+5. Falsas creencias y recuerdos verdaderos por grupo.
+6. Tiempo de respuesta por grupo y su relación con los falsos recuerdos.
 
 ---
 
@@ -172,14 +222,26 @@ Ejes a desarrollar:
 
 - **Lectura de los resultados** frente a cada hipótesis y frente a lo hallado por Martel et al. (2020), Bago et al. (2020) y Leon et al. (2023).
 - **Mecanismo.** Discutir con el marco de monitoreo de fuentes (Johnson et al., 1993) si una inducción emocional favorece que lo imaginado se registre como visto, y su relación con los factores cognitivos, sociales y afectivos descritos por Ecker et al. (2022).
-- **Diferencias entre orientaciones.** Retomar el desbalance que Leon et al. (2023) hallaron entre el grupo PSA y el grupo PBE.
-- **Limitaciones.**
-  - Todas las noticias falsas que recibe cada participante son congruentes con su orientación, por lo que el diseño no permite comparar, dentro de la misma persona, noticias congruentes con incongruentes, como sí hacen Leon et al. (2023).
-  - Diferencias de procedimiento con Leon et al. (2023): ellos dieron un máximo de 30 s para responder y evaluaron la memoria en dos días, con una semana de diferencia; aquí hay 15 s de lectura obligatoria seguidos de respuesta sin límite, en una sola sesión.
-  - La muestra es de estudiantes y graduados de psicología de [instituciones], reclutada por [medio], por lo que limita la generalización.
-  - La verificación de la manipulación se basa en autoinforme.
-  - La frase de contexto de Martel et al. (2020) («titulares de noticias reales de 2017-2018») solo se presenta al grupo Control.
-- **Líneas futuras.** Diseño factorial con advertencias y emoción, siguiendo a Grady et al. (2021): ¿sobrevive el efecto protector de una advertencia a una inducción emocional?
+- **Diferencias entre afinidades.** Retomar el desbalance que Leon et al. (2023) hallaron entre el grupo PSA y el grupo PBE.
+- **Generalización.** La muestra es de estudiantes y graduados de psicología; discutir qué implica para otras poblaciones, por ejemplo para las personas que consultan a un profesional y deben decidir qué información tomar de él.
+
+**Limitaciones**
+
+- Todas las noticias falsas son congruentes con la afinidad de cada participante; el diseño no permite estimar el efecto de la congruencia, como sí hacen Leon et al. (2023).
+- **Tiempo de lectura.** Leon et al. (2023) dieron un máximo de 30 s para responder y evaluaron la memoria en dos días, con una semana de diferencia; aquí hay 15 s de lectura obligatoria seguidos de respuesta sin límite, en una sola sesión.
+- El diseño implica un ocultamiento parcial de información (ver Consideraciones éticas).
+- La muestra, reclutada por [medio], limita la generalización.
+- La verificación de la manipulación se basa en autoinforme.
+- La frase de contexto de Martel et al. (2020) («titulares de noticias reales de 2017-2018») solo se presenta al grupo Control.
+- Origen de las imágenes de las noticias: [aclarar].
+
+**Líneas futuras.** Diseños factoriales con una variable más manipulada entre sujetos: (1) advertencias × inducción (razón o emoción), siguiendo a Grady et al. (2021), para ver si el efecto protector de una advertencia sobrevive a una inducción emocional; (2) procesamiento intuitivo frente a deliberado como factor entre sujetos, ya que se ha estudiado dentro del mismo sujeto (Bago et al., 2020); (3) noticias a favor y en contra de una ideología, para estudiar el efecto de la compatibilidad; y (4) la predisposición emocional o racional como variable continua de personalidad. Queda abierta una pregunta de la discusión del equipo: si entrenar procedimientos lógicos hasta automatizarlos haría detectar noticias falsas incluso al leer rápido y juzgar de forma intuitiva **[identificar el trabajo en que se basa]**.
+
+---
+
+## Conclusión
+
+**[PENDIENTE: se redacta al cerrar la Discusión.]**
 
 ---
 
@@ -193,18 +255,20 @@ Frenda, S. J., Knowles, E. D., Saletan, W., y Loftus, E. F. (2013). False memori
 
 Grady, R. H., Ditto, P. H., y Loftus, E. F. (2021). Nevertheless, partisanship persisted: Fake news warnings help briefly, but bias returns with time. *Cognitive Research: Principles and Implications, 6*, Artículo 52. https://doi.org/10.1186/s41235-021-00315-z
 
-Johnson, M. K., Hashtroudi, S., y Lindsay, D. S. (1993). Source monitoring. *Psychological Bulletin, 114*(1), 3-28.
+Greifeneder, R., Jaffé, M. E., Newman, E. J., y Schwarz, N. (Eds.). (2021). *The psychology of fake news: Accepting, sharing, and correcting misinformation*. Routledge. https://doi.org/10.4324/9780429295379
+
+Johnson, M. K., Hashtroudi, S., y Lindsay, D. S. (1993). Source monitoring. *Psychological Bulletin, 114*(1), 3-28. https://doi.org/10.1037/0033-2909.114.1.3
 
 Leon, C. S., Bonilla, M., Brusco, L. I., Forcato, C., y Urreta Benítez, F. (2023). Fake news and false memory formation in the psychology debate. *IBRO Neuroscience Reports, 15*, 24-30. https://doi.org/10.1016/j.ibneur.2023.06.002
 
 Martel, C., Pennycook, G., y Rand, D. G. (2020). Reliance on emotion promotes belief in fake news. *Cognitive Research: Principles and Implications, 5*, Artículo 47. https://doi.org/10.1186/s41235-020-00252-3
 
-Murphy, G., Murray, E., y Gough, D. (2021). Attitudes towards feminism predict susceptibility to feminism-related fake news. *Applied Cognitive Psychology*. https://doi.org/10.1002/acp.3851
+Murphy, G., Murray, E., y Gough, D. (2021). Attitudes towards feminism predict susceptibility to feminism-related fake news. *Applied Cognitive Psychology, 35*(5), 1182-1192. https://doi.org/10.1002/acp.3851
 
-Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. *Review of General Psychology, 2*(2), 175-220.
+Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. *Review of General Psychology, 2*(2), 175-220. https://doi.org/10.1037/1089-2680.2.2.175
 
 Pennycook, G., y Rand, D. G. (2021). The psychology of fake news. *Trends in Cognitive Sciences, 25*(5), 388-402. https://doi.org/10.1016/j.tics.2021.02.007
 
-Pérez Santángelo, A., y Solovey, G. (2023). Understanding belief in political statements using a model-driven experimental approach: A registered report. *Scientific Reports, 13*, Artículo 21205.
+Pérez Santángelo, A., y Solovey, G. (2023). Understanding belief in political statements using a model-driven experimental approach: A registered report. *Scientific Reports, 13*, Artículo 21205. https://doi.org/10.1038/s41598-023-47939-3
 
 Trevors, G., Bohn-Gettler, C., y Kendeou, P. (2021). The effects of experimentally induced emotions on revising common vaccine misconceptions. *Quarterly Journal of Experimental Psychology*. https://doi.org/10.1177/17470218211017840
