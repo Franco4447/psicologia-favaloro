@@ -13,8 +13,8 @@ fuentes:
 - archivo: 6_Entregables/web-experimento/src/components (pantallas del experimento)
 - archivo: 6_Entregables/web-experimento/src/data/residence.ts
 skill: ninguna (redacción manual asistida)
-generado: '2026-10-12'
-hash_generado: 5e035a286e4b
+generado: '2026-10-13'
+hash_generado: 7cfe5d76eb7b
 ---
 
 # Efecto de la inducción racional y emocional sobre la formación de falsos recuerdos a partir de noticias falsas congruentes con la afinidad terapéutica
@@ -103,6 +103,7 @@ Objetivos complementarios, que se derivan de las variables que la plataforma reg
 
 4. Describir y comparar entre grupos la frecuencia de falsas creencias y de recuerdos verdaderos.
 5. Analizar si el tiempo de respuesta, tomado como indicador del esfuerzo cognitivo, difiere entre inducciones y se relaciona con la frecuencia de falsos recuerdos.
+6. Verificar la eficacia de la manipulación: describir, en los grupos racional y emocional, qué proporción de participantes reporta la inducción que se le asignó, y comparar entre los tres grupos el uso autoinformado de emoción y de razón.
 
 > **Sobre la congruencia.** Todas las noticias falsas que ve cada participante son congruentes con su afinidad terapéutica; la congruencia es entonces una **constante del diseño** y no una variable. Por eso este estudio *no* tiene como objetivo estimar el efecto de la congruencia ni su interacción con la inducción. Lo que sí varía entre participantes es la afinidad terapéutica, y el objetivo 3 la analiza.
 
@@ -150,7 +151,7 @@ Experimento en línea con diseño entre sujetos de un factor, **tipo de inducci�
 
 **Participantes excluidos del análisis.** Quienes no cumplían algún criterio completaban igualmente la tarea con la consigna del grupo Control y uno de los dos conjuntos de noticias falsas, elegido al azar, pero la plataforma los registraba como excluidos: no se los asignaba a ningún grupo ni integran la muestra analizada. Se analiza a quienes completaron la tarea completa, incluido el control de la manipulación.
 
-**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp e Instagram y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología mayores de 18 años. La participación no fue remunerada. Los datos se recolectaron desde el 1 de octubre de 2026 [hasta la fecha de cierre].
+**Reclutamiento.** Muestreo no probabilístico por acercamiento voluntario: el enlace al experimento se difundió por WhatsApp e Instagram y circuló entre potenciales participantes, con una convocatoria dirigida a estudiantes y graduados/as de Psicología de 18 a 65 años que vivan en la Ciudad Autónoma de Buenos Aires o en la provincia de Buenos Aires. La participación no fue remunerada. Los datos se recolectaron desde el 1 de octubre de 2026 [hasta la fecha de cierre].
 
 **Muestra.** Participaron [N total] personas, de las cuales [n incluidas] cumplieron los criterios y completaron la tarea (Razón: [n]; Emoción: [n]; Control: [n]). Edad: *M* = [ ], *DE* = [ ], rango [ ]. Género: [n] femenino, [n] masculino, [n] otro. Afinidad: [n] psicoanálisis, [n] cognitivo-conductual. Instituciones: [UBA, UNLZ, UFLO, otras].
 
@@ -205,6 +206,7 @@ Cada noticia falsa tiene un «espejo» con la misma historia y la corriente inve
 | Falsa creencia (complementaria) | Elegir la opción 2 ante una noticia **falsa** | 0-8 por participante |
 | Recuerdo verdadero (complementaria) | Elegir la opción 1 ante una noticia **verdadera** | 0-12 por participante |
 | Tiempo de respuesta (complementaria) | Desde que aparece la pantalla de evaluación hasta que se confirma la respuesta; se promedia por participante y se expresa en segundos | continua |
+| Inducción reportada (control de la manipulación) | Elegir «Emoción» o «Razón» en la pregunta de elección forzada; solo en los grupos racional y emocional. Coincide si es la asignada | coincide / no coincide |
 | Uso de emoción / de razón (control de la manipulación) | Ítems de 1 a 5 al final de la tarea | 1-5 |
 
 ### Consideraciones éticas
@@ -218,7 +220,7 @@ La participación fue voluntaria, previa lectura y aceptación del consentimient
 Los datos se exportan de la base de datos en una tabla con una fila por participante, restringida a los participantes incluidos que completaron la tarea, con edad, género, universidad (con las variantes de escritura unificadas), grupo de inducción, afinidad terapéutica, respuestas del control de la manipulación, recuentos de falsos recuerdos, falsas creencias y recuerdos verdaderos, y tiempo de respuesta promedio en segundos.
 
 - **Descriptivos.** Primero, la descripción de la muestra, con el porcentaje de cada afinidad dentro de cada grupo. Luego, medias, desviaciones estándar y proporciones de cada variable por grupo de inducción y por afinidad.
-- **Control de la manipulación.** Comparación entre grupos del uso autoinformado de emoción y de razón (se espera más uso de emoción en el grupo emocional y más uso de razón en el racional), y porcentaje de aciertos en la pregunta de elección forzada. Quienes no recuerden su consigna se analizarán por separado como análisis de sensibilidad **[definir el criterio antes de ver los resultados]**.
+- **Control de la manipulación.** Comparación entre grupos del uso autoinformado de emoción y de razón (se espera más uso de emoción en el grupo emocional y más uso de razón en el racional), y porcentaje de aciertos en la pregunta de elección forzada (objetivo 6). Quienes reportan una inducción distinta de la asignada se cuentan y se describen por grupo, pero **no se excluyen**: el análisis principal es por grupo asignado.
 - **Efecto de la inducción (H1, C1, C2).** Como cada recuento es la cantidad de respuestas de un tipo sobre 8 o 12 ensayos, se usarán modelos de regresión binomial con el grupo como predictor y contrastes planeados del grupo emocional contra el racional y contra el control; si no se cumplen los supuestos, prueba de Kruskal-Wallis. Se informarán tamaños del efecto e intervalos de confianza.
 - **Variación según afinidad (H2).** Interacción entre grupo de inducción y afinidad terapéutica.
 - **Tiempo de respuesta (C3).** Comparación entre grupos (ANOVA de un factor o Kruskal-Wallis) y relación entre el tiempo de respuesta y el recuento de falsos recuerdos.
@@ -267,6 +269,7 @@ Ejes a desarrollar:
 - **Exposición dentro del estudio.** La pregunta se refiere a haber visto el evento *con anterioridad*, pero el participante acaba de leer la noticia durante 15 segundos. Esa familiaridad reciente puede atribuirse a una exposición previa, que es justamente un error de monitoreo de la fuente. Afecta por igual a los tres grupos, pero puede elevar la tasa general de falsos recuerdos.
 - La muestra es no probabilística, lo que limita la generalización.
 - El control de la manipulación se basa en autoinforme.
+- **Participantes que reportan una inducción distinta de la asignada.** No se los excluyó del análisis, porque conseguir participantes es difícil y sacarlos reduciría una muestra ya pequeña. Si la manipulación no fue registrada por algunas de estas personas, el efecto de la inducción puede estar subestimado (se analiza por grupo asignado). Además, el grupo Control no responde la pregunta de elección forzada, así que no hay una verificación equivalente en ese grupo.
 - La frase de contexto de Martel et al. (2020) («titulares de noticias reales de 2017-2018») solo se presenta al grupo Control, y presenta como reales también las noticias falsas.
 
 **Líneas futuras.** Diseños factoriales con una variable más manipulada entre sujetos: (1) advertencias × inducción (racional o emocional), siguiendo a Grady et al. (2021), para ver si el efecto protector de una advertencia sobrevive a una inducción emocional; (2) procesamiento intuitivo frente a deliberado como factor entre sujetos, ya que se ha estudiado dentro del mismo sujeto (Bago et al., 2020); (3) noticias a favor y en contra de una ideología, para estimar el efecto de la compatibilidad; y (4) la predisposición emocional o racional como variable continua de personalidad. Queda abierta una pregunta de la discusión del equipo: si entrenar procedimientos lógicos hasta automatizarlos haría detectar noticias falsas incluso al leer rápido y juzgar de forma intuitiva **[identificar el trabajo en que se basa]**.
