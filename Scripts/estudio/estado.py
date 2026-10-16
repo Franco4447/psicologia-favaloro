@@ -19,6 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import frontmatter  # noqa: E402
 from nombres import RAIZ, validar  # noqa: E402
+from protocolos import PROTOCOLOS, protocolo_de_archivo  # noqa: E402
 
 RE_COD = re.compile(r"^(U\d{2}|C\d{2}(?:_\d{2})*|Global_(?:1erC|2doC)|Global|Transversal_[A-Za-z0-9]+|Inv)(?=_)")
 ETAPAS = {"2_Textos_Extraidos": "crudo", "3_Guias_de_Estudio": "guia", "4_Flashcards": "flash", "5_Evaluaciones": "eval"}
@@ -52,11 +53,15 @@ def analizar(dir_materia):
             if not cod:
                 continue
             if clave == "guia":
-                variante = "resumen" if re.search(r"_(Resumen|Sintesis\w*|Repaso)_Guia", f.name) else "guia"
+                proto = protocolo_de_archivo(f)
+                variante = "guia" if proto else "resumen"
                 filas[cod][f"{variante}{f.suffix}"].append(f)
+                if proto and f.suffix == ".md":
+                    filas[cod]["protocolos"].append(proto)
                 if f.suffix == ".md" and frontmatter.estado(f) == "editado":
                     editadas.append(f.name)
-                if f.suffix == ".md" and variante == "guia" and formato_anterior(f):
+                if (f.suffix == ".md" and proto and PROTOCOLOS[proto]["plantilla_completa"]
+                        and formato_anterior(f)):
                     anteriores.append(cod)
             elif clave == "eval":
                 tipo = "resultado" if f.stem.endswith("_Resultados") else "eval"
@@ -98,7 +103,9 @@ def reporte(dir_materia):
         if r.get("resultado"):
             meta, _ = frontmatter.leer(r["resultado"][-1])
             ult = f"{meta.get('porcentaje')} % ({meta.get('fecha')})" if meta else "✓"
-        out.append(f"| {cod} | {marca(len(r.get('crudo', [])))} | {marca(len(guia_md))} | {marca(len(guia_doc))} | "
+        protos = sorted(set(r.get("protocolos", [])), key=list(PROTOCOLOS).index)
+        col_guia = marca(len(guia_md)) + (f" ({', '.join(p[:4] for p in protos)})" if protos else "")
+        out.append(f"| {cod} | {marca(len(r.get('crudo', [])))} | {col_guia} | {marca(len(guia_doc))} | "
                    f"{marca(res)} | {marca(len(r.get('flash', [])))} | {marca(len(r.get('eval', [])))} | {ult or '—'} |")
         hay_guia = guia_md or guia_doc
         if r.get("crudo") and not hay_guia:

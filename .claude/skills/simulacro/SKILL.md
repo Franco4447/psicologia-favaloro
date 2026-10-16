@@ -19,24 +19,28 @@ entrenan recordar, pero no armar una respuesta de 10 renglones. Ahí el simulacr
 ## Antes de empezar
 
 1. Leé `AGENTS.md` (reglas de carpetas y nombres; manda sobre esta skill).
-2. Identificá el alcance: una guía, varias clases ("clases 4, 7 y 11"), una unidad o un parcial
+2. **Propuesta (obligatoria):** antes de generar, presentá las opciones de guía base y alcance
+   con pros y contras y recomendá una (`guia-estudio/references/protocolos.md` §5), con el formato
+   del examen tomado del perfil de la materia (`python Scripts/estudio/protocolos.py perfil --materia "<Materia>"`).
+   Esperá la elección.
+3. Identificá el alcance: una guía, varias clases ("clases 4, 7 y 11"), una unidad o un parcial
    entero. Buscá las guías en `[Año]/[Materia]/3_Guias_de_Estudio/` (la extendida; las `_Resumen` /
    `_Sintesis` como complemento). Si están solo en `.docx`, convertilas con pandoc a un temporal
    fuera del repo. Si no queda claro de qué materia o unidad se trata, **preguntá**.
-3. Buscá material de examen de la cátedra para **calibrar** el estilo y priorizar temas:
+4. Buscá material de examen de la cátedra para **calibrar** el estilo y priorizar temas:
    `5_Evaluaciones/` (repasos, cuestionarios, casos, problemas), la guía de lectura de
    `1_Bibliografia_Original/` y las secciones "Para rendir", "Trampa de examen" o "Lo que entra sí o
    sí" de las guías. Leé `references/estilos_catedra.md`.
-4. Averiguá el **formato del examen real** (tipo de preguntas, cantidad, extensión mínima como
-   «10 renglones», tiempo, si hay elección de preguntas). Está en los apuntes del usuario, en la
-   memoria o en la guía; si no, preguntá. El simulacro lo reproduce: mismas consignas, misma
+5. Averiguá el **formato del examen real** (tipo de preguntas, cantidad, extensión mínima como
+   «10 renglones», tiempo, si hay elección de preguntas). Está en el perfil de la materia, en los
+   apuntes del usuario, en la memoria o en la guía; si no, preguntá y anotalo en el perfil. El simulacro lo reproduce: mismas consignas, misma
    extensión, mismo tiempo.
-5. Nombre de salida con el script (el tema resume el alcance):
+6. Nombre de salida con el script (el tema resume el alcance):
    ```bash
    python Scripts/estudio/nombres.py generar simulacro --unidad C08 --tema "Pulsión de muerte y compulsión de repetición"
    ```
    Alcance de varias clases: código de rango (`C04_07_11`) o `Global_1erC` para todo el cuatrimestre.
-6. Si el simulacro ya existe, `python Scripts/estudio/frontmatter.py estado <archivo>`; si dice
+7. Si el simulacro ya existe, `python Scripts/estudio/frontmatter.py estado <archivo>`; si dice
    `editado` o `sin-cabecera`, mostrá las diferencias y preguntá antes de sobrescribir.
 
 ## Modo archivo: generar el simulacro

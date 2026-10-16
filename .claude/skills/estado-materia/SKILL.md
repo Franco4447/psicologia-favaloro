@@ -26,6 +26,10 @@ python Scripts/estudio/estado.py --anio "1er Año" …   # otro año (1er Año e
 
 ## Ojo
 
+- La columna «Guía .md» muestra entre paréntesis los protocolos de las guías de esa unidad
+  (`curs`, `desa`, `exte`, `oral`, `proc`, `lect`). Si el usuario quiere avanzar, el siguiente paso
+  pasa por la propuesta de protocolo (`guia-estudio/references/protocolos.md`).
+
 - Los **textos extraídos** y la **bibliografía original** no se suben a git: el conteo es el de la
   copia local (en una sesión en la nube faltan: solo están en el OneDrive del usuario).
 - "Nombres fuera de AGENTS.md" incluye guías viejas sin tema en el nombre (`C01_Guia.md` en vez de `C01_[Tema]_Guia.md`) o con

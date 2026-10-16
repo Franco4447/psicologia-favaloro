@@ -17,7 +17,8 @@ El formato que debes utilizar y crear (si no existe) es el siguiente, dividido e
 [Año de la Carrera]/[Nombre de la Materia]/
 ├── 1_Bibliografia_Original/  -> Para los PDFs, PPTs y textos originales descargados (no se versionan en git).
 ├── 2_Textos_Extraidos/       -> Para los archivos .md crudos generados post-OCR/extracción (no se versionan en git).
-├── 3_Guias_de_Estudio/       -> Para los apuntes extendidos finales en .md y .docx.
+├── Perfil_Materia.md         -> Formato de cada evaluación, protocolo habitual y fuentes de la cátedra (ver «Protocolos de apuntes»).
+├── 3_Guias_de_Estudio/       -> Para las guías de estudio (del protocolo elegido) en .md y .docx.
 │   └── _media/               -> Para guardar los diagramas Mermaid (.png) y otros assets.
 ├── 4_Flashcards/             -> Para los mazos CSV exportados para Anki.
 ├── 5_Evaluaciones/           -> Para los simulacros de parciales, tests y problemas de práctica.
@@ -33,7 +34,10 @@ Si el usuario no especifica a qué materia corresponde un texto, **DEBES PREGUNT
 
 Al crear nuevos archivos generados, DEBES aplicar las siguientes convenciones de nombres para que Windows los ordene correctamente por Unidad:
 - **Textos Extraídos**: `[Unidad]_[Autor]_[Capítulo]_Crudo.md` (Ej: `U07_Papalia_Cap15_Crudo.md`)
-- **Guías de Estudio**: `[Unidad]_[Tema_Principal]_Guia.ext` (Ej: `U07_Adolescencia_Guia.docx`)
+- **Guías de Estudio**: el sufijo indica el protocolo con que se hizo (ver «Protocolos de apuntes»):
+  - Extendido (sufijo histórico): `[Unidad]_[Tema_Principal]_Guia.ext` (Ej: `U07_Adolescencia_Guia.docx`).
+  - Cursada, Desarrollo, Oral, Procedimental: `[Unidad]_[Tema]_[Protocolo]_Guia.ext` (Ej: `C17_Memoria_Cursada_Guia.md`, `U03_Pensamiento_Oral_Guia.md`).
+  - Lectura de investigación (una ficha por artículo): `[Unidad]_[Autor]_[Tema]_Lectura_Guia.md` (Ej: `Inv_Barrett_MusicEvokedNostalgia_Lectura_Guia.md`).
   - Ficha de repaso corta de una guía: `[Unidad]_[Tema]_Repaso_Guia.ext` (Ej: `C13_EstructuraYTiemposDeLaNeurosis_Repaso_Guia.md`).
   - Cuadro integrador que compara varias clases: `Transversal_[Eje]_Guia.ext` (Ej: `Transversal_EstructurasClinicas_Guia.md`).
 - **Flashcards**: `[Unidad]_[Tema]_Flashcards.csv` (Ej: `U07_Adolescencia_Flashcards.csv`)
@@ -96,17 +100,31 @@ Usalas en lugar de hacer el trabajo a mano:
 | 3 (Word/PDF) | `/exportar` | `exportar.py` |
 | 3 → 4 | `/flashcards` | `anki_csv.py`, `probar_anki.py` |
 | 3 → 5 | `/simulacro` | `simulacro.py` |
-| Todas | `/estudiar-unidad`, `/estado-materia` | `estado.py` |
+| Todas | `/estudiar-unidad`, `/estado-materia` | `estado.py`, `protocolos.py` |
 
 - Los nombres de archivo se generan con `Scripts/estudio/nombres.py`, nunca a mano.
 - Todo `.md` generado lleva cabecera YAML (`frontmatter.py`); antes de sobrescribir un archivo
   generado, comprobá con `frontmatter.py estado` que no fue editado a mano.
 
-## Nivel de Detalle de los Apuntes (Regla Obligatoria)
+## Protocolos de Apuntes (Regla Obligatoria)
 
-Al generar resúmenes o guías de estudio, **SIEMPRE debes crear "Apuntes Extendidos"**. 
-* **Extensión Máxima:** No debes sobre-sintetizar ni omitir detalles. El material generado debe funcionar como un reemplazo completo del libro original.
-* **Profundidad:** Incluye todos los ejemplos relevantes, experimentos, estadísticas, casos de estudio y matices teóricos mencionados en la bibliografía fuente.
-* **Formato:** Aunque apliques estructuras (como mapas conceptuales o glosarios), el cuerpo del desarrollo analítico debe ser exhaustivo y lo más detallado posible.
+No hay un único nivel de detalle: cada material de estudio se hace con un **protocolo** que se ajusta a **cómo se evalúa** el tema y al material de clase disponible. La guía se mide contra el examen, no contra el largo del libro.
+
+* **Proponer siempre antes de crear:** cada vez que se pide un material de estudio (guía, unidad completa, material para un parcial o final, ficha, cuadro integrador, flashcards o simulacro), **antes de escribir nada** presentá los protocolos que apliquen, con sus **pros y contras**, y **recomendá uno** para el caso, con el porqué. Esperá la elección del usuario. Para pedidos en lote, una sola propuesta. Procedimiento y formato: `.claude/skills/guia-estudio/references/protocolos.md`.
+* **Catálogo** (detalle, pros y contras en `Scripts/estudio/protocolos.py`):
+
+  | Protocolo | Para qué evaluación | Extensión orientativa |
+  |---|---|---|
+  | A. Cursada | Respuesta corta: opción múltiple, V/F, abiertas breves | 2.000–3.500 palabras por clase |
+  | B. Desarrollo | Desarrollo con extensión mínima; baterías de preguntas | 5.000–8.000 por clase o bloque |
+  | C. Extendido | Final integral; texto que se pide leer completo; a pedido | Sin tope (reemplaza el texto) |
+  | D. Oral | Lección oral, exposición, coloquio | 1.500–3.000 por tema |
+  | E. Procedimental | Problemas: estadística, metodología | Según los procedimientos |
+  | F. Lectura de investigación | Artículos para TP, informe o monografía | 500–1.000 por artículo |
+
+* **Cómo se elige la recomendación:** `python Scripts/estudio/protocolos.py proponer --materia "<Materia>" --unidad <Unidad>`. Parte del formato de la evaluación en el **perfil de la materia** (`[Año]/[Materia]/Perfil_Materia.md`) y del material de clase encontrado, y se ajusta con lo que el script no ve (baterías de preguntas, clase no dictada, tiempo hasta el examen). Si la materia no tiene perfil, crealo con `.claude/skills/guia-estudio/references/plantilla_perfil_materia.md` y preguntá el formato de sus exámenes. Sirve para cualquier materia: ya cursada (`estado: cursada`), en curso o por cursar.
+* **Prioridad de fuentes:** (1) lo dado en clase (diapositivas, apuntes, preguntas de la cátedra); (2) el programa; (3) el formato del examen; (4) el texto, para explicar y citar. En el protocolo C, el texto manda: reemplazo completo, con todos los ejemplos, experimentos, cifras, casos y matices.
+* **En todos los protocolos:** mapa de origen de los temas (Clase / Programa / Solo libro), aviso de lo que queda afuera y de lo provisorio, campo `protocolo:` en la cabecera YAML, nada inventado.
+* **Escalable:** para agregar o ajustar un protocolo se edita `PROTOCOLOS` en `Scripts/estudio/protocolos.py` y su estructura en `protocolos.md`; `nombres.py` y `estado.py` lo toman solos.
 * **Citas en normas APA 7:** toda mención de una fuente (en el texto y en la lista de fuentes) va en APA 7: `(Freud, 1894/1991, p. 6)`. No se agrega un apartado "Cómo se cita". Reglas: `.claude/skills/guia-estudio/references/citas_apa.md`.
-* **Capas para rendir:** la guía extendida no se recorta; se le suman capas cortas para repasar e integrar (hilo conductor, esqueletos de respuesta, "no confundir", fichas de repaso, cuadros integradores, simulacros con rúbrica). Cuándo y cómo: `.claude/skills/guia-estudio/references/materiales_de_parcial.md`.
+* **Capas para rendir:** sobre la guía del protocolo elegido se suman capas cortas (fichas de repaso, cuadros integradores, flashcards, simulacros con rúbrica), que también se proponen con sus opciones. Cuándo y cómo: `.claude/skills/guia-estudio/references/materiales_de_parcial.md`.
