@@ -220,10 +220,11 @@ La participación fue voluntaria, previa lectura y aceptación del consentimient
 Los datos se exportan de la base de datos en una tabla con una fila por participante, restringida a los participantes incluidos que completaron la tarea, con edad, género, universidad (con las variantes de escritura unificadas), grupo de inducción, afinidad terapéutica, respuestas del control de la manipulación, recuentos de falsos recuerdos, falsas creencias y recuerdos verdaderos, y tiempo de respuesta promedio en segundos.
 
 - **Descriptivos.** Primero, la descripción de la muestra, con el porcentaje de cada afinidad dentro de cada grupo. Luego, medias, desviaciones estándar y proporciones de cada variable por grupo de inducción y por afinidad.
-- **Control de la manipulación.** Comparación entre grupos del uso autoinformado de emoción y de razón (se espera más uso de emoción en el grupo emocional y más uso de razón en el racional), y porcentaje de aciertos en la pregunta de elección forzada (objetivo 6). Quienes reportan una inducción distinta de la asignada se cuentan y se describen por grupo, pero **no se excluyen**: el análisis principal es por grupo asignado.
-- **Efecto de la inducción (H1, C1, C2).** Como cada recuento es la cantidad de respuestas de un tipo sobre 8 o 12 ensayos, se usarán modelos de regresión binomial con el grupo como predictor y contrastes planeados del grupo emocional contra el racional y contra el control; si no se cumplen los supuestos, prueba de Kruskal-Wallis. Se informarán tamaños del efecto e intervalos de confianza.
+- **Comparación entre grupos.** Para cada variable se comprueban primero los supuestos: normalidad en cada grupo (prueba de Shapiro-Wilk) y homogeneidad de varianzas (prueba de Levene centrada en la mediana). Si se cumplen ambos, se usará ANOVA de un factor con comparaciones de Tukey-Kramer; si se cumple la normalidad pero no la homogeneidad, ANOVA de Welch con comparaciones de Games-Howell; si algún grupo no se distribuye normalmente, prueba de Kruskal-Wallis con comparaciones de Dunn corregidas por Holm. Se fija α = .05 y se informan tamaños del efecto (η² en el ANOVA, ε² en Kruskal-Wallis).
+- **Control de la manipulación.** Comparación entre grupos del uso autoinformado de emoción y de razón con ese procedimiento (se espera más uso de emoción en el grupo emocional y más uso de razón en el racional), y porcentaje de aciertos en la pregunta de elección forzada (objetivo 6). Quienes reportan una inducción distinta de la asignada se cuentan y se describen por grupo, pero **no se excluyen**: el análisis principal es por grupo asignado.
+- **Efecto de la inducción (H1, C1, C2).** Comparación entre grupos de los recuentos de falsos recuerdos (0-8), falsas creencias (0-8) y recuerdos verdaderos (0-12). Para H1 y C1, las comparaciones de interés son las del grupo emocional contra el racional y contra el control.
 - **Variación según afinidad (H2).** Interacción entre grupo de inducción y afinidad terapéutica.
-- **Tiempo de respuesta (C3).** Comparación entre grupos (ANOVA de un factor o Kruskal-Wallis) y relación entre el tiempo de respuesta y el recuento de falsos recuerdos.
+- **Tiempo de respuesta (C3).** Comparación entre grupos del tiempo de respuesta promedio y relación entre el tiempo de respuesta y el recuento de falsos recuerdos.
 
 ---
 
@@ -242,7 +243,7 @@ Estructura prevista:
 | Control | [ ] | [ ] | [ ] |
 
 2. Control de la manipulación.
-3. Falsos recuerdos por grupo de inducción (tabla de medias y *DE*, contrastes planeados, tamaños del efecto).
+3. Falsos recuerdos por grupo de inducción (tabla de medias y *DE*, supuestos, prueba elegida, comparaciones entre pares y tamaño del efecto).
 4. Variación del efecto según la afinidad terapéutica.
 5. Falsas creencias y recuerdos verdaderos por grupo.
 6. Tiempo de respuesta por grupo y su relación con los falsos recuerdos.
