@@ -130,6 +130,8 @@ def columnas(page):
     cajas, desde = [], top
     for i, (t, b_, cruza) in enumerate(franjas):
         hasta = bottom if i == len(franjas) - 1 else (b_ + franjas[i + 1][0]) / 2
+        if hasta <= desde:                                   # franjas superpuestas: sin alto, se omite
+            continue
         if cruza:
             cajas.append((x0, desde, x1, hasta))
         else:
