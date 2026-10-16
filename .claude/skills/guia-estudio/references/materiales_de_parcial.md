@@ -7,7 +7,7 @@ Psicoanálisis suman unas 85.000 palabras: sin estas capas no se repasan en los 
 | Capa | Archivo | Para qué | Cuándo se hace |
 |---|---|---|---|
 | Texto original | `1_Bibliografia_Original/` | consultar | — |
-| Guía extendida | `[Unidad]_[Tema]_Guia.md` | entender, reemplazar el texto | siempre |
+| Guía del protocolo | `_Cursada_Guia`, `_Desarrollo_Guia`, `_Guia` (extendido), `_Oral_Guia`, `_Procedimental_Guia`, `_Lectura_Guia` | estudiar el tema con el alcance que pide la evaluación | siempre, con el protocolo elegido (`protocolos.md`) |
 | Ficha de repaso | `[Unidad]_[Tema]_Repaso_Guia.md` | repasar en 15 minutos | guía de más de ~5.000 palabras, o antes de un parcial |
 | Cuadro integrador | `Transversal_[Eje]_Guia.md` | comparar entre clases | el parcial abarca varias clases sobre categorías paralelas |
 | Flashcards | `4_Flashcards/` | evocar a diario | siempre (`/flashcards`) |

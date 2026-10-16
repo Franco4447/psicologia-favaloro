@@ -1,13 +1,29 @@
 ---
 name: guia-estudio
-description: 'Escribe guías de estudio extendidas ("apuntes extendidos" que reemplazan al texto original) a partir de los textos extraídos, diapositivas y bibliografía del repositorio de Psicología, procesando textos largos por partes, citando páginas, con diagramas Mermaid renderizados y control de cobertura contra la fuente. Usala siempre que el usuario pida una guía, resumen, apunte, síntesis o "material para estudiar" de un texto, capítulo, clase o unidad, o que pase a guía un texto extraído o un PDF, aunque diga "resumen": en este repo todo resumen es una guía extendida.'
+description: 'Escribe guías de estudio a partir de los textos extraídos, diapositivas, apuntes y bibliografía del repositorio de Psicología, con el protocolo que corresponda a cómo se evalúa el tema (cursada, desarrollo, extendido, oral, procedimental o lectura de investigación), citando páginas en APA, con diagramas Mermaid y control de cobertura. Antes de escribir siempre propone los protocolos con pros y contras y recomienda uno. Usala siempre que el usuario pida una guía, resumen, apunte, síntesis o "material para estudiar" de un texto, capítulo, clase o unidad, o que pase a guía un texto extraído o un PDF.'
 ---
 
-# Guías de estudio extendidas
+# Guías de estudio
 
-Produce `3_Guias_de_Estudio/[Unidad]_[Tema]_Guia.md`. La regla de `AGENTS.md` es estricta:
-**apuntes extendidos** que funcionen como reemplazo completo del texto fuente — todos los
-ejemplos, casos, experimentos, cifras y matices. Nunca sobre-sintetizar.
+Produce la guía de `3_Guias_de_Estudio/` del **protocolo elegido** (`[Unidad]_[Tema]_Guia.md` para
+el extendido; `_Cursada_Guia`, `_Desarrollo_Guia`, `_Oral_Guia`, `_Procedimental_Guia`,
+`_Lectura_Guia` para los demás). Los protocolos están en `AGENTS.md` y en
+`references/protocolos.md`; este archivo describe cómo trabajar las fuentes y escribir, y el
+**detalle exhaustivo** de abajo es el del protocolo C (Extendido) y, acotado, el del B.
+
+## Paso 0: proponer el protocolo (obligatorio)
+
+Antes de leer fuentes en profundidad o escribir:
+
+1. Leé `references/protocolos.md` y el perfil de la materia
+   (`python Scripts/estudio/protocolos.py perfil --materia "<Materia>"`; si no existe, crealo con
+   `references/plantilla_perfil_materia.md` y preguntá el formato del examen).
+2. `python Scripts/estudio/protocolos.py proponer --materia "<Materia>" --unidad <Unidad> --pedido "<pedido>"`.
+3. Presentá la propuesta en el chat (tabla de protocolos con pros y contras, recomendado con su
+   porqué, capas que sumarías) y **esperá la elección**. Con `AskUserQuestion`, el recomendado
+   va primero.
+4. Seguí la estructura del protocolo elegido (§4 de `protocolos.md`) y agregá `protocolo:` a la
+   cabecera YAML.
 
 ## Antes de empezar
 
@@ -25,9 +41,11 @@ ejemplos, casos, experimentos, cifras y matices. Nunca sobre-sintetizar.
      renglones»): fija la extensión de las respuestas modelo. Si no lo sabés y hay preguntas de
      desarrollo, preguntalo.
    - Si no está claro de qué materia/unidad se trata, **preguntá**.
-3. Nombre de salida con el script (tema = tema principal, sin truncar):
+3. Nombre de salida con el script, con el tipo del protocolo elegido (`guia` para el extendido;
+   `cursada`, `desarrollo`, `oral`, `procedimental`, `lectura`), tema = tema principal, sin truncar:
    ```bash
    python Scripts/estudio/nombres.py generar guia --unidad U05 --tema "Las intervenciones del analista"
+   python Scripts/estudio/nombres.py generar cursada --unidad C17 --tema "Memoria"
    ```
 4. Si la guía ya existe: `python Scripts/estudio/frontmatter.py estado <guia.md>`. Con `editado` o
    `sin-cabecera`, mostrá qué cambiaría y **preguntá** antes de sobrescribir (puede tener
@@ -67,7 +85,8 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
 - **Avisos de fuentes:** si un texto está incompleto, no asignado, viene de una transcripción con
   OCR o faltan los apuntes de una clase, decilo en un recuadro de aviso al principio.
 
-- **Exhaustiva:** cada ejemplo, caso clínico, experimento, cifra y distinción de la fuente tiene
+- **Exhaustiva (protocolo C; en B, solo lo que sostiene cada respuesta; en A, D, E y F, lo que
+  pide su estructura):** cada ejemplo, caso clínico, experimento, cifra y distinción de la fuente tiene
   su lugar. Los casos se cuentan con detalle (qué pasó, qué hizo el analista/el experimentador,
   qué concluye el autor).
 - **Citas en normas APA 7** en todo dato o tesis: `(Belucci, 2014, p. 12)`,
@@ -82,12 +101,13 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
   comillas dobles internas.
 - **Contenido externo marcado:** lo que no está en los textos asignados (otra obra del autor, la
   teoría general) va con **▸ Complemento**, para que el estudiante lo contraste con su cuaderno.
-- Cabecera YAML con `frontmatter.escribir` (materia, unidad, tipo `guia`, `fuentes` con archivo y
-  páginas, skill `guia-estudio`):
+- Cabecera YAML con `frontmatter.escribir` (materia, unidad, tipo `guia`, `protocolo`, `fuentes`
+  con archivo y páginas, skill `guia-estudio`):
   ```python
   import sys; sys.path.insert(0, "Scripts/estudio")
   import frontmatter
   frontmatter.escribir(ruta, {"materia": "Psicoanálisis", "unidad": "U05", "tipo": "guia",
+      "protocolo": "extendido",
       "fuentes": [{"archivo": "2_Textos_Extraidos/U05_T27_..._Crudo.md", "paginas": "1-21"}],
       "skill": "guia-estudio"}, cuerpo)
   ```
@@ -98,7 +118,8 @@ Seguí `references/plantilla_guia.md`. Lo esencial:
    ```bash
    python Scripts/estudio/diagramas.py <guia.md>
    ```
-2. Cobertura contra la fuente:
+2. Cobertura contra la fuente (exhaustiva en C; en los demás protocolos, revisá solo que esté
+   todo lo del programa y de la clase):
    ```bash
    python Scripts/estudio/fuente.py cobertura <crudo.md> [...] --guia <guia.md>
    ```
@@ -126,6 +147,6 @@ regeneres solas: ofrecé actualizarlas agregando las secciones que faltan sin to
 
 ## Al terminar, informá
 
-Ruta, extensión (palabras) frente a la fuente, cobertura final, diagramas generados y próximos
+Ruta, protocolo usado, extensión (palabras) frente a la fuente y frente a la orientativa del protocolo, cobertura final, diagramas generados y próximos
 pasos posibles: `/flashcards` y `/simulacro` de la guía, exportarla a Word (`/exportar`, con
 `--indice` si es larga) y los materiales de parcial que apliquen.

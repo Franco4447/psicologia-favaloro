@@ -8,6 +8,7 @@ Uso como módulo (desde las skills):
 Uso por línea de comandos:
     python Scripts/estudio/nombres.py generar guia --unidad U05 --tema "Duelo y melancolía"
     python Scripts/estudio/nombres.py generar repaso --unidad U05 --tema "Duelo y melancolía"   # ficha de repaso
+    python Scripts/estudio/nombres.py generar cursada --unidad C17 --tema "Memoria"   # guía de un protocolo (ver protocolos.py)
     python Scripts/estudio/nombres.py generar guia --unidad Transversal_EstructurasClinicas  # eje que cruza clases
     python Scripts/estudio/nombres.py generar crudo --unidad U04 --texto 15 --autor Freud --tema "Duelo y melancolía"
     python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/C01_CienciaYPsicoanalisisFreudYLasEscuelas_Guia.md" ...
@@ -33,6 +34,14 @@ TIPOS = {
     "enunciado":  ("5_Evaluaciones", "Enunciado", ".pdf"),
     "resuelto":   ("5_Evaluaciones", "Resuelto", ".pdf"),
 }
+
+# Una guía principal por protocolo (catálogo en protocolos.py): «cursada», «desarrollo», «oral»…
+# El extendido usa el tipo «guia» (sufijo histórico _Guia).
+from protocolos import PROTOCOLOS  # noqa: E402
+
+for _clave, _p in PROTOCOLOS.items():
+    if _p["sufijo"] != "Guia":
+        TIPOS[_clave] = ("3_Guias_de_Estudio", _p["sufijo"], ".md")
 
 # Códigos de unidad válidos (ver AGENTS.md → "Detalle de los componentes del nombre")
 RE_UNIDAD = re.compile(

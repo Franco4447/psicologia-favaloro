@@ -1,6 +1,6 @@
 ---
 name: estudiar-unidad
-description: 'Prepara una unidad o clase completa del repositorio de Psicología de punta a punta: digitaliza la bibliografía que falte, escribe la guía extendida, la exporta a Word, arma flashcards para Anki y un simulacro, salteando lo que ya existe y sin pisar ediciones manuales. Usala cuando el usuario pida "preparame la unidad X", "armame todo para el parcial de…", "quiero estudiar la clase N", o el material completo de un tema, en vez de una sola pieza.'
+description: 'Prepara una unidad o clase completa del repositorio de Psicología de punta a punta: digitaliza la bibliografía que falte, propone el protocolo de apuntes y escribe la guía con el elegido, la exporta a Word, arma flashcards para Anki y un simulacro, salteando lo que ya existe y sin pisar ediciones manuales. Usala cuando el usuario pida "preparame la unidad X", "armame todo para el parcial de…", "quiero estudiar la clase N", o el material completo de un tema, en vez de una sola pieza.'
 ---
 
 # Preparar una unidad completa
@@ -14,16 +14,20 @@ Orquesta las demás skills. Cada paso se hace **siguiendo la skill correspondien
 2. Corré `python Scripts/estudio/estado.py "<Materia>"` y mirá la fila de esa unidad.
 3. Revisá `1_Bibliografia_Original/` para saber qué textos y diapositivas corresponden a la unidad
    (y la guía de lectura de la cátedra, si existe).
-4. Mostrale al usuario el plan antes de empezar: qué existe, qué se va a generar, qué se saltea y
-   cuánto puede tardar (OCR de libros escaneados: ~6 s por página; guías de textos largos: varias
-   partes). Esperá su confirmación.
+4. **Propuesta de protocolo** (obligatoria, `guia-estudio/references/protocolos.md`): corré
+   `python Scripts/estudio/protocolos.py proponer --materia "<Materia>" --unidad <Unidad>` y
+   presentá los protocolos con pros y contras, el recomendado con su porqué y las capas que
+   sumarías.
+5. Junto con la propuesta, mostrale el plan: qué existe, qué se va a generar con el protocolo
+   recomendado, qué se saltea y cuánto puede tardar (OCR de libros escaneados: ~6 s por página;
+   guías de textos largos: varias partes). Esperá su elección y confirmación.
 
 ## 2. Pipeline (saltear lo que ya existe)
 
 | Paso | Skill | Se hace si… |
 |---|---|---|
 | a. Texto | `/digitalizar` | hay PDF/PPTX de la unidad sin su `*_Crudo.md` |
-| b. Guía | `/guia-estudio` | no hay guía extendida `.md` de la unidad, o el usuario pide rehacerla |
+| b. Guía | `/guia-estudio` | no hay guía `.md` del protocolo elegido para la unidad, o el usuario pide rehacerla |
 | c. Word | `/exportar` | la guía `.md` no tiene `.docx` (con `--pdf` / `--imprimir` si lo pidió) |
 | d. Flashcards | `/flashcards` | no hay `*_Flashcards.csv` de la unidad |
 | e. Simulacro | `/simulacro` | no hay `*_Simulacro.md` de la unidad |
@@ -42,7 +46,9 @@ Cuando el pedido es "armame todo para el parcial" o abarca varias clases:
 1. Averiguá **fecha y formato del examen** (tipo de preguntas, extensión mínima, qué clases
    entran y cuáles no). Está en los apuntes del usuario, el Planificador o la memoria; si no,
    preguntá. Guardalo en la memoria del proyecto.
-2. Corré el pipeline de la sección 2 **por clase**. Si la cátedra dio baterías de preguntas, cada
+2. Hacé **una sola propuesta de protocolo para todo el parcial** (señalando las clases con una
+   situación distinta, como las que todavía no se dictaron) y corré el pipeline de la sección 2
+   **por clase** con el protocolo elegido. Si la cátedra dio baterías de preguntas, cada
    guía se ordena por pregunta (`/guia-estudio`, plantilla).
 3. Agregá los **materiales integradores** (`guia-estudio/references/materiales_de_parcial.md`):
    cuadro integrador `Transversal_[Eje]_Guia.md` si las clases tratan categorías paralelas, y

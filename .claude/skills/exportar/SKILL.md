@@ -19,6 +19,8 @@ python Scripts/estudio/exportar.py <guia.md> [--pdf] [--imprimir] [--indice] [--
 
 ### Cuándo usar cada opción
 
+- **Según el protocolo** (lista `exportar` de cada uno en `Scripts/estudio/protocolos.py`):
+  Cursada, Oral y Lectura → `--sin-saltos`; Desarrollo y Extendido → `--indice`.
 - **Guía de más de ~5.000 palabras:** `--indice`.
 - **Ficha de repaso** (`*_Repaso_Guia.md`): `--sin-saltos` (tiene que entrar en 2 páginas).
 - **Para imprimir y estudiar en papel:** `--imprimir`.

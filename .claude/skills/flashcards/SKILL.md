@@ -12,23 +12,27 @@ Convierte una guía `*_Guia.md` de `3_Guias_de_Estudio/` en un mazo
 ## Antes de empezar
 
 1. Leé `AGENTS.md` (reglas de carpetas y nombres; manda sobre esta skill).
-2. Identificá la entrada y completá lo que falte:
+2. **Propuesta (obligatoria):** antes de generar, presentá las opciones de guía base y alcance
+   con pros y contras y recomendá una (`guia-estudio/references/protocolos.md` §5): desde la guía
+   del protocolo elegido para la materia (por ejemplo, `_Cursada_Guia`), desde la extendida, o
+   solo temas flojos. Esperá la elección.
+3. Identificá la entrada y completá lo que falte:
    - **Guía concreta** (ruta o nombre): de la ruta salen año, materia y unidad.
    - **Materia + unidad/clase**: buscá la guía en `[Año]/[Materia]/3_Guias_de_Estudio/`.
      Si hay varias (p. ej. `C04_Cronobiologia_Guia.md`, `_Resumen_Guia`, `_SintesisProblemas_Guia`),
-     usá la guía extendida (la que no tiene `_Resumen`, `_Sintesis` ni `_Repaso`) y sumá las
-     otras solo si aportan contenido que falta.
+     usá la guía base elegida en el paso 2 (por defecto, la del protocolo de la materia; nunca una
+     ficha `_Repaso`, `_Resumen` o `_Sintesis`) y sumá las otras solo si aportan contenido que falta.
    - **Lote** ("todas las guías de Psicoanálisis", "las que no tienen flashcards"): ver *Modo lote*.
    - **Guía solo en Word** (`*_Guia.docx` sin `.md`, como en Procesos Básicos II): convertila a
      Markdown en un temporal fuera del repo (`pandoc <guia>.docx -t gfm -o <tmp>/guia.md`) y
      trabajá sobre esa copia; el CSV usa como fuente el nombre del `.docx`.
    - Si no podés determinar la materia o la unidad, **preguntá** antes de generar.
-3. Nombre de salida, siempre con el script (nunca a mano):
+4. Nombre de salida, siempre con el script (nunca a mano):
    ```bash
    python Scripts/estudio/nombres.py generar flashcards --unidad C08 --tema "Pulsión de muerte"
    ```
    Si la guía no tiene tema en el nombre (p. ej. `C##_Guia.md`), sacá el tema de su título `#`.
-4. Si el CSV de salida **ya existe**:
+5. Si el CSV de salida **ya existe**:
    - Leé sus tarjetas con `python Scripts/estudio/anki_csv.py leer <csv>` y **reusá la misma
      `clave` para el mismo concepto**: así Anki actualiza esas tarjetas y conserva su historial
      de repaso. Solo inventá claves nuevas para conceptos nuevos.
@@ -84,7 +88,7 @@ Convierte una guía `*_Guia.md` de `3_Guias_de_Estudio/` en un mazo
 
 Para "todas las guías que no tienen flashcards" de una materia (o de todo `2do Año`):
 
-1. Listá las guías `*_Guia.md` (o `*_Guia.docx` sin `.md`) de `3_Guias_de_Estudio/` (sin `_Resumen`/`_Sintesis`/`_Repaso`, que
+1. Listá las guías `*_Guia.md` (o `*_Guia.docx` sin `.md`) de `3_Guias_de_Estudio/` (sin `_Resumen`/`_Sintesis`/`_Repaso`/`_Cursada`, que
    se usan como complemento) y descartá las que ya tienen su `*_Flashcards.csv`.
 2. Mostrale al usuario la lista y cuántos mazos se van a generar antes de arrancar.
 3. Si son más de 3, repartí las guías entre subagentes (una o pocas guías cada uno), cada
