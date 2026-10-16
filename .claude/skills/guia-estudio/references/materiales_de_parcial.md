@@ -1,8 +1,11 @@
 # Materiales de parcial: repaso e integración
 
-La guía extendida sirve para **entender** y como reemplazo del texto. Para **rendir** hacen falta
-además materiales cortos que integren y que obliguen a recordar. Las 8 guías del 2.º parcial de
-Psicoanálisis suman unas 85.000 palabras: sin estas capas no se repasan en los últimos días.
+La guía del protocolo elegido (`protocolos.md`) sirve para **entender** el tema con el alcance que
+pide la evaluación; la extendida, además, reemplaza al texto. Para **rendir** hacen falta materiales
+cortos que integren y que obliguen a recordar: las 8 guías extendidas del 2.º parcial de
+Psicoanálisis suman unas 85.000 palabras y las 7 de Evolutiva unas 107.000, y sin estas capas no se
+repasan en los últimos días. Las capas también se proponen antes de hacerlas (guía base y alcance,
+§5 de `protocolos.md`).
 
 | Capa | Archivo | Para qué | Cuándo se hace |
 |---|---|---|---|

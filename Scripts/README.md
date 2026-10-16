@@ -62,19 +62,21 @@ pero también se pueden correr a mano.
 | Script | Qué hace |
 |--------|----------|
 | `verificar_entorno.py` | Muestra qué herramientas están instaladas (Python, pandoc, LibreOffice, Tesseract, mermaid-cli) y cómo instalar las que faltan. `--probar` además renderiza un diagrama de prueba |
-| `nombres.py` | Genera el nombre correcto de un archivo según `AGENTS.md` (`generar guia --unidad U05 --tema "Duelo y melancolía"` → `U05_DueloYMelancolia_Guia.md`; `generar repaso …` → `…_Repaso_Guia.md`) y revisa nombres existentes (`validar <archivos>`) |
+| `protocolos.py` | Catálogo de protocolos de apuntes (cursada, desarrollo, extendido, oral, procedimental, lectura) con pros y contras. `listar` muestra el catálogo; `perfil --materia …` muestra el `Perfil_Materia.md`; `proponer --materia … --unidad …` arma la propuesta con el protocolo recomendado según el formato de la evaluación y el material de clase encontrado. Es la única fuente de verdad: `nombres.py` y `estado.py` lo leen de acá |
+| `nombres.py` | Genera el nombre correcto de un archivo según `AGENTS.md` (`generar guia --unidad U05 --tema "Duelo y melancolía"` → `U05_DueloYMelancolia_Guia.md`; `generar cursada --unidad C17 --tema "Memoria"` → `C17_Memoria_Cursada_Guia.md`; un tipo por protocolo; `generar repaso …` → `…_Repaso_Guia.md`) y revisa nombres existentes (`validar <archivos>`) |
 | `anki_csv.py` | Arma (`construir`), valida (`validar`) y lee (`leer`) los mazos CSV de Anki de `/flashcards` |
 | `probar_anki.py` | Importa mazos en una colección de Anki temporal y verifica que reimportar no duplica (requiere `pip install anki`) |
 | `simulacro.py` | Valida la estructura de un simulacro (`validar`: preguntas ↔ clave, opciones, fuentes, rúbricas) y registra los resultados del modo interactivo (`resultados`) |
 | `extraer.py` | Extrae PDFs (con texto, escaneados con OCR, a dos columnas) y PowerPoint a `*_Crudo.md` con marcas de página, limpieza e informe de calidad |
 | `exportar.py` | Guía `.md` → Word con la plantilla `plantillas/plantilla_guia.docx` y el filtro `plantillas/recuadros.lua` (recuadros de color, cada pregunta en página nueva, encabezado y paginado) (+ `--pdf`, `--imprimir` 2 por hoja, `--indice`, `--sin-saltos`; márgenes estrechos con espacio para notas y texto justificado) |
-| `estado.py` | Tabla por materia y unidad de qué etapas están hechas y qué falta (incluye fichas de repaso y guías con formato anterior) |
+| `estado.py` | Tabla por materia y unidad de qué etapas están hechas y qué falta, con el protocolo de cada guía entre paréntesis (incluye fichas de repaso y guías con formato anterior) |
 | `fuente.py` | Divide un texto extraído en partes (`partes`, `texto`) y controla la cobertura de una guía contra su fuente (`cobertura`: términos, autores, casos y citas de página faltantes) |
 | `diagramas.py` | Renderiza los diagramas Mermaid de una guía a `_media/[Unidad]_[Tema]_NN.mmd/.png` e inserta la imagen en la guía |
 | `frontmatter.py` | Lee y escribe la cabecera YAML de los `.md` generados. `estado <archivo>` dice si una guía fue editada a mano desde que se generó, para no pisarla |
 
 ```bash
 python Scripts/estudio/verificar_entorno.py --probar
+python Scripts/estudio/protocolos.py proponer --materia "Psicología Evolutiva" --unidad C17
 python Scripts/estudio/nombres.py validar "2do Año/Psicoanálisis/3_Guias_de_Estudio/"*.md
 ```
 

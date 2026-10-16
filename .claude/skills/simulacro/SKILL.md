@@ -24,8 +24,8 @@ entrenan recordar, pero no armar una respuesta de 10 renglones. Ahí el simulacr
    del examen tomado del perfil de la materia (`python Scripts/estudio/protocolos.py perfil --materia "<Materia>"`).
    Esperá la elección.
 3. Identificá el alcance: una guía, varias clases ("clases 4, 7 y 11"), una unidad o un parcial
-   entero. Buscá las guías en `[Año]/[Materia]/3_Guias_de_Estudio/` (la extendida; las `_Resumen` /
-   `_Sintesis` como complemento). Si están solo en `.docx`, convertilas con pandoc a un temporal
+   entero. Buscá las guías en `[Año]/[Materia]/3_Guias_de_Estudio/` (la guía base elegida en el paso 2;
+   las `_Resumen` / `_Sintesis` / `_Repaso` como complemento). Si están solo en `.docx`, convertilas con pandoc a un temporal
    fuera del repo. Si no queda claro de qué materia o unidad se trata, **preguntá**.
 4. Buscá material de examen de la cátedra para **calibrar** el estilo y priorizar temas:
    `5_Evaluaciones/` (repasos, cuestionarios, casos, problemas), la guía de lectura de

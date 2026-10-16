@@ -1,4 +1,7 @@
-# Plantilla de guía extendida
+# Plantilla de guía (protocolos B. Desarrollo y C. Extendido)
+
+La usan los protocolos B y C de `protocolos.md`. Los demás (A. Cursada, D. Oral, E. Procedimental,
+F. Lectura) tienen su estructura propia en la §4 de ese archivo, aunque usan los mismos recuadros.
 
 Basada en las guías del 2.º parcial de Psicoanálisis (`C13_EstructuraYTiemposDeLaNeurosis_Guia.md`,
 `C21_23_DireccionDeLaCuraIntervencionesYFinDeAnalisis_Guia.md`) y en Biología
@@ -14,7 +17,8 @@ material; el resto va siempre.
   argumento, y al final van "Para rendir — preguntas y respuestas modelo" con consignas armadas
   desde las diapositivas y los "lo que entra sí o sí".
 
-En las dos, todo lo que la fuente dice tiene su lugar (regla de apuntes extendidos de `AGENTS.md`).
+En el protocolo C, todo lo que la fuente dice tiene su lugar; en el B, el desarrollo ampliado se
+acota a lo que sostiene cada respuesta (ver «Protocolos de Apuntes» en `AGENTS.md`).
 
 ## Recuadros (se ven de color en el Word)
 
