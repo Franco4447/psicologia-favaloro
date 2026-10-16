@@ -21,8 +21,11 @@ responder, verificar que los commits viejos den 404.
 - **Bibliografía de 1er Año**: conserva sus nombres y subcarpetas originales.
 
 ### 1.3 Material de estudio
-- Flashcards: solo hay mazos de `C04` (Biología) y `C08` (Psicoanálisis); 8 simulacros en
-  total. La mayoría de las guías no tiene ninguno de los dos.
+- Flashcards: hay mazos de Biología `C04`, Psicoanálisis (2.º parcial), Procesos Básicos III
+  (`U03`) y Psicología Evolutiva (`C17`-`C23`). Muchas guías anteriores todavía no tienen
+  flashcards ni simulacro.
+- Perfiles de materia: faltan los de Biología, Estadística, Procesos Básicos II, Psicología
+  Social y las de 1er Año (se crean la primera vez que se pide material).
 - Guías sin escribir: Psicología Experimental U01–U05, Psicología Social U04 y Procesos
   Básicos II. Las 4 guías de Pensamiento (Procesos Básicos III, `U03`) todavía no tienen
   flashcards ni simulacro.
@@ -101,8 +104,16 @@ en claude.ai y, si no, usa la lista fija y las entregas propias. Las reglas de r
 mismas en ambos modos, las entregas nuevas de `SEED` aparecen aunque haya datos guardados, y
 los datos del formato anterior se migran solos.
 
-### 2.9 Documentación
+### 2.9 Protocolos de apuntes *(octubre 2026)*
+La regla de «apuntes extendidos siempre» producía guías del largo del libro aun para exámenes de
+respuesta corta (Evolutiva: ≈107.000 palabras para 7 clases, ~20 % fuera del programa). Se
+reemplazó por seis protocolos con propuesta obligatoria (pros, contras y recomendación),
+`Scripts/estudio/protocolos.py` como catálogo único y un `Perfil_Materia.md` por materia
+(PR #28).
+
+### 2.10 Documentación
 `README.md` y `AGENTS.md` coherentes entre sí (sin carpetas globales, códigos de unidad,
 nombres sin truncar, diagramas, temporales, 1er Año, cómo subir commits que mueven muchos
 archivos). `Scripts/README.md` y `Planificador_Parciales/README.md` describen sus
-herramientas.
+herramientas. Desde octubre de 2026, los dos README y `docs/PLAN_SKILLS_ESTUDIO.md` describen
+los protocolos de apuntes y el perfil de materia.
