@@ -2,117 +2,200 @@
 materia: Psicología Evolutiva
 unidad: C21
 tipo: guia
+protocolo: cursada
 fuentes:
-- archivo: 3_Guias_de_Estudio/C21_Personalidad_Guia.md
+- archivo: 2_Textos_Extraidos/C21_Catedra_DesarrolloDeLaPersonalidad_Crudo.md
 - archivo: 2_Textos_Extraidos/U10_Papalia_Cap11_Crudo.md
+- archivo: 3_Guias_de_Estudio/C21_Personalidad_Guia.md
 skill: guia-estudio
-generado: '2026-10-16'
-hash_generado: 185d32cb66a5
+generado: '2026-10-21'
+hash_generado: 5fa14acee202
 ---
 
 # C21 — Personalidad en la adultez · Versión de cursada
 
 > **Fuentes:**
 >
-> - Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). *Desarrollo del adulto y vejez* (caps. 11 y 6). McGraw Hill Interamericana.
-> - Cátedra de Psicología Evolutiva. (2026a). *Desarrollo cognitivo en la adultez* [Diapositivas de clase]. Universidad Favaloro. (Solo para la creatividad, §4.)
+> - Cátedra de Psicología Evolutiva. (2026g). *Desarrollo de la personalidad* [Diapositivas de clase, unidad 10]. Universidad Favaloro.
+> - Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). Desarrollo de la personalidad. En *Desarrollo del adulto y vejez* (cap. 11, pp. 392-430). McGraw Hill Interamericana.
 
-> **Aviso sobre las fuentes:** esta es la **versión de cursada**, pero esta clase (13/10) **no tiene diapositivas ni apuntes** en la carpeta, así que el recorte sigue solo el programa de la unidad 10: «desarrollo y estudio de la personalidad; teorías de la personalidad; cambios en la personalidad; desarrollo de la creatividad». Cuando consigas la presentación, ajustá el énfasis. Quedan afuera, y están en `C21_Personalidad_Guia.md`: las facetas de cada uno de los cinco factores, el detalle de los métodos de medición, las teorías del desarrollo de la identidad de género y el detalle de las tareas de Vaillant y las fases de Levinson.
+> **Aviso sobre las fuentes:** **versión de cursada** (protocolo A): lo que se dio en la clase del 13/10 (diapositivas de la cátedra) y lo que pide el programa de la unidad 10 («desarrollo y estudio de la personalidad; teorías de la personalidad; cambios en la personalidad; desarrollo de la creatividad»). Sigue el orden de las diapositivas. Reemplaza a la versión provisoria anterior, hecha solo con el programa. Quedan afuera, y están en `C21_Personalidad_Guia.md`: las facetas de cada factor, el detalle de Vaillant y Levinson, la crisis de la adultez media, los estudios Mills de Helson, las teorías freudiana y del yo en relación sobre el género, Jung y Gutmann en detalle y la tipología de Bem. La **creatividad**, que el programa nombra en esta clase, se dio con inteligencia: está en `C18_Inteligencia_Cursada_Guia.md` (§5).
 
-> **Idea-fuerza:** La personalidad adulta combina **estabilidad y cambio**. Los **rasgos** (Costa y McCrae) son muy estables después de los 30; el **autoconcepto** (Whitbourne) equilibra asimilación y acomodación de la identidad; las **etapas** (Erikson, Vaillant, Levinson) describen cambios normativos con crisis; y los **acontecimientos de la vida** (Neugarten) importan según el momento en que ocurren. Su función central es la **adaptación** (Papalia et al., 2009b, pp. 395, 399-400, 428).
+> **Idea-fuerza:** La personalidad es un patrón **distintivo y relativamente estable** de pensar, sentir y actuar con el que cada persona se **adapta**. No está fijada al nacer: resulta de la **interacción** entre herencia (temperamento) y ambiente. Cuatro tipos de modelos explican su desarrollo adulto: los de **rasgos** (casi no cambia), los del **autoconcepto** (equilibrio entre estabilidad y cambio), los de **etapas** (cambios normativos por edad) y los de **acontecimientos vitales** (cambios según cuándo ocurren los eventos). Con la edad, los roles de **género** tienden a hacerse más flexibles (Cátedra de Psicología Evolutiva, 2026g, diapositivas 3, 7, 12, 31; Papalia et al., 2009b, pp. 395, 398-400).
 
-## Mapa: qué pide el programa
+## Mapa: qué pide el programa y qué se dio en clase
 
 | Tema | Programa | Clase | Sección |
 |---|---|---|---|
-| Desarrollo y estudio de la personalidad (definición, medición, orígenes) | ✔ | sin datos | §1 |
-| Teorías de la personalidad: rasgos, autoconcepto, etapas, acontecimientos | ✔ | sin datos | §2 |
-| Cambios en la personalidad (estabilidad y cambio; género; estudios Mills) | ✔ | sin datos | §3 |
-| Desarrollo de la creatividad | ✔ | se vio en C18 | §4 |
+| Qué es la personalidad; adaptación | ✔ | ✔ | §1 |
+| Medición: Q-sort e inventarios | ✔ | ✔ | §1 |
+| Desarrollo de la personalidad: temperamento, genética y ambiente | ✔ | ✔ | §2 |
+| Modelos de rasgos: los cinco factores | ✔ | ✔ | §3 |
+| Modelos del autoconcepto: Whitbourne | ✔ | ✔ | §4 |
+| Modelos de etapas | ✔ | ✔ | §5 |
+| Modelos de los acontecimientos vitales | ✔ | ✔ | §6 |
+| Género y personalidad | — | ✔ | §7 |
+| Mapa de los seis elementos de la personalidad | ✔ | ✔ | §8 |
+| Desarrollo de la creatividad | ✔ | en C18 | (ver C18) |
 
 ---
 
-## 1. Desarrollo y estudio de la personalidad
+## 1. ¿Qué es la personalidad y cómo se mide?
 
-**Definición.** La personalidad es la forma **única y relativamente constante** de sentir, pensar y comportarse de una persona (Mischel, 1986, citado en Papalia et al., 2009b, p. 395); su función es la **adaptación**: ajustarse a los eventos y circunstancias.
+**Definición.** La personalidad es un conjunto de **patrones de comportamiento, pensamientos y emociones distintivos** que caracterizan la forma en que cada individuo **se adapta** a las situaciones de su vida. La **adaptación** (el ajuste a los eventos, circunstancias y condiciones de la vida) es una de sus funciones más importantes: las personas se adaptan modificando algo de sí mismas, de su entorno o de ambos, y las formas en que lo hacen muestran **cierta estabilidad** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 3; Papalia et al., 2009b, p. 395).
 
-**Cómo se estudia.** Con inventarios de personalidad, la metodología Q (*Q-sort*: comparar el yo real con el ideal), entrevistas y autorreportes; todos tienen riesgos de sesgo (pp. 397-398).
+**Medición** (Cátedra de Psicología Evolutiva, 2026g, diapositivas 4-5; Papalia et al., 2009b, pp. 397-398):
+- **Metodología Q (Q-sort):** un paquete de tarjetas, cada una con un enunciado o adjetivo («Con frecuencia estoy solo», «Enérgico», «Ansioso», «Amigable»); la persona las ordena en categorías según qué tan cercanamente la describen.
+- **Inventario de personalidad:** test psicométrico que pregunta a la persona por sí misma o por otros en referencia a **rasgos**. Hay varios, según la teoría que los respalda; uno de los más usados es el **NEO PI-R**, de los cinco factores.
 
-**Orígenes.** Resulta de la interacción entre la **herencia** (el temperamento, base biológica) y la **experiencia**; los estudios con gemelos muestran que el ambiente explica cerca de la mitad de las diferencias, y sobre todo el ambiente **no compartido** (pp. 398-399). En el **estudio Terman**, la **meticulosidad** en la infancia predijo mejor la longevidad que el optimismo (pp. 396-397).
-
-> ⚠ **No confundir:** *personalidad* (patrón de pensar, sentir y actuar, con estructura interna) con *temperamento* (disposición biológica a reaccionar emocionalmente; es parte de la personalidad) (Papalia et al., 2009b, pp. 395, 398).
+> ⚠ **No confundir:** *Q-sort* (ordenar tarjetas según cuánto describen a la persona) con *inventario* (cuestionario psicométrico sobre rasgos) (Cátedra de Psicología Evolutiva, 2026g, diapositivas 4-5).
 
 ---
 
-## 2. Teorías de la personalidad: ¿estabilidad o cambio?
+## 2. Desarrollo de la personalidad: herencia y ambiente
 
-El gran debate es si la personalidad adulta se mantiene o cambia. Cuatro tipos de modelos dan respuestas distintas (Papalia et al., 2009b, pp. 399-400):
+A pesar de su estabilidad, la personalidad **no está determinada desde el nacimiento**: es un proceso en evolución sujeto a influencias **internas (genéticas)** y **externas (ambientales)** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 7).
 
-| Modelo | Autores | Qué describe | Estabilidad o cambio |
-|---|---|---|---|
-| **Rasgos** | Costa y McCrae | Cinco dimensiones de la personalidad | Estabilidad después de los 30 |
-| **Autoconcepto** | Whitbourne | Cómo la persona se ve a sí misma | Equilibrio dinámico |
-| **Etapas** | Erikson, Vaillant, Levinson | Tareas o crisis según la edad | Cambio normativo |
-| **Acontecimientos de la vida** | Neugarten | Eventos y su momento | Cambio por eventos, no por edad |
-
-**Modelo de rasgos: los cinco factores** (Costa y McCrae) (pp. 401-403). Cinco dimensiones: **neuroticismo** (ansiedad, hostilidad, depresión, vulnerabilidad), **extraversión** (sociabilidad, calidez, actividad), **apertura a la experiencia** (imaginación, curiosidad, gusto por lo nuevo), **meticulosidad** (orden, disciplina, responsabilidad) y **amabilidad** (confianza, altruismo, modestia). Son **muy estables después de los 30 años**, incluso en distintas culturas; los cambios son pequeños: bajan el neuroticismo, la extraversión y la apertura, y suben la amabilidad y la meticulosidad. Se los critica por ser un modelo **limitado** que no explica todo.
-
-**Modelo del autoconcepto** (Whitbourne) (pp. 405-406). El sentido del yo se construye en la interacción con otros y se organiza en esquemas. Whitbourne describe dos procesos: la **asimilación de identidad** (ajustar las experiencias nuevas al autoconcepto que ya se tiene) y la **acomodación de identidad** (revisar la autoimagen ante lo que no se puede explicar). El equilibrio entre ambos define el **estilo de identidad**: el exceso de asimilación vuelve a la persona ciega a la realidad; el de acomodación, débil e influenciable.
-
-**Modelos de etapas** (pp. 407-414). Describen cambios **normativos** ligados a la edad, en períodos sucesivos marcados por crisis:
-- **Erikson:** en la adultez, **intimidad vs. aislamiento** (virtud: amor), **generatividad vs. estancamiento** (cuidado) e **integridad vs. desesperación** (sabiduría).
-- **Vaillant** (estudio Grant, varones seguidos durante décadas): una secuencia de tareas adultas que va de la identidad y la intimidad a la consolidación de la carrera, la generatividad y la integridad.
-- **Levinson:** una **estructura de vida** que se construye y revisa en fases estables y transiciones, con agitación hacia los 40.
-- **Crítica:** se basan en muestras pequeñas de **hombres blancos privilegiados** de una misma cohorte, y no consideran otras culturas.
-
-**Modelo de los acontecimientos de la vida** (Neugarten) (pp. 415-417). El desarrollo adulto depende de los **eventos** y del **momento** en que ocurren, más que de la edad. Los eventos **normativos** son los esperados (paternidad, jubilación); los **no normativos**, inusuales (un accidente). Un evento esperado ocurre «**en tiempo**» o «**fuera de tiempo**» según el **reloj social** (casarse a los 14 o a los 41). Las crisis aparecen cuando los eventos no ocurren como se esperaba. Crítica: la sociedad hoy es **menos consciente de la edad**, así que los tiempos son menos previsibles.
+- **Temperamento:** la disposición, de base genética, con la que un individuo **reacciona emocionalmente** ante personas y situaciones (Papalia et al., 2009b, p. 398). La cátedra mostró como ejemplo la escala **TEMPS-A**, con cinco dimensiones temperamentales: depresión, ciclotimia, hipertimia, irritabilidad y ansiedad (Cátedra de Psicología Evolutiva, 2026g, diapositiva 8).
+- **Pero no es solo genética:** Eaves, Eysenck y Martin (1989) revisaron estudios longitudinales con **gemelos idénticos** (misma herencia), **gemelos fraternos** (parte de la herencia) y otros familiares: las **influencias ambientales explicaron la mitad** de las variaciones en la personalidad (Papalia et al., 2009b, pp. 398-399; Cátedra de Psicología Evolutiva, 2026g, diapositiva 9).
+- **Influencia mutua:** el temperamento de niños de 3 a 6 años afectó cómo sus padres interactuaron con ellos tres años después, y temperamento y estilo parental juntos ayudaron a explicar el optimismo o pesimismo **21 años después**; además, los niños **buscan ambientes** que fortalecen sus tendencias (como elegir amigos afines). Por eso, **la interacción entre herencia y experiencia afecta la personalidad a todas las edades** (Papalia et al., 2009b, p. 399; Cátedra de Psicología Evolutiva, 2026g, diapositiva 10).
 
 > **Esqueleto de la respuesta:**
-> 1. **Tesis:** el debate es estabilidad vs. cambio; cada modelo responde distinto.
-> 2. **Rasgos** (Costa y McCrae): cinco factores, estables después de los 30 (Papalia et al., 2009b, pp. 401-403).
-> 3. **Autoconcepto** (Whitbourne): asimilación y acomodación (p. 406).
-> 4. **Etapas** (Erikson, Vaillant, Levinson): cambio normativo con crisis; sesgo de muestra (pp. 407-414).
-> 5. **Acontecimientos** (Neugarten): eventos y reloj social (pp. 415-417).
-> 6. **Cierre:** hoy se busca integrarlos (p. 428).
+> 1. **Tesis:** la personalidad se desarrolla por la interacción entre herencia y ambiente.
+> 2. **Herencia:** el temperamento, disposición emocional de base genética (Papalia et al., 2009b, p. 398).
+> 3. **Ambiente:** en los estudios de gemelos explica la mitad de las variaciones (pp. 398-399).
+> 4. **Interacción:** temperamento y crianza se influyen; los niños eligen ambientes afines (p. 399).
+> 5. **Cierre:** la interacción actúa a todas las edades.
 
-> ⚠ **No confundir:** *asimilación de identidad* (ajustar la experiencia al yo) con *acomodación* (cambiar el yo); y *evento no normativo* (inesperado) con *evento normativo fuera de tiempo* (esperado, pero a una edad inusual) (Papalia et al., 2009b, pp. 406, 416).
-
----
-
-## 3. Cambios en la personalidad
-
-**Estabilidad y cambio a la vez.** Hoy se busca **integrar** los modelos: la personalidad cambia de manera consistente y a menudo predecible de la juventud a la adultez media, pero con áreas estables; una misma dimensión puede manifestarse distinto con la edad (un vendedor sociable a los 25 puede, a los 70, hacer lobby en el Congreso) (Papalia et al., 2009b, pp. 427-428).
-
-**Género.** Con la edad hay indicios de mayor **androginia** (combinar rasgos considerados masculinos y femeninos): según **Jung**, en la adultez media hombres y mujeres integran aspectos antes «rechazados»; según **Gutmann**, después de la crianza los hombres se vuelven más pasivos y las mujeres más dominantes. La evidencia es mixta (pp. 418-421).
-
-**Estudios Mills (Helson).** 140 mujeres del Mills College seguidas más de treinta años, para corregir el sesgo masculino de las etapas. A principios de los 40 muchas revisaron su historia vital; entre los 21 y los 52 aumentaron la autodisciplina, la independencia, la autoconfianza y la asertividad, y a los 50 describían su vida como «de primera clase». Límite: muestra de mujeres blancas de clase media alta de una sola cohorte (pp. 422-427).
-
-> ⚠ **No confundir:** *crisis de la adultez media* (estresante y universal, según Levinson) con *transición de la adultez media* (a veces estresante, no necesariamente una crisis; tiene más apoyo empírico) (Papalia et al., 2009b, p. 410).
+> ⚠ **No confundir:** *temperamento* (disposición biológica a reaccionar emocionalmente; es parte de la personalidad) con *personalidad* (patrón más amplio de pensar, sentir y actuar, moldeado también por la experiencia) (Papalia et al., 2009b, pp. 395, 398).
 
 ---
 
-## 4. Desarrollo de la creatividad (programa)
+## 3. Modelos de rasgos: los cinco factores
 
-El programa vuelve a nombrar la creatividad en esta clase; en el cursado se la trabajó junto con la inteligencia (clase 18, §5 de `C18_Inteligencia_Cursada_Guia.md`). Lo esencial: el **rendimiento creativo** de la adultez es producto de fuerzas biológicas, personales, sociales y culturales; se mide con el **pensamiento divergente**; el pico de productividad ronda **fines de los 30**, varía según el campo, y la calidad de las obras no depende de la edad (Papalia et al., 2009b, pp. 218-227). Se relaciona con la personalidad: las personas creativas son versátiles, independientes, no conformistas y **abiertas a la experiencia**, uno de los cinco factores (Cátedra de Psicología Evolutiva, 2026a, diapositiva 17).
+**Qué proponen.** Intentan reducir la personalidad y el comportamiento a sus **elementos básicos**; agrupan los rasgos relacionados en **dimensiones**, y suponen que los rasgos predicen la influencia de la personalidad en el comportamiento. Los estudios basados en estos modelos encuentran que la personalidad adulta **cambia muy poco** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 13; Papalia et al., 2009b, p. 400).
+
+**El modelo de los cinco factores** (*Big Five*) de **Costa y McCrae**, el más usado en investigación, tiene cinco dimensiones, cada una con varios rasgos: **neuroticismo, extraversión, apertura a la experiencia, meticulosidad (o responsabilidad) y amabilidad** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 14; Papalia et al., 2009b, p. 401).
+
+**Qué cambia con la edad.** En promedio, y considerando edad, raza y cultura: el **neuroticismo, la extraversión y la apertura** descienden de los 18 a los 30 años, mientras que la **amabilidad y la meticulosidad** aumentan lentamente con la edad (Cátedra de Psicología Evolutiva, 2026g, diapositiva 15; Papalia et al., 2009b, p. 402).
+
+**Matices** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 17; Papalia et al., 2009b, pp. 402-405):
+- **Cultura:** puede cambiar cómo se *expresa* la personalidad, pero los patrones de rasgos son **similares en distintas culturas**.
+- **Cohorte:** las diferencias entre grupos de edad en los estudios **transversales** pueden reflejar diferencias culturales entre cohortes, más que cambios dentro de cada persona.
+- **Percepción del cambio:** cuando se les pide comparar su personalidad pasada (**retrospectiva**) con la actual, las personas reportan **más cambios** de los que muestran las mediciones repetidas (**longitudinales**).
+
+> **Esqueleto de la respuesta:**
+> 1. **Tesis:** para los modelos de rasgos la personalidad adulta cambia muy poco.
+> 2. **Cinco factores** (Costa y McCrae): neuroticismo, extraversión, apertura, meticulosidad, amabilidad (Papalia et al., 2009b, p. 401).
+> 3. **Cambios pequeños:** bajan N, E y apertura hasta los 30; suben amabilidad y meticulosidad (p. 402).
+> 4. **Matices:** patrones similares entre culturas; efecto de cohorte; la gente cree que cambió más de lo que cambió (pp. 402-405).
+> 5. **Cierre:** estabilidad, con cambios menores y predecibles.
+
+> ⚠ **No confundir:** *cambio percibido* (lo que la persona cree, en retrospectiva) con *cambio medido* (lo que muestran las pruebas longitudinales): el primero es mayor (Cátedra de Psicología Evolutiva, 2026g, diapositiva 17).
+
+---
+
+## 4. Modelos del autoconcepto: Whitbourne
+
+**Autoconcepto.** Es el **lado cognitivo** de la personalidad: la visión de uno mismo es su **núcleo**. Está formado por **esquemas**, modelos operativos de la realidad en torno a los cuales se organiza el comportamiento, y vive en una **tensión dinámica entre estabilidad y cambio** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 18; Papalia et al., 2009b, pp. 405-406).
+
+**Modelo de Susan Whitbourne** (Cátedra de Psicología Evolutiva, 2026g, diapositivas 19-20; Papalia et al., 2009b, p. 406). Se enfoca en los **estilos de identidad**: formas características de confrontar, interpretar y responder a la experiencia. La identidad se construye con imágenes acumuladas del yo, conscientes e inconscientes, que se confirman o revisan con dos procesos continuos de interacción con el entorno (parecidos a los de Piaget):
+- **Asimilación de identidad:** ajustar las experiencias nuevas a un autoconcepto que ya se tiene; muchas personas se esfuerzan por confirmar una visión favorable de sí mismas.
+- **Acomodación de identidad:** ajustar la autoimagen cuando la experiencia lo obliga; es necesaria para una adaptación efectiva.
+- **El exceso de cualquiera no es saludable:** quien siempre asimila es **ciego a la realidad** (solo ve lo que desea); quien siempre acomoda es **débil y fácilmente influenciable**.
+
+Así, el modelo incluye dentro de una personalidad **esencialmente estable** un mecanismo **flexible** para lidiar con la experiencia nueva, único para cada persona.
+
+> **Esqueleto de la respuesta:**
+> 1. **Tesis:** el autoconcepto es el núcleo de la personalidad y equilibra estabilidad y cambio.
+> 2. **Esquemas:** organizan el comportamiento (Papalia et al., 2009b, pp. 405-406).
+> 3. **Whitbourne:** estilos de identidad; asimilación y acomodación (p. 406).
+> 4. **Equilibrio:** el exceso de asimilación vuelve ciego; el de acomodación, influenciable (p. 406).
+> 5. **Cierre:** estabilidad con flexibilidad.
+
+> ⚠ **No confundir:** *asimilación de identidad* (la experiencia se ajusta al yo) con *acomodación de identidad* (el yo se ajusta a la experiencia) (Cátedra de Psicología Evolutiva, 2026g, diapositiva 20).
+
+---
+
+## 5. Modelos de las etapas
+
+Describen un **cambio normativo** de la personalidad: patrones de desarrollo **ligados a la edad** y comunes a la mayoría de una población. Los modelos de **Erikson, Vaillant, Levinson y Helson** son **organicistas** (Cátedra de Psicología Evolutiva, 2026g, diapositiva 21; Papalia et al., 2009b, p. 407).
+
+**Ejemplo: Erikson.** La séptima crisis, en la adultez media, es **generatividad frente a estancamiento**: el adulto desarrolla la preocupación por **establecer y guiar a la siguiente generación**; quien no encuentra una salida para la generatividad se vuelve **ensimismado, autoindulgente y estancado** (Papalia et al., 2009b, pp. 407-409; Cátedra de Psicología Evolutiva, 2026g, diapositiva 21). En la adultez joven, la crisis previa es intimidad frente a aislamiento, y en la vejez, integridad frente a desesperación (p. 407).
+
+**Crítica.** Estos modelos se formularon con **muestras pequeñas de hombres blancos** de nivel socioeconómico medio-alto y nivel educativo alto, nacidos en las décadas de 1920 y 1930 (Cátedra de Psicología Evolutiva, 2026g, diapositiva 22; Papalia et al., 2009b, pp. 413-414).
+
+> ⚠ **No confundir:** *modelos de etapas* (el cambio llega con la edad) con *modelos de acontecimientos vitales* (el cambio llega con los eventos y su momento) (Cátedra de Psicología Evolutiva, 2026g, diapositivas 21-24).
+
+---
+
+## 6. Modelos de los acontecimientos vitales
+
+Toman los **principales eventos de la vida** como indicadores del desarrollo: las personas se desarrollan según **cuándo ocurren o no** ciertos eventos clave (Cátedra de Psicología Evolutiva, 2026g, diapositiva 23; Papalia et al., 2009b, pp. 415-416).
+- **Eventos normativos:** los que le ocurren a la mayoría de los adultos (la paternidad, la jubilación).
+- **Eventos no normativos:** inusuales e inesperados (un accidente traumático, un ascenso no anunciado, un premio de lotería).
+
+**Lo central:** las crisis **no** se producen por llegar a cierta edad (como en los modelos de etapas), sino por **la ocurrencia esperada o inesperada** y por **el momento** en que suceden los eventos. El estrés puede aparecer ante un evento inesperado (perder el empleo), ante uno esperado que llega antes o después de lo previsto (enviudar a los 35, tener el primer hijo a los 45) o ante uno esperado que **nunca ocurre** (no casarse, no poder tener hijos) (Cátedra de Psicología Evolutiva, 2026g, diapositiva 24; Papalia et al., 2009b, p. 416).
+
+> **Esqueleto de la respuesta:**
+> 1. **Tesis:** el desarrollo responde a los eventos de vida y a su momento, no a la edad.
+> 2. **Tipos:** normativos y no normativos (Papalia et al., 2009b, p. 416).
+> 3. **Momento:** «en tiempo» o «fuera de tiempo»; también el evento que no llega (p. 416).
+> 4. **Ejemplos:** enviudar a los 35, primer hijo a los 45, nunca casarse.
+> 5. **Cierre:** contraste con los modelos de etapas.
+
+---
+
+## 7. Género y personalidad
+
+**Cómo se desarrollan los roles y la identidad de género.** Hay varias teorías, muchas contradictorias, y cada una tiene consecuencias para la vejez. La cátedra presentó tres (Cátedra de Psicología Evolutiva, 2026g, diapositivas 27-30; Papalia et al., 2009b, pp. 419-420):
+- **Aprendizaje social:** los niños aprenden a identificarse y a actuar como el padre del mismo sexo, por **observación, imitación y reforzamiento** de los padres y la sociedad («¡No seas llorón!»). Como son aprendidos, los roles pueden modificarse después con nuevos modelos o reforzamientos.
+- **Cognitivo-evolutivas:** los niños aprenden sobre el género **pensando activamente** sobre su experiencia y adoptan los comportamientos que consideran coherentes con su identidad. Cuatro etapas: (1) en la niñez, nociones vagas; (2) en la niñez, ideas rígidas sobre lo que son y hacen varones y mujeres; (3) en la adultez, un autoconcepto más **flexible y andrógino**; (4) **trascendencia del rol de género**: los roles se vuelven irrelevantes y se hace lo más adaptativo en cada situación.
+- **Esquema de género:** combina las dos anteriores. Los **esquemas de género** son patrones de comportamiento organizados en torno al género que ayudan a ordenar lo que significa ser hombre o mujer; pueden modificarse, pero eso exige cambiar actitudes culturalmente arraigadas, muy resistentes al cambio.
+
+**¿Cambian los roles de género en la adultez?** Hay considerable evidencia de que las personas se vuelven **más andróginas en la adultez media**: los **hombres**, más abiertos con sus sentimientos, más interesados en las relaciones íntimas y más paternales que los jóvenes; las **mujeres**, más asertivas, activas, independientes y orientadas al logro (Cátedra de Psicología Evolutiva, 2026g, diapositiva 31; Papalia et al., 2009b, pp. 420-421).
+
+> **Esqueleto de la respuesta:**
+> 1. **Tesis:** los roles de género se aprenden y tienden a flexibilizarse en la adultez.
+> 2. **Aprendizaje social:** observación, imitación, reforzamiento (Papalia et al., 2009b, p. 419).
+> 3. **Cognitivo-evolutivas:** cuatro etapas, hasta la trascendencia del rol (p. 419).
+> 4. **Esquema de género:** esquemas modificables pero resistentes (p. 420).
+> 5. **Adultez media:** mayor androginia en hombres y mujeres (pp. 420-421).
+
+> ⚠ **No confundir:** *aprendizaje social* (el niño aprende del ambiente: modelos y reforzamiento) con *teoría cognitivo-evolutiva* (el niño construye activamente la noción de género) y con *esquema de género* (combina ambas) (Cátedra de Psicología Evolutiva, 2026g, diapositivas 28-30).
+
+---
+
+## 8. Mapa de los seis elementos de la personalidad
+
+**Costa y McCrae** elaboraron un mapa de **seis elementos interrelacionados** que están en la base de la mayoría de las teorías de la personalidad (Cátedra de Psicología Evolutiva, 2026g, diapositiva 33; Papalia et al., 2009b, p. 400):
+1. **Tendencias básicas:** rasgos de personalidad, salud física, apariencia, género, orientación sexual, inteligencia, habilidades artísticas.
+2. **Influencias externas:** del ambiente.
+3. **Adaptaciones específicas:** roles sociales, actitudes, intereses, habilidades, actividades, hábitos y creencias.
+4. **Autoconcepto:** el sentido del yo.
+5. **Biografía objetiva:** los hechos reales de la vida de la persona.
+6. **Procesos dinámicos:** el aprendizaje.
+
+Este mapa permite integrar los cuatro modelos: los **rasgos** son tendencias básicas; el **autoconcepto** es un elemento propio; los **acontecimientos vitales** forman parte de la biografía objetiva y de las influencias externas.
+
+> ⚠ **No confundir:** *tendencias básicas* (lo que menos cambia: rasgos, salud, inteligencia) con *adaptaciones específicas* (roles, hábitos, actitudes: lo que surge de combinar tendencias e influencias externas); y *biografía objetiva* (los hechos) con *autoconcepto* (cómo uno se ve) (Papalia et al., 2009b, p. 400).
 
 ---
 
 ## Para rendir (formato del parcial)
 
-**1) Opción múltiple.** ¿Cuál **no** es uno de los cinco factores de Costa y McCrae? (a) neuroticismo; (b) apertura a la experiencia; (c) **generatividad**; (d) meticulosidad. — *Respuesta: c.* La generatividad es la séptima crisis de Erikson (Papalia et al., 2009b, pp. 401, 407).
+**1) Opción múltiple.** Según Whitbourne, una persona que interpreta toda experiencia nueva de modo que confirme su visión favorable de sí misma, sin revisarla nunca, usa en exceso: (a) la acomodación de identidad; (b) **la asimilación de identidad**; (c) el pensamiento posformal; (d) la trascendencia del rol de género. — *Respuesta: b.* El exceso de asimilación vuelve a la persona ciega a la realidad (Cátedra de Psicología Evolutiva, 2026g, diapositiva 20).
 
-**2) Verdadero o falso.** «Según Neugarten, las crisis de la adultez se deben a llegar a ciertas edades.» — *Falso.* Se deben a eventos inesperados o fuera del reloj social (p. 416).
+**2) Verdadero o falso.** «Según los estudios de gemelos, la personalidad está determinada casi por completo por la herencia.» — *Falso.* Las influencias ambientales explicaron la mitad de las variaciones; herencia y experiencia interactúan a todas las edades (Papalia et al., 2009b, pp. 398-399).
 
-**3) Verdadero o falso.** «Los modelos de etapas se basaron en muestras diversas en género y cultura.» — *Falso.* Se basaron en muestras pequeñas de hombres blancos privilegiados (pp. 413-414).
+**3) Verdadero o falso.** «Para los modelos de acontecimientos vitales, también puede generar estrés un evento esperado que nunca ocurre.» — *Verdadero.* Por ejemplo, no casarse o no poder tener hijos (Cátedra de Psicología Evolutiva, 2026g, diapositiva 24).
 
-**4) Pregunta abierta (máx. 7 renglones).** *Compará el modelo de los cinco factores con los modelos de etapas.*
+**4) Pregunta abierta (máx. 7 renglones).** *¿La personalidad cambia en la adultez? Respondé según dos modelos.*
 
-*Respuesta modelo:* El modelo de los cinco factores de Costa y McCrae (neuroticismo, extraversión, apertura, meticulosidad y amabilidad) sostiene que la personalidad es muy estable después de los 30 años, con cambios pequeños, también en distintas culturas. Los modelos de etapas (Erikson, Vaillant, Levinson) describen en cambio transformaciones normativas ligadas a la edad, con tareas o crisis como la intimidad, la generatividad y la integridad. Al primero se lo critica por limitado y a los segundos por basarse en hombres blancos privilegiados; hoy se busca integrarlos (Papalia et al., 2009b, pp. 401-414, 428).
+*Respuesta modelo:* Depende del modelo. Para los modelos de rasgos, como el de los cinco factores de Costa y McCrae (neuroticismo, extraversión, apertura, meticulosidad y amabilidad), la personalidad adulta cambia muy poco: el neuroticismo, la extraversión y la apertura bajan hasta los 30 años y la amabilidad y la meticulosidad suben lentamente. Para los modelos de acontecimientos vitales, en cambio, las personas se desarrollan según si ocurren o no los eventos esperados y en qué momento: enviudar a los 35 o tener el primer hijo a los 45 puede producir crisis (Papalia et al., 2009b, pp. 401-402, 416).
 
 ## Referencias
 
-Cátedra de Psicología Evolutiva. (2026a). *Desarrollo cognitivo en la adultez* [Diapositivas de clase]. Universidad Favaloro.
+Cátedra de Psicología Evolutiva. (2026g). *Desarrollo de la personalidad* [Diapositivas de clase, unidad 10]. Universidad Favaloro.
 
 Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). Desarrollo de la personalidad. En *Desarrollo del adulto y vejez* (cap. 11, pp. 392-430). McGraw Hill Interamericana.
-
-Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). Inteligencia y creatividad. En *Desarrollo del adulto y vejez* (cap. 6, pp. 191-229). McGraw Hill Interamericana.
