@@ -2,119 +2,185 @@
 materia: Psicología Evolutiva
 unidad: C22
 tipo: guia
+protocolo: cursada
 fuentes:
-- archivo: 3_Guias_de_Estudio/C22_Afrontamiento_Guia.md
+- archivo: 2_Textos_Extraidos/C22_Catedra_SaludMentalAfrontamientoYAdaptacion_Crudo.md
 - archivo: 2_Textos_Extraidos/U10_Papalia_Cap12_Crudo.md
+- archivo: 3_Guias_de_Estudio/C22_Afrontamiento_Guia.md
 skill: guia-estudio
-generado: '2026-10-16'
-hash_generado: 83b974aefece
+generado: '2026-10-21'
+hash_generado: 2883f44d6879
 ---
 
-# C22 — Afrontamiento y comportamientos destructivos · Versión de cursada
+# C22 — Salud mental, afrontamiento y adaptación al envejecimiento · Versión de cursada
 
 > **Fuentes:**
 >
+> - Cátedra de Psicología Evolutiva. (2026h). *Salud mental, afrontamiento y adaptación al envejecimiento* [Diapositivas de clase, unidad 10]. Universidad Favaloro.
 > - Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). Salud mental, afrontamiento y adaptación al envejecimiento. En *Desarrollo del adulto y vejez* (cap. 12, pp. 431-475). McGraw Hill Interamericana.
 
-> **Aviso sobre las fuentes:** esta es la **versión de cursada**, pero la clase (20/10) **todavía no se dictó**: no hay diapositivas ni apuntes, así que el recorte sigue solo el programa de la unidad 10: «afrontamiento de los cambios en el desarrollo; estilos de afrontamiento; comportamientos destructivos y efectos en la salud». Cuando tengas la presentación, ajustá el énfasis. Quedan afuera, y están en `C22_Afrontamiento_Guia.md`: el caso de Arthur Ashe en detalle, los recuadros (varones y roles familiares, Malasia, religión), los siete ajustes de Peck, la salud mental en la vejez (bienestar de Ryff, depresión, hipocondría, valoración de fortalezas) y las cifras de EE. UU. La **demencia** está resumida en `C17_Memoria_Cursada_Guia.md` (§6), porque el programa la ubica en la unidad 9.
+> **Aviso sobre las fuentes:** **versión de cursada** (protocolo A): lo que se dio en la clase del 20/10 (diapositivas de la cátedra) y lo que pide el programa de la unidad 10 («afrontamiento de los cambios en el desarrollo; estilos de afrontamiento; comportamientos destructivos y efectos en la salud»). Sigue el orden de las diapositivas. Reemplaza a la versión provisoria anterior, hecha solo con el programa. Quedan afuera, y están en `C22_Afrontamiento_Guia.md`: el caso de Arthur Ashe, el modelo de **estilos** de afrontamiento de Vaillant (la cátedra presentó solo tres enfoques), los recuadros, el abuso infantil, el bienestar de Ryff, la depresión y la hipocondría en detalle, y las cifras de EE. UU. La **demencia** está resumida en `C17_Memoria_Cursada_Guia.md` (§6).
 
-> **Idea-fuerza:** **Afrontar** es pensar o actuar para reducir el estrés. Los modelos van del más mecánico (**ambiental**: el estrés depende de cuántos cambios hay) al **conductual** (desesperanza aprendida), al de **estilos** (mecanismos más o menos maduros, Vaillant) y al de **valoración cognitiva** (Lazarus): un proceso dinámico, centrado en el **problema** o en la **emoción**, donde ninguna estrategia es buena o mala en sí. Afrontar el propio envejecimiento puede entenderse como desvinculación, actividad o **continuidad**. Cuando el afrontamiento falla aparecen **comportamientos destructivos** (abuso de sustancias, violencia, abuso de niños y de ancianos) que dañan la salud propia y ajena (Papalia et al., 2009b, pp. 435-460).
+> **Idea-fuerza:** La **salud mental** es vivir de manera significativa con los recursos disponibles, y contra el estereotipo, **no se deteriora típicamente en la vejez**. El estrés es inevitable: **afrontar** es pensar o actuar para reducirlo. La cátedra presenta tres enfoques: **ambiental** (cuántos cambios hay), **conductual** (adaptaciones aprendidas) y **valoración cognitiva** (Lazarus y Folkman: un proceso dinámico, centrado en el **problema** o en la **emoción**, donde ninguna estrategia es buena o mala en sí). El **envejecimiento exitoso** se explica con modelos **normativos** (Peck, desvinculación, actividad) y de **equilibrio** (continuidad, Whitbourne). Cuando el afrontamiento falla aparecen **comportamientos destructivos** (Cátedra de Psicología Evolutiva, 2026h, diapositivas 4-5, 7-8, 25; Papalia et al., 2009b, pp. 433, 435-449, 461).
 
-## Mapa: qué pide el programa
+## Mapa: qué pide el programa y qué se dio en clase
 
 | Tema | Programa | Clase | Sección |
 |---|---|---|---|
-| Afrontamiento: qué es; modelos ambiental, conductual y de estilos | ✔ | sin datos | §1 |
-| Estilos de afrontamiento: valoración cognitiva; problema vs. emoción | ✔ | sin datos | §2 |
-| Afrontamiento de los cambios del envejecimiento: desvinculación, actividad, continuidad | ✔ | sin datos | §3 |
-| Comportamientos destructivos y efectos en la salud | ✔ | sin datos | §4 |
+| Salud mental y satisfacción con la vida | — | ✔ | §1 |
+| Modelos de afrontamiento: ambientales y conductuales | ✔ | ✔ | §2 |
+| Valoración cognitiva: problema vs. emoción; estrategias de los mayores | ✔ | ✔ | §3 |
+| Envejecimiento exitoso: concepto, críticas, modelos normativos y de equilibrio | ✔ | ✔ | §4 |
+| Comportamientos destructivos | ✔ | ✔ | §5 |
+| Actividad: Zonas Azules | — | ✔ | §6 |
 
 ---
 
-## 1. Qué es afrontar y los primeros modelos
+## 1. Salud mental
 
-**Afrontamiento:** pensamiento o comportamiento adaptativo dirigido a **reducir o aliviar el estrés** que surge de situaciones dolorosas, amenazantes o desafiantes. Es un aspecto importante de la **salud mental**, que Kivnick define como «hacer lo mejor que uno puede con lo que tiene» (Kivnick, 1993, citado en Papalia et al., 2009b, p. 433; p. 435).
+**Definición.** La salud mental es el **intento por vivir de manera significativa**, en ciertas circunstancias sociales y ambientales, contando con un conjunto específico de **recursos y apoyos**: desarrollar **fortalezas internas** y usar **recursos externos** para compensar debilidades y déficits (Kivnick, 1993, citado en Papalia et al., 2009b, p. 433; Cátedra de Psicología Evolutiva, 2026h, diapositiva 4). La **satisfacción con la vida** es la forma en que una persona juzga la calidad de su vida (p. 433).
 
-**Modelos ambientales** (pp. 435-436). Son **mecanicistas**: el tamaño y la frecuencia de las demandas determinan el afrontamiento. **Holmes y Rahe** asignaron **unidades de cambio de vida** a cada evento: cuantos más cambios en un año, más probabilidad de enfermar. Sus límites: no consideran cómo la persona **interpreta** el evento, ni su momento, ni el estrés por **falta** de cambio, ni las tensiones cotidianas, ni las diferencias individuales. Dos variantes: el modelo de **congruencia** (el estrés depende del ajuste entre la persona y su ambiente) y el de **competencia-presión ambiental** (Lawton y Nahemow: la presión moderada lleva al máximo potencial; si la competencia baja o la presión sube, aparece el estrés).
+**Contra el estereotipo** (Cátedra de Psicología Evolutiva, 2026h, diapositiva 5; Papalia et al., 2009b, pp. 461-462):
+- El deterioro de la salud mental en la vejez **no es típico**.
+- La enfermedad mental es **menos común** entre los ancianos que entre los adultos más jóvenes, y la salud mental **tiende a mejorar** con la edad.
+- Influyen en la salud mental y la satisfacción con la vida: la **salud física**, el **ajuste psicológico**, el **estatus socioeconómico**, los **eventos vitales** y el **apoyo social**. Entre los trastornos de la vejez, la cátedra destaca la **depresión** y las **demencias**.
 
-**Modelos conductuales** (p. 437). El afrontamiento son adaptaciones aprendidas: ante un estresor se puede **huir, pelear o aguantar**. Si escapar es imposible y los intentos fracasan, aparece la **desesperanza aprendida**: dejar de intentar cambiar la situación (por ejemplo, cónyuges golpeados que siguen con su pareja).
-
-**Modelos de estilos** (p. 437). De tradición psicoanalítica: el afrontamiento como **estilo** estable, más o menos efectivo. **Vaillant** distinguió mecanismos **maduros** (humor, ayudar a otros), **neuróticos** (reprimir), **inmaduros** (fantasear, achaques imaginarios) y **psicóticos** (negar o distorsionar la realidad); quienes usaban mecanismos maduros eran más felices y estaban más sanos. **Lazarus** los critica: no captan que una misma persona afronta distinto cada situación, no distinguen afrontar de una conducta automática y confunden el proceso con el resultado (p. 438).
-
-> ⚠ **No confundir:** *modelo ambiental* (mecanicista: cuentan las demandas) con *valoración cognitiva* (contextual: cuenta cómo la persona interpreta la situación) (Papalia et al., 2009b, pp. 435-438).
+> ⚠ **No confundir:** *salud mental* (proceso positivo: vivir con sentido usando recursos) con *ausencia de enfermedad*; y *satisfacción con la vida* (juicio de la persona sobre su vida) con *salud física* (Papalia et al., 2009b, p. 433).
 
 ---
 
-## 2. Estilos de afrontamiento: el modelo de valoración cognitiva
+## 2. Modelos de afrontamiento: ambientales y conductuales
 
-**Lazarus y Folkman** (pp. 438-439). El afrontamiento es un **proceso dinámico**, no un rasgo: ocurre cuando la persona percibe una exigencia que supera sus recursos. La persona **valora** la situación, sus recursos y la amenaza; **elige** una estrategia; la pone en práctica; **evalúa** el resultado y, si no funcionó, **revalora** y cambia de estrategia. La elección depende de los recursos (salud, creencias, apoyo social, dinero) y de las restricciones (personales y ambientales).
+**Afrontamiento:** el estrés es una parte inevitable de la vida, y afrontar es el **pensamiento adaptativo o comportamiento dirigido a reducir o aliviar el estrés** que surge de condiciones dolorosas, amenazantes o desafiantes. La cátedra distingue **tres enfoques**: ambientales, conductuales y de valoración cognitiva (Cátedra de Psicología Evolutiva, 2026h, diapositivas 7-8; Papalia et al., 2009b, p. 435).
 
-**Dos modos de afrontar** (p. 439):
-- **Enfocado en el problema:** eliminar, gestionar o mejorar lo que causa el estrés. Predomina cuando se ve posible un cambio realista.
-- **Enfocado en la emoción** (paliativo): manejar la respuesta emocional para sentirse mejor (distraerse, reinterpretar, negar). Predomina cuando se concluye que poco puede hacerse.
+**Modelos ambientales** (Cátedra de Psicología Evolutiva, 2026h, diapositivas 9-11; Papalia et al., 2009b, pp. 435-436):
+- **Holmes y Rahe (1976):** investigación cuantitativa con **5.000 pacientes internados**, a quienes preguntaron por los eventos relevantes (positivos y negativos) previos a su enfermedad. Asignaron a cada evento **unidades de cambio de vida (LCU)**. Resultado: enfermaron en los siguientes 1 o 2 años **la mitad** de quienes sumaban **150 a 300 LCU** al año y el **70 %** de quienes superaban **300**. Cuantos más cambios importantes, más difícil afrontarlos.
+- **Críticas:** no considera cómo la persona **interpreta** el evento; el **momento** en que aparece puede influir; el estrés también puede venir de la **falta de cambio**; y la salud física y mental se afecta más por las **molestias y tensiones cotidianas** que por eventos graves aislados.
+- **Modelos que responden a esas críticas:**
+  - **Congruencia:** la satisfacción o el estrés dependen del **ajuste entre la persona y su ambiente** (internar en un asilo a un anciano con fuerte necesidad de independencia aumenta su estrés).
+  - **Competencia-presión ambiental:** compara la **presión** (demanda) del ambiente con la **competencia** (habilidad) de la persona. Cuando están equilibradas hay un **nivel de adaptación normal**; cualquier diferencia produce estrés.
+- Estos modelos explican **por qué** algo estresa, pero no **cómo** lo afronta la persona.
 
-**Ninguno es bueno o malo en sí:** la **negación** puede ser dañina (no ir al médico ante un dolor en el pecho) o útil (negarse a vivir pendiente de la muerte, como Arthur Ashe) (p. 439). Los **ancianos** usan más estrategias centradas en la emoción, pero no por incapacidad: ante problemas muy emocionales eligen regular la emoción, lo que puede ser adaptativo (Blanchard-Fields et al., 1995, citado en Papalia et al., 2009b, p. 441). La **religión** es una estrategia frecuente, sobre todo en los mayores (pp. 441-443).
+**Modelos conductuales** (Cátedra de Psicología Evolutiva, 2026h, diapositiva 12; Papalia et al., 2009b, p. 437): dan a la persona un **rol más activo**. Explican el afrontamiento por **condicionamiento** (clásico y operante): adaptaciones **aprendidas** a los estresores que reducen el estrés percibido. Se basan en estudios con animales. Ante el estrés hay tres respuestas: **luchar, huir o aguantar firme**. Si escapar es imposible y los intentos fracasan, aparece la **desesperanza aprendida**: dejar de intentar cambiar la situación.
+
+> ⚠ **No confundir:** *modelo de congruencia* (ajuste entre necesidades y ambiente) con *competencia-presión* (demandas del ambiente frente a habilidades de la persona) (Cátedra de Psicología Evolutiva, 2026h, diapositiva 11).
+
+---
+
+## 3. Modelo de valoración cognitiva (Lazarus y Folkman)
+
+**El proceso** (Cátedra de Psicología Evolutiva, 2026h, diapositiva 13; Papalia et al., 2009b, p. 438). El afrontamiento es un **proceso evolutivo** que ocurre solo cuando la persona percibe una **exigencia excesiva**, que supera sus recursos y le demanda un esfuerzo inusual. La persona hace una **valoración cognitiva** de la situación (su ambiente y sus recursos), y el afrontamiento es **dinámico**: se revalora y se cambia de estrategia si hace falta.
+
+**Qué influye en la elección y efectividad de la estrategia** (diapositiva 14; p. 438):
+- **Recursos personales:** salud, energía, creencias sobre el control personal o sobrenatural, compromisos y motivaciones, habilidades sociales y de resolución de problemas, apoyo social y recursos materiales (dinero, bienes y servicios).
+- **Restricciones personales:** problemas psicológicos (miedo al fracaso) o actitudes que reflejan normas sociales (roles de género).
+- **Restricciones ambientales:** demandas que compiten por los mismos recursos, o instituciones que frustran el afrontamiento.
+
+**Dos modos de afrontar** (diapositiva 15; p. 439):
+- **Enfocado en el problema:** se dirige a **eliminar, gestionar o mejorar** la condición que provoca estrés.
+- **Enfocado en la emoción:** se dirige a **manejar la respuesta emocional** para aliviar el impacto físico o psicológico.
+
+**Claves** (diapositiva 17; pp. 439-441):
+- **Ninguna estrategia es buena o mala en sí:** su efectividad depende del contexto.
+- Los **adultos mayores** usan más estrategias enfocadas en la emoción que los jóvenes y son más capaces de **regularse emocionalmente**.
+- Muchos mayores usan el **comportamiento religioso** como estrategia efectiva.
+
+**Estrategias reportadas espontáneamente por adultos mayores** (Koenig, George y Siegler, 1988, citado en Papalia et al., 2009b, pp. 441-442; Cátedra de Psicología Evolutiva, 2026h, diapositiva 18):
+
+| Estrategia | % |
+|---|---|
+| Religión | 17,4 |
+| Mantenerse ocupado | 15,1 |
+| Aceptación | 11,3 |
+| Apoyo de la familia o amistades | 11,1 |
+| Ayuda profesional | 6,1 |
+| Actitud positiva | 5,6 |
+| Vivir un día a la vez | 5,2 |
+
+**Ejercicio de la clase: ¿qué modo aplicarían?** (diapositiva 16). Una forma de razonarlo con el modelo: el modo **centrado en el problema** predomina cuando se ve posible un cambio, y el **centrado en la emoción**, cuando poco puede hacerse (p. 439). Respuestas posibles:
+- *Fallecimiento del cónyuge:* sobre todo **emoción** (no se puede revertir), con algo de problema en los trámites y la reorganización de la vida.
+- *Pérdida de la audición:* **problema** (audífonos, adaptar la comunicación) y **emoción** (aceptar la pérdida).
+- *Cambio de rutina por la jubilación:* sobre todo **problema** (armar una rutina y actividades nuevas).
+- *Jubilación insuficiente para vivienda y salud:* sobre todo **problema** (buscar ingresos, ayudas o ajustar gastos), con manejo emocional de la preocupación.
 
 > **Esqueleto de la respuesta:**
-> 1. **Tesis:** el afrontamiento es pensamiento o conducta para reducir el estrés; los modelos difieren en cuánto rol activo dan a la persona.
-> 2. **Ambiental:** mecanicista; Holmes y Rahe (Papalia et al., 2009b, pp. 435-436).
-> 3. **Conductual:** desesperanza aprendida (p. 437).
-> 4. **Estilos:** mecanismos de Vaillant (p. 437).
-> 5. **Valoración cognitiva:** proceso dinámico; problema o emoción (pp. 438-439).
-> 6. **Cierre:** ninguna estrategia es buena o mala en sí (p. 439).
+> 1. **Tesis:** afrontar es un proceso dinámico de valoración y revaloración (Lazarus y Folkman).
+> 2. **Cuándo ocurre:** ante una exigencia que supera los recursos (Papalia et al., 2009b, p. 438).
+> 3. **Qué influye:** recursos y restricciones personales y ambientales (p. 438).
+> 4. **Modos:** enfocado en el problema o en la emoción (p. 439).
+> 5. **Cierre:** ninguna estrategia es mala en sí; los mayores regulan mejor la emoción (pp. 439-441).
 
-> ⚠ **No confundir:** *afrontamiento enfocado en el problema* (cambiar la situación) con *enfocado en la emoción* (manejar la respuesta emocional) (Papalia et al., 2009b, p. 439).
-
----
-
-## 3. Afrontar los cambios del envejecimiento
-
-El programa habla de «afrontamiento de los cambios en el desarrollo». El capítulo lo trata como **envejecimiento exitoso**: evitar la enfermedad y la discapacidad, mantener el funcionamiento físico y cognitivo y seguir activamente involucrado en lo social y productivo. Se lo critica porque puede cargar a los ancianos con estándares inalcanzables y «culpar a las víctimas» (Papalia et al., 2009b, pp. 444-445).
-
-Tres teorías sobre cómo se afronta el envejecimiento (pp. 446-448):
-- **Desvinculación** (Cumming y Henry): el envejecimiento trae un retiro gradual, **universal e inevitable** de los roles sociales. Hoy se la considera defectuosa: según Gutmann, solo ocurre donde los ancianos no tienen roles.
-- **Actividad** (Neugarten y colaboradores): cuanto más activa siga la persona y más **sustituya los roles perdidos**, mejor envejece. La evidencia es mixta (importa el **tipo** de actividad) y se la considera simplista.
-- **Continuidad** (Atchley): los mayores buscan un **equilibrio entre continuidad y cambio** con su pasado (estructuras internas y externas); la actividad importa en tanto **continúa el estilo de vida previo**.
-
-> ⚠ **No confundir:** *desvinculación* (retiro universal), *actividad* (más actividad, mejor) y *continuidad* (equilibrio entre continuidad y cambio según el estilo previo) (Papalia et al., 2009b, pp. 446-448).
+> ⚠ **No confundir:** *afrontamiento enfocado en el problema* (cambiar la situación) con *enfocado en la emoción* (manejar la respuesta emocional); y *modelo ambiental* (mecanicista: cuentan las demandas) con *valoración cognitiva* (cuenta cómo la persona interpreta la situación) (Papalia et al., 2009b, pp. 435-439).
 
 ---
 
-## 4. Comportamientos destructivos y efectos en la salud
+## 4. Envejecimiento exitoso
 
-Las conductas destructivas no son «asuntos privados»: dañan a quien las tiene y a quienes lo rodean, y con frecuencia se transmiten entre generaciones (Papalia et al., 2009b, p. 450).
+**El concepto** (Cátedra de Psicología Evolutiva, 2026h, diapositivas 21-22; Papalia et al., 2009b, p. 444). Representa un gran **cambio en el enfoque gerontológico**, en respuesta al número creciente de ancianos activos y saludables, y contrasta con la vieja idea de que envejecer es resultado de **procesos inevitables de pérdida y deterioro**. La **MacArthur Foundation Research Network on Successful Aging** identificó **tres componentes**:
+1. **Evitar la enfermedad** o la discapacidad relacionada con ella.
+2. **Mantener un alto funcionamiento físico y cognitivo.**
+3. **Involucrarse en forma activa y sostenida** en actividades sociales y productivas.
 
-**Abuso y dependencia de sustancias** (pp. 450-454). El **abuso** es un patrón de uso dañino con consecuencias (falta a las obligaciones, situaciones peligrosas, problemas legales o sociales) durante doce meses; la **dependencia** suma criterios como tolerancia creciente, abstinencia y pérdida de control. En la vejez el problema más común es el **alcohol**, a menudo **subestimado** porque se oculta y se confunde con otros síntomas; los ancianos alcohólicos responden bien al tratamiento. Los hábitos con sustancias se fijan en la adultez temprana, así que dependen mucho de la **cohorte**.
+**Críticas** (diapositiva 23; pp. 444-445): estos términos pueden **cargar más que liberar** a los mayores, al presionarlos a cumplir estándares que no pueden o no quieren; no contemplan **estilos de vida** diferentes, ni las influencias **genéticas**, ni los distintos niveles de **escolaridad** y **socioeconómicos**. ▸ **Complemento:** la cátedra mostró además un artículo sobre los *Superagers* (diapositiva 24); revisalo si lo tenés.
 
-**Violencia del compañero íntimo** (pp. 454-456): violencia física o sexual, amenazas, abuso psicológico y acecho por parte de una pareja o ex pareja. Las víctimas suelen quedarse por baja autoestima, dependencia económica, miedo y aislamiento.
+**Modelos normativos** (diapositivas 26-27; pp. 445-447): los adultos envejecen exitosamente cuando completan las **tareas psicológicas** de cada período de manera emocionalmente saludable.
+- **Siete ajustes de Peck**:
+  - *En la adultez media:* valorar la **sabiduría** frente a la fuerza física; **socializar** frente a sexualizar las relaciones; **flexibilidad emocional** frente a empobrecimiento emocional; **flexibilidad mental** frente a rigidez.
+  - *En la vejez:* **autodefinición más amplia** frente a preocupación por los roles del trabajo; **trascendencia del cuerpo** frente a preocupación por el cuerpo; **trascendencia del yo** frente a preocupación por el yo.
+- **Teoría de la desvinculación:** el envejecimiento normal implica una reducción gradual del involucramiento social y más preocupación por uno mismo: un retiro gradual de los roles que termina con la muerte.
+- **Teoría de la actividad:** cuanto más activas permanecen las personas, mejor envejecen (más actividad = más satisfacción); quienes envejecen bien mantienen todas las actividades posibles y **sustituyen los roles perdidos**.
 
-**Abuso infantil y negligencia** (pp. 457-458): el **abuso** daña activamente al niño; la **negligencia** es no satisfacer sus necesidades básicas. Es síntoma de una perturbación grave de la crianza, agravada por pobreza, alcoholismo, depresión o aislamiento.
-
-**Abuso de ancianos** (pp. 458-460): maltrato o negligencia de ancianos dependientes o violación de sus derechos. Contra la creencia popular, ocurre sobre todo **en el hogar**: en el **90 %** de los casos el abusador es un **familiar**. Tipos: negligencia, abuso psicológico, explotación financiera y abuso físico. Su causa más frecuente es un **cambio en la situación familiar** que suma estrés al cuidador.
+**Modelos de equilibrio** (diapositivas 28-29; pp. 447-449): el envejecimiento perdió parte de su carácter normativo, por los avances en salud y condición física y por las variaciones en la jubilación.
+- **Teoría de la continuidad (Atchley):** envejecer bien es mantener la **continuidad con el pasado**, en las **estructuras internas** (conocimiento, autoestima, sentido de historia personal) y **externas** (roles, relaciones, actividades, apoyo social, ambiente físico). La actividad importa no por sí misma, sino **en la medida en que continúa el estilo de vida** previo.
+- **Estilos de identidad (Whitbourne):** las personas enfrentan el envejecimiento como enfrentaron retos anteriores; los cambios físicos, mentales y emocionales pueden desestabilizar el autoconcepto y deben **asimilarse, acomodarse o ambas**: lo saludable es el **equilibrio** entre asimilación y acomodación (→ C21 §4).
 
 > **Esqueleto de la respuesta:**
-> 1. **Tesis:** los comportamientos destructivos dañan a quien los tiene y a los demás.
-> 2. **Sustancias:** abuso vs. dependencia; el alcohol en la vejez, subestimado (Papalia et al., 2009b, pp. 450-454).
-> 3. **Violencia del compañero íntimo** (pp. 454-456).
-> 4. **Abuso infantil y de ancianos:** sobre todo en el hogar, por familiares (pp. 457-460).
-> 5. **Cierre:** efectos en la salud y transmisión entre generaciones.
+> 1. **Tesis:** el envejecimiento exitoso cambió el foco de la pérdida a lo que se puede sostener, pero recibe críticas.
+> 2. **MacArthur:** tres componentes (Papalia et al., 2009b, p. 444).
+> 3. **Críticas:** presión, estilos de vida, genética, escolaridad, nivel socioeconómico (pp. 444-445).
+> 4. **Normativos:** Peck; desvinculación vs. actividad (pp. 445-447).
+> 5. **Equilibrio:** continuidad (Atchley) y Whitbourne (pp. 447-449).
 
-> ⚠ **No confundir:** *abuso de sustancias* (uso dañino con consecuencias) con *dependencia* (tolerancia, abstinencia, pérdida de control); y *abuso* (daño activo) con *negligencia* (no satisfacer necesidades) (Papalia et al., 2009b, pp. 450, 457).
+> ⚠ **No confundir:** *desvinculación* (retiro gradual de los roles), *actividad* (más actividad, mejor; sustituir roles) y *continuidad* (la actividad importa si continúa el estilo de vida previo) (Cátedra de Psicología Evolutiva, 2026h, diapositivas 27-28).
+
+---
+
+## 5. Patrones de comportamiento destructivo
+
+(Cátedra de Psicología Evolutiva, 2026h, diapositivas 31-32; Papalia et al., 2009b, pp. 450-460.)
+- **Trastornos por sustancias:** entre los ancianos el problema suele **subestimarse**: muchos viven solos o tienen pocos contactos sociales, así que puede pasar sin detectarse, y a veces la familia ignora o encubre el abuso (p. 450).
+- **Violencia del compañero íntimo en la vejez:** a una esposa anciana que sufre abuso la retienen en la relación los valores y normas sobre los roles femeninos de otra época y la falta de educación o de preparación para independizarse económicamente (p. 456).
+- **Abuso de ancianos:** la forma más común es la **negligencia**, seguida del **abuso psicológico**, la **explotación financiera** y el **abuso físico**. Los más vulnerables son las **mujeres**, las personas con **demencia o depresión** y con **discapacidades físicas** (p. 458).
+
+> ⚠ **No confundir:** *abuso* (daño activo: psicológico, financiero, físico) con *negligencia* (no atender las necesidades de quien depende de uno), que es la forma más común en los ancianos (Papalia et al., 2009b, pp. 457-458).
+
+---
+
+## 6. Actividad de clase: Zonas Azules
+
+La cátedra propuso investigar las **Zonas Azules**, lugares del mundo donde las personas viven más años con buena calidad de vida, y responder (Cátedra de Psicología Evolutiva, 2026h, diapositivas 33-34):
+- ¿Qué factores podrían relacionarse con el envejecimiento exitoso de esas poblaciones?
+- ¿Cómo se relacionan esos hallazgos con los conceptos de **salud mental** y **afrontamiento** vistos en clase?
+- ¿Desde qué **modelo de envejecimiento exitoso** pueden interpretarse?
+
+**Para responder** con los conceptos de la clase: los factores de la salud mental (salud física, apoyo social, eventos vitales; §1), las estrategias de los mayores (religión, mantenerse ocupado, apoyo familiar; §3) y los modelos de §4. La teoría de la **actividad** y la de la **continuidad** son las candidatas naturales; justificá cuál según lo que encuentres.
 
 ---
 
 ## Para rendir (formato del parcial)
 
-**1) Opción múltiple.** En el modelo de Lazarus, el afrontamiento enfocado en la emoción: (a) busca eliminar la fuente del estrés; (b) **busca manejar la respuesta emocional para aliviar el impacto del estrés**; (c) es siempre inmaduro; (d) solo lo usan los ancianos. — *Respuesta: b* (Papalia et al., 2009b, p. 439).
+**1) Opción múltiple.** Holmes y Rahe asignaron unidades de cambio de vida a los eventos. Su modelo se critica porque: (a) da a la persona un rol demasiado activo; (b) **no considera cómo cada persona interpreta el evento**; (c) se basa en estudios con animales; (d) solo estudia eventos positivos. — *Respuesta: b.* También ignora el momento del evento, la falta de cambio y las tensiones cotidianas (Cátedra de Psicología Evolutiva, 2026h, diapositiva 10).
 
-**2) Verdadero o falso.** «La mayor parte del abuso de ancianos ocurre en instituciones.» — *Falso.* Ocurre sobre todo en el hogar; en el 90 % de los casos el abusador es un familiar (p. 458).
+**2) Verdadero o falso.** «El deterioro de la salud mental es típico de la vejez.» — *Falso.* La enfermedad mental es menos común en los ancianos que en los adultos jóvenes y la salud mental tiende a mejorar con la edad (Papalia et al., 2009b, p. 461).
 
-**3) Verdadero o falso.** «Para la teoría de la continuidad, la actividad importa en tanto continúa el estilo de vida previo.» — *Verdadero* (Atchley, citado en Papalia et al., 2009b, pp. 447-448).
+**3) Verdadero o falso.** «Para la teoría de la continuidad, cuanta más actividad, mejor envejecimiento.» — *Falso.* Eso afirma la teoría de la actividad; para la continuidad, la actividad importa en la medida en que continúa el estilo de vida previo (pp. 447-448).
 
-**4) Pregunta abierta (máx. 7 renglones).** *Compará el modelo ambiental con el de valoración cognitiva.*
+**4) Pregunta abierta (máx. 7 renglones).** *Explicá el modelo de valoración cognitiva y por qué los adultos mayores usan más estrategias enfocadas en la emoción.*
 
-*Respuesta modelo:* El modelo ambiental (Holmes y Rahe) es mecanicista: el tamaño y la frecuencia de los cambios determinan el afrontamiento, por lo que ignora cómo la persona interpreta el evento y sus diferencias individuales. El de valoración cognitiva (Lazarus y Folkman) es contextual y dinámico: la persona valora la situación y sus recursos, elige una estrategia (enfocada en el problema o en la emoción), evalúa el resultado y, si no funciona, revalora. Para este modelo ninguna estrategia es buena o mala en sí (Papalia et al., 2009b, pp. 435-439).
+*Respuesta modelo:* Para Lazarus y Folkman, el afrontamiento es un proceso dinámico que aparece cuando la persona percibe una exigencia que supera sus recursos: valora la situación, sus recursos y sus restricciones, elige una estrategia y la revisa si no funciona. Puede enfocarse en el problema (eliminar o mejorar lo que estresa) o en la emoción (manejar la respuesta emocional), y ninguna es buena o mala en sí. Los mayores usan más las centradas en la emoción porque regulan mejor sus emociones y muchas veces enfrentan situaciones que no se pueden cambiar; la religión es una de las más frecuentes (Papalia et al., 2009b, pp. 438-441).
 
 ## Referencias
+
+Cátedra de Psicología Evolutiva. (2026h). *Salud mental, afrontamiento y adaptación al envejecimiento* [Diapositivas de clase, unidad 10]. Universidad Favaloro.
 
 Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). Salud mental, afrontamiento y adaptación al envejecimiento. En *Desarrollo del adulto y vejez* (cap. 12, pp. 431-475). McGraw Hill Interamericana.

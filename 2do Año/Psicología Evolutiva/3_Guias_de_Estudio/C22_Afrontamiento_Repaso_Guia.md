@@ -3,58 +3,76 @@ materia: Psicología Evolutiva
 unidad: C22
 tipo: guia
 fuentes:
-- archivo: 3_Guias_de_Estudio/C22_Afrontamiento_Guia.md
+- archivo: 3_Guias_de_Estudio/C22_Afrontamiento_Cursada_Guia.md
+- archivo: 2_Textos_Extraidos/C22_Catedra_SaludMentalAfrontamientoYAdaptacion_Crudo.md
 skill: guia-estudio
-generado: '2026-10-08'
-hash_generado: d85765e4d8b5
+generado: '2026-10-21'
+hash_generado: 6f9d07b78c43
 ---
 
-# C22 — Afrontamiento y salud mental · Ficha de repaso
+# C22 — Salud mental, afrontamiento y adaptación · Ficha de repaso
 
-> **Idea-fuerza:** La **salud mental** es «hacer lo mejor que uno puede con lo que tiene» (Kivnick): usar fortalezas y recursos para afrontar el estrés. Los **modelos de afrontamiento** (ambiental, conductual, de estilos y, sobre todo, el de **valoración cognitiva** de Lazarus) explican cómo se afronta: es un proceso dinámico, centrado en el problema o en la emoción. El **envejecimiento exitoso** se explica con modelos normativos (Peck, desvinculación, actividad) y de equilibrio (continuidad, Whitbourne). Cuando el afrontamiento falla: conductas destructivas y trastornos como depresión y demencia (Papalia et al., 2009b, pp. 433, 435, 438, 444-449, 461-475).
+> **Idea-fuerza:** La **salud mental** es vivir con sentido usando los recursos disponibles, y **no se deteriora típicamente en la vejez**. **Afrontar** es pensar o actuar para reducir el estrés; la cátedra presenta tres enfoques: **ambiental**, **conductual** y **valoración cognitiva** (problema o emoción; ninguna estrategia es mala en sí). El **envejecimiento exitoso** se explica con modelos **normativos** (Peck, desvinculación, actividad) y de **equilibrio** (continuidad, Whitbourne). Cuando el afrontamiento falla aparecen **comportamientos destructivos** (Cátedra de Psicología Evolutiva, 2026h, diapositivas 4-8, 25; Papalia et al., 2009b, pp. 433-449, 461).
 
-![Diagrama de la guía](_media/C22_Afrontamiento_01.png)
+```mermaid
+graph TD
+    E[Estrés inevitable] --> A[Afrontamiento]
+    A --> A1[Ambiental: Holmes y Rahe, congruencia, competencia-presión]
+    A --> A2[Conductual: lucha, huida, aguante; desesperanza aprendida]
+    A --> A3[Valoración cognitiva: Lazarus y Folkman]
+    A3 --> P[Enfocado en el problema]
+    A3 --> M[Enfocado en la emoción]
+    A --> V[Envejecimiento exitoso]
+    V --> V1[Normativos: Peck, desvinculación, actividad]
+    V --> V2[Equilibrio: continuidad, Whitbourne]
+    A --> D[Si falla: sustancias, violencia, abuso de ancianos]
+```
+
+![Diagrama 01](_media/C22_Afrontamiento_Repaso_01.png)
+
 
 ## Esqueletos de respuesta
 
-**P1. Modelos de afrontamiento.** 1) Ambiental: unidades de cambio de vida (Holmes y Rahe), congruencia, competencia-presión (pp. 435-436). 2) Conductual: desesperanza aprendida (p. 437). 3) Estilos: mecanismos de Vaillant (maduro, neurótico, inmaduro, psicótico) (p. 437). 4) Valoración cognitiva (Lazarus): valorar, elegir, evaluar y revalorar (pp. 438-439). 5) Ninguna estrategia es mala en sí.
+**P1. Salud mental en la vejez.** 1) Definición: vivir con sentido con recursos y apoyos (Kivnick, citado en p. 433). 2) Contra el estereotipo: menos enfermedad mental que en los jóvenes; tiende a mejorar (p. 461). 3) Factores: salud física, ajuste psicológico, nivel socioeconómico, eventos vitales, apoyo social (pp. 461-462).
 
-**P2. Problema vs. emoción.** Problema: eliminar o gestionar lo que estresa (cuando se ve posible un cambio); emoción: manejar la respuesta emocional (cuando poco puede hacerse); los ancianos usan más las centradas en la emoción, y pueden ser más selectivos (pp. 439-441). Ejemplos: la «posesión» en Malasia, la religión.
+**P2. Modelos de afrontamiento.** 1) Ambiental: LCU de Holmes y Rahe (mitad de 150-300 y 70 % de más de 300 enfermaron); críticas: interpretación, momento, falta de cambio, tensiones cotidianas; congruencia y competencia-presión (pp. 435-436). 2) Conductual: condicionamiento; lucha, huida o aguante; desesperanza aprendida (p. 437). 3) Valoración cognitiva (§P3).
 
-**P3. Envejecimiento exitoso.** MacArthur: evitar enfermedad y discapacidad, mantener el funcionamiento, involucrarse activamente (p. 444); críticas: puede cargar y «culpar a las víctimas» (pp. 444-445). Peck: siete ajustes. Desvinculación vs. actividad vs. continuidad (Atchley); estilos de identidad de Whitbourne (pp. 445-449).
+**P3. Valoración cognitiva.** 1) Proceso dinámico ante una exigencia que supera los recursos (p. 438). 2) Recursos y restricciones personales y ambientales (p. 438). 3) Problema vs. emoción (p. 439). 4) Ninguna es mala en sí; los mayores regulan mejor la emoción; religión 17,4 % (pp. 439-442).
 
-**P4. Conductas destructivas.** Abuso y dependencia de sustancias (alcohol, efectos de cohorte); violencia del compañero íntimo; abuso infantil y de ancianos (pp. 450-460).
+**P4. Envejecimiento exitoso.** 1) MacArthur: evitar la enfermedad, mantener el funcionamiento, involucrarse (p. 444). 2) Críticas: presión, estilos de vida, genética, escolaridad, nivel socioeconómico (pp. 444-445). 3) Normativos: Peck (siete ajustes), desvinculación, actividad (pp. 445-447). 4) Equilibrio: continuidad (Atchley), Whitbourne (pp. 447-449).
 
-**P5. Salud mental en la vejez.** La mayoría goza de buena salud mental; ciclo de vida (multidireccionalidad, plasticidad); seis dimensiones de Ryff; depresión (subdiagnosticada, tratable), demencia, hipocondría; fortalezas de Kivnick (pp. 461-473).
+**P5. Comportamientos destructivos.** Sustancias (subestimadas en los ancianos); violencia del compañero íntimo (normas de otra época, falta de independencia económica); abuso de ancianos (negligencia la más común; más vulnerables mujeres, personas con demencia, depresión o discapacidad) (pp. 450-458).
 
 ## No confundir
 
 | X | Y | Criterio |
 |---|---|---|
+| Modelo ambiental | Valoración cognitiva | Cuentan las demandas / cuenta cómo la persona interpreta la situación (pp. 435-438) |
+| Congruencia | Competencia-presión | Ajuste persona-ambiente / demandas frente a habilidades (diapositiva 11) |
 | Enfocado en el problema | Enfocado en la emoción | Cambiar la situación / manejar la respuesta emocional (p. 439) |
-| Afrontamiento | Conducta adaptativa automática | Esfuerzo ante exigencia excesiva / respuesta aprendida (p. 438) |
-| Modelo ambiental | Valoración cognitiva | Mecanicista / contextual y dinámico (pp. 435-438) |
-| Desvinculación | Actividad / continuidad | Retiro universal / más actividad es mejor / equilibrio continuidad-cambio (pp. 446-448) |
-| Abuso de sustancias | Dependencia | Patrón mal adaptado / tolerancia, abstinencia, control perdido (p. 450) |
-| Abuso | Negligencia | Daño activo / fracaso en satisfacer necesidades (p. 457) |
-| Depresión | Demencia / pseudodemencia | Trastorno del ánimo / múltiples déficits cognitivos / deterioro cognitivo por depresión (pp. 465-470) |
+| Desvinculación | Actividad / continuidad | Retiro gradual de roles / más actividad, mejor / la actividad importa si continúa el estilo previo (pp. 446-448) |
+| Modelos normativos | Modelos de equilibrio | Cumplir las tareas de cada etapa / equilibrio entre continuidad y cambio, distinto en cada persona (pp. 445-449) |
+| Abuso | Negligencia | Daño activo / no atender necesidades (la forma más común) (pp. 457-458) |
 
-## Citas y datos que conviene saber
+## Datos que conviene saber
 
-- Kivnick: salud mental = «hacer lo mejor que uno puede con lo que tiene» (Kivnick, 1993, p. 15, citado en Papalia et al., 2009b, p. 433).
-- Koenig et al. (1988): la **religión** fue la estrategia más citada (17,4 %) (Papalia et al., 2009b, tabla 12.1, pp. 441-442).
-- Abuso de ancianos: **90 %** de los abusadores son familiares (p. 458). Depresión: subdiagnosticada en ancianos (p. 466).
+- Holmes y Rahe: 5.000 pacientes; enfermó la mitad de quienes tenían 150-300 LCU y el 70 % de quienes superaban 300 (Papalia et al., 2009b, pp. 435-436).
+- Estrategias de los mayores: religión 17,4 %, mantenerse ocupado 15,1 %, aceptación 11,3 %, apoyo familiar o de amistades 11,1 % (pp. 441-442).
+- Siete ajustes de Peck: cuatro en la adultez media y tres en la vejez (p. 445).
 
 ## Referencias
 
-Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). *Desarrollo del adulto y vejez*. McGraw Hill Interamericana.
+Cátedra de Psicología Evolutiva. (2026h). *Salud mental, afrontamiento y adaptación al envejecimiento* [Diapositivas de clase, unidad 10]. Universidad Favaloro.
+
+Papalia, D. E., Sterns, H. L., Feldman, R. D., & Camp, C. J. (2009b). Salud mental, afrontamiento y adaptación al envejecimiento. En *Desarrollo del adulto y vejez* (cap. 12, pp. 431-475). McGraw Hill Interamericana.
 
 ## Autoevaluación rápida
 
-1. ¿Cómo define Kivnick la salud mental?
-2. Los cuatro modelos de afrontamiento en una oración cada uno.
-3. Diferenciá afrontamiento enfocado en el problema y en la emoción.
-4. Desvinculación, actividad y continuidad: ¿qué dice cada una?
-5. ¿Por qué se subdiagnostica la depresión en los ancianos?
-6. Seis dimensiones del bienestar de Ryff.
-7. ¿Qué propone Kivnick con la valoración de fortalezas?
+1. ¿Por qué decimos que el deterioro de la salud mental no es típico de la vejez?
+2. ¿Qué hallaron Holmes y Rahe y qué críticas recibe su modelo?
+3. ¿Qué es la desesperanza aprendida?
+4. ¿Qué recursos y restricciones influyen en el afrontamiento según Lazarus y Folkman?
+5. ¿Qué modo de afrontamiento usarías ante la pérdida de la audición? ¿Y ante el fallecimiento del cónyuge?
+6. Los tres componentes del envejecimiento exitoso y dos críticas.
+7. Diferenciá desvinculación, actividad y continuidad.
+8. ¿Cuál es la forma más común de abuso de ancianos y quiénes son más vulnerables?
