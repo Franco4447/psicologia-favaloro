@@ -18,4 +18,4 @@ evaluaciones:
 # Perfil de la materia
 
 - U03 Pensamiento preparada con guías completas, fichas, cuadro integrador, flashcards y simulacro (PR #20).
-- Presentación del artículo de Pensamiento (De Neys, 2023): guion por expositor (10 min, 5 personas) y diapositivas en `6_Entregables/U03_PresentacionArticulo_FastAndSlowThinking_*`.
+- Presentación del artículo de Pensamiento (De Neys, 2023): guion por expositor (10 min, 2 por persona) y diapositivas en `6_Entregables/U03_PresentacionArticulo_FastAndSlowThinking_*`.
