@@ -9,20 +9,21 @@ fuentes:
 - archivo: 3_Guias_de_Estudio/U03_RazonamientoProbabilistico_Guia.md
 - archivo: 3_Guias_de_Estudio/U03_SolucionDeProblemas_Guia.md
 generado: '2026-10-23'
-hash_generado: d519d750ff59
+hash_generado: 9284acfbb38c
 ---
 
 # Guion de la presentación: *Advancing theorizing about fast-and-slow thinking* (De Neys, 2023)
 
-> **Duración total: 10 minutos, 2 por persona.** Cada parte tiene unas 250 palabras, que a ritmo de exposición (unas 130 por minuto) dan 1:55. Esos segundos de margen son para pasar de una diapositiva a otra y para cambiar de expositor. Ensayen con cronómetro. Las notas en recuadro («Si preguntan…») **no se leen**: son para responder si el docente pregunta. Cada parte está también en las notas del orador de su diapositiva.
+> **Duración total: 10 minutos, 2 por persona.** Cada parte tiene unas 250 palabras, que a ritmo de exposición (unas 130 por minuto) dan 1:55. Esos segundos de margen son para pasar de una diapositiva a otra y para cambiar de expositor. **El debate va después de los 10 minutos**, como pide la consigna («Luego de la presentación, el grupo deberá propiciar un debate»), y lo abre el grupo con la diapositiva 10. Ensayen con cronómetro. Las notas en recuadro («Si preguntan…») **no se leen**: son para responder si el docente pregunta. Cada parte está también en las notas del orador de su diapositiva.
 
 | Expositor/a | Parte | Diapositivas | Tiempo | Acumulado |
 |---|---|---|---|---|
 | 1 | Apertura y el experimento | 1-4 | 2:00 | 2:00 |
-| 2 | La propuesta del autor y acierto 1: un mecanismo donde Evans no lo tenía | 5-6 | 2:00 | 4:00 |
+| 2 | Acierto 1: un mecanismo donde Evans no lo tenía | 5-6 | 2:00 | 4:00 |
 | 3 | Acierto 2: la intuición se educa | 7 | 2:00 | 6:00 |
 | 4 | Crítica 1: ¿umbral o continuo? | 8 | 2:00 | 8:00 |
-| 5 | Crítica 2 y cierre con la pregunta para el debate | 9-10 | 2:00 | 10:00 |
+| 5 | Crítica 2: del laboratorio a la vida real | 9 | 2:00 | 10:00 |
+| Todo el grupo | Debate (después de la exposición) | 10 | — | — |
 
 > **Aviso sobre las fuentes:** el guion sale del artículo de reacción del grupo (`U03_ArticuloDeReaccion_FastAndSlowThinking.md`), que resume el artículo con sus páginas, y de las guías de la U03. Las citas siguen ese artículo. Los ejemplos numéricos de la fórmula de incertidumbre son **nuestros**, para explicarla: no están en el texto, y así hay que presentarlos.
 >
@@ -34,7 +35,7 @@ hash_generado: d519d750ff59
 
 ### Diapositiva 1 — Portada (0:15)
 
-Buenas tardes. Vamos a presentar *Advancing theorizing about fast-and-slow thinking*, de Wim De Neys, publicado en 2023 en *Behavioral and Brain Sciences*. Yo les cuento cómo se investigó; después vienen la propuesta, los aciertos y las críticas.
+Buenas tardes. Vamos a presentar *Advancing theorizing about fast-and-slow thinking*, de Wim De Neys, publicado en 2023 en *Behavioral and Brain Sciences*. Yo les cuento cómo se investigó; después mis compañeros presentan dos aciertos y dos críticas teóricas.
 
 ### Diapositiva 2 — El problema: dos sistemas y dos supuestos (0:30)
 
@@ -52,21 +53,21 @@ Tres resultados. Uno: impedir la deliberación baja el acierto mucho menos de lo
 
 ---
 
-## Expositor/a 2 — La propuesta y acierto 1: un mecanismo donde Evans no lo tenía (2:00)
+## Expositor/a 2 — Acierto 1: un mecanismo donde Evans no lo tenía (2:00)
 
-### Diapositiva 5 — La propuesta: un modelo no exclusivo (0:35)
+### Diapositiva 5 — El mecanismo que propone De Neys (0:45)
 
-A partir de esos resultados, De Neys propone un modelo. El sistema 1 activa **varias intuiciones** de distinta fuerza, incluida la lógica. Un **monitoreo** intuitivo compara esas fuerzas: si son parecidas, la incertidumbre es alta y, pasado un umbral, se activa el sistema 2. La **deliberación** puede corregir, pero también solo justificar. Y una **retroalimentación** ajusta las intuiciones y apaga la deliberación. Conclusión: todo modelo dual viable tiene que ser **no exclusivo**.
+El primer acierto es que De Neys, a diferencia de los modelos anteriores, **especifica un mecanismo**, y tiene cuatro piezas. El sistema 1 activa **varias intuiciones** de distinta fuerza, incluida la lógica: ante el bate y la pelota pueden activarse a la vez "10 centavos" y "5 centavos". Un **monitoreo** intuitivo compara esas fuerzas: si son parecidas, la incertidumbre es alta y, pasado un umbral, se activa el sistema 2. La **deliberación** puede corregir, pero también solo justificar. Y una **retroalimentación** ajusta las intuiciones y apaga la deliberación. Por eso concluye que todo modelo dual viable tiene que ser **no exclusivo**.
 
 > **Si preguntan por la fórmula** (ejemplo nuestro, no del texto): U = 1 − |I1 − I2|. Si la intuición "10 centavos" tiene fuerza 0,8 y la de "5 centavos" 0,3, U = 1 − 0,5 = 0,5. Si las dos valen 0,6, U = 1 − 0 = 1: máxima incertidumbre, y ahí se activa el sistema 2.
 >
 > **Si preguntan por qué los modelos anteriores no explican el cambio:** si el sistema 2 vigila al 1, ya tendría que estar activo para detectar el conflicto; y un "sistema 3" que los compare lleva a una regresión infinita (De Neys, 2023a, pp. 6-7).
 
-### Diapositiva 6 — Acierto 1 (1:25)
+### Diapositiva 6 — Lo que a Evans le faltaba (1:15)
 
-El primer acierto es que hace explícito un supuesto que vimos en la materia: el de la teoría heurístico-analítica de Evans. Para Evans hay un estadio **heurístico**, preconsciente, que selecciona la información relevante, y uno **analítico**, donde se deduce. Los **sesgos** se atribuyen al primero y la **competencia**, al segundo (Valiña y Martín, 2014, pp. 19-20, 22). Esa es justamente la exclusividad, y De Neys muestra lo que a Evans le faltaba: **qué hace que intervenga** lo analítico. Además, que deliberar a veces solo **justifique** la intuición coincide con Evans: "las personas cometen errores en razonamiento porque piensan selectivamente" (Valiña y Martín, 2014, p. 20). Por ejemplo, alguien puede deliberar solo para encontrar razones a favor de los 10 centavos.
+Esto llena un hueco que vimos en la materia, en la teoría heurístico-analítica de Evans. Para Evans hay un estadio **heurístico**, preconsciente, que selecciona la información relevante, y uno **analítico**, donde se deduce. Los **sesgos** se atribuyen al primero y la **competencia**, al segundo (Valiña y Martín, 2014, pp. 19-20, 22). Esa es justamente la exclusividad, y Evans no explicaba **qué hace que intervenga** lo analítico; De Neys sí: la incertidumbre. Además, que deliberar a veces solo **justifique** la intuición coincide con Evans: "las personas cometen errores en razonamiento porque piensan selectivamente" (Valiña y Martín, 2014, p. 20).
 
-Hay un segundo aporte. A Tversky y Kahneman se les criticó que su teoría es **más descriptiva que explicativa** (Pérez Echeverría y Bautista, 2014, p. 18). De Neys, en cambio, propone un **mecanismo** —fuerza de las intuiciones, incertidumbre, umbral y retroalimentación— del que salen preguntas que se pueden poner a prueba.
+Y responde a una crítica que vimos a Tversky y Kahneman: que su teoría es **más descriptiva que explicativa** (Pérez Echeverría y Bautista, 2014, p. 18). De Neys propone un proceso del que salen preguntas que se pueden poner a prueba.
 
 ---
 
@@ -98,27 +99,33 @@ Es la misma crítica que se le hizo a Tversky y Kahneman: **no se puede saber a 
 
 ---
 
-## Expositor/a 5 — Crítica 2 y cierre (2:00)
+## Expositor/a 5 — Crítica 2: del laboratorio a la vida real (2:00)
 
-### Diapositiva 9 — Crítica 2: tareas de laboratorio (1:20)
+### Diapositiva 9
 
-La segunda crítica apunta a **las tareas**: toda la evidencia viene de problemas de laboratorio, bien definidos y con poco contenido, como el del bate y la pelota.
+La segunda crítica apunta a **las tareas**: toda la evidencia viene de problemas de laboratorio, bien definidos y con poco contenido, como el del bate y la pelota o elegir entre bandejas con bolitas.
 
-En solución de problemas, la investigación hizo el mismo camino: empezó con problemas sin contenido, que daban más control (Postigo Angón, 2014, p. 8), hasta que el enfoque de **expertos y novatos** mostró que resolver bien depende del **conocimiento del dominio** (Pérez Echeverría, 2014, p. 13). Y Pérez Echeverría advierte que estas tareas son **muy artificiales** y que quizás **las normas matemáticas no son el mejor modelo** (Pérez Echeverría y Bautista, 2014, p. 16). Entonces, ¿qué pasa con el modelo en los problemas mal definidos de la vida cotidiana, donde no hay respuesta correcta contra la cual medir? El autor lo admite como límite (De Neys, 2023b, p. 68).
+En solución de problemas, la investigación hizo el mismo camino: empezó con problemas sin contenido, que daban más control experimental (Postigo Angón, 2014, p. 8), hasta que el enfoque de **expertos y novatos** mostró que resolver bien depende del **conocimiento del dominio** (Pérez Echeverría, 2014, p. 13). Y Pérez Echeverría advierte que estas tareas son **muy artificiales** y que quizás **las normas matemáticas no son el mejor modelo** (Pérez Echeverría y Bautista, 2014, p. 16).
 
-Además, que la lógica se automatice **tiene poca evidencia directa** (De Neys, 2023a, p. 13), y el autor no usa la tradición de Fischbein, que podría darle sustento.
+Entonces, ¿qué pasa con el modelo en los problemas mal definidos de la vida cotidiana, donde no hay una respuesta correcta contra la cual medir la intuición? Evans distingue la racionalidad **de proceso**, ajustarse a una norma como la lógica, de la racionalidad **de propósito**, alcanzar los propios objetivos (Valiña y Martín, 2014, p. 21). El modelo de De Neys solo mide la primera, y el propio autor admite este límite (De Neys, 2023b, p. 68).
 
-> **Si preguntan qué sería "acertar" fuera del laboratorio:** Evans distingue la racionalidad **de proceso**, ajustarse a una norma como la lógica, de la racionalidad **de propósito**, alcanzar los propios objetivos (Valiña y Martín, 2014, p. 21). En la vida cotidiana importa la segunda, y el modelo solo mide la primera.
+Por último, la pieza más original del modelo, que la respuesta lógica se automatice, **tiene poca evidencia directa** (De Neys, 2023a, p. 13). Y el autor no recurre a la tradición de Fischbein, que estudió justamente cómo la instrucción genera intuiciones nuevas y podría darle sustento.
 
-### Diapositiva 10 — Conclusión y debate (0:40)
-
-En síntesis: el artículo muestra que la exclusividad y el mecanismo de cambio son el mismo problema, y propone un modelo que conserva la distinción entre intuición y deliberación. Sus límites: es verbal, la automatización está poco probada y las tareas son artificiales.
-
-Y les preguntamos: **¿les pasó que algo que al principio tenían que pensar con esfuerzo, después les saliera "solo"?** Por ejemplo, en estadística. Esa respuesta automática, ¿es una intuición, como dice De Neys, o sigue siendo pensamiento deliberado, pero más rápido?
+Con esto terminamos la exposición. Ahora queremos abrir el debate.
 
 ---
 
-## Para sostener el debate (todo el grupo)
+## Debate — todo el grupo (después de los 10 minutos)
+
+### Diapositiva 10 — Para debatir
+
+Cualquiera del grupo lanza la pregunta:
+
+Les queremos preguntar: **¿les pasó que algo que al principio tenían que pensar con esfuerzo, después les saliera "solo"?** Por ejemplo, en estadística. Esa respuesta automática, ¿es una intuición, como dice De Neys, o sigue siendo pensamiento deliberado, pero más rápido?
+
+> **Si el docente pide una conclusión:** el artículo muestra que la exclusividad y el mecanismo de cambio son el mismo problema, y propone un modelo que conserva la distinción entre intuición y deliberación. Sus límites: es verbal, la automatización está poco probada y las tareas son artificiales. Como líneas futuras, estudios de entrenamiento que sigan cómo una respuesta deliberada se vuelve intuitiva, y llevar el modelo a problemas reales y a dominios de pericia.
+
+## Para sostener el debate
 
 **Preguntas de repuesto**, si la primera no arranca:
 
