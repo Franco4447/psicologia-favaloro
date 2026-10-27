@@ -1,0 +1,7 @@
+flowchart TD
+    P[Problema] --> I[1. Intuiciones del sistema 1<br/>varias, con distinta fuerza]
+    I --> M{2. Monitoreo<br/>¿la incertidumbre supera el umbral?}
+    M -- No --> R[Respuesta intuitiva]
+    M -- Sí --> D[3. Deliberación del sistema 2<br/>inhibe, calcula o justifica]
+    D --> F[4. Retroalimentación<br/>cambia la fuerza de las intuiciones]
+    F --> I

@@ -28,7 +28,7 @@ fi
 if ! command -v mmdc >/dev/null; then
   PUPPETEER_SKIP_DOWNLOAD=1 npm install -g @mermaid-js/mermaid-cli >/dev/null 2>&1
 fi
-CHROME="$(ls -d /opt/pw-browsers/chromium-*/chrome-linux/chrome 2>/dev/null | sort -V | tail -1 || true)"
+CHROME="$(ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome 2>/dev/null | sort -V | tail -1 || true)"
 if [ -n "$CHROME" ]; then
   CFG="$HOME/.config/mermaid/puppeteer.json"
   mkdir -p "$(dirname "$CFG")"
