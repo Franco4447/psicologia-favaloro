@@ -1,0 +1,12 @@
+graph TD
+  DR["Determinismo recíproco:<br>persona, conducta, ambiente"] --> AO["Aprendizaje observacional"]
+  M["Modelo"] -->|se observa| AO
+  AO -->|fase de adquisición| A1["1. Atención"]
+  A1 --> A2["2. Retención"]
+  A2 -->|fase de ejecución| A3["3. Reproducción motriz"]
+  A3 --> A4["4. Motivación"]
+  R["Refuerzo: directo,<br>vicario, autorrefuerzo"] -->|actúa antes,<br>por anticipación| A4
+  A4 --> E["Conducta ejecutada"]
+  E -.->|retroalimenta| DR
+  A2 -.->|Muñeco Bobo:<br>todos saben| S["Saber"]
+  E -.->|solo algunos hacen| H["Hacer"]
