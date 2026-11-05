@@ -1,0 +1,6 @@
+graph LR
+  A["Comando motor"] --> B["Copia eferente"]
+  B --> C["Predicción sensorial"]
+  C --> D["Comparación con<br>la retroalimentación"]
+  D -->|coinciden| E["Autoproducida:<br>se cancela"]
+  D -->|no coinciden| F["Externa:<br>se percibe intensa"]
