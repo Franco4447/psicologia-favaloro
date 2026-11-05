@@ -19,14 +19,14 @@ fuentes:
 - archivo: 3_Guias_de_Estudio/Transversal_NivelesDeAnalisis_Guia.md
 skill: simulacro
 generado: '2026-11-04'
-hash_generado: 8dfc0ebd73f4
+hash_generado: 74b0b3e46108
 ---
 
 # Simulacro — Psicología Social · Examen integrador (clases 1 a 12)
 
 > **Alcance:** clases 1 a 12 · **Tiempo sugerido:** 60 min para la parte A y 60 min para las partes B a E.
-> **Examen del 12/11 (opción múltiple individual, abarca toda la materia):** hacé la **parte A completa**. A1 a A24 recorren las clases en orden. Según tus notas, el examen usa experimentos paradigmáticos como articuladores: por eso A25 a A41 se concentran en ellos. A42 a A64 refuerzan las clases 3, 5, 9, 10, 11 y 12.
-> **Final integrador:** formato sin confirmar. Las partes B a E lo practican.
+> **TP3 (opción múltiple individual, 12/11):** según los lineamientos de la cátedra entran las clases 1, 2, 6, 7, 8, 9 y 11. Hacé la parte A **salteando A8 a A12, A21, A23, A24, A42 a A49, A54 a A58 y A62 a A64**: son de aprendizaje social, actitudes, decisiones e intervenciones. Quedan 54 preguntas. A25 a A41 se concentran en experimentos, y A65 a A78 cubren a Adell y Scotto. Para sumar práctica, usá B y C salteando B4, B5, B9, B10, C2 y C4.
+> **Final integrador:** evalúa toda la materia, con formato sin confirmar. Hacé todo el simulacro.
 > **Puntaje:** A a C, 1 punto cada una; D y E, hasta 3 puntos cada una.
 > Respondé primero sin mirar el material; después corregí con la clave y volvé a la guía solo en lo que falles.
 
@@ -416,6 +416,90 @@ hash_generado: 8dfc0ebd73f4
 - c) Solo si hay una lesión de la corteza prefrontal
 - d) Solo en quienes tienen genes predeterminados
 
+### A65. Hartshorne y May (1928-30) encontraron que:
+- a) Quienes mejor conocían la norma la transgredían menos
+- b) El estadio moral predecía la transgresión en cada situación
+- c) La honestidad era un rasgo estable en todas las situaciones
+- d) Conocer la norma no se relacionaba con la conducta real
+
+### A66. Una persona cree que es justo socorrer a alguien, pero se pregunta si le corresponde hacerlo a ella. Esa pregunta es un:
+- a) Juicio de responsabilidad
+- b) Juicio deóntico
+- c) Razonamiento post hoc
+- d) Efecto de adopción de perspectiva
+
+### A67. Cuando Kohlberg evaluó a participantes de Milgram, encontró que:
+- a) Los subestadios A y B se negaron en la misma proporción
+- b) Todo el subestadio B siguió hasta el final, y el 86 % del A se negó
+- c) Todo el subestadio A siguió hasta el final, y el 86 % del B se negó
+- d) El estadio no se relacionó con la negativa a seguir
+
+### A68. En McNamee (1978), al aumentar el estadio de razonamiento moral:
+- a) Todos justificaron de la misma forma no intervenir
+- b) La ayuda dejó de depender de la situación experimental
+- c) Disminuyó la ayuda, por respeto al experimentador
+- d) Aumentaron la probabilidad y el grado de ayuda
+
+### A69. En el modelo de Kohlberg y Candee, la atención y el retraso de la gratificación pertenecen a:
+- a) La elección deóntica de la función II
+- b) Las destrezas no morales de la función IV
+- c) El juicio de responsabilidad de la función III
+- d) La adopción de perspectiva de la función I
+
+### A70. Adell objeta al modelo de Kohlberg y Candee que:
+- a) Sus evidencias son anteriores al modelo y no mostró poder predictivo
+- b) Da demasiado peso a la intuición sobre el razonamiento moral
+- c) Se apoya solo en dilemas reales y descarta los hipotéticos
+- d) Niega cualquier relación entre el juicio y la acción moral
+
+### A71. Alguien siente rechazo inmediato ante un acto, lo condena y después busca argumentos. Según el MIS, esos argumentos son:
+- a) Un juicio de responsabilidad que precede al rechazo
+- b) La causa del juicio moral intuitivo
+- c) Una evaluación deducida de principios previos
+- d) Una justificación post hoc de la intuición
+
+### A72. La metáfora de Haidt sobre el jinete y el elefante indica que:
+- a) La intuición está mayormente al servicio del razonamiento
+- b) El razonamiento controla siempre la conducta moral
+- c) El razonamiento está mayormente al servicio de la intuición
+- d) Intuición y razonamiento nunca entran en contacto
+
+### A73. Una comunidad condena con fuerza a quien traiciona a su grupo. Según Haidt, esa intuición corresponde al fundamento de:
+- a) Endogrupo/lealtad
+- b) Daño/cuidado
+- c) Pureza/santidad
+- d) Justicia/reciprocidad
+
+### A74. El sistema 1 del enfoque dual se caracteriza por ser:
+- a) Reciente, conceptual y distintivamente humano
+- b) Abstracto, reflexivo y consciente
+- c) Lento, secuencial y controlado
+- d) Rápido, asociativo y automático
+
+### A75. El enfoque interactivo de la lectura de mentes pone el foco en:
+- a) La superación del test de falsa creencia a los cuatro años
+- b) Los encuentros cara a cara y los comportamientos expresivos
+- c) Las actitudes proposicionales como único objeto de atribución
+- d) El observador que infiere creencias ajenas desde afuera
+
+### A76. Una persona atribuye agresividad a alguien por su grupo social y su manera de caminar. Según Scotto, es una intuición:
+- a) Metaética
+- b) Holística
+- c) De modelado
+- d) Inferencial
+
+### A77. La teoría de la mente mínima se distingue de la plena porque:
+- a) Rastrea estados de otros sin representarlos
+- b) Construye explicaciones causales de la acción
+- c) Exige representar actitudes proposicionales
+- d) Aparece después de la competencia lingüística
+
+### A78. Una investigación halla asociaciones automáticas que contradicen las creencias que las personas declaran, medidas con el IAT. Se trata de:
+- a) Intuiciones de segundo nivel
+- b) Cuasi-obligaciones
+- c) Sesgos implícitos
+- d) Juicios deónticos
+
 ## B) Verdadero / Falso (justificá en una línea)
 
 ### B1. La identidad social y la identidad personal se activan siempre al mismo tiempo y con la misma fuerza.
@@ -657,6 +741,48 @@ Después hay que identificar a los actores sociales y considerar el contexto. *(
 
 ### A64 — a
 Muestra que lo biológico no es predeterminado. *(Fuente: C12_IntervencionesYNivelesDeAnalisis_Cursada_Guia.md, §7)*
+
+### A65 — d
+Lo que mejor explicaba la transgresión era la probabilidad de ser descubierto. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §8)*
+
+### A66 — a
+El deóntico define qué es justo; el de responsabilidad, el papel del actor. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §8)*
+
+### A67 — c
+También aumentaron las negativas al subir de estadio. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §8)*
+
+### A68 — d
+Quienes no intervinieron lo justificaron de manera distinta según su estadio. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §8)*
+
+### A69 — b
+Son habilidades necesarias para llevar adelante el plan de acción. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §8)*
+
+### A70 — a
+También señala que no definió variables situacionales y que fue excesivamente cognitivista. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §8)*
+
+### A71 — d
+Para Haidt, las intuiciones vienen primero y las razones después. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §9)*
+
+### A72 — c
+El jinete es racional y el elefante, intuitivo. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §9)*
+
+### A73 — a
+Los cinco fundamentos también incluyen autoridad/respeto. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §9)*
+
+### A74 — d
+Las otras opciones describen rasgos del sistema 2. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §9)*
+
+### A75 — b
+Por eso también se llama enfoque de segunda persona. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §10)*
+
+### A76 — d
+Combina información acumulada con señales percibidas; la holística integra señales sin análisis. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §10)*
+
+### A77 — a
+Es eficiente pero inflexible; la plena es flexible pero demandante. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §10)*
+
+### A78 — c
+Los sesgos implícitos son automáticos y pueden chocar con creencias conscientes. *(Fuente: C11_DilemasMorales_Cursada_Guia.md, §10)*
 
 ### B1 — Falso
 Hay antagonismo: cuando se enfatiza una, es a expensas de la otra. *(Fuente: C01_IntroduccionALaPsicologiaSocial_Cursada_Guia.md, §5)*

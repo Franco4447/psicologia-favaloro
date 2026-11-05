@@ -14,7 +14,7 @@ fuentes:
 - archivo: 3_Guias_de_Estudio/C11_DilemasMorales_Cursada_Guia.md
 skill: guia-estudio
 generado: '2026-11-04'
-hash_generado: 768dc11c7b7b
+hash_generado: 6ecfada01650
 ---
 
 # Cuadro integrador — Experimentos paradigmáticos
@@ -61,6 +61,9 @@ graph TD
 | **Seminaristas** | ¿La prisa reduce la ayuda? | Con o sin prisa | 10 % frente a 63 % | Paso 1: notar | C08 §7 |
 | **Humo** | ¿Los otros cambian la interpretación? | Solos o con otros inmóviles | 75 % frente a 38 % | Ignorancia pluralista | C08 §7 |
 | **Ketelaar y Au (2003)** | ¿La culpa aumenta la cooperación? | Juegos repetidos | 78 % sin culpa sigue igual | Emociones morales | C11 §6 |
+| **Hartshorne y May (1928-30)** | ¿Conocer la norma predice la conducta? | Conocimiento de normas y conductas de niños y adolescentes | Sin relación; pesa la probabilidad de ser descubierto | Distancia entre juicio y acción | C11, §8 |
+| **McNamee (1978)** | ¿El estadio moral predice la ayuda? | 102 universitarios; un cómplice pide ayuda y el experimentador no se la da | A mayor estadio, más ayuda | Consistencia entre juicio y acción | C11, §8 |
+| **Kohlberg en Milgram** | ¿El razonamiento moral predice la negativa? | Estadio y subestadio de participantes | Todo el subestadio A siguió; se negó el 86 % del B | Juicio moral y obediencia | C11, §8 |
 | **Bechara et al. (1994)** | ¿Decidir requiere emoción? | Iowa Gambling Task | Lesión ventromedial: mazos riesgosos | Marcador somático | C10 §6 |
 
 ## Cuadro 2: formas de influencia
