@@ -1,0 +1,57 @@
+flowchart TB
+  classDef teo fill:#E8EEF7,stroke:#4A6FA5,color:#1B2A41
+  classDef cong fill:#FCEFD9,stroke:#C98A1B,color:#3D2A00
+  classDef proc fill:#E3F2EA,stroke:#3E8E63,color:#0F3320
+  classDef hueco fill:#FBE3E3,stroke:#C0392B,stroke-width:3px,color:#5A0F0F
+  classDef nuestro fill:#EDE7F6,stroke:#6B4FA0,stroke-width:2px,color:#2A1A4D
+
+  subgraph T["1 · MARCO TEÓRICO"]
+    N["<b>Nickerson (1998)</b><br/>Sesgo de confirmación"]
+    J["<b>Johnson et al. (1993)</b><br/>Monitoreo de fuentes:<br/>falso recuerdo ≠ falsa creencia"]
+    G["<b>Greifeneder et al. (2021)</b><br/>Pennycook y Rand (2021)<br/>Psicología de las noticias falsas"]
+    E["<b>Ecker et al. (2022)</b><br/>Factores cognitivos, sociales<br/>y afectivos, no excluyentes"]
+  end
+
+  subgraph A["2A · LÍNEA DE LA CONGRUENCIA: ¿qué se recuerda?"]
+    F["<b>Frenda et al. (2013)</b><br/>Falsos recuerdos de eventos políticos,<br/>más frecuentes si son congruentes"]
+    M["<b>Murphy et al. (2021)</b><br/>Replica el efecto con<br/>noticias sobre feminismo"]
+    Gr["<b>Grady et al. (2021)</b><br/>La advertencia ayuda un tiempo;<br/>la congruencia reaparece"]
+    L["<b>Leon et al. (2023)</b><br/>Psicología en Argentina (n = 326): el grupo PBE<br/>recordó o creyó más las noticias contra el<br/>psicoanálisis; el grupo de psicoanálisis, sin efecto"]
+  end
+
+  subgraph B["2B · LÍNEA DEL PROCESAMIENTO: ¿cómo se procesa?"]
+    Ba["<b>Bago et al. (2020)</b><br/>Deliberar reduce la creencia<br/>en titulares falsos"]
+    Tr["<b>Trevors et al. (2021)</b><br/>Emociones negativas, más que positivas,<br/>favorecen revisar conocimientos erróneos"]
+    PS["<b>Pérez Santángelo y Solovey (2023)</b><br/>Concordancia política: más creencia.<br/>Reflexión: más escepticismo, pero no<br/>mejor discriminación verdadero/falso"]
+    Ma["<b>Martel et al. (2020)</b><br/>Inducir emoción aumenta la creencia;<br/>inducir razón no mejora vs. control"]
+  end
+
+  V["<b>EL HUECO</b><br/><br/>Ningún estudio probó si inducir razón o emoción<br/>modifica la formación de <b>falsos recuerdos</b><br/>ante noticias falsas congruentes<br/>con la postura de quien las lee"]
+
+  Q["<b>ESTE ESTUDIO</b><br/><br/>Inducción: racional, emocional o control<br/>Noticias falsas congruentes con la afinidad<br/>(psicoanálisis o TCC) · VD: falsos recuerdos<br/><br/><b>H1</b> emocional > racional y control<br/>(mecanismo: monitoreo de fuentes)<br/><b>H2</b> el efecto varía según la afinidad<br/><br/><b>C1-C3</b> (complementarias): falsas creencias,<br/>recuerdos verdaderos y tiempo de respuesta"]
+
+  N -->|"predice"| F
+  J -->|"define la medida"| F
+  G -->|"marco"| F
+  G -->|"marco"| Ba
+  E -->|"factores múltiples:<br/>las dos líneas no se excluyen"| Ba
+  E -.-> F
+
+  F -->|"replicación"| M
+  F --> Gr
+  M -->|"extensión a la psicología"| L
+
+  Ba -->|"misma lógica:<br/>razón vs. emoción"| Ma
+  Tr -->|"emoción inducida"| Ma
+  PS -.->|"mide creencia"| Ma
+
+  A -->|"miden falsos recuerdos,<br/>pero no manipulan el procesamiento"| V
+  B -->|"manipulan o miden el procesamiento,<br/>pero evalúan creencia, no memoria"| V
+  L -.->|"propone estudiar el<br/>pensamiento analítico"| V
+  V --> Q
+
+  class G,J,N,E teo
+  class F,M,L,Gr cong
+  class Ba,Ma,Tr,PS proc
+  class V hueco
+  class Q nuestro
