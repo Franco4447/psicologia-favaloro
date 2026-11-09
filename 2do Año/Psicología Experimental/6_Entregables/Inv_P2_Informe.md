@@ -91,32 +91,34 @@ Hasta donde alcanza la bibliografía revisada, entonces, no se ha puesto a prueb
 
 **Pregunta de investigación.** ¿Cuál es el efecto de la inducción al pensamiento racional y emocional sobre la formación de falsos recuerdos tras la exposición a *fake news* congruentes con la afinidad terapéutica, en personas de 18 a 65 años, estudiantes o graduadas de Psicología, que residen en la Ciudad Autónoma de Buenos Aires o en la provincia de Buenos Aires?
 
-**Objetivo general.** Evaluar si la inducción previa a modos de procesamiento cognitivo diferenciados (racional, emocional y control) modifica la frecuencia de formación de falsos recuerdos ante la lectura de *fake news* congruentes con la afinidad terapéutica, en personas de 18 a 65 años, estudiantes o graduadas de Psicología, que residen en la Ciudad Autónoma de Buenos Aires o en la provincia de Buenos Aires.
+**Objetivo general.** Verificar si la inducción previa a un modo de procesamiento (racional, emocional o control) modifica la frecuencia de falsos recuerdos ante la lectura de *fake news* congruentes con la afinidad terapéutica, en personas de 18 a 65 años, estudiantes o graduadas de Psicología, que residen en la Ciudad Autónoma de Buenos Aires o en la provincia de Buenos Aires.
 
-**Objetivos específicos**
+**Objetivos específicos**, que desarrollan el objetivo general:
 
-1. Describir la frecuencia de formación de falsos recuerdos ante la lectura de *fake news* congruentes con la afinidad terapéutica previa de los participantes.
-2. Comparar la frecuencia de formación de falsos recuerdos entre los participantes sometidos a inducción emocional, inducción racional y los del grupo control.
-3. Explorar si el efecto del tipo de inducción sobre la formación de falsos recuerdos varía según la afinidad terapéutica previa (psicoanálisis o terapia cognitivo-conductual).
+1. Describir la frecuencia de falsos recuerdos ante la lectura de *fake news* congruentes con la afinidad terapéutica en cada grupo de inducción (racional, emocional y control).
+2. Comparar esa frecuencia entre los tres grupos, para determinar si la inducción la modifica y en qué sentido.
+3. Verificar la eficacia de la manipulación, condición para atribuir las diferencias entre grupos a la inducción: describir, en los grupos racional y emocional, qué proporción de participantes reporta la inducción que se le asignó, y comparar entre los tres grupos el uso autoinformado de emoción y de razón.
 
-Objetivos complementarios, que se derivan de las variables que la plataforma registra:
+**Objetivos secundarios**, que acompañan al principal y se derivan de las variables que la plataforma registra:
 
-4. Describir y comparar entre grupos la frecuencia de falsas creencias y de recuerdos verdaderos.
-5. Analizar si el tiempo de respuesta, tomado como indicador del esfuerzo cognitivo, difiere entre inducciones y se relaciona con la frecuencia de falsos recuerdos.
-6. Verificar la eficacia de la manipulación: describir, en los grupos racional y emocional, qué proporción de participantes reporta la inducción que se le asignó, y comparar entre los tres grupos el uso autoinformado de emoción y de razón.
+4. Explorar si el efecto del tipo de inducción sobre la formación de falsos recuerdos varía según la afinidad terapéutica previa (psicoanálisis o terapia cognitivo-conductual).
+5. Describir y comparar entre grupos la frecuencia de falsas creencias y de recuerdos verdaderos.
+6. Analizar si el tiempo de respuesta, tomado como indicador del esfuerzo cognitivo, difiere entre inducciones y se relaciona con la frecuencia de falsos recuerdos.
 
-> **Sobre la congruencia.** Todas las noticias falsas que ve cada participante son congruentes con su afinidad terapéutica; la congruencia es entonces una **constante del diseño** y no una variable. Por eso este estudio *no* tiene como objetivo estimar el efecto de la congruencia ni su interacción con la inducción. Lo que sí varía entre participantes es la afinidad terapéutica, y el objetivo 3 la analiza.
+> **Sobre la congruencia.** Todas las noticias falsas que ve cada participante son congruentes con su afinidad terapéutica; la congruencia es entonces una **constante del diseño** y no una variable. Por eso este estudio *no* tiene como objetivo estimar el efecto de la congruencia ni su interacción con la inducción. Lo que sí varía entre participantes es la afinidad terapéutica, y el objetivo 4 la analiza.
 
-**Hipótesis**
+**Hipótesis general.** La inducción previa a un modo de procesamiento modifica la frecuencia de falsos recuerdos ante *fake news* congruentes con la afinidad terapéutica.
 
-- **H1.** Los participantes sometidos a inducción **emocional** presentarán una mayor frecuencia de falsos recuerdos ante *fake news* que los sometidos a inducción **racional** y que los del **grupo control**.
-- **H2.** El efecto del tipo de inducción sobre la formación de falsos recuerdos **variará según la afinidad terapéutica previa** de los participantes.
+**Hipótesis principal** (objetivos 1 y 2)
 
-**Hipótesis complementarias**
+- **H1.** Los participantes sometidos a inducción **emocional** presentarán una mayor frecuencia de falsos recuerdos ante *fake news* que los sometidos a inducción **racional** y que los del **grupo control**. Apoyarse en la emoción favorece la creencia en noticias falsas (Martel et al., 2020), y un juicio rápido y heurístico sobre el origen de la familiaridad con una noticia favorece atribuirla a una exposición previa que no existió (Johnson et al., 1993).
 
-- **C1.** El patrón de H1 se repetirá en las falsas creencias: más falsas creencias en el grupo Emoción que en los grupos Razón y Control (Martel et al., 2020).
-- **C2.** Los recuerdos verdaderos no diferirán entre grupos: la inducción afectaría la aceptación de lo falso pero no la de lo verdadero (Bago et al., 2020).
-- **C3.** Los participantes del grupo Emoción responderán más rápido que los del grupo Razón, y un menor tiempo de respuesta se asociará con más falsos recuerdos. La lógica es la del monitoreo de fuentes: un juicio rápido y heurístico sobre el origen de la familiaridad con una noticia favorece atribuirla a una exposición previa que no existió (Johnson et al., 1993); la deliberación, en cambio, corrige los errores intuitivos (Bago et al., 2020).
+**Hipótesis secundarias**, que acompañan a H1 y corresponden a los objetivos 4 a 6
+
+- **H2** (objetivo 4). El efecto del tipo de inducción sobre la formación de falsos recuerdos **variará según la afinidad terapéutica previa** de los participantes, dado que Leon et al. (2023) observaron el efecto de la congruencia en el grupo PBE y no en el de psicoanálisis.
+- **C1** (objetivo 5, complementaria). El patrón de H1 se repetirá en las falsas creencias: más falsas creencias en el grupo Emoción que en los grupos Razón y Control (Martel et al., 2020).
+- **C2** (objetivo 5, complementaria). Los recuerdos verdaderos no diferirán entre grupos: la inducción afectaría la aceptación de lo falso pero no la de lo verdadero (Bago et al., 2020).
+- **C3** (objetivo 6, complementaria). Los participantes del grupo Emoción responderán más rápido que los del grupo Razón, y un menor tiempo de respuesta se asociará con más falsos recuerdos. La lógica es la del monitoreo de fuentes: un juicio rápido y heurístico sobre el origen de la familiaridad con una noticia favorece atribuirla a una exposición previa que no existió (Johnson et al., 1993); la deliberación, en cambio, corrige los errores intuitivos (Bago et al., 2020).
 
 ---
 
@@ -219,13 +221,13 @@ La participación fue voluntaria, previa lectura y aceptación del consentimient
 
 Los datos se exportan de la base de datos en una tabla con una fila por participante, restringida a los participantes incluidos que completaron la tarea, con edad, género, universidad (con las variantes de escritura unificadas), grupo de inducción, afinidad terapéutica, respuestas del control de la manipulación, recuentos de falsos recuerdos, falsas creencias y recuerdos verdaderos, y tiempo de respuesta promedio en segundos.
 
-- **Descriptivos.** Primero, la descripción de la muestra, con el porcentaje de cada afinidad dentro de cada grupo. Luego, medias, desviaciones estándar y proporciones de cada variable por grupo de inducción y por afinidad.
+- **Descriptivos (objetivo 1).** Primero, la descripción de la muestra, con el porcentaje de cada afinidad dentro de cada grupo. Luego, medias, desviaciones estándar y proporciones de cada variable por grupo de inducción y por afinidad.
 - **Comparación entre grupos.** Para cada variable se comprueban primero los supuestos: normalidad en cada grupo (prueba de Shapiro-Wilk) y homogeneidad de varianzas (prueba de Levene centrada en la mediana). Si se cumplen ambos, se usará ANOVA de un factor con comparaciones de Tukey-Kramer; si se cumple la normalidad pero no la homogeneidad, ANOVA de Welch con comparaciones de Games-Howell; si algún grupo no se distribuye normalmente, prueba de Kruskal-Wallis con comparaciones de Dunn corregidas por Holm. Se fija α = .05 y se informan tamaños del efecto (η² en el ANOVA, ε² en Kruskal-Wallis).
-- **Control de la manipulación.** Comparación entre grupos del uso autoinformado de emoción y de razón con ese procedimiento (se espera más uso de emoción en el grupo emocional y más uso de razón en el racional), y porcentaje de aciertos en la pregunta de elección forzada (objetivo 6). Quienes reportan una inducción distinta de la asignada se cuentan y se describen por grupo, pero **no se excluyen**: el análisis principal es por grupo asignado.
-- **Efecto de la inducción (H1, C1, C2).** Comparación entre grupos de los recuentos de falsos recuerdos (0-8), falsas creencias (0-8) y recuerdos verdaderos (0-12). Para H1 y C1, las comparaciones de interés son las del grupo emocional contra el racional y contra el control.
-- **Variación según afinidad (H2).** Interacción entre grupo de inducción y afinidad terapéutica.
-- **Tiempo de respuesta (C3).** Comparación entre grupos del tiempo de respuesta promedio y relación entre el tiempo de respuesta y el recuento de falsos recuerdos.
-
+- **Efecto de la inducción sobre los falsos recuerdos (H1; objetivos 1 y 2).** Comparación entre grupos de los recuentos de falsos recuerdos (0-8). Las comparaciones de interés son las del grupo emocional contra el racional y contra el control.
+- **Control de la manipulación (objetivo 3).** Comparación entre grupos del uso autoinformado de emoción y de razón con ese procedimiento (se espera más uso de emoción en el grupo emocional y más uso de razón en el racional), y porcentaje de aciertos en la pregunta de elección forzada (objetivo 3). Quienes reportan una inducción distinta de la asignada se cuentan y se describen por grupo, pero **no se excluyen**: el análisis principal es por grupo asignado.
+- **Variación según afinidad (H2; objetivo 4).** Interacción entre grupo de inducción y afinidad terapéutica.
+- **Falsas creencias y recuerdos verdaderos (C1 y C2; objetivo 5).** Comparación entre grupos de los recuentos de falsas creencias (0-8) y de recuerdos verdaderos (0-12). Para C1, las comparaciones de interés son las del grupo emocional contra el racional y contra el control.
+- **Tiempo de respuesta (C3; objetivo 6).** Comparación entre grupos del tiempo de respuesta promedio y relación entre el tiempo de respuesta y el recuento de falsos recuerdos.
 ---
 
 ## Resultados
@@ -242,11 +244,11 @@ Estructura prevista:
 | Emocional | [ ] | [ ] | [ ] |
 | Control | [ ] | [ ] | [ ] |
 
-2. Control de la manipulación.
-3. Falsos recuerdos por grupo de inducción (tabla de medias y *DE*, supuestos, prueba elegida, comparaciones entre pares y tamaño del efecto).
-4. Variación del efecto según la afinidad terapéutica.
-5. Falsas creencias y recuerdos verdaderos por grupo.
-6. Tiempo de respuesta por grupo y su relación con los falsos recuerdos.
+2. Falsos recuerdos por grupo de inducción (objetivos 1 y 2; H1): tabla de medias y *DE*, supuestos, prueba elegida, comparaciones entre pares y tamaño del efecto.
+3. Control de la manipulación (objetivo 3).
+4. Variación del efecto según la afinidad terapéutica (objetivo 4; H2).
+5. Falsas creencias y recuerdos verdaderos por grupo (objetivo 5; C1 y C2).
+6. Tiempo de respuesta por grupo y su relación con los falsos recuerdos (objetivo 6; C3).
 
 ---
 
