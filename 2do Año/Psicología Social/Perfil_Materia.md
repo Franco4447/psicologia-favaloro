@@ -40,7 +40,7 @@ evaluaciones:
   - nombre: Final reducido oral
     fecha: 2026-12-10
     formato: oral
-    detalle: "Beneficio de final reducido (Evaluación 1 y 2 con 8 o más): exposición oral de un tema de la lista de la cátedra, con preguntas solo sobre ese tema (1_Bibliografia_Original/Global_2doC_LineamientosRecuperatorioYFinal.pdf). Tema elegido: Altruismo y conducta prosocial, vinculado con el torneo de Axelrod, Golden Balls (Nick e Ibrahim) y las bandas de la langosta de Maine. Exposición de unos 10 minutos. Una articulación o variación entre temas se consulta a la docente con una semana de anticipación (hasta el 03/12)."
+    detalle: "Beneficio de final reducido (Evaluación 1 y 2 con 8 o más): exposición oral de un tema de la lista de la cátedra, con preguntas solo sobre ese tema (1_Bibliografia_Original/Global_2doC_LineamientosRecuperatorioYFinal.pdf). Tema elegido: Altruismo y conducta prosocial, vinculado con el torneo de Axelrod, Golden Balls (Nick e Ibrahim) y las bandas de la langosta de Maine. Exposición de unos 10 minutos; el 18/11 el guion se amplió a unos 16 con la bibliografía obligatoria de la unidad 9 no dada en clase. Una articulación o variación entre temas se consulta a la docente con una semana de anticipación (hasta el 03/12)."
     unidades: [U09]
     estado: pendiente
 ---
