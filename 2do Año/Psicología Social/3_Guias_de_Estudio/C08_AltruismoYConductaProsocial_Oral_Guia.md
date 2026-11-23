@@ -13,17 +13,17 @@ fuentes:
 - archivo: 3_Guias_de_Estudio/C08_NeurocienciaSocialYAltruismo_Cursada_Guia.md
 - archivo: 1_Bibliografia_Original/Global_2doC_LineamientosRecuperatorioYFinal.pdf
 skill: guia-estudio
-generado: '2026-11-18'
-hash_generado: c4ae23113023
+generado: '2026-11-23'
+hash_generado: 7e1849585cbd
 ---
 
 # Final reducido: altruismo y conducta prosocial · Guía oral
 
 > **Para qué es esta guía:** para preparar la exposición del **10/12**, sobre un tema de la lista de la cátedra, con preguntas solo sobre ese tema (Cátedra de Psicología Social, 2026n). No es para leer en voz alta: es el orden de lo que vas a decir y lo que tenés que poder responder.
 >
-> **Duración:** el guion dura unos **16 minutos**, más que los 10 previstos, porque suma la bibliografía obligatoria de la unidad 9 que no se dio en clase. Si la mesa te pide acortar, los bloques marcados con **(recortable)** se pueden resumir en una frase sin perder el hilo.
+> **Duración:** la docente pidió unos **15 minutos** (respuesta del 23/11). El guion está armado para ese tiempo, con la bibliografía obligatoria de la unidad 9 que no se dio en clase. Si te pasás o la mesa te pide acortar, el bloque marcado como **(recortable)** se resume en una frase sin perder el hilo.
 >
-> **Aviso sobre las fuentes:** el marco teórico sale de la clase 8 y de Baron y Byrne (2005), con las páginas del PDF de la cátedra. Los estudios que Baron y Byrne reseñan se citan como fuente secundaria. Axelrod está en las diapositivas 34 y 35; Golden Balls y la langosta de Maine son ejemplos tuyos. Los datos de los tres casos están verificados en las fichas de lectura: `C08_AxelrodHamilton_TorneoDelDilemaDelPrisionero_Lectura_Guia.md`, `C08_VanDenAssem_GoldenBalls_Lectura_Guia.md` y `C08_WaringAcheson_BandasDeLaLangostaDeMaine_Lectura_Guia.md`. **Consultá a la docente:** la consigna pide avisar con una semana de anticipación si se hace una articulación o variación entre temas. Tus casos son ejemplos dentro de un mismo tema, pero, si hay dudas, el plazo vence el **03/12**. La consigna no dice si se permite apoyo visual.
+> **Aviso sobre las fuentes:** el marco teórico sale de la clase 8 y de Baron y Byrne (2005), con las páginas del PDF de la cátedra. Los estudios que Baron y Byrne reseñan se citan como fuente secundaria. Axelrod está en las diapositivas 34 y 35; Golden Balls y la langosta de Maine son ejemplos tuyos. Los datos de los tres casos están verificados en las fichas de lectura: `C08_AxelrodHamilton_TorneoDelDilemaDelPrisionero_Lectura_Guia.md`, `C08_VanDenAssem_GoldenBalls_Lectura_Guia.md` y `C08_WaringAcheson_BandasDeLaLangostaDeMaine_Lectura_Guia.md`. **Aprobado por la docente:** el 23/11 confirmó que se pueden usar los tres casos como ejemplos del tema.
 
 ## Qué usás y de dónde viene
 
@@ -127,13 +127,13 @@ Baron y Byrne (2005, p. 37) ordenan cuatro teorías. Las tres primeras ponen el 
 - **De la banda a la ley:** en los 70, cuatro islas se fijaron límites de trampas. En 1995, la ley creó siete zonas que adoptaron esas prácticas (pp. 3, 8 y 11).
 - **Lectura:** se cumplen las condiciones de Axelrod y Trivers: vecinos estables que se reencuentran toda la vida, se reconocen y pueden castigar. Axelrod mismo señala que la **territorialidad** favorece la cooperación (Axelrod y Hamilton, 1981, p. 7; diapositiva 37). Y conecta con Darwin: es selección entre grupos, porque prosperan las bandas que cooperan.
 
-### 13:00-14:30 · Un límite: el altruismo selectivo (recortable)
+### 13:00-14:00 · Un límite: el altruismo selectivo (recortable)
 
 - **El problema:** cuando hay recursos limitados para ayudar a un grupo, lo mejor para el grupo es repartirlos de forma equitativa. Pero el **egoísmo** («primero yo») y la **empatía dirigida a un solo miembro** llevan al mismo resultado: el grupo queda desatendido. Las dos alternativas amenazan el **bien común** (Batson et al., 1999, citados en Baron y Byrne, 2005, p. 39).
 - **Ejemplo:** es mucho más fácil juntar ayuda para un niño con nombre y foto que para miles de niños desnutridos (Baron y Byrne, 2005, p. 39).
 - **Lectura:** la empatía, que en Batson era la fuente del altruismo puro, no alcanza para resolver un dilema social. Lo que sostiene el recurso común de la langosta no son los buenos sentimientos, sino **reglas, control y sanción** que valen para todos.
 
-### 14:30-16:00 · Cierre
+### 14:00-15:00 · Cierre
 
 | | Torneo de Axelrod | Golden Balls | Langosta de Maine |
 |---|---|---|---|
@@ -146,17 +146,22 @@ Baron y Byrne (2005, p. 37) ordenan cuatro teorías. Las tres primeras ponen el 
 
 ## Apoyo visual sugerido
 
-Si se permite, siete diapositivas:
+La docente recomienda llevar un PPT, pero avisa que puede no haber proyector según el aula que toque. Prepará las dos versiones: el PPT y el cuadro del cierre impreso. No respondió si se pueden pasar videos. Si llevás la final de Golden Balls, que sea un fragmento corto y descargado, y tené preparado cómo contarla en dos frases por si no hay pantalla.
 
-1. **Título y pregunta:** «¿Por qué cooperamos si traicionar paga más?».
+El PPT está en `6_Entregables/C08_FinalReducido_Presentacion.pptx`, con el guion de cada bloque en las notas del orador. En el mismo lugar hay una copia en PDF para imprimir. Tiene una diapositiva por bloque del guion:
+
+1. **Portada:** «¿Por qué cooperamos si traicionar paga más?».
 2. **Prosocial y altruista:** las definiciones.
-3. **Las cuatro explicaciones:** el diagrama 02, con el experimento de Batson.
-4. **Parentesco y herencia:** Burnstein, el tercio de los gemelos y el suricato.
-5. **Matriz del dilema y TIT FOR TAT:** los tres rasgos.
-6. **Dos casos:** foto o esquema de Golden Balls y un mapa de los territorios de Maine.
-7. **El cuadro del cierre.**
+3. **Las cuatro explicaciones:** con el experimento de Batson.
+4. **El desafío evolutivo:** parentesco, el tercio heredado de la empatía, Trivers y el suricato.
+5. **Axelrod:** la matriz del dilema, el torneo y los tres rasgos de TIT FOR TAT.
+6. **Golden Balls:** la matriz de dividir o robar y la final de Nick e Ibrahim.
+7. **La langosta de Maine:** de las bandas a la ley de 1995.
+8. **Altruismo selectivo** (recortable).
+9. **El cuadro del cierre.**
+10. **Referencias:** no se presenta; queda para las preguntas.
 
-Si no se permite, llevá el cuadro del cierre en un papel como ayuda memoria.
+Si no se puede proyectar, el cuadro del cierre en papel te sirve como ayuda memoria y lo podés mostrar a la mesa.
 
 ## Preguntas probables
 
