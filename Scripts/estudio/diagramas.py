@@ -39,6 +39,24 @@ def render(mmd, png):
         raise RuntimeError(f"mmdc falló con {Path(mmd).name}:\n{(r.stderr or r.stdout)[-800:]}")
 
 
+def al_dia(guia):
+    """True si cada bloque Mermaid de la guía ya tiene su .mmd idéntico y su .png en _media/.
+
+    Permite exportar sin mermaid-cli cuando los diagramas no cambiaron desde el último render.
+    """
+    guia = Path(guia)
+    base = guia.stem[: -len("_Guia")] if guia.stem.endswith("_Guia") else guia.stem
+    media = guia.parent / "_media"
+    texto = guia.read_text(encoding="utf-8-sig").replace("\r\n", "\n")
+    for n, m in enumerate(RE_BLOQUE.finditer(texto), start=1):
+        mmd, png = media / f"{base}_{n:02d}.mmd", media / f"{base}_{n:02d}.png"
+        if not (mmd.exists() and png.exists()):
+            return False
+        if mmd.read_text(encoding="utf-8-sig").replace("\r\n", "\n").strip() != m.group(1).strip():
+            return False
+    return True
+
+
 def procesar(guia, renderizar=True):
     guia = Path(guia)
     base = guia.stem[: -len("_Guia")] if guia.stem.endswith("_Guia") else guia.stem
