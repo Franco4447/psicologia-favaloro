@@ -1,0 +1,12 @@
+graph TD
+  E[Emergencia] --> P1{Paso 1: Se da cuenta?}
+  P1 -- No --> N1[No ayuda]
+  P1 -- Sí --> P2{Paso 2: La interpreta como emergencia?}
+  P2 -- No --> N2[No ayuda: ignorancia pluralista]
+  P2 -- Sí --> P3{Paso 3: Asume la responsabilidad?}
+  P3 -- No --> N3[No ayuda: difusión de la responsabilidad]
+  P3 -- Sí --> P4{Paso 4: Sabe cómo ayudar?}
+  P4 -- No --> N4[No ayuda: faltan habilidades]
+  P4 -- Sí --> P5{Paso 5: Decide actuar?}
+  P5 -- No --> N5[No ayuda: costos]
+  P5 -- Sí --> A[Ayuda]
