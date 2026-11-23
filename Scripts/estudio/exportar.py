@@ -152,7 +152,7 @@ def exportar(guia, pdf=False, imprimir=False, indice=False, forzar=False, sin_sa
     if RE_MERMAID.search(guia.read_text(encoding="utf-8-sig")) and shutil.which("mmdc"):
         diagramas.procesar(guia)                       # .mmd + .png en _media/ y referencias en la guía
     _, cuerpo = frontmatter.leer(guia)
-    if shutil.which("mmdc"):
+    if shutil.which("mmdc") or diagramas.al_dia(guia):
         cuerpo = RE_MERMAID.sub("", cuerpo)            # en Word va la imagen, no el código
 
     def img(m):
