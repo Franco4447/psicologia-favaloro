@@ -88,6 +88,23 @@ git -c pack.useSparse=false push -u origin <rama>
 
 Para comprobarlo antes de subir: `printf 'HEAD\n^origin/main\n' | git -c pack.useSparse=false pack-objects --revs --stdout --thin -q | wc -c` debe dar kilobytes, no cientos de megabytes. Al sincronizar `main` después, usa `git switch -C main origin/main` (no `git pull`) para no regenerar archivos en OneDrive.
 
+## Git en la carpeta de OneDrive (Windows)
+
+La copia local del repositorio vive dentro de OneDrive. Para traer lo integrado en GitHub (por ejemplo, después de aceptar un pull request), desde la raíz del repositorio:
+
+```powershell
+git fetch origin
+git switch -C main origin/main
+```
+
+Si git responde `warning: invalid write operation detected` y `unable to append to '.git/logs/...': Invalid argument`, es OneDrive que rechaza la forma en que Git para Windows agrega líneas a sus registros internos. No se pierde nada: el `fetch` ya bajó los datos, solo no pudo anotar dónde quedó `main`. Se arregla una vez por copia del repositorio y se repite el comando que falló:
+
+```powershell
+git config windows.appendAtomically false
+```
+
+Si vuelve a aparecer algún error de escritura en `.git`, marca la carpeta oculta `.git` como «Mantener siempre en este dispositivo» (clic derecho en el Explorador, o `attrib +P -U .git /S /D`), para que OneDrive no la reemplace por archivos que se descargan a pedido.
+
 ## Skills de Estudio (Claude Code)
 
 El repositorio trae skills propias en `.claude/skills/` que aplican estas reglas automáticamente.
