@@ -1,0 +1,12 @@
+flowchart TD
+    R["Prolific: hablantes nativos de inglés"] --> A["Asignación al azar"]
+    A --> T["Grupo de entrenamiento"]
+    A --> C["Grupo control"]
+    T --> P1["Bloque PRE<br/>dos respuestas"]
+    C --> P2["Bloque PRE<br/>dos respuestas"]
+    P1 --> I1["Intervención: 3 problemas<br/>+ explicación"]
+    P2 --> I2["Intervención: 3 problemas<br/>sin explicación"]
+    I1 --> Q1["Bloque POST"]
+    I2 --> Q2["Bloque POST<br/>(explicación al final)"]
+    Q1 --> M["Dos meses después<br/>solo el grupo entrenado"]
+    M --> RT["Retest 1B / 2B:<br/>PRE con contenidos nuevos<br/>→ segundo entrenamiento → POST"]
