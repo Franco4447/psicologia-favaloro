@@ -40,7 +40,7 @@ evaluaciones:
   - nombre: Final reducido oral
     fecha: 2026-12-10
     formato: oral
-    detalle: "Beneficio de final reducido (Evaluación 1 y 2 con 8 o más): exposición oral de un tema de la lista de la cátedra, con preguntas solo sobre ese tema (1_Bibliografia_Original/Global_2doC_LineamientosRecuperatorioYFinal.pdf). Tema elegido: Altruismo y conducta prosocial, vinculado con el torneo de Axelrod, Golden Balls (Nick e Ibrahim) y las bandas de la langosta de Maine. Exposición de unos 10 minutos; el 18/11 el guion se amplió a unos 16 con la bibliografía obligatoria de la unidad 9 no dada en clase. Una articulación o variación entre temas se consulta a la docente con una semana de anticipación (hasta el 03/12)."
+    detalle: "Beneficio de final reducido (Evaluación 1 y 2 con 8 o más): exposición oral de un tema de la lista de la cátedra, con preguntas solo sobre ese tema (1_Bibliografia_Original/Global_2doC_LineamientosRecuperatorioYFinal.pdf). Tema elegido: Altruismo y conducta prosocial, vinculado con el torneo de Axelrod, Golden Balls (Nick e Ibrahim) y las bandas de la langosta de Maine. La docente aprobó los tres casos (respuesta del 23/11). Exposición de unos 15 minutos, según la docente. Recomienda llevar un PPT, aunque puede no haber proyector según el aula que toque. No respondió si se pueden pasar videos."
     unidades: [U09]
     estado: pendiente
 ---
@@ -50,6 +50,7 @@ evaluaciones:
 - El programa disponible es de 2025. Para el alcance de 2026 mandan las diapositivas y el cronograma de trabajos 2026.
 - El cronograma de trabajos es de agosto y se corrió: las notas de clase (Drive > anotaciones, actualizadas el 2026-11-04) mandan sobre él. Clases: 08/10 emociones sociales, 15/10 decisiones sociales, 22/10 dilemas morales, 29/10 niveles de análisis e intervenciones, 05/11 repaso, 12/11 examen.
 - Notas de cada evaluación: de 6 a 8 se accede al final; de 8 a 10 (bibliografía complementaria, creatividad y originalidad) se accede al final reducido.
+- Final reducido (2026-11-23): la docente respondió la consulta. Los tres casos (Axelrod, Golden Balls y la langosta de Maine) quedan aprobados como ejemplos del tema. La exposición dura unos 15 minutos. Sugiere armar un PPT, pero no sabe qué aula tocará, así que puede que no se pueda proyectar: conviene llevar también un apoyo en papel.
 - Nota final: promedio de la cursada (Evaluación 1 y Evaluación 2) y el examen final.
 - La clase 4 fue práctica (TP1). La clase 13 es el repaso; el archivo de su carpeta en Drive es idéntico a la presentación de la clase 12.
 - Decisión de apuntes (2026-11-04): guías de cursada por clase, con diagramas relacionales y contenido desarrollado que sigue las diapositivas y se valida con la bibliografía, sin extender mucho la clase; más cuadros integradores y un simulacro integrador.
